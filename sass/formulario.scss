@@ -1,0 +1,134 @@
+
+/*textarea {
+  resize: none;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#page-contacto{
+  overflow: hidden;
+}
+
+#nombre,#email,#asunto,#telefono,#mensaje{
+  width: 80%;
+  border:0;
+  background:inherit;
+  border-bottom: 1px solid #585757;
+}
+
+
+.wrappper-formulario-span{
+  margin-right: auto;
+}
+
+#wrappper-formulario{
+  width: 100%;
+  @media(min-width: 760px){
+    width: 400px;
+  }
+}
+
+
+.wrappper-formulario-titulo{
+  font-size: 25px;
+  line-height: 100%;
+  margin-top: 40px;
+  @media(min-width: 760px){
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+
+
+.wrappper-formulario-envoltura-inputs{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+
+#btn-enviar{
+  cursor: pointer;
+  background: initial;
+  border:0;
+  color: #C83C41;
+  font-size: 20px;
+  margin-left:40px;
+  margin-top: 20px;
+  @media(min-width: 760px){
+     margin-left:80px;
+    margin-top: 50px;
+  }
+}
+
+.boton-admision{
+  margin-left:0;
+}
+
+
+.top-20{
+  margin-top: 50px;
+}
+
+*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity:1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+#formulario-admision{
+  display: flex;
+  flex-direction: column;
+  @media(min-width: 760px){
+    width: 350px;
+  }
+}
+
+#nombreAdmision,#nombre,#telefono,#dni,#correo{
+  border:0;
+  outline: 0;
+  background-color: initial;
+  color: #ffffff;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+}
+
+#nombreAdmision{
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+#btn-enviar-admision{
+   border:0;
+  outline: 0;
+    background-color: initial;
+  width: 120px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border:1px solid #ffffff;
+  border-radius: 7px;
+  box-shadow: 10px 20px 20px rgba(0,0,0,.3);
+  color:#c83c41;
+
+  @media(min-width: 760px){
+   
+  }
+}

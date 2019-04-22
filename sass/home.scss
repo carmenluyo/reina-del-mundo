@@ -1,0 +1,141 @@
+body { 
+    background-color: #fff;
+    font-family: 'Candara' ,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+
+.box-text-float {
+    text-align: left;
+    position: absolute;
+    top: 207px;
+    width: 380px;
+    padding: 21px;
+
+    h3 {
+        font-size: 35px;
+        margin-bottom: 14px;
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+    }
+
+    @media screen and (min-width: 1300px) {
+        width: 450px;
+    }
+}
+
+.slider-single h3 {
+	line-height: 10rem;
+}
+
+
+
+.slider-nav .slick-slide { 
+    cursor: pointer; 
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        right: 0;
+    }
+}
+
+.slick-slide.is-active h3 {
+	color: #fff;
+}
+
+.slick-track {
+    height: 100%;
+
+    .slick-slide {
+        text-align: right;
+        padding-right: 28px;
+    }
+}
+
+.slick-list {
+    height: 100%;
+}
+
+.slider-home {
+    width: 70%;
+    float: right;
+    height: 460px;
+
+    .slick-slide {
+        .image-slider {
+            width: 650px;
+            display: inline-block;
+
+            @media screen and (min-width: 1300px) {
+                width: 75%;
+            }
+        }
+        .image-nav {
+            width: 450px;
+
+            @media screen and (min-width: 1300px) {
+                width: 100%;
+            }
+
+        }
+    }
+
+    @media screen and (min-width: 1300px) {
+        height: 600px;
+    }
+}
+
+.box-logos {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    overflow: auto;
+    display: inline-block;
+    width: 60%;
+    float: right;
+    text-align: right;
+
+    img {
+        display: inline-block;
+        width: 80px;
+
+        @media screen and (min-width: 1300px) {
+            width: 100px;
+        }
+    }
+}
+
+.slider.slider-nav.slick-initialized.slick-slider {
+    position: absolute;
+    left: 0;
+    width: 441px;
+    height: 600px;
+    bottom: 0;
+    // background-image: url('img/tab1.png');
+
+    @media screen and (min-width: 1300px) {
+        width: 33%;
+    }
+}
+
+// .slick-track {
+//     width: 900px !important;
+// }
+
+// .slick-slide {
+//     &.slick-current {
+//         &.slick-active {
+//             width: 900px !important;
+//         }
+//     }
+// }

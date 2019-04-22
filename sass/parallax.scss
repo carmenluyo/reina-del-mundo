@@ -1,0 +1,228 @@
+.wrapper-parallax{
+	position: absolute;
+	top: 550px;
+	left: 0;
+	height: 1100px;
+	overflow: hidden;
+
+}
+
+.hiddenParallax{
+	
+	left: -5%;
+	top:-5%;
+	height: 100vh;
+}
+
+.wrapper-parallax-bottom{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	@media(max-width: 760px){
+		background-color:#304f87;
+	}
+}
+.wrapper-parallax-bottom > div{
+	width: 100%;
+	align-self: center;
+	box-sizing: border-box;
+	@media(min-width: 760px){
+		width: 50%;
+	}
+}
+.wrapper-parallax-bottom > div:nth-child(1){
+
+	margin-top: -10%;
+	padding-left: 10%;
+	@media(max-width: 760px){
+		position: relative;
+		top: -250px;
+	}
+}
+
+.wrapper-parallax-bottom > div > p{
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: right;
+	font-size: 18px;
+	color:#ffffff;
+	@media(min-width: 760px){
+		width: 400px;
+	}
+}
+
+.onda01,.onda02,.onda03,.onda04,.onda05,.onda06,
+.onda07,.onda08{
+	width: 110vw;
+	background-size: cover;
+	position: relative;
+}
+.onda01b,.onda02b,.onda03b,.onda04b,.onda05b,.onda06b,
+.onda07b{
+	width: 110vw;
+	background-size: 100%;
+	position: relative;
+
+	background-repeat-x: repeat;
+}
+.onda01{
+	height: 350px;
+	background-image:url('img/parallax/ondas-01.svg');
+	top: -150px;
+	filter:drop-shadow(20px 20px 20px #01103a);
+
+}
+
+.onda02{
+	height: 350px;
+	background: url('img/parallax/ondas-02.svg') repeat bottom;
+	background-position: bottom;
+	background-repeat: repeat;
+
+	top: -120px;
+	
+
+}
+
+.onda03{
+	height: 550px;
+	background-image:url('img/parallax/ondas-03.svg');
+	filter:drop-shadow(40px 20px  30px #20233B);
+}
+.onda04{
+	height: 550px;
+	background-image:url('img/parallax/ondas-04.svg');
+	background-size: cover;
+	top:200px;
+	filter:drop-shadow(20px 20px 30px #01103a);
+}
+
+.onda05{
+	height: 550px;
+	background-image:url('img/parallax/ondas-05.svg');
+
+	top: 300px;
+	filter:drop-shadow(20px 20px 60px #01103a);
+}
+.onda06{
+	height: 550px;
+	background-image:url('img/parallax/ondas-06.svg');
+	background-size: cover;
+	top: 400px;
+	filter:drop-shadow(20px 20px 60px #1e0156);
+}
+
+
+.onda01b{
+	height: 350px;
+	background-image:url('img/parallax/ondas-01-b.svg');
+	background-size: cover;
+	@media(min-width: 1500px){
+		height: 450px;
+	}
+}
+.top400{
+	position: relative;
+	top: 400px;
+}
+.top500{
+	position: relative;
+	top: 500px;
+}
+.top600{
+	position: relative;
+	top: 600px;
+}
+.top-mv-350{
+	@media(max-width: 760px){
+		position: relative;
+		top:350px;
+	}
+}
+.onda02b{
+	height: 360px;
+	background: url('img/parallax/ondas-02.svg') ;
+	background-size: cover;
+	background-size: 100%;
+	top: -250px;
+	@media(min-width: 1500px){
+		height: 460px;
+		top: -300px;
+	}
+	@media(max-width: 760px){
+		height: 260px;
+		top:-350px;
+		background-size: cover;
+	}
+}
+
+.onda03b{
+	height: 430px;
+	top:-500px;
+	background: url('img/parallax/ondas-03.svg') ;
+	background-size: cover;
+	filter:drop-shadow(40px 20px  30px #20233B);
+	@media(min-width: 1500px){
+		height: 520px;
+		top:-650px;
+	}
+	@media(max-width: 760px){
+		height: 250px;
+	}
+}
+.onda04b{
+	height: 430px;
+	background-image:url('img/parallax/ondas-04-b.svg');
+	background-size: cover;
+	background-size: 100%;
+	top:-650px;
+	filter:drop-shadow(20px 20px 30px #01103a);
+	@media(min-width: 1500px){
+		top:-850px;
+	}
+	@media(max-width: 760px){
+		background-size: cover;
+		top:-750px;
+	}
+}
+
+.onda05b{
+	display: none;
+	height: 500px;
+	background-image:url('img/parallax/ondas-05.svg');
+	background-size: cover;
+	top: -900px;
+	filter:drop-shadow(20px 20px 60px #01103a);
+}
+.onda06b{
+	height: 650px;
+	background-image:url('img/parallax/ondas-06-b.svg');
+	background-size: cover;
+	top: -1050px;
+	@media(min-width: 1500px){
+		height: 850px;
+		top: -1350px;
+	}
+
+
+	/*filter:drop-shadow(20px 20px 60px #1e0156);*/
+}
+
+.onda-07-img{
+	position: relative;
+	z-index: 999;
+}
+
+
+/*
+.onda07{
+	height: 550px;
+	background-image:url('img/parallax/ondas-07.svg');
+	top: 500px;
+}
+*/

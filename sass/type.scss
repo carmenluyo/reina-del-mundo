@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'Berlin Sans FB';
+    src: url('fonts/BerlinSansFB-Reg.eot');
+    src: url('fonts/BerlinSansFB-Reg.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BerlinSansFB-Reg.woff2') format('woff2'),
+        url('fonts/BerlinSansFB-Reg.woff') format('woff'),
+        url('fonts/BerlinSansFB-Reg.ttf') format('truetype'),
+        url('fonts/BerlinSansFB-Reg.svg#BerlinSansFB-Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Candara';
+    src: url('fonts/Candara.eot');
+    src: url('fonts/Candara.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Candara.woff2') format('woff2'),
+        url('fonts/Candara.woff') format('woff'),
+        url('fonts/Candara.ttf') format('truetype'),
+        url('fonts/Candara.svg#Candara') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+        font-family: 'Berlin Sans FB', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.txt-right{
+    text-align: right;
+}
+.txt-white{
+    color:#ffffff;
+}
+
+p{
+   font-family: 'Candara' ,sans-serif;
+     font-weight: normal;
+    font-style: normal;   
+    line-height: 130%;
+    letter-spacing: .3px;
+}
+
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.txt-20{
+    font-size: 18px;
+    @media(min-width: 760px){
+        font-size: 18px;
+    }
+    @media(min-width: 1500px){
+        font-size:20px;
+    }
+    
+}
+
+
+.txt-25{
+    font-size: 18px;
+    line-height: 140%;
+    @media(min-width: 760px){
+        font-size: 25px;
+    }
+}
+
+
+
+.m-txt-18{
+    @media(max-width: 760px){
+      font-size: 18px !important;  
+    }
+    
+}
+
+
+
+.seccion-text-right-titulo,.boton-inicio{
+	 font-family: 'Candara' ,sans-serif;
+	 font-weight: bold;
+    font-style: normal;
+    color:#ffffff;
+}
+
+.wp-inicio-cajas > p,.wrapper-lista-descripcion-p,.wp-inicio-cajas{
+     font-family: 'Candara' ,sans-serif;
+     font-weight: bold;
+    font-style: normal;
+}
+
+.wrapper-inicio-contenido-contexto{
+     font-family: 'Candara' ,sans-serif;
+    font-weight: normal;
+    color:#ffffff;
+    margin-bottom: 0;
+}
+
+.wrapper-inicio-contenido-contexto{
+    position: relative;
+    z-index: 2;
+    letter-spacing: .5px;
+}
+.wrapper-lista-descripcion,.seccion-wrapper-admision-contenido-contexto,.wrapper-parallax-bottom > div > p{
+     font-family: 'Candara' ,sans-serif;
+     font-weight: bold;
+    font-style: normal;
+}
+
+.cabecera-modal-ul,.titulo-interno,.wrapper-lista-carusel,.navegacion-simple-ul,.btn-conoce-reina,
+.formulario-admision-titulo,#formulario-admision > input,.seccion-wrapper-admision-contenido-titulo{
+	font-family: 'Berlin Sans FB', sans-serif;
+	font-weight: normal;
+    font-style: normal;
+}
+.formulario-admision-titulo{
+    color: #ffffff;
+    font-size: 28px;
+    margin-bottom: 5px;
+    margin-top: 0;
+    @media(min-width: 760px){
+        font-size:32px;
+    }
+}
+.seccion-wrapper-admision-contenido-titulo{
+    color: #ffffff;
+    text-align: right;
+}
+
+.seccion-wrapper-admision-contenido-contexto{
+    width: 100%;
+    font-size:18px;
+    margin-left: auto;
+    text-align: right;
+    color:#ffffff;
+    @media(min-width: 760px){
+         width: 500px;
+    font-size: 18px;
+    }
+}
+
+#formulario-admision > input{
+    font-size: 20px;
+}
+
+.titulo-interno{
+    font-size: 20px;
+    color:black;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 4;
+    @media(min-width: 760px){
+        font-size: 35px;
+         color:$rojo;
+    }
+}
+
+.titulo-admision{
+
+}
+
+.titulo-fecha{
+    font-size: 30px;
+}
+
+.titulo-socilitud{
+    font-size: 25px;
+}
+
+.lineH-110{
+    line-height: 100%;
+}
+
+
+
+.seccion-text-right-titulo{
+
+    font-size:18px;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0px;
+    @media(min-width: 760px){
+        font-size: 20px; 
+    }
+}
+
+
+.titulo-blanco{
+    color:#ffffff;
+}

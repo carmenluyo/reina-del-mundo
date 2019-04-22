@@ -1,0 +1,897 @@
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    @media(min-width: 760px){
+        width: 100%;
+    }
+}
+
+ .m-right-10 {
+    @media(min-width: 760px){
+        margin-right: 10%;
+    }
+    
+ }
+
+ .mr-left-auto{
+    margin-left: auto;
+ }
+
+
+.flex{
+    display: flex;
+}
+
+.order-2-movil{
+    @media(max-width: 760px){
+        order:2;
+    }
+}
+
+.mt-negative-10{
+    margin-top: -10%;
+}
+
+.mb-movil-200{
+    @media(max-width: 760px){
+        margin-bottom: 200px;   
+    }
+    
+}
+
+.m-mt-negative-25{
+    @media(max-width: 760px){
+       margin-top: -35%; 
+    }
+    
+}
+
+.hidden-mv{
+    @media(max-width: 760px){
+        display: none !important;
+    }
+}
+
+.align-center{
+    align-items: center;
+}
+.flex-center{
+    align-items: center;
+    align-self: center;
+}
+
+.m-center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width{
+    width: 100%;
+}
+.full-width-75{
+    width: 75%;
+    margin-right: 2%;
+}
+
+.full-width-90{
+    width: 90%;
+    margin-right: 2%;
+}
+
+.w-tablet-40{
+    @media(min-width: 760px){
+       width: 40%; 
+    }
+}
+
+.remover-space{
+    font-size: 0;
+}
+
+.w-500{
+    @media(min-width: 760px){
+        width: 500px;
+    }
+    
+}
+.w-tablet-50{
+    @media(min-width: 760px){
+       width: 50%; 
+    }
+}
+.w-tablet-60{
+    @media(min-width: 760px){
+       width: 60%; 
+    }
+}
+.w-tablet-70{
+    @media(min-width: 760px){
+       width: 70%; 
+    }
+}
+.w-tablet-80{
+    @media(min-width: 760px){
+       width: 80%; 
+    }
+}
+.w-tablet-90{
+    @media(min-width: 760px){
+       width: 90%; 
+    }
+}
+.w-tablet-100{
+    @media(min-width: 760px){
+       width: 100%; 
+    }
+}
+.w-40{
+    @media(min-width: 1200px){
+       width: 40%; 
+    }
+}
+.w-50{
+    
+    @media(min-width: 1200px){
+        width: 50%;
+    }   
+}
+.w-60{
+    
+     @media(min-width: 1200px){
+        width: 60%;
+     }
+}
+.w-70{
+   
+     @media(min-width: 1200px){
+         width: 70%;
+     }
+}
+.w-80{
+    
+     @media(min-width: 1200px){
+         width: 80%;
+     }
+}
+
+@media only screen 
+and (min-device-width : 300px) 
+and (max-device-width : 500px) 
+and (orientation : landscape) { 
+
+
+#animacion-vereda{
+    display: none;
+}
+
+}
+
+.w-350{
+    @media(min-width: 760px){
+        width: 350px !important;
+    }
+    @media(min-width:1400px){
+        width: 420px !important;
+    }
+    
+}
+
+
+.width82{
+    width: 82% !important;
+}
+
+.m-left{
+    margin-left: auto;
+}
+.m-right{
+    margin-right: auto;
+}
+
+.pt-20{
+    padding-top: 40px;
+}
+.pt-30{
+    padding-top: 30px;
+}
+.pt-40{
+    padding-top: 40px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pt-60{
+    padding-top: 60px;
+}
+.pt-120{
+    padding-top: 120px;
+}
+.pd-left-right-mv-20{
+    @media(max-width: 760px){
+       padding-left: 20px;
+    padding-right: 20px; 
+    box-sizing: border-box;
+    }
+    
+}
+
+.pr-20{
+    @media(min-width: 760px){
+         padding-right: 20px;
+    }
+}
+.pr-50{
+    @media(min-width: 760px){
+         padding-right: 50px;
+    }
+}
+.pr-porcentage-20{
+    padding-right: 20%;
+}
+.fondo-colegio {
+    background-image: url(img/nuestro-colegio/fondo-colegio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* @media(min-width: 760px){
+        background-size: 100% 100%;
+        background-position: -250px;
+     }
+     @media(min-width: 1600px){
+         background-position: -350px;
+     }*/
+}
+
+#animacion-propuesta-bottom{
+    @media(max-width: 760px){
+        opacity: .3;
+    }
+}
+
+
+.mtop-100{
+    margin-top: 100px;
+}
+
+.mt-mv-100{
+    @media(max-width: 760px){
+        margin-top: 100px;
+    }
+}
+
+.top-mv-300{
+    @media(max-width: 760px){
+        top:300px !important;
+    }
+}
+
+.mtop-max-0{
+    @media(max-width: 760px){
+        margin-top: 0;
+    }
+}
+
+.wrapper-svg-bottom{
+   /* transform: translateY(-200px);*/
+   margin-top: -15%;
+   margin-bottom: -15%;
+}
+
+.z-1,.z-2,.z-3,.z-4,.z-5,.z-6,.z-7,.z-8,.z-9{
+    position: relative;
+}
+.z-1{
+    z-index: 1;
+}
+.z-2{
+    z-index: 2;
+}
+.z-3{
+    z-index: 3;
+}
+.z-4{
+    z-index: 4;
+}
+
+.h-500{
+    height: 600px;
+}
+
+.h-700{
+    height: 700px;
+}
+
+.h-900 {
+    height: 900px
+}
+
+.radius{
+    border-radius: 50%;
+}
+
+
+.circulo-verde-bottom-nuestraPropuesta{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(79,110,53, .5);
+    box-shadow: 0px 0px 10px #a45f5f;
+}
+
+.fondo-historia{
+    background-image: url(img/fondo-historia.jpg);
+    background-size: cover;
+    background-position:-50px 20px;
+    @media(min-width: 1200px){
+        background-size: contain;
+    }
+ }
+
+.height-100{
+    height: 100%;
+}
+
+.w-400{
+  width:90vw;
+  @media(min-width: 760px){
+    width:400px;
+  }
+} 
+.w-450{
+    width:90%;
+    @media(min-width: 760px){
+        width: 450px;
+    }
+}
+
+.ml-200{
+    margin-left:0;
+    @media(min-width: 760px){
+         margin-left: 200px;
+    }
+}
+
+.z-index-4{
+    position: relative;
+    z-index: 4;
+} 
+
+.m-bottom-300{
+    margin-bottom: 300px;
+}
+.mt-200{
+    margin-top: 200px;
+} 
+.m-bottom-mv-300{
+    @media(max-width: 760px){
+        margin-bottom: 100px;
+    }
+}
+.m-bottom-mv-0{
+    @media(max-width: 760px){
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-device-width: 480px) and (orientation: portrait){
+     #animacion-vereda{
+        display: none;
+    }
+}
+
+.h-max-500{
+    @media(max-width: 760px){
+        height: 500px;
+    }
+}
+.m-bottom-negative-10{
+    margin-bottom: -10%;
+}
+.max-align-center {
+    @media(max-width: 760px){
+        align-items: center;
+    }
+}
+.mv-over{
+    @media(max-width: 760px){
+        overflow: hidden;
+    }
+}
+
+#page-admision{
+    @media(min-width: 760px){
+         overflow: hidden;
+    }
+   
+}
+
+.wrapper-slider-fotos{
+    @media(max-width: 760px){
+        margin-top:40px;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+@media(max-width: 760px){
+    .max-w-80{
+         width: 80%;
+    }
+    .max-w-90{
+         width: 90%;
+         /*left: 0;
+         right: 0;
+         margin-left: auto;
+         margin-right: auto;*/
+    }  
+    .max-w-95{
+        width: 100%;
+    }  
+    .max-w-100{
+        width: 100%;
+    }
+    .centrado-movil{
+        left: 0;
+         right: 0;
+         margin-left: auto;
+         margin-right: auto;
+    }    
+}
+
+.circulo-img-mitad{
+    position: absolute;
+    top:70px;
+    right: 7%;
+    @media(max-width: 760px){
+        width:35%;
+        right: 10%;
+    }
+}
+
+.cajita{
+    height: 175px;
+    overflow: hidden;
+    @media(max-width: 760px){
+        top:520px;  
+    }
+    @media(min-width: 760px){
+        height: 675px;
+    }
+}
+
+.overflowHidden{
+    overflow: hidden;
+}
+
+
+.mv-br-none{
+    @media(max-width: 760px){
+          display: none;
+    }
+  
+}
+
+.background-petalo{
+    height: 700px;
+    background-image: url(img/petalo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:45% 90%;
+    position: relative;
+    z-index: 2;
+    filter:drop-shadow(20px 20px 10px gray);
+    @media(min-width: 760px){
+       height:700px;
+       background-size: 130%;  /*  130% */
+       background-position:25% 55%;  /*  20% 95% */
+    }
+    @media(min-width:1100px){
+       height:750px;
+       background-size: 110%;  /*  130% */
+       background-position:-85% 15%;  /*  20% 95% */
+    }
+    @media(min-width:1500px){
+       height:700px;
+       background-size: 110%;  /*  130% */
+       background-position:-85% 15%;  /*  20% 95% */
+    }
+     @media(min-width: 1600px){
+        height:950px;
+     }
+}
+
+.background-petalo.historia{
+    @media(max-width: 760px){
+        height: 500px;
+        background-size:180% 150%;
+        background-position: 12% 60%;
+    }
+}
+
+.img-educacion-top{
+
+    position: absolute;
+    left: 0%;
+    top:80px;
+    z-index: 2;
+    @media(max-width: 760px){
+         width:30%;
+         z-index: 20;
+    }
+}
+
+.ml-10{
+    @media(min-width: 760px){
+        margin-left: 10%;
+    }
+}
+
+#top-formativo{
+    position: absolute;
+    top: 0;
+}
+
+.min-width-1600-width-90{
+    @media(min-width: 1600px){
+        width: 90%;
+    }
+}
+.foto-der{
+    position: absolute;
+    right: 5%;
+    width: 50%;
+    filter: drop-shadow(0px 0px 5px #bfb382);
+    @media(max-width: 760px){
+        top:-150px;
+    }
+    @media(min-width: 760px){
+      width: 550px; 
+      right: 15%; 
+      top:150px;
+    }
+    @media(min-width: 1600px){
+        right:30%;
+        top:120px;
+    }
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column-movil{
+    @media(max-width: 760px){
+      flex-direction: column;  
+    }
+    
+}
+
+.foto-atras{
+    position: absolute;
+    width: 77vw;
+}
+.img-educacion-top{
+    
+}
+
+.foto-iz-ei{
+    position: absolute;
+   
+   
+    filter:drop-shadow(0px 0px 5px #bfb382);
+    z-index: 5;
+    @media(min-width: 760px){
+         width: 600px;
+    }
+}
+
+ .relative{
+    position: relative;
+}
+
+.z-index3{
+    z-index: 3;
+ }
+
+.height{
+    height: 750px;
+}
+
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+#page-propuesta-educativa{
+
+}
+
+.seccion-text-right{
+    width: 80%;
+    margin-left: auto;
+    padding-right: 5%;
+    
+    position: relative;
+    @media(min-width: 1200px){
+          width: 400px;
+    }
+}
+.seccion-text-right.nuestraPropuesta{
+    height: 350px;
+    padding-top:3%;
+    padding-left: 7%;
+    position: relative;
+    background-color: rgba(200,60,65, .8);
+     @media(min-width: 760px){
+         height: 600px;
+    }
+}
+
+
+.seccion-text-right-titulo{
+    position: relative;
+    z-index: 4;
+}
+.educacionIntegral{
+    position: relative;
+    z-index: 3;
+}
+.educacionIntegral:after{
+    content: "";
+    background-color: rgba(229,172,77, .8);
+    position: absolute;
+    top: -140px;
+    right: -10px;
+    width: 600px;
+    height: 600px;
+   
+    @media(min-width: 760px){
+        border-radius: 50%;
+    }
+}
+
+.seccion-text-right.educacionIntegral{
+    height: 350px;
+     padding-top:3%;
+    
+    padding-left: 7%;
+     @media(min-width: 760px){
+         height: 600px;
+    }
+}
+
+
+/************** INICIO ***************/
+#page-area-formativo{
+	background-color: #C5293B;
+}
+
+.sub-wrapper-lista{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    height: 450px;
+    background-color: #efd27b;
+    @media(min-width: 760px){
+      width: 550px;  
+      height: 350px;
+    }
+}
+.sub-wrapper-lista > p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.wrapper-lista-descripcion{
+    position: absolute;
+    z-index: 4;
+    transform: translateY(50px);
+    width: 100%;
+    @media(max-width: 760px){
+       width: 100%;
+       left: 0;
+       right: 0; 
+    }
+    @media(min-width: 760px){
+        /*transform: translateY(200px);*/
+    }
+    
+}
+
+.ml-20{
+   
+    @media(min-width: 760px){
+        margin-left: 15%; 
+    }
+    @media(max-width:  760px){
+         margin-left: auto;
+    margin-right: auto;
+    }
+}
+.wrapper-lista-descripcion-p{
+    visibility: hidden;
+    /*width: 80%;*/
+    font-size: 16px;
+    line-height: 135%;
+    letter-spacing: 1px;
+    text-align: right;
+    margin-top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+    /*margin-left: 10%;*/
+    position: absolute;
+    color:#2e366a;
+    @media(min-width: 340px){
+         font-size: 18px;
+    }
+
+    @media(min-width: 760px){
+        left:initial;
+        right:initial;
+        /*width: 500px;*/
+        /*margin-left: 200px;*/
+    }
+    @media(max-width: 760px){
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+.max-height-600{
+    @media(max-width: 760px){
+        height: 600px;
+    }
+}
+
+.max-height-300{
+     @media(max-width: 760px){
+        height: 300px;
+    }
+}
+
+.bottom-svg-nuestro-colegio{
+    @media(max-width: 760px){
+        position: absolute;
+        width: 100%;
+        top:900px;
+    }
+}
+.imagen-educacion-circular{
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+   top:130px;
+    z-index: 20;
+    @media(min-width: 760px){
+        width: 380px;
+        height: auto;
+         left: 40%;
+         top:inherit;
+    }
+}
+
+.col-iz-left{
+
+}
+
+.admision-imagen-movil{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    @media(min-width: 760px){
+        display: none;
+    }
+}
+
+
+.seccion-wrapper-admision{
+    width:90%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 4;
+    @media(min-width: 760px){
+        width: 82%;
+        height: 350px;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+}
+
+.slick-slide.activeLista{
+
+}
+.slick-slide {
+    outline: none
+}
+
+.wrapper-lista-descripcion-p.show{
+    visibility: visible;
+}
+
+.seccion-wrapper-admision-form{
+    width: 90%;
+    @media(min-width: 760px){
+        width: 50%;
+    }
+}
+.seccion-wrapper-admision-contenido{
+    width:90%;
+    @media(min-width: 760px){
+        width: 50%;
+    }
+}
+
+
+
+.lt-space-1{
+    letter-spacing: 1px;
+}
+
+
+
+#areaformativa{
+    background: rgb(247,234,225);
+background: linear-gradient(0deg, rgba(247,234,225,1) 0%, rgba(216,146,119,1) 100%);
+}
+
+
+
+
+
+.m-t-7{
+    margin-top: 7% !important;
+}
+
+.position-right-20{
+    right: 20px;
+}
+
+
+.remove-background{
+    background:initial;
+}
+
+/********** ADMISION *******/
+.admision-forma-bottom-rojo{
+    width: 800px;
+    position: absolute;
+    top: -80px;
+    right: -220px;
+    z-index: -1;
+    @media(min-width:1500px){
+        width: 950px;
+        right: -250px;
+    }
+    @media(max-width: 760px){
+        width:100%;
+        top:400px;
+        right:0;
+    }
+}
+
+.btn-conoce-reina{
+    font-size: 20px;
+    display: table;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    border:2px solid white;
+    border-radius: 10px;
+    color:#e9be53;
+}
