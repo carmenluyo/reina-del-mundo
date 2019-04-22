@@ -146,14 +146,12 @@
 						</div>
 					</div>
 					<div class="tab-2">
-						<!-- 		
-							<div class="box-text-float">
-								<h3>
-									¿Cuál es nuestro objetivo?
-								</h3>
-								<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-Alemania.Nuestra propuesta educativa está centrada en el alumno como persona.  Por ello, es parte fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y armónico.</p>
-						</div> -->
-						
+						<div class="box-text-float">
+							<h3>
+								¿Cuál es nuestro objetivo?
+							</h3>
+							<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-Alemania.Nuestra propuesta educativa está centrada en el alumno como persona.  Por ello, es parte fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y armónico.</p>
+						</div>
 					</div>
 					<div class="tab-3">
 						<!-- <div class="box-text-float">
@@ -208,53 +206,59 @@
 <script src="js/slick/slick.min.js"></script>
 <script>
 
-	$('.slider-single').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: true,
-    autoplaySpeed: 8000,
-		arrows: false,
-		fade: false,
-		adaptiveHeight: true,
-		infinite: true,
-		useTransform: true,
-		speed: 400,
-		cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-	});
+	$('.slider-single')
 
-	$('.slider-nav')
 		.on('init', function(event, slick) {
 			$('.slider-nav .slick-slide.slick-current').addClass('is-active');
 		})
+	
 		.slick({
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			dots: false,
-			arrows: false,
-			focusOnSelect: false,
-			infinite: true,
 			autoplay: true,
-  		autoplaySpeed: 8000,
-			responsive: [{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				}
-			}, {
-				breakpoint: 640,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-				}
-			}, {
-				breakpoint: 420,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-			}
-			}]
+			autoplaySpeed: 8000,
+			arrows: false,
+			fade: false,
+			adaptiveHeight: true,
+			infinite: true,
+			useTransform: true,
+			speed: 400,
+			cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
 		});
+
+	// $('.slider-nav')
+	// 	.on('init', function(event, slick) {
+	// 		$('.slider-nav .slick-slide.slick-current').addClass('is-active');
+	// 	})
+	// 	.slick({
+	// 		slidesToShow: 1,
+	// 		slidesToScroll: 1,
+	// 		dots: false,
+	// 		arrows: false,
+	// 		focusOnSelect: false,
+	// 		infinite: true,
+	// 		autoplay: true,
+  	// 		autoplaySpeed: 8000,
+	// 		responsive: [{
+	// 			breakpoint: 1024,
+	// 			settings: {
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1,
+	// 			}
+	// 		}, {
+	// 			breakpoint: 640,
+	// 			settings: {
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1,
+	// 			}
+	// 		}, {
+	// 			breakpoint: 420,
+	// 			settings: {
+	// 				slidesToShow: 1,
+	// 				slidesToScroll: 1,
+	// 		}
+	// 		}]
+	// 	});
 
 	$('.slider-single').on('afterChange', function(event, slick, currentSlide) {
 		$('.slider-nav').slick('slickGoTo', currentSlide);
@@ -269,6 +273,27 @@
 
 		$('.slider-single').slick('slickGoTo', goToSingleSlide);
 	});
+
+
+	$('.slider-single').on('afterChange', function(event, slick, currentSlide){   
+
+		console.log(currentSlide);
+
+		if(currentSlide == 1) {
+			$(".tab-1").css("z-index" , 3);
+			$(".tab-2").css("z-index" , 4);
+			console.log("current -->", currentSlide );
+		}
+
+		if(currentSlide == 0) {
+			$(".tab-1").css("z-index" , 4);
+			$(".tab-2").css("z-index" , 3);
+			console.log("current -->", currentSlide );
+		}
+	});
+  
+
+
 
 </script>
 
