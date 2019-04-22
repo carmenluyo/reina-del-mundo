@@ -1568,7 +1568,6 @@ button:focus {
     .wrapper-inicio {
       height: calc(100vh + 35px); } }
 
-
 .wrapper-inicio-full {
   width: 100%; }
 
@@ -2527,103 +2526,6 @@ body.removerScroll {
   margin-left: auto;
   z-index: 90; }
 
-body {
-  background-color: #fff;
-  font-family: 'Candara' ,sans-serif;
-  font-weight: normal;
-  font-style: normal; }
-
-.js .slider-single > div:nth-child(1n+2) {
-  display: none; }
-
-.js .slider-single.slick-initialized > div:nth-child(1n+2) {
-  display: block; }
-
-.box-text-float {
-  text-align: left;
-  position: absolute;
-  top: 207px;
-  width: 380px;
-  padding: 21px; }
-  .box-text-float h3 {
-    font-size: 35px;
-    margin-bottom: 14px;
-    color: #fff; }
-  .box-text-float p {
-    color: #fff; }
-  @media screen and (min-width: 1300px) {
-    .box-text-float {
-      width: 450px; } }
-
-.slider-single h3 {
-  line-height: 10rem; }
-
-.slider-nav .slick-slide {
-  cursor: pointer;
-  position: relative; }
-  .slider-nav .slick-slide img {
-    position: absolute;
-    bottom: -16px;
-    left: 0;
-    right: 0; }
-
-.slick-slide.is-active h3 {
-  color: #fff; }
-
-.slick-track {
-  height: 100%; }
-  .slick-track .slick-slide {
-    text-align: right;
-    padding-right: 28px; }
-
-.slick-list {
-  height: 100%; }
-
-.slider-home {
-  width: 70%;
-  float: right;
-  height: 460px; }
-  .slider-home .slick-slide .image-slider {
-    width: 650px;
-    display: inline-block; }
-    @media screen and (min-width: 1300px) {
-      .slider-home .slick-slide .image-slider {
-        width: 75%; } }
-  .slider-home .slick-slide .image-nav {
-    width: 450px; }
-    @media screen and (min-width: 1300px) {
-      .slider-home .slick-slide .image-nav {
-        width: 100%; } }
-  @media screen and (min-width: 1300px) {
-    .slider-home {
-      height: 600px; } }
-
-.box-logos {
-  position: absolute;
-  bottom: 40px;
-  right: 0;
-  overflow: auto;
-  display: inline-block;
-  width: 60%;
-  float: right;
-  text-align: right; }
-  .box-logos img {
-    display: inline-block;
-    width: 80px; }
-    @media screen and (min-width: 1300px) {
-      .box-logos img {
-        width: 100px; } }
-
-.slider.slider-nav.slick-initialized.slick-slider {
-  position: absolute;
-  left: 0;
-  width: 441px;
-  height: 600px;
-  bottom: 0; }
-  @media screen and (min-width: 1300px) {
-    .slider.slider-nav.slick-initialized.slick-slider {
-      width: 33%; } }
-
 .cabecera-simple {
   position: absolute;
   width: 100vw;
@@ -2694,7 +2596,7 @@ body {
   @media (min-width: 760px) {
     .logo-rmd {
       position: absolute;
-      left: 5%;
+      left: 3%;
       top: 31px; } }
 
 body {
@@ -3015,5 +2917,155 @@ body {
 
   .word-inside {
     top: 21%; } }
+body {
+  background-color: #fff;
+  font-family: 'Candara' ,sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+.js .slider-single > div:nth-child(1n+2) {
+  display: none; }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) {
+  display: block; }
+
+.box-text-float {
+  text-align: left;
+  position: absolute;
+  top: 14px;
+  width: 380px;
+  padding: 21px; }
+  .box-text-float h3 {
+    font-size: 35px;
+    margin-bottom: 14px;
+    color: #fff; }
+  .box-text-float p {
+    color: #fff;
+    font-size: 16px; }
+  @media screen and (min-width: 1300px) {
+    .box-text-float {
+      top: 10%;
+      width: 450px; } }
+  @media screen and (min-width: 1300px) {
+    .box-text-float {
+      top: 15%;
+      width: 450px; } }
+
+.slider-single h3 {
+  line-height: 10rem; }
+
+.slider-nav .slick-slide {
+  cursor: pointer;
+  position: relative; }
+  .slider-nav .slick-slide img {
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    right: 0; }
+
+.slick-slide.is-active h3 {
+  color: #fff; }
+
+.slick-track {
+  height: 100%; }
+  .slick-track .slick-slide {
+    text-align: right;
+    padding-right: 28px; }
+
+.slick-list {
+  height: 100%; }
+
+.slider-home {
+  right: 0;
+  width: 100%;
+  float: right;
+  position: absolute; }
+  .slider-home .slick-slide .image-slider {
+    width: 70%;
+    display: inline-block; }
+    @media screen and (min-width: 1300px) {
+      .slider-home .slick-slide .image-slider {
+        width: 65%; } }
+  .slider-home .slick-slide .image-nav {
+    width: 450px; }
+    @media screen and (min-width: 1300px) {
+      .slider-home .slick-slide .image-nav {
+        width: 100%; } }
+
+.box-logos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  display: inline-block;
+  float: right;
+  text-align: right; }
+  .box-logos img {
+    display: inline-block;
+    width: 80px; }
+    @media screen and (min-width: 1300px) {
+      .box-logos img {
+        width: 100px; } }
+
+.slider.slider-nav.slick-initialized.slick-slider {
+  position: absolute;
+  left: 0;
+  width: 441px;
+  bottom: 0; }
+  @media screen and (min-width: 1300px) {
+    .slider.slider-nav.slick-initialized.slick-slider {
+      width: 33%; } }
+
+.container-full {
+  width: 100%;
+  padding-top: 114px;
+  position: relative; }
+
+.tabs-info {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  top: 190px; }
+  @media screen and (min-width: 1024px) {
+    .tabs-info {
+      top: 190px; } }
+  @media screen and (min-width: 1300px) {
+    .tabs-info {
+      top: 15%; } }
+  .tabs-info div img {
+    width: 100%; }
+  .tabs-info .tab-1,
+  .tabs-info .tab-2,
+  .tabs-info .tab-3,
+  .tabs-info .tab-4 {
+    height: 460px;
+    width: 470px;
+    position: absolute;
+    background-size: cover; }
+    @media screen and (min-width: 1300px) {
+      .tabs-info .tab-1,
+      .tabs-info .tab-2,
+      .tabs-info .tab-3,
+      .tabs-info .tab-4 {
+        height: 600px;
+        width: 600px; } }
+  .tabs-info .tab-1 {
+    z-index: 4;
+    background-image: url(img/tab1.png); }
+  .tabs-info .tab-2 {
+    z-index: 3;
+    left: 0;
+    background-image: url(img/tab2.png); }
+  .tabs-info .tab-3 {
+    z-index: 2;
+    left: 0;
+    background-image: url(img/tab3.png); }
+  .tabs-info .tab-4 {
+    z-index: 1;
+    left: 0;
+    background-image: url(img/tab4.png); }
+
+.slick-slide {
+  height: auto !important; }
 
 /*# sourceMappingURL=estilos.css.map */
