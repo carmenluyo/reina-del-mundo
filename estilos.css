@@ -2692,6 +2692,14 @@ body {
     left: 5% !important;
     top: 31px !important;
     position: absolute; } }
+@media screen and (min-width: 1440px) {
+  .slick-slide {
+    margin-top: 35px;
+    height: auto !important; }
+
+  .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4 {
+    width: 1000px;
+    height: 950px; } }
 .cabecera-simple {
   position: absolute;
   width: 100vw;

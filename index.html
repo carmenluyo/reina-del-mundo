@@ -73,10 +73,10 @@
 				<li class="navegacion-simple-menu-lista">
 					
 				<a href="nuestra-colegio.html">Nuestro <br>Colegio</a>
-							<ul class="submenu">
-								<a href="nuestra-colegio.html">Misión</a>
-								<a href="nuestra-colegio.html">Visión</a>
-							</ul>
+					<ul class="submenu">
+						<a href="nuestra-colegio.html">Misión</a>
+						<a href="nuestra-colegio.html">Visión</a>
+					</ul>
 				
 				</li>
 
@@ -132,9 +132,8 @@
 	</header>
 
 	<div class="container-full">
-		<div class="logo">
+		<div class="logo"></div>
 
-		</div>
 		<div class="slider-home">
 			<div class="tabs-info">
 					<div class="tab-1">
@@ -154,21 +153,21 @@
 						</div>
 					</div>
 					<div class="tab-3">
-						<!-- <div class="box-text-float">
+						<div class="box-text-float">
 							<h3>
 								¿Por qué elegirnos?
 							</h3>
 							<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-Alemania.Nuestra propuesta educativa está centrada en el alumno como persona.  Por ello, es parte fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y armónico.</p>
-						</div> -->
+						</div>
 					</div>
 
 					<div class="tab-4">
-							<!-- <div class="box-text-float">
+							<div class="box-text-float">
 								<h3>
 									¿Por qué elegirnos?
 								</h3>
 								<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-Alemania.Nuestra propuesta educativa está centrada en el alumno como persona.  Por ello, es parte fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y armónico.</p>
-							</div> -->
+							</div>
 					</div>
 			</div>
 			<div class="slider slider-single">
@@ -186,7 +185,7 @@
 		
 
 
-		<!-- <div class="box-logos">
+		<div class="box-logos">
 			<img src="img/logos/logo1.png">
 			<img src="img/logos/logo2.png">
 			<img src="img/logos/logo3.png">
@@ -194,7 +193,7 @@
 			<img src="img/logos/logo5.png">
 			<img src="img/logos/logo6.png">
 			<img src="img/logos/logo7.png">
-		</div> -->
+		</div>
 	</div>
 </section>
 
@@ -226,40 +225,6 @@
 			cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
 		});
 
-	// $('.slider-nav')
-	// 	.on('init', function(event, slick) {
-	// 		$('.slider-nav .slick-slide.slick-current').addClass('is-active');
-	// 	})
-	// 	.slick({
-	// 		slidesToShow: 1,
-	// 		slidesToScroll: 1,
-	// 		dots: false,
-	// 		arrows: false,
-	// 		focusOnSelect: false,
-	// 		infinite: true,
-	// 		autoplay: true,
-  	// 		autoplaySpeed: 8000,
-	// 		responsive: [{
-	// 			breakpoint: 1024,
-	// 			settings: {
-	// 				slidesToShow: 1,
-	// 				slidesToScroll: 1,
-	// 			}
-	// 		}, {
-	// 			breakpoint: 640,
-	// 			settings: {
-	// 				slidesToShow: 1,
-	// 				slidesToScroll: 1,
-	// 			}
-	// 		}, {
-	// 			breakpoint: 420,
-	// 			settings: {
-	// 				slidesToShow: 1,
-	// 				slidesToScroll: 1,
-	// 		}
-	// 		}]
-	// 	});
-
 	$('.slider-single').on('afterChange', function(event, slick, currentSlide) {
 		$('.slider-nav').slick('slickGoTo', currentSlide);
 		var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
@@ -279,17 +244,16 @@
 
 		console.log(currentSlide);
 
-		if(currentSlide == 1) {
-			$(".tab-1").css("z-index" , 3);
-			$(".tab-2").css("z-index" , 4);
-			console.log("current -->", currentSlide );
-		}
-
 		if(currentSlide == 0) {
 			$(".tab-1").css("z-index" , 4);
 			$(".tab-2").css("z-index" , 3);
-			console.log("current -->", currentSlide );
 		}
+
+		if(currentSlide == 1) {
+			$(".tab-1").css("z-index" , 3);
+			$(".tab-2").css("z-index" , 4);
+		}
+
 	});
   
 
