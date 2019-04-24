@@ -26,10 +26,10 @@ body {
     text-align: left;
     position: absolute;
     top: 14px;
-    width: 380px;
+    width: 340px;
     padding: 21px;
     h3 {
-        font-size: 35px;
+        font-size: 31px;
         margin-bottom: 14px;
         color: #fff;
     }
@@ -80,7 +80,7 @@ body {
     right: 0;
     width: 100%;
     float: right;
-    position: absolute;
+    position: relative;
     .slick-slide {
         .image-slider {
             width: 70%;
@@ -93,18 +93,20 @@ body {
 }
 
 .box-logos {
-    position: absolute;
-    bottom: 0;
     right: 0;
-    overflow: auto;
-    display: inline-block;
+    bottom: 0;
     float: right;
+    overflow: auto;
     text-align: right;
+    position: relative;
+    display: inline-block;
+
+
     img {
         display: inline-block;
-        width: 80px;
+        width: 84px;
     }
-}
+} 
 
 .slider.slider-nav.slick-initialized.slick-slider {
     position: absolute;
@@ -138,8 +140,8 @@ body {
     .tab-3,
     .tab-4 {
         left: 0;
-        width: 470px;
-        height: 460px;
+        width: 400px;
+        height: 400px;
         bottom: 109px;
         position: absolute;
         background-size: cover;
@@ -185,11 +187,22 @@ body {
     } 
 
     .logo-rmd {
-        left: 14px;
-        top: 170%;
+        left: 21px;
+        top: 170% !important;
 
         img {
             width: 100% !important;
+        }
+    }
+
+    .box-logos {
+        right: 0;
+        bottom: 200px;
+        margin-right: 21%;
+
+        img {
+            display: block;
+            width: 80px;
         }
     }
 }
@@ -205,7 +218,25 @@ body {
                 }
             }
         }
-    }     
+    }   
+
+    .box-logos {
+        right: 0;
+        bottom: 0;
+        float: right;
+        overflow: auto;
+        text-align: right;
+        position: relative;
+        display: inline-block;
+        margin-right: 0;
+
+        img {
+            display: inline-block;
+            width: 84px;
+        }
+    }
+
+
 }
 
 @media screen and (min-width: 1300px) {
@@ -273,7 +304,49 @@ body {
     }
     
     .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4 {
+        width: 530px;
+        height: 530px; 
+    }
+
+    .slick-list {
+        height: 550px !important;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+
+    .slick-list {
+        height: 650px !important;
+    }
+}
+
+
+@media screen and (min-width: 2560px) {
+    .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4 {
         width: 1000px;
-        height: 950px;    
+        height: 900px; 
+        bottom: 126px;
+    }
+
+    .slick-list {
+        height: 600px !important;
+    }
+
+    .box-text-float {
+        width: 650px;
+        padding-left: 21px;
+
+        h3 {
+            font-size: 56px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+
+    .box-logos img {
+        width: 180px;
     }
 }
