@@ -2530,7 +2530,8 @@ body {
   background-color: #fff;
   font-family: 'Candara' ,sans-serif;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  cursor: url("img/cursor.png"), auto; }
 
 .js .slider-single > div:nth-child(1n+2) {
   display: none; }
@@ -2853,6 +2854,224 @@ body {
   display: block;
   width: 200px; }
 
+@media screen and (min-width: 768px) {
+  .auto-height {
+    height: 800px;
+    overflow: hidden; }
+
+  .red-bg--absolute {
+    top: 0;
+    width: 55%;
+    z-index: 0;
+    height: 100%;
+    right: -72px;
+    position: absolute; }
+    .red-bg--absolute img {
+      top: 40%;
+      position: absolute;
+      margin-top: -200px; }
+
+  .line-yellow {
+    top: 10%;
+    left: 0;
+    right: 0;
+    width: 300px;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute; }
+    .line-yellow img {
+      width: 100%; }
+
+  .circle-blue {
+    bottom: 0;
+    z-index: 87;
+    left: 3.6%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #253776; }
+
+  .red {
+    left: 0;
+    bottom: -6px;
+    right: -20%;
+    width: 21%;
+    z-index: 3;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute; }
+    .red img {
+      width: 100%; }
+
+  .circle-red {
+    bottom: 0;
+    right: 21%;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #dd2128; }
+
+  .circle-fade-purple {
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    position: absolute;
+    border-radius: 50%;
+    background-image: linear-gradient(to left, rgba(137, 109, 183, 0.87), #2a016e); }
+    .circle-fade-purple p {
+      top: 33%;
+      left: 0;
+      right: 0;
+      color: white;
+      font-size: 26px;
+      margin-left: auto;
+      margin-right: auto;
+      position: absolute; }
+    .circle-fade-purple:hover {
+      background-image: linear-gradient(to right, rgba(137, 109, 183, 0.87), #2a016e); }
+
+  .carousel-move {
+    position: absolute;
+    z-index: 10;
+    left: 21px; }
+
+  .word-inside {
+    top: 140px;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    margin-right: 5%; }
+    .word-inside h1 {
+      z-index: 4;
+      right: 0;
+      position: relative; }
+    .word-inside p {
+      width: 60%;
+      font-size: 9px;
+      margin-right: 0;
+      margin-left: auto; }
+
+  	/*
+  	* Animaciones
+   	*/
+  .animated {
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite; }
+
+  .bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce; }
+
+  @-webkit-keyframes bounce {
+    0%, 100% {
+      -webkit-transform: translateY(0); }
+    50% {
+      -webkit-transform: translateY(-10px); } }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); }
+    50% {
+      transform: translateY(-10px); } }
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); } }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg); } }
+  .rotating {
+    top: 40%;
+    right: -82px;
+    line-height: 100px;
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto; }
+    .rotating img {
+      width: 100%;
+      animation: rotating 3s linear infinite; }
+
+  .lefToRight {
+    -webkit-animation: rightThenLeft infinite linear;
+    margin-right: 10000px; }
+
+  @-webkit-keyframes rightThenLeft {
+    0% {
+      margin-right: 100%; }
+    50% {
+      margin-right: 0; }
+    100% {
+      margin-right: 100%; } }
+  .fondo-colegio .rotating {
+    left: 14%;
+    width: 120px;
+    margin: 0;
+    top: unset;
+    bottom: 0; }
+
+  /*Child Section*/
+  .left,
+  .right {
+    height: 100%;
+    width: calc(99%/2);
+    position: relative;
+    display: inline-block;
+    vertical-align: middle; }
+    .left img,
+    .right img {
+      width: 100%; }
+    .left .center-absolute,
+    .right .center-absolute {
+      text-align: center;
+      padding-top: 70px;
+      padding-right: 35px;
+      position: absolute;
+      margin-top: -250px;
+      top: 60%; }
+    .left .left-inside-shape .pizza-content,
+    .right .left-inside-shape .pizza-content {
+      left: 0;
+      bottom: 0;
+      margin-left: auto;
+      position: absolute; }
+
+  .bottom-svg-nuestro-colegio {
+    height: 600px; }
+
+  .left p {
+    margin-left: 14%; }
+
+  .fondo-colegio .slick-slide {
+    height: 354px !important;
+    margin-top: 0; } }
 @media screen and (min-width: 1024px) {
   html,
   body {
@@ -2862,7 +3081,7 @@ body {
     padding: 0; }
 
   .auto-height {
-    height: 100vh;
+    height: 800px;
     overflow: hidden; }
 
   .red-bg--absolute {
@@ -2877,7 +3096,7 @@ body {
     top: 10%;
     left: 0;
     right: 0;
-    width: 300px;
+    width: -a270px;
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
@@ -2945,11 +3164,12 @@ body {
     left: 67px; }
 
   .word-inside {
-    top: 70px;
+    top: 50%;
     right: 0;
     width: 50%;
-    height: 100vh;
-    margin-right: 5%; }
+    height: 100%;
+    margin-right: 5%;
+    margin-top: 150px; }
     .word-inside h1 {
       z-index: 4;
       right: 0;
@@ -2959,67 +3179,6 @@ body {
       font-size: 13px;
       margin-right: 0;
       margin-left: auto; }
-
-  	/*
-  	* Animaciones
-   	*/
-  .animated {
-    -webkit-animation-duration: .5s;
-    animation-duration: .5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite; }
-
-  .bounce {
-    -webkit-animation-name: bounce;
-    animation-name: bounce; }
-
-  @-webkit-keyframes bounce {
-    0%, 100% {
-      -webkit-transform: translateY(0); }
-    50% {
-      -webkit-transform: translateY(-10px); } }
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0); }
-    50% {
-      transform: translateY(-10px); } }
-  @-webkit-keyframes rotating /* Safari and Chrome */ {
-    from {
-      -webkit-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg); }
-    to {
-      -webkit-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg); } }
-  @keyframes rotating {
-    from {
-      -ms-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg); }
-    to {
-      -ms-transform: rotate(360deg);
-      -moz-transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
-      -o-transform: rotate(360deg);
-      transform: rotate(360deg); } }
-  .rotating {
-    top: 40%;
-    right: -82px;
-    line-height: 100px;
-    text-align: center;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto; }
-    .rotating img {
-      width: 100%;
-      animation: rotating 2s linear infinite; }
 
   .fondo-colegio .rotating {
     left: 14%;
@@ -3118,24 +3277,29 @@ body {
   /*Child Section*/
   .left,
   .right {
-    height: 100vh; }
+    height: 100%; }
     .left .center-absolute,
     .right .center-absolute {
-      top: 0; }
+      top: 50%;
+      padding-top: 0; }
 
   .word-inside {
-    top: 130px; }
+    top: 80px; }
     .word-inside p {
       width: 60%;
       font-size: 16px; }
 
   .bottom-svg-nuestro-colegio {
-    height: auto; } }
+    height: 700px; }
+
+  .fondo-colegio .slick-slide {
+    margin-top: 0;
+    height: 430px !important; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {
   .line-yellow {
     width: 400px; }
 
   .word-inside {
-    top: 21%; } }
+    top: 200px; } }
 
 /*# sourceMappingURL=estilos.css.map */

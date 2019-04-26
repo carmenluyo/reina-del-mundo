@@ -15,32 +15,10 @@
     }
 
 * {
-  cursor:none;
+  cursor: url('img/cursor.png'), auto;
 }
 
-.cursor {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: -50%;
-  left: -50%;
-  margin: -15px 0 0 -15px;
-  border-radius: 50%;
-  background-color: white;
-  backface-visibility: hidden;
-  transition: transform 0.2s ease-out;
-  mix-blend-mode: difference;
-  z-index: 1000;
-  pointer-events: none;
-}
-.cursor.is-moving {
-  transform: scale(0.8);
-}
 
-.content_cursor {
-  position:relative;
-  height:100%;
-}
 @media(min-width: 320px){
 
 	.vision{
@@ -72,7 +50,6 @@
 	
 </head>
 <body >
-<div class="cursor"></div>
 <div class="contendorTransition">
 			<div class="contendorTransition-top">
 				<ul class="cabecera-modal-ul">
@@ -116,14 +93,14 @@
 		<div class="line-yellow">
 			<img src="img/nuestro-colegio/line-yellow.png" alt="">
 		</div>
-		<div class="circle-blue animated bounce"></div>
+		<div class="circle-blue lefToRight"></div>
 		<div class="rotating">
 			<img src="img/nuestro-colegio/main-square.png">
 		</div>
 		<div class="red">
 			<img src="img/nuestro-colegio/rejillas.png">
 		</div>
-		<div class="circle-red animated bounce"></div>
+		<div class="circle-red rotating"></div>
 		<div class="circle-fade-purple"> <p>Visión</p></div>
 		<div class="max-w-100  m-left">
 			<div class="red-bg--absolute"><img src="img/nuestro-colegio/red-square.svg" alt=""></div>
@@ -405,24 +382,6 @@ $("a").click(function() {
         });    
 </script>
 
-
-
-<script>
-var $cursor = $('.cursor');
-
-function moveCursor(e) {
-  $cursor.addClass('is-moving');
-  $cursor.css({"top": e.pageY, "left": e.pageX});
-
-  clearTimeout(timer2);
-
-   var timer2 = setTimeout(function() {
-       $cursor.removeClass('is-moving');
-   }, 300);
-}
-
-$(window).on('mousemove', moveCursor);
-</script>
 <script src="js/rellax.min.js"></script>
 <script>
 	var rellax = new Rellax('.rellax');
