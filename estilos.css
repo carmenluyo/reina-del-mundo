@@ -2884,7 +2884,7 @@ body {
       width: 100%; }
 
   .circle-blue {
-    bottom: 120px;
+    bottom: 180px;
     z-index: 87;
     left: 3.6%;
     width: 100px;
@@ -2908,7 +2908,7 @@ body {
 
   .circle-red {
     bottom: 64px;
-    right: 21%;
+    right: 28%;
     z-index: 2;
     width: 100px;
     height: 100px;
@@ -2945,7 +2945,7 @@ body {
     left: 21px; }
 
   .word-inside {
-    top: 140px;
+    top: 200px;
     right: 0;
     width: 50%;
     height: 100%;
@@ -3190,7 +3190,7 @@ body {
     left: 67px; }
 
   .word-inside {
-    top: 50%;
+    top: 42px;
     right: 0;
     width: 50%;
     height: 100%;
