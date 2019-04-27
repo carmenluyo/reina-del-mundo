@@ -2884,14 +2884,15 @@ body {
       width: 100%; }
 
   .circle-blue {
-    bottom: 0;
+    bottom: 120px;
     z-index: 87;
     left: 3.6%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     border-radius: 50%;
-    background-color: #253776; }
+    background-color: #253776;
+    animation: translating 4s linear 0s infinite; }
 
   .red {
     left: 0;
@@ -2906,14 +2907,15 @@ body {
       width: 100%; }
 
   .circle-red {
-    bottom: 0;
+    bottom: 64px;
     right: 21%;
     z-index: 2;
     width: 100px;
     height: 100px;
     position: absolute;
     border-radius: 50%;
-    background-color: #dd2128; }
+    background-color: #dd2128;
+    transition: all .8s linear; }
 
   .circle-fade-purple {
     bottom: 0;
@@ -2961,6 +2963,11 @@ body {
   	/*
   	* Animaciones
    	*/
+  .opacity-scroll-up,
+  .opacity-scroll-down,
+  .opacity-scroll-top {
+    transition-delay: 0.8s; }
+
   .animated {
     -webkit-animation-duration: .5s;
     animation-duration: .5s;
@@ -3019,17 +3026,36 @@ body {
       width: 100%;
       animation: rotating 3s linear infinite; }
 
-  .lefToRight {
-    -webkit-animation: rightThenLeft infinite linear;
-    margin-right: 10000px; }
-
-  @-webkit-keyframes rightThenLeft {
+  @keyframes scaling {
     0% {
-      margin-right: 100%; }
-    50% {
-      margin-right: 0; }
+      transform: scale(1); }
+    20% {
+      transform: scale(2); }
+    40% {
+      transform: scale(0.5); }
+    60% {
+      transform: scale(0); }
+    80% {
+      transform: scale(-1); }
     100% {
-      margin-right: 100%; } }
+      transform: scale(1); } }
+  .scale-circle {
+    animation: scaling 1s steps(1) 0s infinite; }
+
+  @keyframes translating {
+    0% {
+      transform: translate(0, 0); }
+    25% {
+      transform: translate(440px, 0); }
+    50% {
+      transform: translate(440px, 0); }
+    75% {
+      transform: translate(0, 0); }
+    100% {
+      transform: translate(0, 0); } }
+  .translate-animated {
+    animation: translating 4s linear infinite; }
+
   .fondo-colegio .rotating {
     left: 14%;
     width: 120px;
@@ -3105,11 +3131,11 @@ body {
       width: 100%; }
 
   .circle-blue {
-    bottom: 0;
+    bottom: 120px;
     z-index: 87;
     left: 3.6%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     border-radius: 50%;
     background-color: #253776; }
@@ -3127,7 +3153,7 @@ body {
       width: 100%; }
 
   .circle-red {
-    bottom: 0;
+    bottom: 64px;
     right: 21%;
     z-index: 2;
     width: 100px;
@@ -3201,7 +3227,7 @@ body {
     .left .center-absolute,
     .right .center-absolute {
       text-align: center;
-      padding-top: 70px;
+      padding-top: 0;
       padding-right: 35px;
       position: absolute; }
     .left .left-inside-shape .pizza-content,
@@ -3215,7 +3241,10 @@ body {
     height: 600px; }
 
   .left p {
-    margin-left: 14%; } }
+    margin-left: 14%; }
+
+  .fondo-colegio .slick-slide {
+    height: 400px !important; } }
 @media screen and (min-width: 1200px) {
   .word-inside {
     top: 100px; } }
@@ -3239,30 +3268,20 @@ body {
     top: 15%; }
 
   .circle-blue {
-    bottom: 40px;
+    bottom: 120px;
     left: 3.6%; }
-    .circle-blue.animated {
-      -webkit-animation-duration: .5s;
-      animation-duration: .5s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      -webkit-animation-timing-function: linear;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      -webkit-animation-iteration-count: infinite; }
-    .circle-blue.bounce {
-      -webkit-animation-name: bounce;
-      animation-name: bounce; }
-  @-webkit-keyframes bounce {
-    0%, 100% {
-      -webkit-transform: translateY(0); }
+
+  @keyframes translating {
+    0% {
+      transform: translate(0, 0); }
+    25% {
+      transform: translate(640px, 0); }
     50% {
-      -webkit-transform: translateY(-10px); } }
-  @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0); }
-    50% {
-      transform: translateY(-10px); } }
+      transform: translate(640px, 0); }
+    75% {
+      transform: translate(0, 0); }
+    100% {
+      transform: translate(0, 0); } }
   .carousel-move {
     position: absolute;
     z-index: 87;
@@ -3280,7 +3299,7 @@ body {
     height: 100%; }
     .left .center-absolute,
     .right .center-absolute {
-      top: 50%;
+      top: 40%;
       padding-top: 0; }
 
   .word-inside {

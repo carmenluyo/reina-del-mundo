@@ -93,14 +93,14 @@
 		<div class="line-yellow">
 			<img src="img/nuestro-colegio/line-yellow.png" alt="">
 		</div>
-		<div class="circle-blue lefToRight"></div>
+		<div class="circle-blue translate-animated"></div>
 		<div class="rotating">
 			<img src="img/nuestro-colegio/main-square.png">
 		</div>
 		<div class="red">
 			<img src="img/nuestro-colegio/rejillas.png">
 		</div>
-		<div class="circle-red rotating"></div>
+		<div class="circle-red bounce animated"></div>
 		<div class="circle-fade-purple"> <p>Visión</p></div>
 		<div class="max-w-100  m-left">
 			<div class="red-bg--absolute"><img src="img/nuestro-colegio/red-square.svg" alt=""></div>
@@ -328,6 +328,23 @@ $("a").click(function() {
 	
 		  ]
 	});
+
+
+	var lastScrollTop = 0;
+
+	window.addEventListener("scroll", function(){
+	   var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+	   if (currentScroll > lastScrollTop){
+	   		$(".line-yellow").css("opacity", "0.2");
+	   } else {
+	   		$(".line-yellow").css("opacity", "0.3");
+
+	     if(currentScroll<=3){
+	   		$(".line-yellow").css("opacity", "1");
+	     }
+	   }
+	   lastScrollTop = currentScroll;
+	}, false);
  });
 
 </script>
