@@ -198,23 +198,6 @@
 
 
 	</div>
-	
-
-
-	<aside class="wrapper-lista-carusel">
-            <li class="wrapper-lista-carusel-li">
-                  <a class="activeLista -der   idiomas">Idiomas</a>
-                  <a class="intercambio">Intercambio</a>
-                  <a class="Mittelstufe">Mittelstufe</a>
-                  <a class="MetodoSingapur">MétodoSingapur</a>
-                  <a class="ArteTalleres">ArteTalleres</a>
-                   <a class=" idiomas">Idiomas</a>
-                  <a class="intercambio">Intercambio</a>
-                  <a class="Mittelstufe">Mittelstufe</a>
-                  <a class="MetodoSingapur">MétodoSingapur</a>
-                  <a class="ArteTalleres">ArteTalleres</a>
-            </li>
-      </aside>
 
 
     <div class="wrapper-lista-descripcion mb-movil-200">
@@ -322,48 +305,7 @@ $("a").click(function() {
     }, 2000);
 });
 </script>
-	<script>
-$(document).ready(function(){	
-	$('.wrapper-lista-carusel-li').slick({
-	    slidesToShow: 5,
-	    slidesToScroll: 3,
-	    dots: false,
-	    prevArrow: false,
-	    nextArrow: false,
-	     pauseOnHover:true,
-	     autoplay: true,
-	    autoplaySpeed: 2000,
-	    responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow:3,
-		        slidesToScroll: 1
-		      }
-		    }
-		    // You can unslick at a given breakpoint now by adding:
-		    // settings: "unslick"
-		    // instead of a settings object
-		  ]
-	});
-});
-</script>
+
 <script>
 /*
 
@@ -376,56 +318,6 @@ $(document).mousemove(function(e){
     "left": e.pageX - o.left
   });
 });*/
-</script>
-<script>
-	$(".wrapper-lista-carusel-li > a:nth-child(3n+1)").click(function() {
-        	
-        	
-
-            $(this).addClass('activeLista').siblings('.activeLista').removeClass('activeLista');
-            $(".wrapper-lista-carusel-li > a:nth-child(3)").removeClass('activeLista');
-
-            $('#1').addClass('show');
-            $('#2').removeClass('show');
-            $('#3').removeClass('show');
-
-
-          
-             
-        });
-
-        /***** VISION ***/
-
-         $(".wrapper-lista-carusel-li > a:nth-child(3n+2)").click(function() {
-        	$(this).addClass('activeLista').siblings('.activeLista').removeClass('activeLista');
-
-            $(".wrapper-lista-carusel-li > a:nth-child(1)").removeClass('activeLista');
-            $(".wrapper-lista-carusel-li > a:nth-child(3)").removeClass('activeLista');
-
-
-            /*$(this).addClass('activeLista').siblings('.activeLista').removeClass('activeLista');*/
-
-            $('#2').addClass('show');
-            $('#1').removeClass('show');
-            $('#3').removeClass('show');
-        });
-
-        /***** MISION **/
-          $(".wrapper-lista-carusel-li > a:nth-child(3)").click(function() {
-          	/*$(".wrapper-lista-carusel-li > a:nth-child(3)").addClass('activeLista');*/
-
-          	$(this).addClass('activeLista').siblings('.activeLista').removeClass('activeLista');
-            $(".wrapper-lista-carusel-li > a:nth-child(2)").removeClass('activeLista');
-            $(".wrapper-lista-carusel-li > a:nth-child(1)").removeClass('activeLista'); 
-
-
-           /* $(this).addClass('activeLista').siblings('.activeLista').removeClass('activeLista');*/
-
-            $('#3').addClass('show');
-            $('#1').removeClass('show');
-            $('#2').removeClass('show');
-            
-        });    
 </script>
 
 <script>
