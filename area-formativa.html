@@ -130,6 +130,15 @@
 
 		<div class="triangle triangle--brown"></div>
 
+		<ul>
+			Instalaciones 
+
+			<li><a href="#" data-slide="1">1</a></li>
+			<li><a href="#" data-slide="2">2</a></li>
+			<li><a href="#" data-slide="3">3</a></li>
+			<li><a href="#" data-slide="4">4</a></li>
+		</ul>
+
 	</section>
 	
 	<div>
@@ -367,6 +376,12 @@ $("a").click(function() {
 		   autoplaySpeed: 2000,
 		   asNavFor: '.slider-for-area'
  		});
+
+ 		$('a[data-slide]').click(function(e) {
+		   e.preventDefault();
+		   var slideno = $(this).data('slide');
+		   $('.slider-nav-area').slick('slickGoTo', slideno - 1);
+		});
 	});
 </script>
 <script>
