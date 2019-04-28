@@ -93,14 +93,14 @@
 		<div class="line-yellow">
 			<img src="img/nuestro-colegio/line-yellow.png" alt="">
 		</div>
-		<div class="circle-blue translate-animated"></div>
-		<div class="rotating">
+		<div class="circle-blue"></div>
+		<div class="square">
 			<img src="img/nuestro-colegio/main-square.png">
 		</div>
 		<div class="red">
 			<img src="img/nuestro-colegio/rejillas.png">
 		</div>
-		<div class="circle-red bounce animated"></div>
+		<div class="circle-red"></div>
 		<div class="circle-fade-purple"> <p>Visión</p></div>
 		<div class="max-w-100  m-left">
 			<div class="red-bg--absolute"><img src="img/nuestro-colegio/red-square.svg" alt=""></div>
@@ -126,7 +126,7 @@
 								<img src="img/nuestro-colegio/pizza-shape.png" alt="">
 							</div>
 						</div>
-						<div class="rotating">
+						<div class="square">
 							<img src="img/nuestro-colegio/cuadrado.png" alt="">
 						</div>
 				</div>
@@ -331,16 +331,30 @@ $("a").click(function() {
 
 
 	var lastScrollTop = 0;
+	$(".square").css("opacity", "0");	
 
 	window.addEventListener("scroll", function(){
 	   var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 	   if (currentScroll > lastScrollTop){
 	   		$(".line-yellow").css("opacity", "0.2");
+	   		$(".circle-blue").addClass("translate-animated");
+	   		$(".circle-red").addClass("bounce animated");
+	   		$(".square").addClass("rotating");
+
 	   } else {
 	   		$(".line-yellow").css("opacity", "0.3");
+	   		$(".circle-blue").removeClass("translate-animated");
+	   		$(".circle-red").removeClass("bounce animated");
+	   		$(".square").removeClass("rotating");
+			$(".square").css("opacity", "0");	
+
 
 	     if(currentScroll<=3){
 	   		$(".line-yellow").css("opacity", "1");
+	   		$(".circle-blue").removeClass("translate-animated");
+	   		$(".circle-red").removeClass("bounce animated");
+	   		$(".square").removeClass("rotating");
+	   		$(".square").css("opacity", "0");
 	     }
 	   }
 	   lastScrollTop = currentScroll;

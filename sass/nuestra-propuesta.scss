@@ -1,0 +1,169 @@
+@media screen and (min-width: 768px) {
+
+	#page-propuesta-educativa {
+		.slick-slide  {
+			height: auto !important;
+		}
+
+		.wrapper-slider-fotos {
+			left: 21px;
+		}
+
+		.full-width {
+			p {
+				font-size: 12px;
+			}
+
+			div.h-700 {
+				height: 600px;
+			}
+		}
+
+		.scalar {
+			right: 0;
+			position: absolute;
+
+			&.left-p {
+				right: 90%;
+			}
+		}
+
+		.ball {
+			top: 100%;
+		}
+
+
+		.circle-red {
+		    bottom: 0px;
+		    left: 25%;
+		    z-index: 9;
+		    width: 100px;
+		    height: 100px;
+		    position: absolute;
+		    border-radius: 50%;
+		    background-color: #dd2128;
+		}
+
+
+		.slider-propuesta {
+			width: 100%;
+			height: 480px;
+			position: relative;
+
+			.right,
+			.left {
+				float: right;
+				vertical-align: unset;
+			}
+
+			.right {
+				top: 0;
+
+				.slick-slide {
+					margin: 35px 0;
+
+					img {
+						width: 90%;
+					}
+				}
+			}
+
+			.left p {
+				margin-left: 14%;
+				font-size: 16px;
+				text-align: left;
+				line-height: 18px;
+				color: #2e366a;
+			}
+
+
+			.slider.slider-nav.slick-initialized.slick-slider {
+				width: 380px;
+			}
+		}
+
+
+		.circulo-verde-bottom-nuestraPropuesta {
+			width: 150px;
+			height: 150px;
+		}
+	}
+
+
+	.wrapper-lista-descripcion {
+		transform: translateY(100px);
+	}
+
+
+	circle.circle-ai {
+	    animation: bounce 0.5s;
+	    animation-direction: alternate;
+	    animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
+	    animation-iteration-count: infinite;
+	}
+}
+
+
+@media screen and (min-width: 1024px) {
+		#page-propuesta-educativa {
+
+			.wrapper-slider-fotos {
+			    left: 70px;
+		    }			
+
+			.full-width {
+				p {
+					font-size: 22px;
+				}
+
+				div.h-700 {
+					height: 600px;
+				}
+			}
+		}
+}
+
+
+@media screen and (min-width: 1300px){
+	#page-propuesta-educativa {
+		.slider-propuesta {
+			.right {
+				.slick-slide {
+					img {
+						width: 70%;
+					}
+				}
+			}
+
+		}		
+
+		.slider-propuesta .left p {
+			font-size: 21px;
+		}
+
+		.wrapper-slider-fotos {
+			left: 250px;
+		}
+
+		.slider-nav .slick-list {
+			height: 430px !important;
+		}
+	}
+
+
+	.wrapper-lista-descripcion {
+		transform: translateY(170px);
+	}
+
+	.slider.slider-nav.slick-initialized.slick-slider {
+		width: 580px !important;
+	}
+
+	.circulo-verde-bottom-nuestraPropuesta {
+		bottom: 190px;
+	}
+}
+
+
+@media screen and (min-width: 1900px) and (max-width: 200000px){
+}
