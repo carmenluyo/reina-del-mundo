@@ -13,9 +13,19 @@
 @import "sass/animacion-admision.scss";
 @import "sass/parallax.scss";
 @import "sass/header-interno.scss";
-@import "sass/home.scss";
 @import "sass/header-inicio.scss";
 @import "sass/animacion-morph-menu.scss";
 @import "sass/imagenes.scss";
-@import "sass/linea-tiempo.scss";
+
+
+/*
+* NUEVOS SCSS PARA ARREGLAR LA PÁGINA
+*/
+
+@import "sass/home.scss";
 @import "sass/nuestro-colegio.scss";
+@import "sass/historia.scss";
+@import "sass/nuestra-propuesta.scss";
+@import "sass/area-formativa.scss";
+@import "sass/linea-tiempo.scss";
+

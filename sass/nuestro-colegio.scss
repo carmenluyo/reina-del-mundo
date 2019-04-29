@@ -43,7 +43,6 @@
 		position: absolute;
 		border-radius: 50%;
 		background-color: #253776;
-	    animation: translating 4s linear 0s infinite;
 	}
 
 	.red {
@@ -108,21 +107,24 @@
 	}
 
 	.word-inside {
-	    top: 200px;
 	    right: 0;
 	    width: 50%;
 	    height: 100%;
-        margin-right: 5%;	
+        margin-right: 5%;
+		position: absolute;
+		margin-top: -60px;
+		top: 35%;	
 
 			h1 {
 				z-index: 4;
 				right: 0;
 				position: relative;
+				font-size: 23px;
 			}
 
 	    p {
 			width: 60%;
-			font-size: 9px;
+			font-size: 8px;
 			margin-right: 0;
 			margin-left: auto;
 	    }
@@ -210,6 +212,7 @@
 		position: absolute;
 		margin-left: auto;
 		margin-right: auto;
+		opacity: 1 !important;
 
 		img {
 			width: 100%;
@@ -240,6 +243,7 @@
 
 	.translate-animated { 
 		animation: translating 4s linear infinite;
+	    animation: translating 4s linear 0s infinite;
 	}
 
 
@@ -250,6 +254,7 @@
 		    margin: 0;
 		    top: unset;
 		    bottom: 0;
+		    opacity: 1 !important;
 		}
 	}
 
@@ -417,17 +422,19 @@
 	}
 
 	.word-inside {
-	    top: 42px;
 	    right: 0;
 	    width: 50%;
 	    height: 100%;
 	    margin-right: 5%;
-	    margin-top: 150px;
+		margin-top: -204px;
+		position: absolute;
+		top: 50%;
 
 			h1 {
 				z-index: 4;
 				right: 0;
 				position: relative;
+				font-size: normal;
 			}
 
 	    p {
@@ -445,6 +452,7 @@
 		    margin: 0;
 		    top: unset;
 		    bottom: 0;
+		    opacity: 1 !important;
 		}
 	}
 
@@ -497,9 +505,6 @@
 
 
 @media screen and (min-width: 1200px) {
-	.word-inside {
-		top: 100px;
-	}
 }
 
 
@@ -570,8 +575,6 @@
 	}
 
 	.word-inside {
-		top: 80px;
-
 		p {
 		    width: 60%;
     		font-size: 16px;
