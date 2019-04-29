@@ -1,0 +1,103 @@
+.linea-tiempo {
+    background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-position-y: bottom;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    .content {
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 114px;
+        margin-top: 28px;
+        align-items: flex-end;
+
+        &.flex-center {
+            align-items: center;
+        }
+
+        &.space-center {
+            .items {
+                margin: 0 30px;
+
+                img {
+                    &.top {
+                        position: relative;
+                        top: -10px;
+                    }
+
+                    &.bottom {
+                        bottom: -23px;
+                        position: relative;
+                    }
+                }
+            }
+        }
+
+        &.flex-between {
+            justify-content: space-between;
+
+            .items {
+                img {
+                    margin: 0 21px;
+
+                    &.bottom {
+                        position: relative;
+                        bottom: -30px;
+                    }
+                }
+            }
+        }
+
+        &.flex-left {
+            justify-content: flex-start;
+
+            img {
+                margin-left: 21px;
+            }
+        }
+
+        img {
+            width: 120px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            height: 140px;
+        }
+
+        @media screen and (min-width: 1400px) {
+            height: 170px;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        right: 0;
+        width: 355px;
+        text-align: center;
+        margin: 0 auto;
+
+        p {
+            color: #3D497C;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    }
+}

@@ -15,32 +15,10 @@
     }
 
 * {
-  cursor:none;
+  cursor: url('img/cursor.png'), auto;
 }
 
-.cursor {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: -50%;
-  left: -50%;
-  margin: -15px 0 0 -15px;
-  border-radius: 50%;
-  background-color: white;
-  backface-visibility: hidden;
-  transition: transform 0.2s ease-out;
-  mix-blend-mode: difference;
-  z-index: 1000;
-  pointer-events: none;
-}
-.cursor.is-moving {
-  transform: scale(0.8);
-}
 
-.content_cursor {
-  position:relative;
-  height:100%;
-}
 @media(min-width: 320px){
 
 	.vision{
@@ -72,7 +50,6 @@
 	
 </head>
 <body >
-<div class="cursor"></div>
 <div class="contendorTransition">
 			<div class="contendorTransition-top">
 				<ul class="cabecera-modal-ul">
@@ -116,19 +93,19 @@
 		<div class="line-yellow">
 			<img src="img/nuestro-colegio/line-yellow.png" alt="">
 		</div>
-		<div class="circle-blue animated bounce"></div>
+		<div class="circle-blue translate-animated"></div>
 		<div class="rotating">
 			<img src="img/nuestro-colegio/main-square.png">
 		</div>
 		<div class="red">
 			<img src="img/nuestro-colegio/rejillas.png">
 		</div>
-		<div class="circle-red animated bounce"></div>
+		<div class="circle-red bounce animated"></div>
 		<div class="circle-fade-purple"> <p>Visión</p></div>
 		<div class="max-w-100  m-left">
 			<div class="red-bg--absolute"><img src="img/nuestro-colegio/red-square.svg" alt=""></div>
 			<div class="max-w-90 centrado-movil w-60 flex-center mr-left-auto word-inside  z-4 ">
-				<h1 class="txt-right txt-white full-width pt-50 z-index-4" >Nuestro Colegio</h1>
+				<h1 class="txt-right txt-white full-width z-index-4" >Nuestro Colegio</h1>
 				<p class="text-right  m t-white m-right-10  txt-20  " data-rellax-speed="4" >Fundados en 1969 por la Congregación de Misioneras<br class="mv-br-none"> de San Vicente de Paúl de Hildesheim – Alemania,<br class="mv-br-none">  brindamos una educación personalizada que integra <br class="mv-br-none">una alta exigencia académica acorde a estándares<br class="mv-br-none"> internacionales con una sólida formación en valores <br class="mv-br-none">humanos y cristianos. <br class="mv-br-none">Asumimos los desafíos en un mundo globalizado, en una acción conjunta con la familia. Nos preocupamos tanto del desarrollo cognitivo como de los aspectos ético, corporal y afectivo. Bajo el impulso del lema: “Todo en humildad, sencillez y caridad”, procuramos que cada alumno despliegue sus capacidades para el servicio a los demás.</p>	
 			</div>
 			
@@ -351,6 +328,23 @@ $("a").click(function() {
 	
 		  ]
 	});
+
+
+	var lastScrollTop = 0;
+
+	window.addEventListener("scroll", function(){
+	   var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+	   if (currentScroll > lastScrollTop){
+	   		$(".line-yellow").css("opacity", "0.2");
+	   } else {
+	   		$(".line-yellow").css("opacity", "0.3");
+
+	     if(currentScroll<=3){
+	   		$(".line-yellow").css("opacity", "1");
+	     }
+	   }
+	   lastScrollTop = currentScroll;
+	}, false);
  });
 
 </script>
@@ -405,24 +399,6 @@ $("a").click(function() {
         });    
 </script>
 
-
-
-<script>
-var $cursor = $('.cursor');
-
-function moveCursor(e) {
-  $cursor.addClass('is-moving');
-  $cursor.css({"top": e.pageY, "left": e.pageX});
-
-  clearTimeout(timer2);
-
-   var timer2 = setTimeout(function() {
-       $cursor.removeClass('is-moving');
-   }, 300);
-}
-
-$(window).on('mousemove', moveCursor);
-</script>
 <script src="js/rellax.min.js"></script>
 <script>
 	var rellax = new Rellax('.rellax');

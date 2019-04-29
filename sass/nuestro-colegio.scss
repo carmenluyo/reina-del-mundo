@@ -1,29 +1,23 @@
-
-@media screen and (min-width: 1024px) {
-
-	html,
-	body {
-		height: 100%;
-		width: 100%;
-		margin: 0;
-    	padding: 0;
-	}
-
+@media screen and (min-width: 768px) {
 	.auto-height {
-		height: 100vh;
+	    height: 800px;	
 		overflow: hidden;
 	}
-
 
 	.red-bg--absolute  {
 	    top: 0;
 	    width: 55%;
 	    z-index: 0;
-	    height: 705px;
+	    height: 100%;
 	    right: -72px;
 	    position: absolute;
-	}
 
+	    img {
+		    top: 40%;
+		    position: absolute;
+		    margin-top: -200px;
+	    }
+	}
 
 	.line-yellow {
     	top: 10%;
@@ -41,15 +35,15 @@
 	}
 
 	.circle-blue {
-	    bottom: 0;
+		bottom: 180px;
 		z-index: 87;
-	    left: 3.6%;
-	    width: 150px;
-	    height: 150px;
-	    position: absolute;
+		left: 3.6%;
+		width: 100px;
+		height: 100px;
+		position: absolute;
 		border-radius: 50%;
-	    background-color: #253776;
-
+		background-color: #253776;
+	    animation: translating 4s linear 0s infinite;
 	}
 
 	.red {
@@ -68,14 +62,15 @@
 	}
 
 	.circle-red {
-	    bottom: 0;
-	    right: 21%;
+	    bottom: 64px;
+	    right: 28%;
 	    z-index: 2;
 	    width: 100px;
 	    height: 100px;
 	    position: absolute;
 	    border-radius: 50%;
 	    background-color: #dd2128;
+	    transition: all .8s linear;
 	}
 
 	.circle-fade-purple {
@@ -91,14 +86,14 @@
 
 
 	    p {
-			color: white;
-			font-size: 26px;
-			position: absolute;
 			top: 33%;
 			left: 0;
 			right: 0;
+			color: white;
+			font-size: 26px;
 			margin-left: auto;
 			margin-right: auto;
+			position: absolute;
 	    }
 		
 		&:hover {
@@ -109,14 +104,14 @@
 	.carousel-move {
 	    position: absolute;
 	    z-index: 10;
-	    left: 67px;
+	    left: 21px;
 	}
 
 	.word-inside {
-	    top: 70px;
+	    top: 200px;
 	    right: 0;
 	    width: 50%;
-	    height: 100vh;
+	    height: 100%;
         margin-right: 5%;	
 
 			h1 {
@@ -126,8 +121,8 @@
 			}
 
 	    p {
-			width: 70%;
-			font-size: 13px;
+			width: 60%;
+			font-size: 9px;
 			margin-right: 0;
 			margin-left: auto;
 	    }
@@ -136,6 +131,12 @@
 	/*
 	* Animaciones
  	*/
+
+ 	.opacity-scroll-up,
+ 	.opacity-scroll-down,
+ 	.opacity-scroll-top {
+ 		transition-delay: 0.8s;
+ 	}
 	
 	.animated {
 	  -webkit-animation-duration: .5s;
@@ -212,9 +213,35 @@
 
 		img {
 			width: 100%;
-			animation: rotating 2s linear infinite;
+			animation: rotating 3s linear infinite;
 		}
 	}
+
+	@keyframes scaling {
+	  0%  { transform: scale(1);}
+	  20%{ transform: scale(2);}
+	  40%{ transform: scale(0.5);}
+	  60%{ transform: scale(0);}
+	  80%{ transform: scale(-1);}
+	  100%{ transform: scale(1);}
+	}
+
+	.scale-circle { 
+		animation: scaling 1s steps(1) 0s infinite;
+	}
+
+	@keyframes translating {
+	  0%  { transform: translate(0, 0);}
+	  25% { transform: translate(440px, 0);}
+	  50% { transform: translate(440px, 0);}
+	  75% { transform: translate(0, 0);}
+	  100%{ transform: translate(0, 0);}
+	}
+
+	.translate-animated { 
+		animation: translating 4s linear infinite;
+	}
+
 
 	.fondo-colegio {
 		.rotating {
@@ -245,6 +272,9 @@
 				padding-top: 70px;
 				padding-right: 35px;
 				position: absolute;
+			    margin-top: -250px;
+    			top: 60%;
+
 			} 
 
 			.left-inside-shape {
@@ -266,6 +296,203 @@
 			margin-left: 14%;
 		}
 	}
+
+	.fondo-colegio .slick-slide {
+		height: 354px !important;
+		margin-top: 0;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+	html,
+	body {
+		height: 100%;
+		width: 100%;
+		margin: 0;
+    	padding: 0;
+	}
+
+	.auto-height {
+	    height: 800px;	
+		overflow: hidden;
+	}
+
+
+	.red-bg--absolute  {
+	    top: 0;
+	    width: 55%;
+	    z-index: 0;
+	    height: 705px;
+	    right: -72px;
+	    position: absolute;
+	}
+
+
+	.line-yellow {
+    	top: 10%;
+	    left: 0;
+	    right: 0;
+	    width: -a270px;
+	    z-index: 1;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: absolute;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.circle-blue {
+	    bottom: 120px;
+		z-index: 87;
+	    left: 3.6%;
+	    width: 100px;
+	    height: 100px;
+	    position: absolute;
+		border-radius: 50%;
+	    background-color: #253776;
+	}
+
+	.red {
+	    left: 0;
+	    bottom: -6px;
+	    right: -20%;
+	    width: 21%;
+	    z-index: 3;
+	    margin-right: auto;
+	    margin-left: auto;
+	    position: absolute;
+
+		img {
+			width: 100%
+		}
+	}
+
+	.circle-red {
+	    bottom: 64px;
+	    right: 21%;
+	    z-index: 2;
+	    width: 100px;
+	    height: 100px;
+	    position: absolute;
+	    border-radius: 50%;
+	    background-color: #dd2128;
+	}
+
+	.circle-fade-purple {
+		bottom: 0;
+		right: 0;
+		z-index: 10;
+		width: 250px;
+		height: 250px;
+		text-align: center;
+		position: absolute;
+		border-radius: 50%;
+		background-image: linear-gradient(to left, rgba(137, 109, 183, 0.87), rgb(42, 1, 110));
+
+
+	    p {
+			color: white;
+			font-size: 26px;
+			position: absolute;
+			top: 33%;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+	    }
+		
+		&:hover {
+	    	background-image: linear-gradient(to right, rgba(137, 109, 183, 0.87), rgb(42, 1, 110));
+		}
+	}
+
+	.carousel-move {
+	    position: absolute;
+	    z-index: 10;
+	    left: 67px;
+	}
+
+	.word-inside {
+	    top: 42px;
+	    right: 0;
+	    width: 50%;
+	    height: 100%;
+	    margin-right: 5%;
+	    margin-top: 150px;
+
+			h1 {
+				z-index: 4;
+				right: 0;
+				position: relative;
+			}
+
+	    p {
+			width: 70%;
+			font-size: 13px;
+			margin-right: 0;
+			margin-left: auto;
+	    }
+	}
+
+	.fondo-colegio {
+		.rotating {
+		    left: 14%;
+		    width: 120px;
+		    margin: 0;
+		    top: unset;
+		    bottom: 0;
+		}
+	}
+
+	/*Child Section*/
+
+	.left,
+	.right {
+		height: 100%;
+		width: calc(99%/2);
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+
+			img {
+				width: 100%;
+			}
+
+			.center-absolute {
+				text-align: center;
+				padding-top: 0;
+				padding-right: 35px;
+				position: absolute;
+			} 
+
+			.left-inside-shape {
+				.pizza-content {
+					left: 0;
+					bottom: 0;
+					margin-left: auto;
+					position: absolute;
+				}
+			}
+	}
+
+	.bottom-svg-nuestro-colegio {
+		height: 600px;
+	} 
+
+	.left {
+		p {
+			margin-left: 14%;
+		}
+	}
+
+	.fondo-colegio .slick-slide {
+		height: 400px !important;
+	}
+
 }
 
 
@@ -302,43 +529,18 @@
 	}
 
 	.circle-blue {
-	    bottom: 40px;
+	    bottom: 120px;
 	    left: 3.6%;
-
-
-	    &.animated {
-		  -webkit-animation-duration: .5s;
-		  animation-duration: .5s;
-		  -webkit-animation-fill-mode: both;
-		  animation-fill-mode: both;
-		  -webkit-animation-timing-function: linear;
-		  animation-timing-function: linear;
-		  animation-iteration-count: infinite;
-		  -webkit-animation-iteration-count: infinite;
-		}
-
-		&.bounce {
-		  -webkit-animation-name: bounce;
-		  animation-name: bounce;
-		}
-
-		@-webkit-keyframes bounce {
-		  0%, 100% {
-		    -webkit-transform: translateY(0);
-		  }
-		  50% {
-		    -webkit-transform: translateY(-10px);
-		  }
-		}
-		@keyframes bounce {
-		  0%, 100% {
-		    transform: translateY(0);
-		  }
-		  50% {
-		    transform: translateY(-10px);
-		  }
-		}
 	}
+
+	@keyframes translating {
+	  0%  { transform: translate(0, 0);}
+	  25% { transform: translate(640px, 0);}
+	  50% { transform: translate(640px, 0);}
+	  75% { transform: translate(0, 0);}
+	  100%{ transform: translate(0, 0);}
+	}
+
 
 	.carousel-move {
 	    position: absolute;
@@ -359,15 +561,16 @@
 	.left,
 	.right {
 
-		height: 100vh;
+		height: 100%;
 
 		.center-absolute {
-			top: 0;
+			top: 40%;
+			padding-top: 0;
 		} 
 	}
 
 	.word-inside {
-		top: 130px;
+		top: 80px;
 
 		p {
 		    width: 60%;
@@ -376,8 +579,13 @@
 	}
 
 	.bottom-svg-nuestro-colegio {
-		height: auto;
+		height: 700px;
 	} 
+
+	.fondo-colegio .slick-slide {
+		margin-top: 0;
+		height: 430px !important;
+	}
 }
 
 
@@ -387,6 +595,6 @@
 	}
 
 	.word-inside {
-		top: 21%;
+		top: 200px;
 	}
 }
