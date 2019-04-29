@@ -2452,7 +2452,6 @@ body.removerScroll {
 .seccion-titulos {
   display: flex;
   width: 90%;
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   /* position: relative;*/
@@ -2853,6 +2852,69 @@ body {
 .logo-negativo {
   display: block;
   width: 200px; }
+
+.linea-tiempo {
+  background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-position-y: bottom;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+  .linea-tiempo .content {
+    width: 100%; }
+  .linea-tiempo .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 114px;
+    margin-top: 28px;
+    align-items: flex-end; }
+    .linea-tiempo .row.flex-center {
+      align-items: center; }
+    .linea-tiempo .row.space-center .items {
+      margin: 0 30px; }
+      .linea-tiempo .row.space-center .items img.top {
+        position: relative;
+        top: -10px; }
+      .linea-tiempo .row.space-center .items img.bottom {
+        bottom: -23px;
+        position: relative; }
+    .linea-tiempo .row.flex-between {
+      justify-content: space-between; }
+      .linea-tiempo .row.flex-between .items img {
+        margin: 0 21px; }
+        .linea-tiempo .row.flex-between .items img.bottom {
+          position: relative;
+          bottom: -30px; }
+    .linea-tiempo .row.flex-left {
+      justify-content: flex-start; }
+      .linea-tiempo .row.flex-left img {
+        margin-left: 21px; }
+    .linea-tiempo .row img {
+      width: 120px; }
+    @media screen and (min-width: 1200px) {
+      .linea-tiempo .row {
+        height: 140px; } }
+    @media screen and (min-width: 1400px) {
+      .linea-tiempo .row {
+        height: 170px; } }
+  .linea-tiempo .overlay {
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    right: 0;
+    width: 355px;
+    text-align: center;
+    margin: 0 auto; }
+    .linea-tiempo .overlay p {
+      color: #3D497C; }
+    .linea-tiempo .overlay .hide {
+      display: none; }
+    .linea-tiempo .overlay .visible {
+      display: block; }
 
 @media screen and (min-width: 768px) {
   .auto-height {
