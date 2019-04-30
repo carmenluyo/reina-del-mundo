@@ -3682,4 +3682,49 @@ body {
     .linea-tiempo .overlay .visible {
       display: block; }
 
+@media screen and (min-width: 768px) {
+  .cajita {
+    height: 100vh; }
+
+  .img-educacion-top {
+    position: absolute;
+    left: 0%;
+    top: 208px;
+    z-index: 3; }
+
+  .seccion-text-right {
+    width: 50%;
+    padding-top: 7% !important; }
+    .seccion-text-right-titulo {
+      font-size: 18px; }
+
+  .imagen-educacion-circular {
+    top: 50%; } }
+@media screen and (min-width: 1024px) {
+  #educacionintegral .container-maxw,
+  #educacionintegral .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    position: absolute;
+    height: 100% !important; } }
+@media screen and (min-width: 1300px) {
+  #educacionintegral .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1250px;
+    height: 100% !important; } }
+@media screen and (min-width: 1900px) and (max-width: 200000px) {
+  #educacionintegral .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1500px !important;
+    height: 100% !important; } }
+
 /*# sourceMappingURL=estilos.css.map */
