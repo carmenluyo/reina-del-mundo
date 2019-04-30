@@ -1,7 +1,11 @@
 @media screen and (min-width: 768px) {
+	.bg-linear-pink {
+		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;		
+	}
+
 	#areaformativa {
 		background-repeat: no-repeat;
-	   	height: 1 !important;
+		height: 1 !important;
 		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
 
 
@@ -109,6 +113,8 @@
 	}
 
 	ul {
+		z-index: 90;
+		position: relative;
 		text-align: right;
 
 		li {
@@ -122,10 +128,6 @@
 
 
 @media screen and (min-width: 1024px) {
-	html {
-		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
-	}
-
 	#areaformativa {
 		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
 		background-repeat: no-repeat;
@@ -152,28 +154,31 @@
 		}
 
 		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 900px;
+			height: 100% !important;
+			transform: translateY(280px);
 
 			transform: translateY(-30px);
 					
 			.slick-slide {
-				height: 490px !important;
+				height: 600px !important;
 			}
 		}
 
 		.left p {
 	      font-size: 20px;
 	      line-height: 20px;
-      	}
+		}
 
 	}
 }
 
 
 @media screen and (min-width: 1300px){
-	html {
-		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
-	}
-
 	#areaformativa {
 		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
 		background-repeat: no-repeat;
@@ -206,14 +211,19 @@
 		}
 
 		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 950px;
+			height: 100% !important;
+			transform: translateY(280px);
 
 			transform: translateY(160px);
 					
 			.slick-slide {
-				height: 490px !important;
-
 				img {
-					width: 70%;
+					width: 100%;
 				}
 			}
 		}
@@ -237,4 +247,33 @@
 
 
 @media screen and (min-width: 1900px) and (max-width: 200000px){
+
+	#areaformativa {
+		.wrapper-lista-descripcion {
+
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1272px;
+			height: 100% !important;
+			transform: translateY(280px);
+
+
+			transform: translateY(280px);
+					
+			.slick-slide {
+				height: 750px !important;
+			}
+		}
+
+		.slick-list {
+			height: 650px !important;
+		}
+
+		.left p {
+	      font-size: 20px;
+	      line-height: 20px;
+		}
+	}
 }

@@ -22,6 +22,7 @@
 
 		.scalar {
 			right: 0;
+			bottom: 0;
 			position: absolute;
 
 			&.left-p {
@@ -30,7 +31,7 @@
 		}
 
 		.ball {
-			top: 100%;
+			top: 80%;
 		}
 
 
@@ -70,7 +71,8 @@
 			}
 
 			.left p {
-				margin-left: 14%;
+				margin-right: 14%;
+				margin-left: 0 !important;
 				font-size: 16px;
 				text-align: left;
 				line-height: 18px;
@@ -88,12 +90,18 @@
 			width: 150px;
 			height: 150px;
 		}
-	}
+
+	
+		.wrapper-lista-descripcion {
+			transform: translateY(100px);
 
 
-	.wrapper-lista-descripcion {
-		transform: translateY(100px);
+			.slick-list {
+				height: auto !important;
+			}
+		}
 	}
+
 
 
 	circle.circle-ai {
@@ -107,6 +115,21 @@
 
 @media screen and (min-width: 1024px) {
 		#page-propuesta-educativa {
+
+			.container-maxw,
+			.wrapper-lista-descripcion {
+				left: 0;
+				right: 0;
+				width: 100%;
+				margin: 0 auto;
+				max-width: 1200px;
+				position: absolute;
+				height: 100% !important;
+			}
+
+			.wrapper-lista-descripcion {
+				transform: translateY(280px);
+			}
 
 			.wrapper-slider-fotos {
 			    left: 70px;
@@ -131,7 +154,7 @@
 			.right {
 				.slick-slide {
 					img {
-						width: 70%;
+						width: 100%;
 					}
 				}
 			}
@@ -143,28 +166,53 @@
 		}
 
 		.wrapper-slider-fotos {
-			left: 250px;
+			left: 150px;
 		}
 
 		.slider-nav .slick-list {
-			height: 430px !important;
+			height: auto !important;
+		}
+
+		.container-maxw,
+		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1250px;
+			height: 100% !important;
+		}
+	
+		.wrapper-lista-descripcion {
+			transform: translateY(170px);
+		}
+	
+		.slider.slider-nav.slick-initialized.slick-slider {
+			width: 580px !important;
+		}
+	
+		.circulo-verde-bottom-nuestraPropuesta {
+			bottom: 190px;
 		}
 	}
 
-
-	.wrapper-lista-descripcion {
-		transform: translateY(170px);
-	}
-
-	.slider.slider-nav.slick-initialized.slick-slider {
-		width: 580px !important;
-	}
-
-	.circulo-verde-bottom-nuestraPropuesta {
-		bottom: 190px;
-	}
 }
 
 
 @media screen and (min-width: 1900px) and (max-width: 200000px){
+	#page-propuesta-educativa {
+		.container-maxw,
+		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1500px !important;
+			height: 100% !important;
+		}
+	
+		.wrapper-lista-descripcion {
+			transform: translateY(280px);
+		}
+	}
 }

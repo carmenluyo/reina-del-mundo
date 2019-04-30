@@ -55,7 +55,7 @@
 
 	</style>
 
-<body id="areaformativa">
+<body id="areaformativa" class="areaformativa">
 
 
 
@@ -353,6 +353,9 @@ $("a").click(function() {
 		   lastScrollTop = currentScroll;
 		}, false);	
 
+		if($("#areaformativa").hasClass("areaformativa")){
+				$("html").addClass("bg-linear-pink")
+		}
 
 	 	$('.slider-for-area').slick({
 		   fade: true,
