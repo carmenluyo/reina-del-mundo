@@ -2862,13 +2862,17 @@ body {
     height: 800px;
     overflow: hidden; }
 
+  .wrapper-container {
+    height: 100vh; }
+
   .red-bg--absolute {
     top: 0;
     width: 55%;
     z-index: 0;
     height: 100%;
     right: -72px;
-    position: absolute; }
+    position: absolute;
+    background-color: red; }
     .red-bg--absolute img {
       top: 40%;
       position: absolute;
@@ -3117,6 +3121,15 @@ body {
     height: 800px;
     overflow: hidden; }
 
+  .wrapper-container {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+    position: absolute;
+    height: 100% !important; }
+
   .red-bg--absolute {
     top: 0;
     width: 55%;
@@ -3255,7 +3268,25 @@ body {
 
   .fondo-colegio .slick-slide {
     height: 400px !important; } }
+@media screen and (min-width: 1200px) {
+  .wrapper-container {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+    position: absolute;
+    height: 100% !important; } }
 @media screen and (min-width: 1300px) {
+  .wrapper-container {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+    position: absolute;
+    height: 100% !important; }
+
   .auto-height {
     height: 800px;
     overflow: hidden; }
@@ -3320,11 +3351,17 @@ body {
     width: 400px; }
 
   .word-inside {
-    top: 200px; } }
-@media screen and (min-width: 768px) {
-  html {
-    overflow-x: hidden; }
+    top: 200px; }
 
+  .wrapper-container {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1900px;
+    position: absolute;
+    height: 100% !important; } }
+@media screen and (min-width: 768px) {
   .bg-linear-yellow {
     background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
 
@@ -3359,7 +3396,15 @@ body {
     background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
 
   #historia .slick-slide {
-    height: 490px !important; } }
+    height: 490px !important; }
+  #historia .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+    position: absolute;
+    height: 100% !important; } }
 @media screen and (min-width: 1300px) {
   .bg-linear-yellow {
     background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
@@ -3367,10 +3412,27 @@ body {
   #historia .slick-slide {
     height: 490px !important; }
     #historia .slick-slide img {
-      width: 70%; } }
+      width: 70%; }
+  #historia .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+    position: absolute;
+    height: 100% !important; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {
   .bg-linear-yellow {
-    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; } }
+    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
+
+  .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1800px;
+    position: absolute;
+    height: 100% !important; } }
 @media screen and (min-width: 768px) {
   #page-propuesta-educativa .slick-slide {
     height: auto !important; }
@@ -3740,8 +3802,9 @@ body {
   .seccion-text-right {
     width: 50%;
     padding-top: 7% !important; }
-    .seccion-text-right-titulo {
-      font-size: 18px; }
+
+  .seccion-text-right-titulo {
+    font-size: 18px; }
 
   .imagen-educacion-circular {
     top: 50%; } }

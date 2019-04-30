@@ -4,6 +4,10 @@
 		overflow: hidden;
 	}
 
+	.wrapper-container {
+		height: 100vh;
+	}
+
 	.red-bg--absolute  {
 	    top: 0;
 	    width: 55%;
@@ -11,6 +15,7 @@
 	    height: 100%;
 	    right: -72px;
 	    position: absolute;
+	    background-color: red;
 
 	    img {
 		    top: 40%;
@@ -323,6 +328,16 @@
 		overflow: hidden;
 	}
 
+	.wrapper-container {
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1800px;
+		position: absolute;
+		height: 100% !important;
+	}
+
 
 	.red-bg--absolute  {
 	    top: 0;
@@ -504,11 +519,29 @@
 
 
 @media screen and (min-width: 1200px) {
+	.wrapper-container {
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1800px;
+		position: absolute;
+		height: 100% !important;
+	}
 }
 
 
 @media screen and (min-width: 1300px){
 
+	.wrapper-container {
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1800px;
+		position: absolute;
+		height: 100% !important;
+	}
 
 	.auto-height {
 		height: 800px;
@@ -594,5 +627,15 @@
 
 	.word-inside {
 		top: 200px;
+	}
+
+	.wrapper-container {
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1900px;
+		position: absolute;
+		height: 100% !important;
 	}
 }

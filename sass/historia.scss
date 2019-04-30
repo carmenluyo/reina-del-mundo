@@ -1,9 +1,5 @@
 @media screen and (min-width: 768px) {
 
-	html {
-		overflow-x: hidden;
-	}
-
 	.bg-linear-yellow {
 		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
 	}
@@ -60,6 +56,17 @@
 		.slick-slide {
 			height: 490px !important;
 		}
+
+		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1800px;
+			position: absolute;
+			height: 100% !important;
+		}
+
 	}
 }
 
@@ -77,6 +84,16 @@
 				width: 70%;
 			}
 		}
+
+		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1800px;
+			position: absolute;
+			height: 100% !important;
+		}
 	}
 }
 
@@ -84,5 +101,15 @@
 @media screen and (min-width: 1900px) and (max-width: 200000px){
 	.bg-linear-yellow {
 		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+	}
+
+	.wrapper-lista-descripcion {
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 1800px;
+		position: absolute;
+		height: 100% !important;
 	}
 }
