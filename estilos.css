@@ -3109,7 +3109,6 @@ body {
 @media screen and (min-width: 1024px) {
   html,
   body {
-    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0; }
@@ -3257,10 +3256,6 @@ body {
   .fondo-colegio .slick-slide {
     height: 400px !important; } }
 @media screen and (min-width: 1300px) {
-  html,
-  body {
-    height: 100%; }
-
   .auto-height {
     height: 800px;
     overflow: hidden; }
@@ -3327,11 +3322,55 @@ body {
   .word-inside {
     top: 200px; } }
 @media screen and (min-width: 768px) {
+  html {
+    overflow-x: hidden; }
+
+  .bg-linear-yellow {
+    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
+
+  #historia {
+    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
+    #historia .middle-left,
+    #historia .historia {
+      top: 0;
+      width: 49%;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle; }
+      #historia .middle-left img,
+      #historia .historia img {
+        width: 100vw; }
+    #historia .left, #historia .right {
+      float: right; }
+    #historia .left p {
+      font-size: 20px; }
+    #historia .wrapper-lista-descripcion {
+      transform: translateY(-100%); }
+    #historia .slick-slide {
+      height: 400px !important; }
+
   circle.circle-ai {
     animation: bounce 0.5s;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(0.5, 0.05, 1, 0.5);
     animation-iteration-count: infinite; } }
+@media screen and (min-width: 1024px) {
+  .bg-linear-yellow {
+    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
+
+  #historia .slick-slide {
+    height: 490px !important; } }
+@media screen and (min-width: 1300px) {
+  .bg-linear-yellow {
+    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
+
+  #historia .slick-slide {
+    height: 490px !important; }
+    #historia .slick-slide img {
+      width: 70%; } }
+@media screen and (min-width: 1900px) and (max-width: 200000px) {
+  .bg-linear-yellow {
+    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; } }
 @media screen and (min-width: 768px) {
   #page-propuesta-educativa .slick-slide {
     height: auto !important; }
@@ -3537,6 +3576,9 @@ body {
       cursor: pointer;
       font-size: 30px; } }
 @media screen and (min-width: 1024px) {
+  .bg-linear-pink {
+    background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
+
   #areaformativa {
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
     background-repeat: no-repeat;
@@ -3565,6 +3607,9 @@ body {
       font-size: 20px;
       line-height: 20px; } }
 @media screen and (min-width: 1300px) {
+  .bg-linear-pink {
+    background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
+
   #areaformativa {
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
     background-repeat: no-repeat;

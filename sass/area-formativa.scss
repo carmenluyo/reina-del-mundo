@@ -128,6 +128,10 @@
 
 
 @media screen and (min-width: 1024px) {
+	.bg-linear-pink {
+		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
+	}
+	
 	#areaformativa {
 		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
 		background-repeat: no-repeat;
@@ -179,6 +183,9 @@
 
 
 @media screen and (min-width: 1300px){
+	.bg-linear-pink {
+		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
+	}
 	#areaformativa {
 		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;
 		background-repeat: no-repeat;

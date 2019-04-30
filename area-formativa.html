@@ -320,8 +320,8 @@
 <script src="js/menu-burger.js"></script>
 <script src="js/scrollForever.min.js"></script>
 <script src="js/lista.js"></script>
-	<script src="js/slick/slick.min.js"></script>
- <script type="text/javascript">
+<script src="js/slick/slick.min.js"></script>
+<script type="text/javascript">
 $("a").click(function() {
     $('html, body').animate({
         scrollTop: $(".wrapper-lista-descripcion").offset().top - 150 /*(150) is height to leave from top*/
@@ -356,6 +356,11 @@ $("a").click(function() {
 		if($("#areaformativa").hasClass("areaformativa")){
 				$("html").addClass("bg-linear-pink")
 		}
+
+		if($('body').hasClass("areaformativa")) {
+			$('html').addClass('bg-linear-pink');
+		};
+
 
 	 	$('.slider-for-area').slick({
 		   fade: true,

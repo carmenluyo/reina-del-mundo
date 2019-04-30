@@ -1,5 +1,47 @@
 @media screen and (min-width: 768px) {
 
+	html {
+		overflow-x: hidden;
+	}
+
+	.bg-linear-yellow {
+		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+	}
+
+	#historia {
+		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+
+		.middle-left,
+		.historia {
+			top: 0;
+			width: 49%;
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+
+			img {
+				width: 100vw;
+			}
+		}
+
+		.left, .right {
+			float: right;
+		}
+
+
+		.left p {
+			font-size: 20px;
+		}
+
+		.wrapper-lista-descripcion {
+			transform: translateY(-100%);
+		}
+
+		.slick-slide {
+			height: 400px !important;
+		}
+	}
+
 	circle.circle-ai {
 	    animation: bounce 0.5s;
 	    animation-direction: alternate;
@@ -10,12 +52,37 @@
 
 
 @media screen and (min-width: 1024px) {
+	.bg-linear-yellow {
+		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+	}
+
+	#historia {
+		.slick-slide {
+			height: 490px !important;
+		}
+	}
 }
 
 
 @media screen and (min-width: 1300px){
+	.bg-linear-yellow {
+		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+	}
+
+	#historia {
+		.slick-slide {
+			height: 490px !important;
+
+			img {
+				width: 70%;
+			}
+		}
+	}
 }
 
 
 @media screen and (min-width: 1900px) and (max-width: 200000px){
+	.bg-linear-yellow {
+		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+	}
 }
