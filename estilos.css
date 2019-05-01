@@ -1553,8 +1553,8 @@ button:focus {
   outline: 0; }
 
 #inicio {
-  /* height: 100vh;*/
-  overflow-y: hidden; }
+  /* height: 100vh;
+  overflow-y: hidden;*/ }
 
 #inicio.hiddeScroll {
   overflow-y: visible; }
@@ -2643,10 +2643,6 @@ body {
   font-style: normal;
   cursor: url("img/cursor.png"), auto; }
 
-html {
-  overflow-y: hidden;
-  height: 100vh; }
-
 .wrapper-inicio {
   width: 100vw;
   height: 800px; }
@@ -2887,10 +2883,9 @@ html {
     z-index: 0;
     height: 100%;
     right: -72px;
-    position: absolute;
-    background-color: red; }
+    position: absolute; }
     .red-bg--absolute img {
-      top: 40%;
+      top: 0;
       position: absolute;
       margin-top: -200px; }
 

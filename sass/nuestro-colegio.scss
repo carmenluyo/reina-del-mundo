@@ -1,7 +1,7 @@
 @media screen and (min-width: 768px) {
 	.auto-height {
 	    height: 800px;	
-		overflow: hidden;
+			overflow: hidden;
 	}
 
 	.wrapper-container {
@@ -15,10 +15,9 @@
 	    height: 100%;
 	    right: -72px;
 	    position: absolute;
-	    background-color: red;
 
 	    img {
-		    top: 40%;
+		    top: 0;
 		    position: absolute;
 		    margin-top: -200px;
 	    }

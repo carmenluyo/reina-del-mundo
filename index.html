@@ -17,7 +17,7 @@
 	}
 	</style>
 </head>
-<body id="inicio">
+<body id="inicio" class="inicio-one">
 
 <div class="button_container" id="toggle">
       <span class="top"></span>
@@ -274,6 +274,11 @@
 </script>
 
 <script>
+	$(document).ready(function(){	
+		if($("body").hasClass("inicio-one")){
+			$("html").css( "overflow-y", "hidden" );
+		};
+	});
 	$('.boton-inicio').click(function(){
 		$('#inicio').addClass('hiddeScroll');
 		$('html,body').animate({ scrollTop: $(this).offset().top - 3 }, 1000);
