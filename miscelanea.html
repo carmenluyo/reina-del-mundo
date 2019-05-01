@@ -113,13 +113,22 @@
         </div>
 		<div class="content">
 			<div id="one" class="item-overlay tab_content">
-                <img src="img/imagen-circular-educacion-integral.png" alt="">
+                <div class="slider-fotos-miscelanea">
+					<img src="img/slider/nuestra-educativa/imagen-01.jpg">
+					<img src="img/slider/nuestra-educativa/imagen-02.jpg">
+				</div>
             </div>
             <div id="two" class="item-overlay tab_content">
-                <img src="img/imagen-circular-propuesta-top.png" alt="">
+                <div class="slider-fotos-miscelanea">
+					<img src="img/slider/nuestra-educativa/imagen-01.jpg">
+					<img src="img/slider/nuestra-educativa/imagen-02.jpg">
+				</div>
             </div>
             <div id="three" class="item-overlay tab_content">
-                <img src="img/imagen-circular.png" alt="">
+                <div class="slider-fotos-miscelanea">
+					<img src="img/slider/nuestra-educativa/imagen-01.jpg">
+					<img src="img/slider/nuestra-educativa/imagen-02.jpg">
+				</div>
             </div>
             
 		</div>
@@ -136,16 +145,24 @@
 	<script src="js/menu-burger.js"></script>
 	<script src="js/scrollForever.min.js"></script>
 	<script src="js/lista.js"></script>
+	<script src="js/slick/slick.min.js"></script>
 	<script src="js/miscelanea.js"></script>
 
 	<script src="js/slick/slick.min.js"></script>
-	<!-- <script type="text/javascript">
-	$("a").click(function() {
-			$('html, body').animate({
-					scrollTop: $(".wrapper-lista-descripcion").offset().top - 150 /*(150) is height to leave from top*/
-			}, 2000);
-	});
-	</script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){	
+
+			$('.slider-fotos-miscelanea').slick({
+				dots: false,
+				prevArrow: false,
+				nextArrow: false,
+				pauseOnHover:true,
+				autoplay: true,
+				autoplaySpeed: 2000,
+			
+			});	
+		});
+	</script>
 	<script src="js/rellax.min.js"></script>
 
 	<script>

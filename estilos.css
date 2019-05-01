@@ -2623,10 +2623,28 @@ body.removerScroll {
     justify-content: center; }
     .miscelanea .content img {
       width: 200px; }
+    .miscelanea .content .slider-fotos-miscelanea {
+      width: 350px !important; }
+      .miscelanea .content .slider-fotos-miscelanea .slick-list {
+        height: auto !important; }
+      @media screen and (min-width: 1024px) {
+        .miscelanea .content .slider-fotos-miscelanea {
+          width: 400px !important; } }
+      @media screen and (min-width: 1200px) {
+        .miscelanea .content .slider-fotos-miscelanea {
+          width: 600px !important; } }
+      @media screen and (min-width: 1400px) {
+        .miscelanea .content .slider-fotos-miscelanea {
+          width: 550px !important; } }
+      .miscelanea .content .slider-fotos-miscelanea img {
+        max-width: 100% !important;
+        height: auto !important;
+        padding: 0;
+        margin-top: 0; }
   .miscelanea .overlay {
     position: absolute;
     bottom: 50%;
-    right: 45px;
+    right: 52px;
     width: 355px;
     text-align: center;
     margin: 0 auto; }

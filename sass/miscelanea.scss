@@ -27,12 +27,43 @@
             width: 200px;
         }
 
+        .slider-fotos-miscelanea {
+            width: 350px !important;
+
+            .slick-list {
+                height: auto !important;
+            }
+
+
+            @media screen and (min-width: 1024px) {
+                width: 400px !important;
+                
+            }
+
+            @media screen and (min-width: 1200px) {
+                width: 600px !important;
+                
+            }
+
+            @media screen and (min-width: 1400px) {
+                width: 550px !important;
+                
+            }
+
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+                padding: 0;
+                margin-top: 0;
+            }
+        }
+
     }
 
     .overlay {
         position: absolute;
         bottom: 50%;
-        right: 45px;
+        right: 52px;
         width: 355px;
         text-align: center;
         margin: 0 auto;
