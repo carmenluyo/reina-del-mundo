@@ -3456,11 +3456,20 @@ body {
     position: absolute;
     height: 100% !important; } }
 @media screen and (min-width: 768px) {
+  @keyframes rotating {
+    0% {
+      transform: rotate(0deg); }
+    100% {
+      transform: rotate(360deg); } }
+  .rotaring {
+    animation: rotating 4s linear infinite; }
+
   .bg-linear-yellow {
     background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
 
   #historia {
-    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
+    background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+    overflow-x: hidden; }
     #historia .middle-left,
     #historia .historia {
       top: 0;
@@ -3473,6 +3482,27 @@ body {
         width: 100vw; }
     #historia .left, #historia .right {
       float: right; }
+    #historia .puntos {
+      top: 50%;
+      left: 80%;
+      width: 100%;
+      position: absolute; }
+      #historia .puntos .square-pink {
+        width: 100px;
+        height: 100px;
+        top: -55px;
+        left: 122px;
+        position: relative;
+        background-color: rgba(255, 192, 203, 0.5490196078); }
+      #historia .puntos .square-green {
+        width: 100px;
+        height: 100px;
+        top: -45px;
+        left: 122px;
+        position: relative;
+        background-color: rgba(0, 128, 0, 0.3294117647); }
+      #historia .puntos img {
+        width: 100%; }
     #historia .left p {
       font-size: 20px; }
     #historia .wrapper-lista-descripcion {
@@ -3507,6 +3537,27 @@ body {
     height: auto !important; }
     #historia .slick-slide img {
       width: 70%; }
+  #historia .puntos {
+    top: 50%;
+    left: 80%;
+    width: 100%;
+    position: absolute; }
+    #historia .puntos .square-pink {
+      width: 100px;
+      height: 100px;
+      top: -55px;
+      left: 312px;
+      position: relative;
+      background-color: rgba(255, 192, 203, 0.5490196078); }
+    #historia .puntos .square-green {
+      width: 100px;
+      height: 100px;
+      top: -45px;
+      left: 312px;
+      position: relative;
+      background-color: rgba(0, 128, 0, 0.3294117647); }
+    #historia .puntos img {
+      width: 100%; }
   #historia .wrapper-lista-descripcion {
     left: 0;
     right: 0;
@@ -3625,7 +3676,7 @@ body {
     max-width: 1250px;
     height: 100% !important; }
   #page-propuesta-educativa .wrapper-lista-descripcion {
-    transform: translateY(170px); }
+    transform: translateY(290px); }
   #page-propuesta-educativa .slider.slider-nav.slick-initialized.slick-slider {
     width: 580px !important; }
   #page-propuesta-educativa .circulo-verde-bottom-nuestraPropuesta {
