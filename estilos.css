@@ -3838,6 +3838,12 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: bottom; }
+    .linea-tiempo .content .lineadetiempo {
+      top: 0;
+      left: 0;
+      position: absolute; }
+      .linea-tiempo .content .lineadetiempo img {
+        width: 60%; }
   .linea-tiempo .row {
     display: flex;
     align-items: center;
