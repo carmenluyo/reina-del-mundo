@@ -1,16 +1,22 @@
 .linea-tiempo {
-    background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100vh;
-    background-position-y: bottom;
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    background-image: url(img/linea-tiempo/fondo-lt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 
     .content {
         width: 100%;
+        height: 100vh;
+        background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: bottom;
     }
 
     .row {
@@ -76,13 +82,14 @@
 
         @media screen and (min-width: 1400px) {
             height: 170px;
+            margin-top: -15px;
         }
     }
 
     .overlay {
         position: absolute;
         left: 0;
-        bottom: 50px;
+        bottom: 0;
         right: 0;
         width: 355px;
         text-align: center;
@@ -90,6 +97,15 @@
 
         p {
             color: #3D497C;
+            font-size: 12px;
+
+            @media screen and (min-width: 1020px) {
+                font-size: 14px;
+            }
+
+            @media screen and (min-width: 1400px) {
+                font-size: 15px;
+            }
         }
 
         .hide {
