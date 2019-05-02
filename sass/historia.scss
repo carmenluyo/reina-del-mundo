@@ -1,4 +1,14 @@
+	.bg-linear-yellow {
+		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+	}
+
+
 @media screen and (min-width: 768px) {
+	.circuloRuta,
+	.ball,
+	#animacion-propuesta-bottom-path{
+		display: block ;
+	}
 
 	@keyframes rotating {
 	  0%  { transform: rotate(0deg);}
@@ -91,7 +101,7 @@
 
 		.wrapper-lista-descripcion {
 		    height: auto !important;
-			transform: translateY(-115%);
+			transform: translateY(0);
 		}
 
 		.slick-slide {
@@ -197,6 +207,7 @@
 	      top: 50%;
 	      left: 80%;
 	      width: 100%;
+	      display: block;
 	      position: absolute;
 
 	      	.square {
@@ -206,6 +217,7 @@
 					top: -55px;
 					left: 312px;
 					position: relative;
+					display: block;
 					background-color: rgba(255, 192, 203, 0.5490196078431373);
 	      		}
 
@@ -215,6 +227,7 @@
 					top: -45px;
 					left: 312px;
 					position: relative;
+					display: block;
 				    background-color: rgba(0, 128, 0, 0.32941176470588235);	      			
 	      		}
 	      	}
