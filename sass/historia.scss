@@ -31,6 +31,7 @@
 
 		.left, .right {
 			float: right;
+			position: relative;
 		}
 
 		.puntos {
@@ -65,8 +66,26 @@
 		}
 
 
-		.left p {
-			font-size: 20px;
+		.left {
+
+			p {
+				font-size: 20px;
+			}
+
+			.ver-mas {
+				position: absolute;
+				right: 0;
+
+				button {
+					border: none;
+					cursor: pointer;
+					background-color: transparent;
+				}
+
+				img {
+					width: 100px;
+				}
+			}
 		}
 
 		.wrapper-lista-descripcion {
@@ -75,6 +94,52 @@
 
 		.slick-slide {
 			height: auto !important;
+		}
+
+		ul {
+
+			right: 0;
+			position: absolute;
+
+			button.instalaciones {
+				left: 130px;
+				width: 170px;
+				color: white;
+				height: 55px;
+				display: block;
+				cursor: pointer;
+				font-size: 20px;
+				line-height: 60px;
+				margin-left: auto;
+				padding-left: 7px;
+				text-align: center;
+				text-decoration: none;
+				background-size: cover;
+				background-image: url(img/submenu.png);
+				background-color: transparent;
+				border: none;
+			}
+
+			li {
+
+				opacity: 0;
+				width: 170px;
+				color: white;
+				height: 55px;
+				display: none;
+				margin-left: auto;
+				text-align: center;
+
+				a {
+					text-decoration: none;
+				}
+
+
+				&.active {
+					opacity: 1;
+					display: block;
+				}
+			}
 		}
 	}
 

@@ -100,7 +100,19 @@
 				<br></p>
 
 			</div>
-			
+		
+			<ul>
+
+				<button class="instalaciones">
+					Instalaciones
+				</button>
+
+				<li><a href="#" data-slide="1">1</a></li>
+				<li><a href="#" data-slide="2">2</a></li>
+				<li><a href="#" data-slide="3">3</a></li>
+				<li><a href="#" data-slide="4">4</a></li>
+			</ul>
+	
 			
 		</div>
 		
@@ -206,7 +218,11 @@
 					</div>
 					
 					<div class="ball position"></div>
-
+					<div class="ver-mas">
+						<button>
+							<img src="img/vermas.png">
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -268,6 +284,11 @@ $(document).ready(function(){
 		if($('body').hasClass("historia")) {
 			$('html').addClass('bg-linear-yellow');
 		};
+
+		$("ul > button.instalaciones").on("click", function(e){
+		   e.preventDefault();
+		   $("ul > li ").toggleClass("active");
+		});
 
 });
 </script>
