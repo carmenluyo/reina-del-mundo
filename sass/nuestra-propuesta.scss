@@ -1,6 +1,65 @@
+
+#page-propuesta-educativa {
+
+	.left {
+
+	}
+
+	.scalar {
+		display: none;
+	}
+
+	.container-maxw {
+		.instalaciones {
+			right: 9px;
+			position: absolute;
+
+			button {
+				color: white;
+				border: none;
+				font-size: 25px;
+				cursor: pointer;			
+				background-color: transparent;
+
+				img {
+					width: 10%;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	.slick-slide {
+		p {
+			padding: 30px;
+		}
+	}
+}
+
+
 @media screen and (min-width: 768px) {
 
 	#page-propuesta-educativa {
+
+		.container-maxw {
+			.instalaciones {
+				right: 9px;
+				position: absolute;
+
+				button {
+					color: white;
+					border: none;
+					font-size: 25px;
+					cursor: pointer;			
+					background-color: transparent;
+
+					img {
+						width: 10%;
+						vertical-align: middle;
+					}
+				}
+			}
+		}
 		
 		.slick-slide  {
 			height: auto !important;

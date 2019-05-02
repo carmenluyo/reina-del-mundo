@@ -3624,7 +3624,36 @@ body {
     max-width: 1800px;
     position: absolute;
     height: 100% !important; } }
+#page-propuesta-educativa .scalar {
+  display: none; }
+#page-propuesta-educativa .container-maxw .instalaciones {
+  right: 9px;
+  position: absolute; }
+  #page-propuesta-educativa .container-maxw .instalaciones button {
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: transparent; }
+    #page-propuesta-educativa .container-maxw .instalaciones button img {
+      width: 10%;
+      vertical-align: middle; }
+#page-propuesta-educativa .slick-slide p {
+  padding: 30px; }
+
 @media screen and (min-width: 768px) {
+  #page-propuesta-educativa .container-maxw .instalaciones {
+    right: 9px;
+    position: absolute; }
+    #page-propuesta-educativa .container-maxw .instalaciones button {
+      color: white;
+      border: none;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: transparent; }
+      #page-propuesta-educativa .container-maxw .instalaciones button img {
+        width: 10%;
+        vertical-align: middle; }
   #page-propuesta-educativa .slick-slide {
     height: auto !important; }
   #page-propuesta-educativa .wrapper-slider-fotos {
@@ -3751,11 +3780,24 @@ body {
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
 
   #areaformativa {
-    background-repeat: no-repeat;
     height: 1 !important;
+    background-repeat: no-repeat;
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
     #areaformativa .seccion-text-right {
       width: 50%; }
+      #areaformativa .seccion-text-right .instalaciones {
+        right: 42px;
+        bottom: -15%;
+        position: absolute; }
+        #areaformativa .seccion-text-right .instalaciones button {
+          color: white;
+          border: none;
+          font-size: 25px;
+          cursor: pointer;
+          background-color: transparent; }
+          #areaformativa .seccion-text-right .instalaciones button img {
+            width: 10%;
+            vertical-align: middle; }
     #areaformativa .middle-side,
     #areaformativa .seccion-text-right {
       width: 47%;
@@ -4008,6 +4050,30 @@ body {
     .linea-tiempo .overlay .visible {
       display: block; }
 
+.seccion-text-right-titulo {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0px; }
+
+.educacionIntegral:after {
+  content: "";
+  background-color: rgba(229, 172, 77, 0.8);
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%; }
+
+.img-educacion-top {
+  top: 40%;
+  width: 50%; }
+
+.imagen-educacion-circular {
+  top: 110px;
+  height: 180px; }
+
 @media screen and (min-width: 768px) {
   .cajita {
     height: 100vh; }
@@ -4021,12 +4087,25 @@ body {
   .seccion-text-right {
     width: 50%;
     padding-top: 7% !important; }
-
-  .seccion-text-right-titulo {
-    font-size: 18px; }
+    .seccion-text-right-titulo {
+      font-size: 18px; }
 
   .imagen-educacion-circular {
-    top: 50%; } }
+    top: 50%; }
+
+  .educacionIntegral:after {
+    content: "";
+    background-color: rgba(229, 172, 77, 0.8);
+    position: absolute;
+    top: -140px;
+    right: -10px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%; }
+
+  .imagen-educacion-circular {
+    top: 68%;
+    height: auto; } }
 @media screen and (min-width: 1024px) {
   #educacionintegral .container-maxw,
   #educacionintegral .wrapper-lista-descripcion {
@@ -4044,7 +4123,10 @@ body {
     width: 100%;
     margin: 0 auto;
     max-width: 1250px;
-    height: 100% !important; } }
+    height: 100% !important; }
+  #educacionintegral .seccion-text-right-titulo {
+    width: 400px;
+    margin-left: auto; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {
   #educacionintegral .wrapper-lista-descripcion {
     left: 0;
