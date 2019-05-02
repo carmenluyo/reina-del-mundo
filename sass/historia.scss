@@ -69,7 +69,8 @@
 		.left {
 
 			p {
-				font-size: 20px;
+				font-size: 17px;
+				margin-top: 50px;
 			}
 
 			.ver-mas {
@@ -89,7 +90,8 @@
 		}
 
 		.wrapper-lista-descripcion {
-			transform: translateY(-84%);
+		    height: auto !important;
+			transform: translateY(-115%);
 		}
 
 		.slick-slide {
@@ -169,7 +171,8 @@
 			margin: 0 auto;
 			max-width: 1800px;
 			position: absolute;
-			height: 100% !important;
+			height: auto !important;
+			transform: translateY(-105%);
 		}
 
 	}

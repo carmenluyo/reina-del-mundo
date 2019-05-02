@@ -3505,7 +3505,8 @@ body {
       #historia .puntos img {
         width: 100%; }
     #historia .left p {
-      font-size: 20px; }
+      font-size: 17px;
+      margin-top: 50px; }
     #historia .left .ver-mas {
       position: absolute;
       right: 0; }
@@ -3516,7 +3517,8 @@ body {
       #historia .left .ver-mas img {
         width: 100px; }
     #historia .wrapper-lista-descripcion {
-      transform: translateY(-84%); }
+      height: auto !important;
+      transform: translateY(-115%); }
     #historia .slick-slide {
       height: auto !important; }
     #historia ul {
@@ -3571,7 +3573,8 @@ body {
     margin: 0 auto;
     max-width: 1800px;
     position: absolute;
-    height: 100% !important; } }
+    height: auto !important;
+    transform: translateY(-105%); } }
 @media screen and (min-width: 1300px) {
   .bg-linear-yellow {
     background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
