@@ -3663,7 +3663,7 @@ body {
       #page-propuesta-educativa .slider-propuesta .right .slick-slide {
         margin: 35px 0; }
         #page-propuesta-educativa .slider-propuesta .right .slick-slide img {
-          width: 90%; }
+          width: 100%; }
     #page-propuesta-educativa .slider-propuesta .left p {
       margin-right: 14%;
       margin-left: 0 !important;
@@ -3677,6 +3677,13 @@ body {
     width: 150px;
     height: 150px; }
   #page-propuesta-educativa .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 700px;
+    position: absolute;
+    height: 100% !important;
     transform: translateY(100px); }
     #page-propuesta-educativa .wrapper-lista-descripcion .slick-list {
       height: auto !important; }
@@ -3693,15 +3700,16 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 945px;
     position: absolute;
     height: 100% !important; }
   #page-propuesta-educativa .wrapper-lista-descripcion {
-    transform: translateY(280px); }
+    transform: translateY(280px);
+    max-width: 800px; }
   #page-propuesta-educativa .wrapper-slider-fotos {
     left: 70px; }
   #page-propuesta-educativa .full-width p {
-    font-size: 22px; }
+    font-size: 19px; }
   #page-propuesta-educativa .full-width div.h-700 {
     height: 600px; } }
 @media screen and (min-width: 1300px) {
