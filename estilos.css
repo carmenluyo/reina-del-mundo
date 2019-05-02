@@ -3775,6 +3775,38 @@ body {
     height: 100% !important; }
   #page-propuesta-educativa .wrapper-lista-descripcion {
     transform: translateY(280px); } }
+#areaformativa h1 {
+  padding-top: 0; }
+#areaformativa .seccion-text-right {
+  overflow: visible; }
+  #areaformativa .seccion-text-right .instalaciones {
+    right: 14px;
+    bottom: -36px;
+    position: absolute; }
+    #areaformativa .seccion-text-right .instalaciones button {
+      color: white;
+      border: none;
+      font-size: 25px;
+      cursor: pointer;
+      background-color: transparent; }
+      #areaformativa .seccion-text-right .instalaciones button img {
+        width: 10%;
+        vertical-align: middle; }
+#areaformativa .left,
+#areaformativa .right {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative; }
+  #areaformativa .left .slick-slide img,
+  #areaformativa .right .slick-slide img {
+    display: block;
+    border-radius: 50%;
+    width: 80%;
+    margin: 0 auto; }
+#areaformativa .slick-slide p {
+  padding: 0 7%; }
+
 @media screen and (min-width: 768px) {
   .bg-linear-pink {
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
@@ -3818,10 +3850,20 @@ body {
       #areaformativa .slick-slide img {
         border-radius: 50%;
         margin-left: 21px; }
+      #areaformativa .slick-slide p {
+        padding: 0; }
+    #areaformativa .left,
+    #areaformativa .right {
+      height: 100%;
+      width: calc(99%/2);
+      position: relative;
+      display: inline-block;
+      vertical-align: middle; }
     #areaformativa .wrapper-lista-descripcion {
       transform: translateY(-100px); }
     #areaformativa .left p {
-      color: #2e366a; }
+      color: #2e366a;
+      margin-left: 0; }
     #areaformativa .slick-prev, #areaformativa .slick-next {
       display: none !important; }
 
@@ -3908,7 +3950,9 @@ body {
         height: 600px !important; }
     #areaformativa .left p {
       font-size: 20px;
-      line-height: 20px; } }
+      line-height: 20px; }
+    #areaformativa .left img, #areaformativa .right img {
+      width: 95%; } }
 @media screen and (min-width: 1300px) {
   .bg-linear-pink {
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }

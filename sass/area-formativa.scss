@@ -1,3 +1,57 @@
+#areaformativa {
+
+	h1 {
+		padding-top: 0;
+	}
+
+	.seccion-text-right {
+
+		overflow: visible;
+
+		.instalaciones {
+			right: 14px;
+			bottom: -36px;
+			position: absolute;
+
+			button {
+				color: white;
+				border: none;
+				font-size: 25px;
+				cursor: pointer;
+				background-color: transparent;
+
+				img {
+					width: 10%;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+
+	.left,
+	.right {
+	    height: 100%;
+	    width: 100%;
+	    display: block;
+	    position: relative;
+	
+		.slick-slide img {
+		    display: block;
+		    border-radius: 50%;
+		    width: 80%;
+		    margin: 0 auto;
+		}
+	}
+
+	.slick-slide {
+
+		p {
+			padding: 0 7%;
+		}
+	}
+}
+
+
 @media screen and (min-width: 768px) {
 	.bg-linear-pink {
 		background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important;		
@@ -61,8 +115,20 @@
 				border-radius: 50%;
 				margin-left: 21px;
 			}
+
+			p {
+				padding: 0;
+			}
 		}
 
+		.left,
+		.right {
+			height: 100%;
+			width: calc(99%/2);
+			position: relative;
+			display: inline-block;
+			vertical-align: middle; 
+		}
 
 
 		.wrapper-lista-descripcion {
@@ -71,6 +137,7 @@
 
 		.left p {
 			color: #2e366a;
+			margin-left: 0;
 		}
 
 		.slick-prev, .slick-next {
@@ -196,6 +263,10 @@
 		.left p {
 	      font-size: 20px;
 	      line-height: 20px;
+		}
+
+		.left img, .right img {
+			width: 95%;
 		}
 
 	}
