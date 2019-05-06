@@ -1,0 +1,123 @@
+.seccion-text-right-titulo {
+    font-size: 14px;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.educacionIntegral:after {
+    content: "";
+    background-color: rgba(229, 172, 77, 0.8);
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+}
+
+.img-educacion-top {
+	top: 40%;
+    width: 50%;
+}
+
+.imagen-educacion-circular {
+  top: 110px;
+  height: 180px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .cajita {
+        height: 100vh;
+	}
+	
+	.img-educacion-top {
+		position: absolute;
+		left: 0%;
+		top: 208px;
+		z-index: 3;
+	}
+
+	.seccion-text-right {
+		width: 50%;
+		padding-top: 7% !important;
+
+		&-titulo {
+			font-size: 18px;
+		}
+	}
+
+	.imagen-educacion-circular {
+		top: 50%;
+	}
+
+	.educacionIntegral:after {
+	    content: "";
+	    background-color: rgba(229, 172, 77, 0.8);
+	    position: absolute;
+	    top: -140px;
+	    right: -10px;
+	    width: 600px;
+	    height: 600px;
+	    border-radius: 50%;
+	}
+
+	.imagen-educacion-circular {
+	  top: 68%;
+	  height: auto;
+	}	
+}
+
+
+@media screen and (min-width: 1024px) {
+    #educacionintegral {
+        .container-maxw,
+        .wrapper-lista-descripcion {
+            left: 0;
+            right: 0;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 1200px;
+            position: absolute;
+            height: 100% !important;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1300px){
+	#educacionintegral {
+		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1250px;
+			height: 100% !important;
+		}
+
+		
+		.seccion-text-right {
+			&-titulo {
+				width: 400px;
+				margin-left: auto;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 1900px) and (max-width: 200000px){
+	#educacionintegral {
+		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1500px !important;
+			height: 100% !important;
+		}
+
+	}
+}

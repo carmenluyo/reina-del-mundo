@@ -1,28 +1,71 @@
 .linea-tiempo {
-    background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 100vh;
-    background-position-y: bottom;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
+    background-image: url(img/linea-tiempo/fondo-lt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
 
     .content {
-        width: 100%;
+        width: 85%;
+        height: 90vh;
+        position: relative;
+        background-image: url(img/linea-tiempo/bg-linea-tiempo-mob.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: bottom;
+
+        @media screen and (min-width: 768px) {
+            background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
+            background-position-x: center;
+            height: auto;
+            width: 100%;
+        }
+
+        .lineadetiempo {
+            top: -23px;
+            left: -37px;
+            position: absolute;
+
+            @media screen and (min-width: 768px) {
+                top: -90px;
+                left: 25px;
+                position: absolute;
+            }
+
+            img {
+                width: 60%;
+            }
+        }
     }
 
     .row {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 114px;
+        flex-direction: column-reverse;
+        height: auto;
         margin-top: 28px;
         align-items: flex-end;
 
         &.flex-center {
             align-items: center;
+
+            .mil-novecientos-setenta-cuatro-mob {
+                position: absolute;
+                top: 345px;
+                left: 4px;
+
+                @media screen and (min-width: 768px) {
+                    position: relative;
+                    top: -12px;
+                    left: -3px;
+                }
+            }
         }
 
         &.space-center {
@@ -31,13 +74,56 @@
 
                 img {
                     &.top {
-                        position: relative;
-                        top: -10px;
+                        position: absolute;
+                        top: 270px;
+                        left: 100px;
+
+                        @media screen and (min-width: 768px) {
+                            position: relative;
+                            top: -10px;
+                            left: 0;
+                        }
+                    }
+
+                    &.mil-novecientos-sesenta-nueva-mob {
+                        position: absolute;
+                        left: 50px;
+                        top: 190px;
+
+                        @media screen and (min-width: 768px) {
+                            position: relative;
+                            left: 10px;
+                            top: -40px;
+                        } 
                     }
 
                     &.bottom {
                         bottom: -23px;
                         position: relative;
+                    }
+
+                    &.mil-novecientos-noventa-mob {
+                        position: absolute;
+                        left: 60px;
+                        bottom: 152px;
+
+                        @media screen and (min-width: 768px) {
+                            position: relative;
+                            left: 30px;
+                            bottom: auto;
+                        } 
+                    }
+
+                    &.mil-novecientos-ochenta-mob {
+                        left: 100px;
+                        position: absolute;
+                        bottom: 230px;
+
+                        @media screen and (min-width: 768px) {
+                            position: relative;
+                            left: 30px;
+                            bottom: -23px;
+                        } 
                     }
                 }
             }
@@ -54,6 +140,30 @@
                         position: relative;
                         bottom: -30px;
                     }
+
+                    &.dos-mil-dos-mob {
+                        position: absolute;
+                        bottom: 123px;
+                        right: 0;
+            
+                        @media screen and (min-width: 768px) {
+                            position: relative;
+                            bottom: 0;
+                            right: 30px;    
+                        }   
+                    }
+
+                    &.mil-novecientos-sesenta-siete-mob {
+                        position: absolute;
+                        left: 70px;
+                        top: 125px;
+
+                        @media screen and (min-width: 768px) {
+                            position: relative;
+                            top: 0;
+                            left: 0px;    
+                        }   
+                    }
                 }
             }
         }
@@ -63,11 +173,68 @@
 
             img {
                 margin-left: 21px;
+                position: absolute;
+                top: 40px;
+                right: 45px;
+                
+
+                @media screen and (min-width: 768px) {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                }
             }
         }
 
+        .dos-mil-tres-mob {
+            position: absolute;
+            bottom: 24px;
+            right: 0;
+
+            @media screen and (min-width: 768px) {
+                position: relative;
+                bottom: 0;
+            }
+        }
+
+        // .items {
+        //     img.dos-mil-dos-mob {
+        //         position: absolute;
+        //         bottom: 24px;
+        //         right: 0;
+    
+        //         @media screen and (min-width: 768px) {
+        //             position: relative;
+        //         }   
+        //     }
+        // }
+
+        
+
         img {
-            width: 120px;
+            width: 76px;
+
+            @media screen and (min-width: 768px) {
+                width: 120px;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            height: 76px;
+            flex-direction: row;
+            // height: 114px;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            height: 95px;
+
+            img {
+                width: 100px;
+            }
         }
 
         @media screen and (min-width: 1200px) {
@@ -76,20 +243,37 @@
 
         @media screen and (min-width: 1400px) {
             height: 170px;
+            margin-top: -15px;
         }
     }
 
     .overlay {
         position: absolute;
         left: 0;
-        bottom: 50px;
+        bottom: 0;
         right: 0;
-        width: 355px;
+        width: 240px;
         text-align: center;
         margin: 0 auto;
 
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            width: 355px;
+            display: block;
+        }
+
         p {
             color: #3D497C;
+            font-size: 12px;
+
+            @media screen and (min-width: 1020px) {
+                font-size: 12px;
+            }
+
+            @media screen and (min-width: 1400px) {
+                font-size: 15px;
+            }
         }
 
         .hide {
@@ -99,5 +283,10 @@
         .visible {
             display: block;
         }
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+
     }
 }

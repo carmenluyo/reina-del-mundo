@@ -9,17 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="css/slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
 	<style type="text/css">
-	body{
-		margin-top: -20px;
-	}
-		@media(max-width: 760px){
-			html,body{
-				overflow-x:hidden;
-			}
+
+	@media(max-width: 760px){
+		html,body{
+			overflow-x:hidden;
 		}
+	}
 	</style>
 </head>
-<body id="inicio">
+<body id="inicio" class="inicio-one">
 
 <div class="button_container" id="toggle">
       <span class="top"></span>
@@ -63,7 +61,6 @@
 				</svg>
 			</div>
 </div>
-
 
 <section class="wrapper-inicio">
 	<header class="cabecera-simple desk">
@@ -131,7 +128,44 @@
 		</nav>
 	</header>
 
-	<div class="container-full">
+	<section class="simple-mobile">
+		<div class="header">
+			<img src="img/home-mobile.png" alt="">
+
+			<div class="info">
+				<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la
+					Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-
+					Alemania.</p>
+					
+				<p>Nuestra propuesta educativa está centrada en el alumno como persona. Por ello, es parte
+					fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y
+					aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y
+					armónico.</p>
+			</div>
+			<div class="info">
+				<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la
+					Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-
+					Alemania.</p>
+					
+				<p>Nuestra propuesta educativa está centrada en el alumno como persona. Por ello, es parte
+					fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y
+					aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y
+					armónico.</p>
+			</div>
+			<div class="info">
+				<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la
+					Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-
+					Alemania.</p>
+					
+				<p>Nuestra propuesta educativa está centrada en el alumno como persona. Por ello, es parte
+					fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y
+					aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y
+					armónico.</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="container-full inicio">
 		<div class="logo"></div>
 
 		<div class="slider-home">
@@ -260,6 +294,11 @@
 </script>
 
 <script>
+	$(document).ready(function(){	
+		if($("body").hasClass("inicio-one")){
+			$("html").css( "overflow-y", "hidden" );
+		};
+	});
 	$('.boton-inicio').click(function(){
 		$('#inicio').addClass('hiddeScroll');
 		$('html,body').animate({ scrollTop: $(this).offset().top - 3 }, 1000);

@@ -55,7 +55,7 @@
 
 	</style>
 
-<body id="areaformativa">
+<body id="areaformativa" class="areaformativa">
 
 
 
@@ -130,14 +130,11 @@
 
 		<div class="triangle triangle--brown"></div>
 
-		<ul>
-			Instalaciones 
-
-			<li><a href="#" data-slide="1">1</a></li>
-			<li><a href="#" data-slide="2">2</a></li>
-			<li><a href="#" data-slide="3">3</a></li>
-			<li><a href="#" data-slide="4">4</a></li>
-		</ul>
+		<div class="instalaciones">
+			<button>
+				<img src="img/flecha-instalaciones.png"> Instalaciones
+			</button>
+		</div>
 
 	</section>
 	
@@ -320,8 +317,8 @@
 <script src="js/menu-burger.js"></script>
 <script src="js/scrollForever.min.js"></script>
 <script src="js/lista.js"></script>
-	<script src="js/slick/slick.min.js"></script>
- <script type="text/javascript">
+<script src="js/slick/slick.min.js"></script>
+<script type="text/javascript">
 $("a").click(function() {
     $('html, body').animate({
         scrollTop: $(".wrapper-lista-descripcion").offset().top - 150 /*(150) is height to leave from top*/
@@ -353,6 +350,14 @@ $("a").click(function() {
 		   lastScrollTop = currentScroll;
 		}, false);	
 
+		if($("#areaformativa").hasClass("areaformativa")){
+				$("html").addClass("bg-linear-pink")
+		}
+
+		if($('body').hasClass("areaformativa")) {
+			$('html').addClass('bg-linear-pink');
+		};
+
 
 	 	$('.slider-for-area').slick({
 		   fade: true,
@@ -376,12 +381,6 @@ $("a").click(function() {
 		   autoplaySpeed: 2000,
 		   asNavFor: '.slider-for-area'
  		});
-
- 		$('a[data-slide]').click(function(e) {
-		   e.preventDefault();
-		   var slideno = $(this).data('slide');
-		   $('.slider-nav-area').slick('slickGoTo', slideno - 1);
-		});
 	});
 </script>
 <script>
