@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*textarea {
   resize: none;
 }
@@ -75,3 +76,82 @@ textarea:focus, input:focus{
   border: 0;
   outline: 0;
   border-bottom: 1px solid black; }
+=======
+/*textarea {
+  resize: none;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+#page-contacto{
+  overflow: hidden;
+}
+
+#nombre,#email,#asunto,#telefono,#mensaje{
+  width: 80%;
+  border:0;
+  background:inherit;
+  border-bottom: 1px solid #585757;
+}
+
+
+.wrappper-formulario-span{
+  margin-right: auto;
+}
+
+#wrappper-formulario{
+  width: 100%;
+  @media(min-width: 760px){
+    width: 400px;
+  }
+}
+
+
+.wrappper-formulario-titulo{
+  font-size: 25px;
+  line-height: 100%;
+  margin-top: 40px;
+  @media(min-width: 760px){
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+
+
+.wrappper-formulario-envoltura-inputs{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+
+#btn-enviar{
+  cursor: pointer;
+  background: initial;
+  border:0;
+  color: #C83C41;
+  font-size: 20px;
+  margin-left:40px;
+  margin-top: 20px;
+  @media(min-width: 760px){
+     margin-left:80px;
+    margin-top: 50px;
+  }
+}
+
+.boton-admision{
+  margin-left:0;
+}
+
+
+.top-20{
+  margin-top: 50px;
+}
+
+*/
+#formulario-admision > input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black; }
+>>>>>>> 346a1e4f6aea5e949a72e4168c37c09227c0a19a

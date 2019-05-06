@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const initRelativeOffset = anime.timeline();
 
 const addTransition = (relativeOffset, i = 1) => {
@@ -19,4 +20,27 @@ const addTransition = (relativeOffset, i = 1) => {
     }
 }
 
+=======
+const initRelativeOffset = anime.timeline();
+
+const addTransition = (relativeOffset, i = 1) => {
+    if(i <= 5) { // keep adding the transition until i passes 5 (you could always change this number if you want to add more <li>s
+        addTransition(
+            relativeOffset.add({
+                targets: `ul > li:nth-child(${i})`,
+                easing:'easeInOutSine',
+                translateY:-25,
+                duration:300,
+                delay:1800,
+                opacity:{
+                    value:[0,1],
+                    easing:'linear'
+                }
+            }),
+            i + 1
+        )
+    }
+}
+
+>>>>>>> 346a1e4f6aea5e949a72e4168c37c09227c0a19a
 addTransition(initRelativeOffset)
