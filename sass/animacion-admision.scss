@@ -1,0 +1,44 @@
+.envoltura-svg-admision{
+	@media(max-width: 760px){
+
+		/*width: 100vw;
+		height: 120vh;
+		overflow: hidden;*/
+	}
+}
+
+#page-admision{
+	
+	@media(max-width: 760px){
+		background-image: url(img/admision/fondo-admision.svg);
+	background-size: 600%;
+	}
+	@media(min-width: 760px){
+		background-color: #C83C41;
+	}
+    
+}
+
+#page-admision > .seccion-titulos {
+	@media(max-width: 760px){
+		margin-top: 20px;
+		width:92% !important;
+	}
+}
+
+#page-admision{
+	@media(max-width: 760px){
+		
+		height: 700px;
+		
+	}
+}
+
+#wrapper-svg-admision{
+  position: absolute;
+  top: 0;
+  @media(max-width: 760px){
+  	display: none;
+  	height: 130vh;
+  }
+}

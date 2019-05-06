@@ -1,0 +1,43 @@
+body{
+	width: 100%;
+	
+}
+
+#morph{
+	
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	pointer-events: none;
+	z-index:40;
+
+	visibility: hidden;
+	@media(min-width:760px){
+	
+	}
+}
+#morph.morphVisible{
+	z-index: 20;
+	visibility: visible;
+}
+
+.pointer{
+	pointer-events: auto !important;
+}
+
+
+.primeraPath{
+	fill:#e9b620;
+}
+
+
+.modal-back{
+	position: absolute;
+	right: 0;
+}
+
+.titulo-oculto{
+	opacity: 0;
+	visibility: hidden;
+}

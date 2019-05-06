@@ -1,0 +1,19 @@
+
+.preload{
+	position: absolute;
+	z-index: 9999;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: calc(100vh + 21px);
+	background-color: #ffffff;
+
+}
+
+.preload > div{
+
+	height: 105vh;
+	box-sizing: border-box;
+
+
+}

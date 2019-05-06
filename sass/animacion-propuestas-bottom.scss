@@ -1,0 +1,47 @@
+
+.cajita{
+  position: relative;
+  
+  @media(min-width: 760px){
+  
+  }
+}
+
+#animacion-propuesta-bottom-path{
+  @media(max-width: 760px){
+    /*height: 100vh;*/
+  }
+}
+
+.circuloRuta,.rectRuta{
+  position: absolute;
+  z-index: 0 ; /*3*/
+  top: -10px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+ 
+  background-color: #C83C41;
+
+}
+
+.circuloRutaGrande{
+  position: absolute;
+  z-index: 3;
+  top: -40px;
+  left: -40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #C83C41;
+
+  box-shadow: 10px 0px 20px rgba(0,0,0, .3);
+}
+
+.rectRuta{
+  box-shadow: 10px 10px 20px rgba(0,0,0, .5);
+  z-index: -1;
+}
+.circuloRuta{
+ border-radius: 50%;
+}
