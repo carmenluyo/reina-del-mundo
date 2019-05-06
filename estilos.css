@@ -2601,6 +2601,63 @@ body.removerScroll {
       left: 21px;
       top: 21%; } }
 
+.miscelanea {
+  background-image: url(img/miscelanea/fondo-deep-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 250px 0 200px; }
+  .miscelanea .content {
+    width: 1100px;
+    margin: 0 auto;
+    height: 100vh;
+    background-image: url(img/miscelanea/fondo-slide-end.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .miscelanea .content img {
+      width: 200px; }
+    .miscelanea .content .slider-fotos-miscelanea {
+      width: 350px !important; }
+      .miscelanea .content .slider-fotos-miscelanea .slick-list {
+        height: auto !important; }
+      @media screen and (min-width: 1024px) {
+        .miscelanea .content .slider-fotos-miscelanea {
+          width: 400px !important; } }
+      @media screen and (min-width: 1200px) {
+        .miscelanea .content .slider-fotos-miscelanea {
+          width: 600px !important; } }
+      @media screen and (min-width: 1400px) {
+        .miscelanea .content .slider-fotos-miscelanea {
+          width: 550px !important; } }
+      .miscelanea .content .slider-fotos-miscelanea img {
+        max-width: 100% !important;
+        height: auto !important;
+        padding: 0;
+        margin-top: 0; }
+  .miscelanea .overlay {
+    position: absolute;
+    bottom: 50%;
+    right: 52px;
+    width: 355px;
+    text-align: center;
+    margin: 0 auto; }
+    .miscelanea .overlay .items {
+      text-align: right; }
+      .miscelanea .overlay .items a {
+        text-decoration: none;
+        color: #FF7167; }
+        .miscelanea .overlay .items a:hover {
+          opacity: 0.7; }
+
 body {
   width: 100%; }
 
@@ -4263,43 +4320,98 @@ body {
   height: 100vh;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
   background-image: url(img/linea-tiempo/fondo-lt.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: bottom; }
   .linea-tiempo .content {
-    width: 100%;
-    height: 100vh;
-    background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
-    background-size: cover;
+    width: 85%;
+    height: 90vh;
+    position: relative;
+    background-image: url(img/linea-tiempo/bg-linea-tiempo-mob.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position-x: center;
+    background-position-x: right;
     background-position-y: bottom; }
+    @media screen and (min-width: 768px) {
+      .linea-tiempo .content {
+        background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
+        background-position-x: center;
+        height: auto;
+        width: 100%; } }
     .linea-tiempo .content .lineadetiempo {
-      top: 0;
-      left: 0;
+      top: -23px;
+      left: -37px;
       position: absolute; }
+      @media screen and (min-width: 768px) {
+        .linea-tiempo .content .lineadetiempo {
+          top: -90px;
+          left: 25px;
+          position: absolute; } }
       .linea-tiempo .content .lineadetiempo img {
         width: 60%; }
   .linea-tiempo .row {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 114px;
+    flex-direction: column-reverse;
+    height: auto;
     margin-top: 28px;
     align-items: flex-end; }
     .linea-tiempo .row.flex-center {
       align-items: center; }
+      .linea-tiempo .row.flex-center .mil-novecientos-setenta-cuatro-mob {
+        position: absolute;
+        top: 345px;
+        left: 4px; }
+        @media screen and (min-width: 768px) {
+          .linea-tiempo .row.flex-center .mil-novecientos-setenta-cuatro-mob {
+            position: relative;
+            top: -12px;
+            left: -3px; } }
     .linea-tiempo .row.space-center .items {
       margin: 0 30px; }
       .linea-tiempo .row.space-center .items img.top {
-        position: relative;
-        top: -10px; }
+        position: absolute;
+        top: 270px;
+        left: 100px; }
+        @media screen and (min-width: 768px) {
+          .linea-tiempo .row.space-center .items img.top {
+            position: relative;
+            top: -10px;
+            left: 0; } }
+      .linea-tiempo .row.space-center .items img.mil-novecientos-sesenta-nueva-mob {
+        position: absolute;
+        left: 50px;
+        top: 190px; }
+        @media screen and (min-width: 768px) {
+          .linea-tiempo .row.space-center .items img.mil-novecientos-sesenta-nueva-mob {
+            position: relative;
+            left: 10px;
+            top: -40px; } }
       .linea-tiempo .row.space-center .items img.bottom {
         bottom: -23px;
         position: relative; }
+      .linea-tiempo .row.space-center .items img.mil-novecientos-noventa-mob {
+        position: absolute;
+        left: 60px;
+        bottom: 152px; }
+        @media screen and (min-width: 768px) {
+          .linea-tiempo .row.space-center .items img.mil-novecientos-noventa-mob {
+            position: relative;
+            left: 30px;
+            bottom: auto; } }
+      .linea-tiempo .row.space-center .items img.mil-novecientos-ochenta-mob {
+        left: 100px;
+        position: absolute;
+        bottom: 230px; }
+        @media screen and (min-width: 768px) {
+          .linea-tiempo .row.space-center .items img.mil-novecientos-ochenta-mob {
+            position: relative;
+            left: 30px;
+            bottom: -23px; } }
     .linea-tiempo .row.flex-between {
       justify-content: space-between; }
       .linea-tiempo .row.flex-between .items img {
@@ -4307,12 +4419,60 @@ body {
         .linea-tiempo .row.flex-between .items img.bottom {
           position: relative;
           bottom: -30px; }
+        .linea-tiempo .row.flex-between .items img.dos-mil-dos-mob {
+          position: absolute;
+          bottom: 123px;
+          right: 0; }
+          @media screen and (min-width: 768px) {
+            .linea-tiempo .row.flex-between .items img.dos-mil-dos-mob {
+              position: relative;
+              bottom: 0;
+              right: 30px; } }
+        .linea-tiempo .row.flex-between .items img.mil-novecientos-sesenta-siete-mob {
+          position: absolute;
+          left: 70px;
+          top: 125px; }
+          @media screen and (min-width: 768px) {
+            .linea-tiempo .row.flex-between .items img.mil-novecientos-sesenta-siete-mob {
+              position: relative;
+              top: 0;
+              left: 0px; } }
     .linea-tiempo .row.flex-left {
       justify-content: flex-start; }
       .linea-tiempo .row.flex-left img {
-        margin-left: 21px; }
+        margin-left: 21px;
+        position: absolute;
+        top: 40px;
+        right: 45px; }
+        @media screen and (min-width: 768px) {
+          .linea-tiempo .row.flex-left img {
+            position: relative;
+            top: 0;
+            right: 0; } }
+    .linea-tiempo .row .dos-mil-tres-mob {
+      position: absolute;
+      bottom: 24px;
+      right: 0; }
+      @media screen and (min-width: 768px) {
+        .linea-tiempo .row .dos-mil-tres-mob {
+          position: relative;
+          bottom: 0; } }
     .linea-tiempo .row img {
-      width: 120px; }
+      width: 76px; }
+      @media screen and (min-width: 768px) {
+        .linea-tiempo .row img {
+          width: 120px; } }
+    @media screen and (min-width: 768px) {
+      .linea-tiempo .row {
+        height: 76px;
+        flex-direction: row; }
+        .linea-tiempo .row img {
+          width: 60px; } }
+    @media screen and (min-width: 1024px) {
+      .linea-tiempo .row {
+        height: 95px; }
+        .linea-tiempo .row img {
+          width: 100px; } }
     @media screen and (min-width: 1200px) {
       .linea-tiempo .row {
         height: 140px; } }
@@ -4325,15 +4485,20 @@ body {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 355px;
+    width: 240px;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .linea-tiempo .overlay {
+        width: 355px;
+        display: block; } }
     .linea-tiempo .overlay p {
       color: #3D497C;
       font-size: 12px; }
       @media screen and (min-width: 1020px) {
         .linea-tiempo .overlay p {
-          font-size: 14px; } }
+          font-size: 12px; } }
       @media screen and (min-width: 1400px) {
         .linea-tiempo .overlay p {
           font-size: 15px; } }
@@ -4341,6 +4506,9 @@ body {
       display: none; }
     .linea-tiempo .overlay .visible {
       display: block; }
+  @media screen and (min-width: 768px) {
+    .linea-tiempo {
+      justify-content: center; } }
 
 .seccion-text-right-titulo {
   font-size: 14px;
