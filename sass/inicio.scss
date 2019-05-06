@@ -23,15 +23,15 @@
     width: 100%;
 }
 
-.wrapper-inicio-contenido{  
+.wrapper-inicio-contenido{	
     opacity: 0;
-    position: relative;
-    width: 80%;
+	position: relative;
+	width: 80%;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    left: 30px;
-    top:30%;
+	left: 30px;
+	top:30%;
     background-color:#c52d34 ; /* #cc534ed1*/
     @media(min-width: 760px){
        padding-top: 0;
