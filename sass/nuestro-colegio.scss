@@ -65,8 +65,8 @@
 	}
 
 	.auto-height {
-	    height: 800px;	
-			overflow: hidden;
+		height: 800px;	
+		overflow: visible;
 	}
 
 	.square {
@@ -82,9 +82,10 @@
 	    width: 55%;
 	    z-index: 0;
 	    height: 100%;
-	    right: -72px;
-			display: block;
-			position: absolute;
+	    right: 0;
+		display: block;
+		position: absolute;
+		overflow: hidden;
 
 	    img {
 		    top: 0;
@@ -175,6 +176,55 @@
 		&:hover {
 	    	background-image: linear-gradient(to right, rgba(137, 109, 183, 0.87), rgb(42, 1, 110));
 		}
+
+
+	ul {
+		top:75px;
+		right: 35px;
+		position: absolute;
+
+		button.vision {
+			left: 130px;
+			width: 180px !important;
+			color: white;
+			height: 55px;
+			display: block;
+			cursor: pointer;
+			font-size: 20px;
+			line-height: 60px;
+			margin-left: auto;
+			padding-left: 7px;
+			text-align: center;
+			text-decoration: none;
+			background-size: cover;
+			background-image: url(img/submenu.png);
+			background-color: transparent;
+			border: none;
+		}
+
+		li {
+
+			opacity: 0;
+			width: 170px;
+			height: 40px;
+			display: none;
+			margin-left: auto;
+			text-align: center;
+			border-radius: 3px;
+			background-color: rgba(211, 211, 211, 0.2901960784313726);
+
+			a {
+				text-decoration: none;
+				color: black
+			}
+
+
+			&.active {
+				opacity: 1;
+				display: block;
+			}
+		}
+	}
 	}
 
 	.carousel-move {
@@ -418,7 +468,7 @@
 
 	.auto-height {
 	    height: 800px;	
-		overflow: hidden;
+		overflow: visible;
 	}
 
 	.wrapper-container {
@@ -436,9 +486,8 @@
 	    top: 0;
 	    width: 55%;
 	    z-index: 0;
-	    height: 705px;
-			right: -72px;
-			display: block;
+		right: 0px;
+		display: block;
 	    position: absolute;
 	}
 
@@ -658,7 +707,7 @@
 
 	.auto-height {
 		height: 800px;
-		overflow: hidden;
+		overflow: visible;
 	}
 
 
@@ -666,7 +715,7 @@
 		top: 0;
 		z-index: 0;
 		width: 55%;
-		right: -140px;
+		right: 0;
 		position: absolute;
 	}
 

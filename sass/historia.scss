@@ -1,7 +1,175 @@
-	.bg-linear-yellow {
-		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+.bg-linear-yellow {
+	background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+}
+
+.circuloRuta,
+.ball,
+#animacion-propuesta-bottom-path,
+.puntos{
+	display: none ;
+}
+
+
+#historia {
+	background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+
+	overflow-x: hidden;
+
+	.middle-left,
+	.historia {
+		top: 0;
+		width: 49%;
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+
+		img {
+			width: 100vw;
+		}
 	}
 
+
+	.lineatiempo {
+
+		width: 40%;
+		margin-left: 14%;
+
+    	a {
+    		cursor: pointer;
+    		
+    		img {
+				width: 100%;
+
+			}
+		}
+	}
+
+	.middle-left	{
+		width: 50%;
+		top: 113px;
+	}
+
+	.historia {
+	    width: 90%;
+	    top: -80px;
+	    padding: 0 12px 0;
+    }
+
+	.left, .right {
+		float: right;
+		position: relative;
+		width: 100%;
+	}
+
+	.puntos {
+      top: 50%;
+      left: 80%;
+      width: 100%;
+      position: absolute;
+      display: none;
+
+      	.square {
+      		&-pink {
+      			display: none;
+      		}
+
+      		&-green {
+				display: none;     			
+      		}
+      	}
+
+      	img {
+      		width: 100%;
+      	}
+	}
+
+
+	.left {
+
+		p {
+			margin-top: 0;
+			padding: 21px;
+			font-size: 17px;
+		}
+
+		.ver-mas {
+			position: absolute;
+			right: 0;
+
+			button {
+				border: none;
+				cursor: pointer;
+				background-color: transparent;
+			}
+
+			img {
+				width: 100px;
+			}
+		}
+	}
+
+	.wrapper-lista-descripcion {
+	    height: auto !important;
+		transform: unset;
+	}
+
+	.slick-slide {
+		height: auto !important;
+
+		img {
+			width: 80%;
+			height: 340px;
+			margin: 0 auto;
+			border-radius: 50%;
+		}
+	}
+
+	ul {
+
+		right: 0;
+		position: absolute;
+
+		button.instalaciones {
+			left: 130px;
+			width: 170px;
+			color: white;
+			height: 55px;
+			display: block;
+			cursor: pointer;
+			font-size: 20px;
+			line-height: 60px;
+			margin-left: auto;
+			padding-left: 7px;
+			text-align: center;
+			text-decoration: none;
+			background-size: cover;
+			background-image: url(img/submenu.png);
+			background-color: transparent;
+			border: none;
+		}
+
+		li {
+
+			opacity: 0;
+			width: 170px;
+			color: white;
+			height: 55px;
+			display: none;
+			margin-left: auto;
+			text-align: center;
+
+			a {
+				text-decoration: none;
+			}
+
+
+			&.active {
+				opacity: 1;
+				display: block;
+			}
+		}
+	}
+}
 
 @media screen and (min-width: 768px) {
 	.circuloRuta,
@@ -29,7 +197,7 @@
 		.middle-left,
 		.historia {
 			top: 0;
-			width: 49%;
+			width: 48%;
 			position: relative;
 			display: inline-block;
 			vertical-align: middle;
@@ -42,12 +210,14 @@
 		.left, .right {
 			float: right;
 			position: relative;
+			width: 50%;
 		}
 
 		.puntos {
 	      top: 50%;
 	      left: 80%;
 	      width: 100%;
+	      display: block;
 	      position: absolute;
 
 	      	.square {
@@ -57,6 +227,7 @@
 					top: -55px;
 					left: 122px;
 					position: relative;
+					display: block;
 					background-color: rgba(255, 192, 203, 0.5490196078431373);
 	      		}
 
@@ -66,6 +237,7 @@
 					top: -45px;
 					left: 122px;
 					position: relative;
+					display: block;
 				    background-color: rgba(0, 128, 0, 0.32941176470588235);	      			
 	      		}
 	      	}
@@ -77,6 +249,11 @@
 
 
 		.left {
+
+			.position {
+				top: -10%;
+			}
+
 
 			p {
 				font-size: 17px;
@@ -101,11 +278,17 @@
 
 		.wrapper-lista-descripcion {
 		    height: auto !important;
-			transform: translateY(0);
+			transform: translateY(-110%);
 		}
 
 		.slick-slide {
 			height: auto !important;
+
+			img {
+				border-radius: 50%;
+				height: 330px;
+				width: 80%;
+			}
 		}
 
 		ul {
@@ -185,6 +368,14 @@
 			transform: translateY(-105%);
 		}
 
+		.slick-slide {
+			img {
+				border-radius: 50%;
+				height: 400px;
+				width: 80%;
+			}
+		}
+
 	}
 }
 
@@ -199,7 +390,8 @@
 			height: auto !important;
 
 			img {
-				width: 70%;
+			    width: 80%;
+			    height: 570px;
 			}
 		}
 
@@ -245,6 +437,7 @@
 			max-width: 1800px;
 			position: absolute;
 			height: 100% !important;
+			transform: translateY(-95%);
 		}
 	}
 }

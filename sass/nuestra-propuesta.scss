@@ -30,6 +30,14 @@
 	}
 
 	.slick-slide {
+
+		img {
+			width: 80%;
+			margin: 0 auto;
+			border-radius: 50%;
+			height: 300px;
+		}
+
 		p {
 			padding: 30px;
 		}
@@ -38,6 +46,10 @@
 
 
 @media screen and (min-width: 768px) {
+
+	.scalar {
+		display: block !important;
+	}
 
 	#page-propuesta-educativa {
 
@@ -125,6 +137,8 @@
 
 					img {
 						width: 100%;
+						height: 340px;
+						border-radius: 50%;
 					}
 				}
 			}
@@ -156,7 +170,7 @@
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
-			max-width: 700px;
+			max-width: 645px;
 			position: absolute;
 			height: 100% !important;
 			transform: translateY(100px);
@@ -180,6 +194,11 @@
 
 
 @media screen and (min-width: 1024px) {
+
+		.scalar {
+			display: block;
+		}
+
 		#page-propuesta-educativa {
 
 			.container-maxw,
@@ -202,6 +221,15 @@
 			    left: 70px;
 		    }			
 
+		    .slider-propuesta {
+				.slick-slide {
+					img {
+						width: 100%;
+						height: 400px !important;
+					}
+				}
+		    }
+
 			.full-width {
 				p {
 					font-size: 19px;
@@ -216,12 +244,18 @@
 
 
 @media screen and (min-width: 1300px){
+
+	.scalar {
+		display: block !important;
+	}
+		
 	#page-propuesta-educativa {
 		.slider-propuesta {
 			.right {
 				.slick-slide {
 					img {
 						width: 100%;
+						height: 600px !important;
 					}
 				}
 			}
@@ -229,7 +263,8 @@
 		}		
 
 		.slider-propuesta .left p {
-			font-size: 21px;
+			font-size: 25px;
+			line-height: 25px;
 		}
 
 		.wrapper-slider-fotos {
@@ -267,6 +302,11 @@
 
 
 @media screen and (min-width: 1900px) and (max-width: 200000px){
+
+	.scalar {
+		display: block !important;
+	}
+		
 	#page-propuesta-educativa {
 		.container-maxw,
 		.wrapper-lista-descripcion {

@@ -38,8 +38,9 @@
 		.slick-slide img {
 		    display: block;
 		    border-radius: 50%;
-		    width: 80%;
+		    width: 90%;
 		    margin: 0 auto;
+		    height: 360px;
 		}
 	}
 
@@ -113,7 +114,9 @@
 
 			img {
 				border-radius: 50%;
-				margin-left: 21px;
+				width: 90%;
+				margin: 0 auto;
+				height: 360px;
 			}
 
 			p {
@@ -267,6 +270,7 @@
 
 		.left img, .right img {
 			width: 95%;
+			height: 450px !important;
 		}
 
 	}
@@ -317,8 +321,7 @@
 			height: 100% !important;
 			transform: translateY(280px);
 
-			transform: translateY(160px);
-					
+						
 			.slick-slide {
 				img {
 					width: 100%;

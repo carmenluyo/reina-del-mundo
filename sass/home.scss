@@ -15,7 +15,7 @@ body {
     display: block;
     
     div.header {
-        height: 800px;
+        height: auto;
         background-image: url(img/puntos.png);
 
         img {
@@ -37,6 +37,20 @@ body {
             }
         }
     }
+
+    .img-mobile-home {
+        img {
+            width: 100%;
+        }
+    }
+
+    .logos-home {
+        img {
+            display: block;
+            width: 250px;
+            margin: 21px auto 35px;
+        }
+    }
 }
 
 .logo-rmd img {
@@ -50,11 +64,26 @@ body {
     display: none;
 }
 
+
+
+
+@media screen and (min-width: 760px) {
+    .logo-rmd {
+        top: 100% !important;
+    }
+
+}
+
 @media screen and (min-width: 768px) {
 
     .simple-mobile {
         display: none;
     } 
+
+    .logo-rmd img {
+        width: 88%;
+        margin-top: 28px;
+    }
 
     .inicio {
         display: block;
@@ -88,7 +117,7 @@ body {
             }
             p {
                 color: #fff;
-                font-size: 16px;
+                font-size: 15px;
             }
         }
 
@@ -126,7 +155,7 @@ body {
         }
 
         .slick-list {
-            height: 100%;
+            height: 360px !important;
         }
 
         .slider-home {
@@ -146,6 +175,9 @@ body {
         }
 
         .box-logos {
+
+            width: 50%;
+            margin: 10% 10px;
             right: 0;
             bottom: 0;
             float: right;
@@ -191,37 +223,61 @@ body {
             .tab-1,
             .tab-2,
             .tab-3,
-            .tab-4 {
+            .tab-4,
+            .tab-5,
+            .tab-6,
+            .tab-7{
                 left: 0;
                 width: 400px;
                 height: 400px;
-                bottom: 109px;
+                bottom: 135px;
                 position: absolute;
                 background-size: cover;
             }
 
             .tab-1 {
-                z-index: 4;
+                z-index: 6;
                 background-image: url(img/tab1.png);
             }
 
             .tab-2 {
-                z-index: 3;
+                z-index: 5;
                 background-image: url(img/tab2.png);
             }
 
             .tab-3 {
-                z-index: 2;
+                z-index: 4;
                 background-image: url(img/tab3.png);
             }
 
             .tab-4 {
-                z-index: 1;
+                z-index: 3;
+                background-image: url(img/tab4.png);
+
             }
+            
+            .tab-5 {
+                z-index: 2;
+                background-image: url(img/tab5.png);
+
+            }
+
+            .tab-6 {
+                z-index: 1;
+                background-image: url(img/tab6.png);
+
+            }
+
+            .tab-7 {
+                z-index: 0;
+                background-image: url(img/tab7.png);
+
+            }
+
         }
 
         .slick-slide {
-            height: 554px !important;
+            height: 360px !important;
             margin-top: 35px;
         }
 
@@ -242,25 +298,21 @@ body {
             top: 170% !important;
     
             img {
-                width: 100% !important;
-            }
-        }
-    
-        .box-logos {
-            right: 0;
-            bottom: 200px;
-            margin-right: 21%;
-    
-            img {
-                display: block;
-                width: 80px;
+                width: 130px;
+                margin-left: 0;
+                margin-top: 28px;
             }
         }
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .logo-rmd {
+        top: 21% !important;
+    }
+
     .inicio {
+
         .navegacion-simple-ul {
             li {
                 a {
@@ -274,6 +326,7 @@ body {
         }   
     
         .box-logos {
+            width: auto;
             right: 0;
             bottom: 0;
             float: right;
@@ -288,10 +341,19 @@ body {
                 width: 84px;
             }
         }
+
+        .submenu > a {
+            font-size: 16px;
+        }
     }
 }
 
 @media screen and (min-width: 1300px) {
+
+    .navegacion-simple-ul {
+        margin-right: 6%;
+    }
+    
     .inicio {
         .box-text-float {
             top: 15%;
@@ -310,8 +372,13 @@ body {
         }
     
         .box-logos {
+            width: auto;
+            bottom: 2px;
+            margin: 0;
+
+
             img {
-                width: 100px;
+                width: 90px;
             }
         }
     
@@ -323,14 +390,19 @@ body {
             .tab-1,
             .tab-2,
             .tab-3,
-            .tab-4 {
-                width: 600px;
-                height: 600px;
+            .tab-4,
+            .tab-5,
+            .tab-6,
+            .tab-7 {
+                width: 500px;
+                height: 500px;
                 bottom: 107px;
             }
         }
     
         .navegacion-simple-ul {
+            margin-right: 6%;
+
             li {
                 a {
                     font-size: 22px;
@@ -346,6 +418,10 @@ body {
             left: 5% !important;
             top: 31px !important;
             position: absolute;
+
+            img {
+                width: 100%;
+            }
         }  
     }
 }
@@ -358,13 +434,19 @@ body {
             height: auto !important;
         }
         
-        .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4 {
-            width: 530px;
-            height: 530px; 
+        .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4,  .tabs-info .tab-5,  .tabs-info .tab-6, .tabs-info .tab-7 {
+            width: 500px;
+            height: 500px; 
+            bottom: 107px;
+
         }
     
         .slick-list {
-            height: 550px !important;
+            height: 520px !important;
+        }
+
+        .box-logos {
+            bottom: -0;
         }
     }
 }
@@ -373,22 +455,28 @@ body {
 @media screen and (min-width: 1500px) {
     .inicio {
         .slick-list {
-            height: 650px !important;
+            height: 520px !important;
         }
     }
 }
 
 
 @media screen and (min-width: 2560px) {
+
+    .logo-rmd img {
+        width: 320px;
+        margin-top: 80px;
+    }
+
     .inicio {
-        .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4 {
+        .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4 , .tabs-info .tab-5,  .tabs-info .tab-6, .tabs-info .tab-7 {
             width: 1000px;
             height: 900px; 
             bottom: 126px;
         }
     
         .slick-list {
-            height: 600px !important;
+            height: 900px !important;
         }
     
         .box-text-float {
