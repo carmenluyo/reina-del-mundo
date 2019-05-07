@@ -1,5 +1,4 @@
 jQuery(document).ready(function ($) {
-
     $('.tab_content').hide();
     $('.tab_content:first').show();
     $('.items').click(function(event) {
