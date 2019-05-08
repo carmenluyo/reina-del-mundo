@@ -71,6 +71,11 @@ body {
 
 
 @media screen and (min-width: 760px) {
+
+    #inicio {
+        overflow: hidden;
+    }
+    
     .logo-rmd {
         top: 100% !important;
     }
@@ -413,8 +418,13 @@ body {
 
 @media screen and (min-width: 1024px) {
 
+    #inicio {
+        overflow-x: hidden;
+    }
+
     .container-full {
         padding-top: 60px;
+        height: 100%;
     }
 
     .logo-rmd {
