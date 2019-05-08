@@ -6,60 +6,6 @@ body {
     cursor: url('img/cursor.png'), auto;
 }
 
-ul.slick-dots {
-    z-index: 9;
-    width: auto;
-    padding: 0 21px;
-    text-align: left;
-    list-style-type: decimal !important;
-
-    li {
-
-        width: 40px;
-        height: 40px;
-        margin: 0 5px;
-        
-        button {
-            height: 40px;
-            width: 40px;
-            border: none;
-            color: white;
-            font-size: 15px;
-            background-color: #C83C41;
-            box-shadow: 0 9px#fbb800;
-        }
-
-        button:active {
-            background-color: #C83C41;
-            box-shadow: 0 5px #fbb800;
-            transform: translateY(4px);
-        }
-
-        button:hover,
-        button:focus {
-              -webkit-animation-name: shakeme;
-              -webkit-animation-duration: 0.8s;
-              -webkit-transform-origin:50% 50%;
-              -webkit-animation-iteration-count: infinite;
-              -webkit-animation-timing-function: linear;
-        }
-
-        @keyframes shakeme {
-            0%{transform:rotate(0deg);}
-            25%{transform:rotate(-10deg);}
-            50%{transform:rotate(0deg);}
-            75%{transform:rotate(10deg);}
-            100%{transform:rotate(0deg);}
-        }
-          
-
-
-        &.slick-active button:before,
-        button::before {
-            color: transparent !important;
-        }
-    }
-}
 
 .wrapper-inicio {
     width: 100vw;
@@ -130,6 +76,21 @@ ul.slick-dots {
 }
 
 @media screen and (min-width: 768px) {
+
+    ul.slick-dots {
+        bottom: 500px;
+        padding: 0 13px;
+    }
+
+    ul.slick-dots li {
+        width: 30px;
+        height: 30px;
+
+        button {
+            height: 30px;
+            width: 30px;    
+        }
+    }
 
     .simple-mobile {
         display: none;
@@ -208,10 +169,6 @@ ul.slick-dots {
                 text-align: right;
                 padding-right: 28px;
             }
-        }
-
-        .slick-list {
-            height: 360px !important;
         }
 
         .slider-home {
@@ -333,7 +290,6 @@ ul.slick-dots {
         }
 
         .slick-slide {
-            height: 360px !important;
             margin-top: 35px;
         }
 
@@ -380,6 +336,10 @@ ul.slick-dots {
     .navegacion-simple-ul {
         margin-top: 0;
     }
+
+    .slick-dots {
+        bottom: 540px;
+    }
     
 
     .inicio {
@@ -416,12 +376,7 @@ ul.slick-dots {
             }
         }   
 
-        .slick-list {
-            height: 525px !important;
-        }
-
         .slick-slide {
-            height: 400px !important;
             margin-top: 35px;
         }
     
@@ -438,7 +393,7 @@ ul.slick-dots {
     
             img {
                 display: inline-block;
-                width: 84px;
+                width: 78px;
             }
         }
 
@@ -461,11 +416,11 @@ ul.slick-dots {
             width: 450px;
 
             h3 {
-                font-size: 33px;
+                font-size: 36px;
             }
     
             p {
-                font-size: 20px;
+                font-size: 16px;
             }
         }
     
@@ -533,14 +488,87 @@ ul.slick-dots {
             }
         }  
     }
+
+    ul.slick-dots {
+        z-index: 9;
+        width: auto;
+        padding: 0 21px;
+        text-align: left;
+        list-style-type: decimal !important;
+    
+        li {
+    
+            width: 40px;
+            height: 40px;
+            margin: 0 5px;
+            
+            button {
+                height: 40px;
+                width: 40px;
+                border: none;
+                color: white;
+                font-size: 15px;
+                background-color: #C83C41;
+                box-shadow: 0 9px#fbb800;
+            }
+    
+            button:active {
+                background-color: #C83C41;
+                box-shadow: 0 5px #fbb800;
+                transform: translateY(4px);
+            }
+    
+            button:hover,
+            button:focus {
+                  -webkit-animation-name: shakeme;
+                  -webkit-animation-duration: 0.8s;
+                  -webkit-transform-origin:50% 50%;
+                  -webkit-animation-iteration-count: infinite;
+                  -webkit-animation-timing-function: linear;
+            }
+    
+            @keyframes shakeme {
+                0%{transform:rotate(0deg);}
+                25%{transform:rotate(-10deg);}
+                50%{transform:rotate(0deg);}
+                75%{transform:rotate(10deg);}
+                100%{transform:rotate(0deg);}
+            }
+              
+    
+            &.slick-active {
+    
+                -webkit-animation-name: shakeme;
+                -webkit-animation-duration: 0.8s;
+                -webkit-transform-origin:50% 50%;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                
+        
+                @keyframes shakeme {
+                    0%{transform:rotate(0deg);}
+                    25%{transform:rotate(-10deg);}
+                    50%{transform:rotate(0deg);}
+                    75%{transform:rotate(10deg);}
+                    100%{transform:rotate(0deg);}
+                }
+            }
+    
+    
+            &.slick-active button:before,
+            button::before {
+                color: transparent !important;
+            }
+        }
+    }    
 }
 
 
 @media screen and (min-width: 1440px) {
     .inicio {
         .slick-slide {
+            height: 540px;
             margin-top: 35px;
-            height: auto !important;
         }
         
         .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4,  .tabs-info .tab-5,  .tabs-info .tab-6, .tabs-info .tab-7 {
@@ -549,11 +577,6 @@ ul.slick-dots {
             bottom: 50px;
         }
     
-        .slick-slide,
-        .slick-list {
-            height: 550px !important;
-        }
-
         .box-logos {
             bottom: -0;
         }
@@ -584,20 +607,17 @@ ul.slick-dots {
             bottom: 126px;
         }
     
-        .slick-list {
-            height: 900px !important;
-        }
     
         .box-text-float {
             width: 650px;
             padding-left: 21px;
     
             h3 {
-                font-size: 56px;
+                font-size: 36px;
             }
     
             p {
-                font-size: 30px;
+                font-size: 16px;
             }
         }
     

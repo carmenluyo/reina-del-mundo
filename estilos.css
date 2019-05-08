@@ -2702,50 +2702,6 @@ body {
   font-style: normal;
   cursor: url("img/cursor.png"), auto; }
 
-ul.slick-dots {
-  z-index: 9;
-  width: auto;
-  padding: 0 21px;
-  text-align: left;
-  list-style-type: decimal !important; }
-  ul.slick-dots li {
-    width: 40px;
-    height: 40px;
-    margin: 0 5px; }
-    ul.slick-dots li button {
-      height: 40px;
-      width: 40px;
-      border: none;
-      color: white;
-      font-size: 15px;
-      background-color: #C83C41;
-      box-shadow: 0 9px #fbb800; }
-    ul.slick-dots li button:active {
-      background-color: #C83C41;
-      box-shadow: 0 5px #fbb800;
-      transform: translateY(4px); }
-    ul.slick-dots li button:hover,
-    ul.slick-dots li button:focus {
-      -webkit-animation-name: shakeme;
-      -webkit-animation-duration: 0.8s;
-      -webkit-transform-origin: 50% 50%;
-      -webkit-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear; }
-@keyframes shakeme {
-  0% {
-    transform: rotate(0deg); }
-  25% {
-    transform: rotate(-10deg); }
-  50% {
-    transform: rotate(0deg); }
-  75% {
-    transform: rotate(10deg); }
-  100% {
-    transform: rotate(0deg); } }
-    ul.slick-dots li.slick-active button:before,
-    ul.slick-dots li button::before {
-      color: transparent !important; }
-
 .wrapper-inicio {
   width: 100vw;
   height: 800px; }
@@ -2787,6 +2743,17 @@ ul.slick-dots {
   .logo-rmd {
     top: 100% !important; } }
 @media screen and (min-width: 768px) {
+  ul.slick-dots {
+    bottom: 500px;
+    padding: 0 13px; }
+
+  ul.slick-dots li {
+    width: 30px;
+    height: 30px; }
+    ul.slick-dots li button {
+      height: 30px;
+      width: 30px; }
+
   .simple-mobile {
     display: none; }
 
@@ -2831,8 +2798,6 @@ ul.slick-dots {
       .inicio .slick-track .slick-slide {
         text-align: right;
         padding-right: 28px; }
-    .inicio .slick-list {
-      height: 360px !important; }
     .inicio .slider-home {
       right: 0;
       width: 100%;
@@ -2908,7 +2873,6 @@ ul.slick-dots {
         z-index: 0;
         background-image: url(img/tab7.png); }
     .inicio .slick-slide {
-      height: 360px !important;
       margin-top: 35px; }
     .inicio .navegacion-simple-ul li a {
       font-size: 14px; }
@@ -2935,6 +2899,9 @@ ul.slick-dots {
   .navegacion-simple-ul {
     margin-top: 0; }
 
+  .slick-dots {
+    bottom: 540px; }
+
   .inicio .box-text-float {
     top: 15%;
     width: 350px;
@@ -2953,10 +2920,7 @@ ul.slick-dots {
     font-size: 20px; }
     .inicio .navegacion-simple-ul li a br {
       display: block; }
-  .inicio .slick-list {
-    height: 525px !important; }
   .inicio .slick-slide {
-    height: 400px !important;
     margin-top: 35px; }
   .inicio .box-logos {
     width: auto;
@@ -2970,7 +2934,7 @@ ul.slick-dots {
     margin: 0; }
     .inicio .box-logos img {
       display: inline-block;
-      width: 84px; }
+      width: 78px; }
   .inicio .submenu > a {
     font-size: 16px; } }
 @media screen and (min-width: 1300px) {
@@ -2982,9 +2946,9 @@ ul.slick-dots {
     top: 15%;
     width: 450px; }
     .inicio .box-text-float h3 {
-      font-size: 33px; }
+      font-size: 36px; }
     .inicio .box-text-float p {
-      font-size: 20px; }
+      font-size: 16px; }
   .inicio .slider-home .slick-slide .image-slider {
     width: 65%; }
   .inicio .slider-home .slick-slide .image-nav {
@@ -3018,18 +2982,76 @@ ul.slick-dots {
     top: 31px !important;
     position: absolute; }
     .inicio .logo-rmd img {
-      width: 100%; } }
+      width: 100%; }
+
+  ul.slick-dots {
+    z-index: 9;
+    width: auto;
+    padding: 0 21px;
+    text-align: left;
+    list-style-type: decimal !important; }
+    ul.slick-dots li {
+      width: 40px;
+      height: 40px;
+      margin: 0 5px; }
+      ul.slick-dots li button {
+        height: 40px;
+        width: 40px;
+        border: none;
+        color: white;
+        font-size: 15px;
+        background-color: #C83C41;
+        box-shadow: 0 9px #fbb800; }
+      ul.slick-dots li button:active {
+        background-color: #C83C41;
+        box-shadow: 0 5px #fbb800;
+        transform: translateY(4px); }
+      ul.slick-dots li button:hover,
+      ul.slick-dots li button:focus {
+        -webkit-animation-name: shakeme;
+        -webkit-animation-duration: 0.8s;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear; }
+  @keyframes shakeme {
+    0% {
+      transform: rotate(0deg); }
+    25% {
+      transform: rotate(-10deg); }
+    50% {
+      transform: rotate(0deg); }
+    75% {
+      transform: rotate(10deg); }
+    100% {
+      transform: rotate(0deg); } }
+      ul.slick-dots li.slick-active {
+        -webkit-animation-name: shakeme;
+        -webkit-animation-duration: 0.8s;
+        -webkit-transform-origin: 50% 50%;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear; }
+  @keyframes shakeme {
+    0% {
+      transform: rotate(0deg); }
+    25% {
+      transform: rotate(-10deg); }
+    50% {
+      transform: rotate(0deg); }
+    75% {
+      transform: rotate(10deg); }
+    100% {
+      transform: rotate(0deg); } }
+      ul.slick-dots li.slick-active button:before,
+      ul.slick-dots li button::before {
+        color: transparent !important; } }
 @media screen and (min-width: 1440px) {
   .inicio .slick-slide {
-    margin-top: 35px;
-    height: auto !important; }
+    height: 540px;
+    margin-top: 35px; }
   .inicio .tabs-info .tab-1, .inicio .tabs-info .tab-2, .inicio .tabs-info .tab-3, .inicio .tabs-info .tab-4, .inicio .tabs-info .tab-5, .inicio .tabs-info .tab-6, .inicio .tabs-info .tab-7 {
     width: 650px;
     height: 533px;
     bottom: 50px; }
-  .inicio .slick-slide,
-  .inicio .slick-list {
-    height: 550px !important; }
   .inicio .box-logos {
     bottom: -0; } }
 @media screen and (min-width: 1500px) {
@@ -3044,15 +3066,13 @@ ul.slick-dots {
     width: 1000px;
     height: 900px;
     bottom: 126px; }
-  .inicio .slick-list {
-    height: 900px !important; }
   .inicio .box-text-float {
     width: 650px;
     padding-left: 21px; }
     .inicio .box-text-float h3 {
-      font-size: 56px; }
+      font-size: 36px; }
     .inicio .box-text-float p {
-      font-size: 30px; }
+      font-size: 16px; }
   .inicio .box-logos img {
     width: 180px; } }
 .pizza-content img,
