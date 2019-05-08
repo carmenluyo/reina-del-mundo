@@ -76,7 +76,7 @@
 
 	.wrapper-lista-descripcion-p {
 		visibility: visible !important;
-		margin-top: 111px;
+		margin-top: 30px;
 	}
 }
 
@@ -102,6 +102,8 @@
 
 .left-inside-shape {
 	display: block;
+	bottom: -358px;
+	position: unset;
 
 }
 
@@ -498,13 +500,18 @@
 	}
 
 	.fondo-colegio .slick-slide {
-		height: 354px !important;
-		margin-top: 0;
+		height: auto !important;
+		margin-top: 4%;
   }
 }
 
 
 @media screen and (min-width: 1024px) {
+
+	.left-inside-shape {
+		display: block;
+	}
+
 
 	.hidden-lg {
 		display: none;
@@ -549,12 +556,17 @@
 
 
 	.red-bg--absolute  {
-	    top: 0;
-	    width: 55%;
-	    z-index: 0;
-		right: 0px;
+		top: 31%;
+		width: 65%;
+		z-index: 0;
+		right: -118px;
 		display: block;
-	    position: absolute;
+		position: absolute;
+		overflow: visible;
+
+	    img {
+	    	width: 100%;
+	    }
 	}
 
 
@@ -664,8 +676,8 @@
 			}
 
 	    p {
-			width: 70%;
-			font-size: 13px;
+			width: 60%;
+			font-size: 15px;
 			margin-right: 0;
 			margin-left: auto;
 	    }
@@ -724,7 +736,7 @@
 	}
 
 	.fondo-colegio .slick-slide {
-		height: 400px !important;
+		height: auto !important;
 	}
 
 }
@@ -778,10 +790,9 @@
 
 
 	.red-bg--absolute  {
-		top: 0;
+		top: 25%;
 		z-index: 0;
 		width: 55%;
-		right: 0;
 		position: absolute;
 	}
 

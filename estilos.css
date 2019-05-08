@@ -3303,7 +3303,7 @@ body {
   top: 0; }
 #colegio .wrapper-lista-descripcion-p {
   visibility: visible !important;
-  margin-top: 111px; }
+  margin-top: 30px; }
 
 .hidden-lg {
   display: block; }
@@ -3321,7 +3321,9 @@ body {
 
 @media screen and (min-width: 768px) {
   .left-inside-shape {
-    display: block; }
+    display: block;
+    bottom: -358px;
+    position: unset; }
 
   #conIsrna
   .left-inside-shape {
@@ -3633,9 +3635,12 @@ body {
     margin-left: 14%; }
 
   .fondo-colegio .slick-slide {
-    height: 354px !important;
-    margin-top: 0; } }
+    height: auto !important;
+    margin-top: 4%; } }
 @media screen and (min-width: 1024px) {
+  .left-inside-shape {
+    display: block; }
+
   .hidden-lg {
     display: none; }
 
@@ -3669,12 +3674,15 @@ body {
     height: 100% !important; }
 
   .red-bg--absolute {
-    top: 0;
-    width: 55%;
+    top: 31%;
+    width: 65%;
     z-index: 0;
-    right: 0px;
+    right: -118px;
     display: block;
-    position: absolute; }
+    position: absolute;
+    overflow: visible; }
+    .red-bg--absolute img {
+      width: 100%; }
 
   .line-yellow {
     top: 10%;
@@ -3764,8 +3772,8 @@ body {
       position: relative;
       font-size: normal; }
     .word-inside p {
-      width: 70%;
-      font-size: 13px;
+      width: 60%;
+      font-size: 15px;
       margin-right: 0;
       margin-left: auto; }
 
@@ -3808,7 +3816,7 @@ body {
     margin-left: 14%; }
 
   .fondo-colegio .slick-slide {
-    height: 400px !important; } }
+    height: auto !important; } }
 @media screen and (min-width: 1200px) {
   .hidden-lg {
     display: none; }
@@ -3845,10 +3853,9 @@ body {
     overflow: visible; }
 
   .red-bg--absolute {
-    top: 0;
+    top: 25%;
     z-index: 0;
     width: 55%;
-    right: 0;
     position: absolute; }
 
   .line-yellow {
