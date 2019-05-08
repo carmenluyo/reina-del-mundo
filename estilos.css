@@ -4256,6 +4256,8 @@ body {
 
   #page-propuesta-educativa ul.slick-dots {
     bottom: -50px; }
+  #page-propuesta-educativa .wrapper-slider-fotos .slick-slide {
+    height: 400px !important; }
   #page-propuesta-educativa .container-maxw .instalaciones {
     right: 9px;
     position: absolute; }
