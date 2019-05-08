@@ -3204,7 +3204,8 @@ body {
     height: 700px !important; }
   .inicio .slider-single {
     width: 65%;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-top: -20px; }
     .inicio .slider-single h3 {
       line-height: 10rem; }
   .inicio .box-logos {
@@ -4400,7 +4401,7 @@ body {
     border-radius: 50%;
     width: 90%;
     margin: 0 auto;
-    height: 360px; }
+    height: 340px; }
 #areaformativa .slick-slide p {
   padding: 0 7%; }
 
@@ -4412,6 +4413,12 @@ body {
     height: 1 !important;
     background-repeat: no-repeat;
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
+    #areaformativa ul.slick-dots {
+      padding: 0; }
+      #areaformativa ul.slick-dots li button {
+        font-size: 15px;
+        background-color: #9C6550;
+        box-shadow: 0 9px #477486; }
     #areaformativa .seccion-text-right {
       width: 50%; }
       #areaformativa .seccion-text-right .instalaciones {
@@ -4433,22 +4440,26 @@ body {
       display: inline-block;
       vertical-align: top; }
     #areaformativa .middle-side {
-      height: 100vh;
+      height: 80vh;
       position: relative; }
       #areaformativa .middle-side .line1 {
         position: absolute;
-        bottom: 0;
+        bottom: -203px;
         width: 150%;
-        left: 120px;
+        right: -96%;
         z-index: -1; }
+      #areaformativa .middle-side .big-triangle-move {
+        position: absolute;
+        right: -50%;
+        bottom: 5%; }
     #areaformativa .slick-slide {
-      height: 420px !important;
+      height: 500px !important;
       margin-top: 35px; }
       #areaformativa .slick-slide img {
-        border-radius: 50%;
         width: 90%;
+        height: 340px;
         margin: 0 auto;
-        height: 360px; }
+        border-radius: 50%; }
       #areaformativa .slick-slide p {
         padding: 0; }
     #areaformativa .left,
@@ -4458,13 +4469,20 @@ body {
       position: relative;
       display: inline-block;
       vertical-align: middle; }
-    #areaformativa .wrapper-lista-descripcion {
-      transform: translateY(-100px); }
     #areaformativa .left p {
       color: #2e366a;
       margin-left: 0; }
     #areaformativa .slick-prev, #areaformativa .slick-next {
       display: none !important; }
+    #areaformativa .wrapper-lista-descripcion {
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 740px;
+      height: 60% !important;
+      transform: unset;
+      overflow: hidden; }
 
   @keyframes rotating {
     0% {
@@ -4483,7 +4501,7 @@ body {
     background: #F5DD6B;
     border-radius: 50%;
     position: absolute;
-    right: -50px;
+    right: -20%;
     top: 35%; }
 
   .triangle {
@@ -4528,6 +4546,8 @@ body {
     background-repeat: no-repeat;
     height: fit-content !important;
     width: auto !important; }
+    #areaformativa ul.slick-dots {
+      bottom: 0; }
     #areaformativa #top-formativo {
       z-index: 2; }
     #areaformativa .seccion-text-right-titulo {
@@ -4540,19 +4560,21 @@ body {
       left: 0;
       right: 0;
       width: 100%;
+      margin-top: 0;
       margin: 0 auto;
-      max-width: 900px;
-      height: 100% !important;
-      transform: translateY(280px);
-      transform: translateY(-30px); }
-      #areaformativa .wrapper-lista-descripcion .slick-slide {
-        height: 600px !important; }
+      max-width: 1000px;
+      transform: unset;
+      overflow: hidden;
+      height: 80% !important; }
+      #areaformativa .wrapper-lista-descripcion .slick-slide img {
+        height: 100% !important; }
     #areaformativa .left p {
       font-size: 20px;
       line-height: 20px; }
     #areaformativa .left img, #areaformativa .right img {
-      width: 95%;
-      height: 6																																																																																																																																																																																																																																																																																																																																																																																																																																																50px !important; } }
+      width: 95%; }
+    #areaformativa .slick-slide {
+      height: 440px !important; } }
 @media screen and (min-width: 1300px) {
   .bg-linear-pink {
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
@@ -4581,14 +4603,20 @@ body {
       right: 0;
       width: 100%;
       margin: 0 auto;
-      max-width: 950px;
-      height: 100% !important;
-      transform: translateY(280px); }
-      #areaformativa .wrapper-lista-descripcion .slick-slide img {
-        width: 100%; }
+      margin-top: 7%;
+      overflow: hidden;
+      max-width: 1272px;
+      height: 85% !important; }
+      #areaformativa .wrapper-lista-descripcion .slick-slide {
+        height: 500px !important; }
+        #areaformativa .wrapper-lista-descripcion .slick-slide img {
+          width: 80%;
+          height: 100%; }
     #areaformativa .left p {
-      font-size: 25px;
-      line-height: 20px; }
+      width: 62%;
+      margin-top: 14%;
+      font-size: 20px;
+      line-height: 25px; }
     #areaformativa .triangle {
       right: -37%; }
       #areaformativa .triangle--brown {
@@ -4599,10 +4627,8 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1272px;
-    height: 100% !important;
-    transform: translateY(280px);
-    transform: translateY(280px); }
+    max-width: 1500px;
+    height: 100% !important; }
     #areaformativa .wrapper-lista-descripcion .slick-slide {
       height: 750px !important; }
   #areaformativa .slick-list {
