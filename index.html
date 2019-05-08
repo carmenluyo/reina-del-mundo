@@ -255,6 +255,17 @@
 								¿Quiénes Somos?
 							</h3>
 							<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-Alemania.Nuestra propuesta educativa está centrada en el alumno como persona.  Por ello, es parte fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y armónico.</p>
+							<nav class="redes">
+								<a href="">
+									<img src="img/facebook.png" alt="">
+								</a>
+								<a href="">
+									<img src="img/linkedin.png" alt="">
+								</a>
+								<a href="">
+									<img src="img/instagram.png" alt="">
+								</a>
+							</nav>
 						</div>
 					</div>
 					<div class="tab-2">
@@ -263,6 +274,17 @@
 								¿Cuál es nuestro objetivo?
 							</h3>
 							<p>Somos un centro educativo confesional católico peruano alemán, cuya promotoría es la Congregación de Misioneras de San Vicente de Paul, que tiene su origen en Hildesheim-Alemania.Nuestra propuesta educativa está centrada en el alumno como persona.  Por ello, es parte fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y armónico.</p>
+							<nav class="redes">
+								<a href="">
+									<img src="img/facebook.png" alt="">
+								</a>
+								<a href="">
+									<img src="img/linkedin.png" alt="">
+								</a>
+								<a href="">
+									<img src="img/instagram.png" alt="">
+								</a>
+							</nav>
 						</div>
 					</div>
 					<div class="tab-3">
@@ -277,6 +299,17 @@
 								fundamental de nuestra tarea, conocer a cada estudiante a profundidad, con sus fortalezas y 
 								aspectos a potenciar; para poder lograr, en sinergia con los padres, un desarrollo perdurable y 
 								armónico. </p>
+							<nav class="redes">
+								<a href="">
+									<img src="img/facebook.png" alt="">
+								</a>
+								<a href="">
+									<img src="img/linkedin.png" alt="">
+								</a>
+								<a href="">
+									<img src="img/instagram.png" alt="">
+								</a>
+							</nav>	
 						</div>
 					</div>
 
@@ -301,6 +334,17 @@
 									alumno a cargo de
 									un preceptor.
 									</p>
+								<nav class="redes">
+									<a href="">
+										<img src="img/facebook.png" alt="">
+									</a>
+									<a href="">
+										<img src="img/linkedin.png" alt="">
+									</a>
+									<a href="">
+										<img src="img/instagram.png" alt="">
+									</a>
+								</nav>		
 							</div>
 					</div>
 
@@ -330,6 +374,17 @@
 									certificaciones
 									Cambridge de ingles.
 									</p>
+									<nav class="redes">
+										<a href="">
+											<img src="img/facebook.png" alt="">
+										</a>
+										<a href="">
+											<img src="img/linkedin.png" alt="">
+										</a>
+										<a href="">
+											<img src="img/instagram.png" alt="">
+										</a>
+									</nav>
 																</div>
 					</div>
 
@@ -355,6 +410,17 @@
 									de ciencias, entre
 									otros.
 									</p>
+									<nav class="redes">
+										<a href="">
+											<img src="img/facebook.png" alt="">
+										</a>
+										<a href="">
+											<img src="img/linkedin.png" alt="">
+										</a>
+										<a href="">
+											<img src="img/instagram.png" alt="">
+										</a>
+									</nav>									
 							</div>
 					</div>	
 					<div class="tab-7">
@@ -373,6 +439,17 @@
 									el conocimiento de
 									otras culturas.
 								</p>
+								<nav class="redes">
+									<a href="">
+										<img src="img/facebook.png" alt="">
+									</a>
+									<a href="">
+										<img src="img/linkedin.png" alt="">
+									</a>
+									<a href="">
+										<img src="img/instagram.png" alt="">
+									</a>
+								</nav>								
 							</div>
 					</div>															
 			</div>
@@ -440,7 +517,7 @@
 				slidesToScroll: 1,
 				autoplay: true,
 				autoplaySpeed: 5000,
-				arrows: false,
+				arrows: true,
 				fade: true,
 				dots: true,
 				adaptiveHeight: false,
@@ -548,14 +625,22 @@
 		if($(window).width() > 700) {
 
 			var heightTab = $(".tab-1").height();
-			var heightSlide = $(".slick-slide").height();
+			var heightSlide = $(".slick-slide img").innerHeight();
 		
 			$("ul.slick-dots").insertBefore($( ".tab-1" ));
-			$(".box-logos").css("top", heightSlide + 100);
+			$(".box-logos").css("top", heightSlide + 200);
 
 			if($(window).width() > 1500) {
 				$("ul.slick-dots").css("bottom", heightTab + 60);
-ººº			}
+			}
+
+			if($(window).width() > 1500) {
+				$(".box-logos").css("top", heightSlide + 100);
+			}
+
+			if($(window).width() > 1900) {
+				$(".box-logos").css("top", heightSlide);
+			}
 		}
 
 		$('html, body').css("height", window.innerHeight);
@@ -574,7 +659,7 @@
 				slidesToScroll: 1,
 				autoplay: true,
 				autoplaySpeed: 8000,
-				arrows: false,
+				arrows: true,
 				fade: true,
 				adaptiveHeight: true,
 				infinite: false,
