@@ -3905,7 +3905,7 @@ body {
 
   .fondo-colegio .slick-slide {
     margin-top: 0;
-    height: 430px !important; } }
+    height: auto !important; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {
   .hidden-lg {
     display: none; }
