@@ -625,22 +625,8 @@
 		if($(window).width() > 700) {
 
 			var heightTab = $(".tab-1").height();
-			var heightSlide = $(".slick-slide img").innerHeight();
 		
 			$("ul.slick-dots").insertBefore($( ".tab-1" ));
-			$(".box-logos").css("top", heightSlide + 200);
-
-			if($(window).width() > 1500) {
-				$("ul.slick-dots").css("bottom", heightTab + 60);
-			}
-
-			if($(window).width() > 1500) {
-				$(".box-logos").css("top", heightSlide + 100);
-			}
-
-			if($(window).width() > 1900) {
-				$(".box-logos").css("top", heightSlide);
-			}
 		}
 
 		$('html, body').css("height", window.innerHeight);

@@ -2883,6 +2883,7 @@ body {
       position: relative; }
       .inicio .slider-home .slick-slide .image-slider {
         width: 100%;
+        height: 100%;
         display: inline-block; }
       .inicio .slider-home .slick-slide .image-nav {
         width: 450px; }
@@ -2895,7 +2896,8 @@ body {
       text-align: right;
       margin: 10% 10px;
       position: absolute;
-      display: inline-block; }
+      display: inline-block;
+      background-color: white; }
       .inicio .box-logos img {
         display: inline-block;
         width: 74px; }
@@ -2969,7 +2971,8 @@ body {
 
   .container-full {
     padding-top: 60px;
-    height: 100%; }
+    height: 88%;
+    position: relative; }
 
   .logo-rmd {
     top: 0 !important; }
@@ -3067,12 +3070,14 @@ body {
     width: 100%;
     right: 0;
     bottom: 0;
+    margin: 0;
+    height: 20%;
     float: right;
     overflow: auto;
-    margin: 0;
     text-align: right;
     position: absolute;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
     .inicio .box-logos img {
       display: inline-block;
       width: 80px; }
@@ -3095,8 +3100,6 @@ body {
   .inicio .slider-home .slick-slide .image-nav {
     width: 100%; }
   .inicio .box-logos {
-    width: auto;
-    bottom: 2px;
     margin: 0; }
     .inicio .box-logos img {
       width: 120px; }
@@ -3188,25 +3191,25 @@ body {
         color: transparent !important; } }
 @media screen and (min-width: 1440px) {
   .inicio .slick-slide {
-    height: 540px;
+    height: 600px;
     margin-top: 35px; }
   .inicio .tabs-info .tab-1, .inicio .tabs-info .tab-2, .inicio .tabs-info .tab-3, .inicio .tabs-info .tab-4, .inicio .tabs-info .tab-5, .inicio .tabs-info .tab-6, .inicio .tabs-info .tab-7 {
     width: 580px;
     height: 533px;
     bottom: 50px; }
   .inicio .box-logos {
-    bottom: -0; } }
+    bottom: 0; } }
 @media screen and (min-width: 1500px) {
   .inicio .slick-list {
     height: 700px !important; }
   .inicio .slider-single {
-    width: 70%;
+    width: 65%;
     margin-left: auto; }
     .inicio .slider-single h3 {
       line-height: 10rem; }
   .inicio .box-logos {
     width: 100%;
-    bottom: -60px;
+    bottom: 0;
     margin-top: 0; }
     .inicio .box-logos img {
       display: inline-block;
@@ -3221,7 +3224,7 @@ body {
       line-height: 10rem; }
   .inicio .box-logos {
     width: 100%;
-    bottom: -50px;
+    bottom: 0;
     margin-top: 20px; }
     .inicio .box-logos img {
       display: inline-block;
