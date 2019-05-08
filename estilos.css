@@ -4254,6 +4254,8 @@ body {
   .scalar {
     display: block !important; }
 
+  #page-propuesta-educativa ul.slick-dots {
+    bottom: -50px; }
   #page-propuesta-educativa .container-maxw .instalaciones {
     right: 9px;
     position: absolute; }
@@ -4267,7 +4269,7 @@ body {
         width: 10%;
         vertical-align: middle; }
   #page-propuesta-educativa .slick-slide {
-    height: auto !important; }
+    height: 400px !important; }
   #page-propuesta-educativa .wrapper-slider-fotos {
     left: 21px; }
   #page-propuesta-educativa .full-width p {
@@ -4304,8 +4306,8 @@ body {
       #page-propuesta-educativa .slider-propuesta .right .slick-slide {
         margin: 35px 0; }
         #page-propuesta-educativa .slider-propuesta .right .slick-slide img {
-          width: 85%;
-          height: 340px;
+          width: 80%;
+          height: 300px;
           border-radius: 50%; }
     #page-propuesta-educativa .slider-propuesta .left p {
       margin-right: 0;
@@ -4313,9 +4315,11 @@ body {
       font-size: 16px;
       text-align: right;
       line-height: 18px;
-      color: #2e366a; }
+      color: #2e366a;
+      width: auto;
+      margin-top: 21%; }
     #page-propuesta-educativa .slider-propuesta .slider.slider-nav.slick-initialized.slick-slider {
-      width: 380px; }
+      width: auto; }
   #page-propuesta-educativa .circulo-verde-bottom-nuestraPropuesta {
     width: 150px;
     height: 150px; }
@@ -4324,10 +4328,10 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 645px;
+    max-width: 740px;
     position: absolute;
     height: 100% !important;
-    transform: translateY(100px); }
+    transform: unset; }
     #page-propuesta-educativa .wrapper-lista-descripcion .slick-list {
       height: auto !important; }
 
@@ -4346,17 +4350,18 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 945px;
+    max-width: 1000px;
     position: absolute;
-    height: 100% !important; }
-  #page-propuesta-educativa .wrapper-lista-descripcion {
-    transform: translateY(280px);
-    max-width: 800px; }
+    margin-top: 8%;
+    transform: unset;
+    height: 80% !important; }
   #page-propuesta-educativa .wrapper-slider-fotos {
     left: 70px; }
   #page-propuesta-educativa .slider-propuesta .slick-slide img {
-    width: 90%;
-    height: 640px; }
+    width: 80%;
+    height: 400px !important; }
+  #page-propuesta-educativa .slick-slide {
+    height: 500px !important; }
   #page-propuesta-educativa .full-width p {
     font-size: 19px; }
   #page-propuesta-educativa .full-width div.h-700 {
@@ -4367,10 +4372,10 @@ body {
 
   #page-propuesta-educativa .slider-propuesta .right .slick-slide img {
     width: 80%;
-    height: 600px !important; }
+    height: 500px !important; }
   #page-propuesta-educativa .slider-propuesta .left p {
-    font-size: 25px;
-    line-height: 25px; }
+    font-size: 21px;
+    line-height: 22px; }
   #page-propuesta-educativa .wrapper-slider-fotos {
     left: 150px; }
   #page-propuesta-educativa .slider-nav .slick-list {
@@ -4381,14 +4386,23 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1250px;
-    height: 100% !important; }
-  #page-propuesta-educativa .wrapper-lista-descripcion {
-    transform: translateY(290px); }
+    max-width: 1272px;
+    margin-top: 8%;
+    height: 80% !important; }
   #page-propuesta-educativa .slider.slider-nav.slick-initialized.slick-slider {
     width: 580px !important; }
   #page-propuesta-educativa .circulo-verde-bottom-nuestraPropuesta {
     bottom: 190px; } }
+@media screen and (min-width: 1350px) {
+  #page-propuesta-educativa .container-maxw,
+  #page-propuesta-educativa .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1272px;
+    margin-top: 10%;
+    height: 80% !important; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {
   .scalar {
     display: block !important; }
@@ -4399,10 +4413,9 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
+    margin-top: 8%;
     max-width: 1500px !important;
-    height: 100% !important; }
-  #page-propuesta-educativa .wrapper-lista-descripcion {
-    transform: translateY(280px); } }
+    height: 100% !important; } }
 #areaformativa h1 {
   padding-top: 0; }
 #areaformativa .seccion-text-right {
