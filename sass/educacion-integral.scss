@@ -16,11 +16,6 @@
     border-radius: 50%;
 }
 
-.img-educacion-top {
-	top: 40%;
-    width: 50%;
-}
-
 .imagen-educacion-circular {
   top: 110px;
   height: 180px;
@@ -37,6 +32,7 @@
 		left: 0%;
 		top: 208px;
 		z-index: 3;
+		top: 10%;
 	}
 
 	.seccion-text-right {
@@ -64,8 +60,11 @@
 	}
 
 	.imagen-educacion-circular {
-	  top: 68%;
-	  height: auto;
+		  top: 38%;
+		  height: auto;
+		  width: 450px;
+		  margin-right: auto;
+		  margin-left: auto;
 	}	
 }
 

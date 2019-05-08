@@ -291,13 +291,15 @@ body.removerScroll{
   width: 100vw;
   height: 100vh;
   background-color: #EAB720;
+  background-image: url('img/fondo-menu-mb.jpg');
+  background-size: cover;
+
+  @media screen and (min-width: 768px) {
+      background-image: url('img/fondo-menu.jpg');
+      background-size: cover;
+  }
 }
-.contendorTransition-svg{
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  bottom: 0;
-}
+
 
 .transitionsuave{
   transform: translateY(0vh);

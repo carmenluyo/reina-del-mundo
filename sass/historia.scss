@@ -24,7 +24,7 @@
 		vertical-align: middle;
 
 		img {
-			width: 100vw;
+			width: 90vw;
 		}
 	}
 
@@ -32,6 +32,7 @@
 	.lineatiempo {
 
 		width: 40%;
+		bottom: -60px;
 		margin-left: 14%;
 
     	a {
@@ -110,7 +111,6 @@
 
 	.wrapper-lista-descripcion {
 	    height: auto !important;
-		transform: unset;
 	}
 
 	.slick-slide {
@@ -127,7 +127,9 @@
 	ul {
 
 		right: 0;
+
 		position: absolute;
+		z-index: 9;
 
 		button.instalaciones {
 			left: 130px;
@@ -147,27 +149,6 @@
 			background-color: transparent;
 			border: none;
 		}
-
-		li {
-
-			opacity: 0;
-			width: 170px;
-			color: white;
-			height: 55px;
-			display: none;
-			margin-left: auto;
-			text-align: center;
-
-			a {
-				text-decoration: none;
-			}
-
-
-			&.active {
-				opacity: 1;
-				display: block;
-			}
-		}
 	}
 }
 
@@ -176,6 +157,31 @@
 	.ball,
 	#animacion-propuesta-bottom-path{
 		display: block ;
+		position: absolute;
+
+	}
+
+	.lineatiempo {
+
+		width: 40%;
+		bottom: 0;
+		margin-left: 14%;
+		position: absolute;
+
+    	a {
+    		cursor: pointer;
+    		
+    		img {
+				width: 100%;
+
+			}
+		}
+	}
+
+
+	#animacion-propuesta-bottom-path{
+		background-image: url('img/shape-bg.jpg');
+		background-size: cover;
 	}
 
 	@keyframes rotating {
@@ -218,6 +224,7 @@
 	      left: 80%;
 	      width: 100%;
 	      display: block;
+	      z-index: 1;
 	      position: absolute;
 
 	      	.square {
@@ -225,7 +232,7 @@
 					width: 100px;
 					height: 100px;
 					top: -55px;
-					left: 122px;
+					left: 233px;
 					position: relative;
 					display: block;
 					background-color: rgba(255, 192, 203, 0.5490196078431373);
@@ -235,7 +242,7 @@
 					width: 100px;
 					height: 100px;
 					top: -45px;
-					left: 122px;
+					left: 203px;
 					position: relative;
 					display: block;
 				    background-color: rgba(0, 128, 0, 0.32941176470588235);	      			
@@ -257,7 +264,7 @@
 
 			p {
 				font-size: 17px;
-				margin-top: 50px;
+				margin-top: 0;
 			}
 
 			.ver-mas {
@@ -277,8 +284,15 @@
 		}
 
 		.wrapper-lista-descripcion {
-		    height: auto !important;
-			transform: translateY(-110%);
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			margin-top: 0;
+			transform: unset;
+			max-width: 740px;
+			position: absolute;
+			height: 60% !important;
 		}
 
 		.slick-slide {
@@ -286,7 +300,7 @@
 
 			img {
 				border-radius: 50%;
-				height: 330px;
+				height: 300px;
 				width: 80%;
 			}
 		}
@@ -299,11 +313,12 @@
 			button.instalaciones {
 				left: 130px;
 				width: 170px;
-				color: white;
+				color: #cc534e;
 				height: 55px;
 				display: block;
 				cursor: pointer;
 				font-size: 20px;
+				font-weight: 800;
 				line-height: 60px;
 				margin-left: auto;
 				padding-left: 7px;
@@ -313,27 +328,6 @@
 				background-image: url(img/submenu.png);
 				background-color: transparent;
 				border: none;
-			}
-
-			li {
-
-				opacity: 0;
-				width: 170px;
-				color: white;
-				height: 55px;
-				display: none;
-				margin-left: auto;
-				text-align: center;
-
-				a {
-					text-decoration: none;
-				}
-
-
-				&.active {
-					opacity: 1;
-					display: block;
-				}
 			}
 		}
 	}
@@ -362,10 +356,10 @@
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
-			max-width: 1800px;
+			margin-top: 8%;
+			max-width: 1000px;
 			position: absolute;
-			height: auto !important;
-			transform: translateY(-105%);
+			height: 60% !important;
 		}
 
 		.slick-slide {
@@ -390,8 +384,8 @@
 			height: auto !important;
 
 			img {
-			    width: 80%;
-			    height: 570px;
+			    width: 70%;
+			    height: 455px;
 			}
 		}
 
@@ -434,10 +428,10 @@
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
-			max-width: 1800px;
+			margin-top: 8%;
+			max-width: 1272px;
 			position: absolute;
-			height: 100% !important;
-			transform: translateY(-95%);
+			height: 80% !important;
 		}
 	}
 }
@@ -453,7 +447,7 @@
 		right: 0;
 		width: 100%;
 		margin: 0 auto;
-		max-width: 1800px;
+		max-width: 1500px;
 		position: absolute;
 		height: 100% !important;
 	}

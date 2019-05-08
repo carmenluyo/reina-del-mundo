@@ -53,6 +53,17 @@
 
 	#page-propuesta-educativa {
 
+		ul.slick-dots {
+			bottom: -50px;
+		}
+
+
+		.wrapper-slider-fotos {
+			.slick-slide {
+				height: 400px !important;
+			}
+		}
+
 		.container-maxw {
 			.instalaciones {
 				right: 9px;
@@ -74,7 +85,7 @@
 		}
 		
 		.slick-slide  {
-			height: auto !important;
+			height: 400px !important;
 		}
 
 		.wrapper-slider-fotos {
@@ -136,25 +147,27 @@
 					margin: 35px 0;
 
 					img {
-						width: 100%;
-						height: 340px;
+						width: 80%;
+						height: 300px;
 						border-radius: 50%;
 					}
 				}
 			}
 
 			.left p {
-				margin-right: 14%;
+				margin-right: 0;
 				margin-left: 0 !important;
 				font-size: 16px;
-				text-align: left;
+				text-align: right;
 				line-height: 18px;
 				color: #2e366a;
+				width: auto;
+				margin-top: 21%;
 			}
 
 
 			.slider.slider-nav.slick-initialized.slick-slider {
-				width: 380px;
+				width: auto;
 			}
 		}
 
@@ -170,10 +183,10 @@
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
-			max-width: 645px;
+			max-width: 740px;
 			position: absolute;
 			height: 100% !important;
-			transform: translateY(100px);
+			transform: unset;
 
 
 			.slick-list {
@@ -207,14 +220,11 @@
 				right: 0;
 				width: 100%;
 				margin: 0 auto;
-				max-width: 945px;
+				max-width: 1000px;
 				position: absolute;
-				height: 100% !important;
-			}
-
-			.wrapper-lista-descripcion {
-				transform: translateY(280px);
-				max-width: 800px;
+				margin-top: 8%;
+				transform: unset;
+				height: 80% !important;
 			}
 
 			.wrapper-slider-fotos {
@@ -224,11 +234,15 @@
 		    .slider-propuesta {
 				.slick-slide {
 					img {
-						width: 100%;
+						width: 80%;
 						height: 400px !important;
 					}
 				}
 		    }
+
+    		.slick-slide  {
+				height: 500px !important;
+			}
 
 			.full-width {
 				p {
@@ -254,8 +268,8 @@
 			.right {
 				.slick-slide {
 					img {
-						width: 100%;
-						height: 600px !important;
+						width: 80%;
+						height: 500px !important;
 					}
 				}
 			}
@@ -263,8 +277,8 @@
 		}		
 
 		.slider-propuesta .left p {
-			font-size: 25px;
-			line-height: 25px;
+			font-size: 21px;
+			line-height: 22px;
 		}
 
 		.wrapper-slider-fotos {
@@ -281,13 +295,11 @@
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
-			max-width: 1250px;
-			height: 100% !important;
+			max-width: 1272px;
+			margin-top: 8%;
+			height: 80% !important;
 		}
-	
-		.wrapper-lista-descripcion {
-			transform: translateY(290px);
-		}
+
 	
 		.slider.slider-nav.slick-initialized.slick-slider {
 			width: 580px !important;
@@ -296,6 +308,24 @@
 		.circulo-verde-bottom-nuestraPropuesta {
 			bottom: 190px;
 		}
+	}
+}
+
+@media screen and (min-width: 1350px){
+	
+	#page-propuesta-educativa {
+
+		.container-maxw,
+		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 1272px;
+			margin-top: 10%;
+			height: 80% !important;
+		}
+
 	}
 
 }
@@ -314,12 +344,9 @@
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
+			margin-top: 8%;
 			max-width: 1500px !important;
 			height: 100% !important;
-		}
-	
-		.wrapper-lista-descripcion {
-			transform: translateY(280px);
 		}
 	}
 }
