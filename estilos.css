@@ -3941,9 +3941,10 @@ body {
     vertical-align: middle; }
     #historia .middle-left img,
     #historia .historia img {
-      width: 100vw; }
+      width: 90vw; }
   #historia .lineatiempo {
     width: 40%;
+    bottom: -60px;
     margin-left: 14%; }
     #historia .lineatiempo a {
       cursor: pointer; }
@@ -3986,8 +3987,7 @@ body {
     #historia .left .ver-mas img {
       width: 100px; }
   #historia .wrapper-lista-descripcion {
-    height: auto !important;
-    transform: unset; }
+    height: auto !important; }
   #historia .slick-slide {
     height: auto !important; }
     #historia .slick-slide img {
@@ -4021,7 +4021,22 @@ body {
   .circuloRuta,
   .ball,
   #animacion-propuesta-bottom-path {
-    display: block; }
+    display: block;
+    position: absolute; }
+
+  .lineatiempo {
+    width: 40%;
+    bottom: 0;
+    margin-left: 14%;
+    position: absolute; }
+    .lineatiempo a {
+      cursor: pointer; }
+      .lineatiempo a img {
+        width: 100%; }
+
+  #animacion-propuesta-bottom-path {
+    background-image: url("img/shape-bg.jpg");
+    background-size: cover; }
 
   @keyframes rotating {
     0% {
@@ -4056,6 +4071,7 @@ body {
       left: 80%;
       width: 100%;
       display: block;
+      z-index: 1;
       position: absolute; }
       #historia .puntos .square-pink {
         width: 100px;
@@ -4079,7 +4095,7 @@ body {
       top: -10%; }
     #historia .left p {
       font-size: 17px;
-      margin-top: 50px; }
+      margin-top: 0; }
     #historia .left .ver-mas {
       position: absolute;
       right: 0; }
@@ -4090,13 +4106,20 @@ body {
       #historia .left .ver-mas img {
         width: 100px; }
     #historia .wrapper-lista-descripcion {
-      height: auto !important;
-      transform: translateY(-110%); }
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 0;
+      transform: unset;
+      max-width: 740px;
+      position: absolute;
+      height: 60% !important; }
     #historia .slick-slide {
       height: auto !important; }
       #historia .slick-slide img {
         border-radius: 50%;
-        height: 330px;
+        height: 300px;
         width: 80%; }
     #historia ul {
       right: 0;
@@ -4104,11 +4127,12 @@ body {
       #historia ul button.instalaciones {
         left: 130px;
         width: 170px;
-        color: white;
+        color: #cc534e;
         height: 55px;
         display: block;
         cursor: pointer;
         font-size: 20px;
+        font-weight: 800;
         line-height: 60px;
         margin-left: auto;
         padding-left: 7px;
@@ -4135,10 +4159,10 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1800px;
+    margin-top: 8%;
+    max-width: 1000px;
     position: absolute;
-    height: auto !important;
-    transform: translateY(-105%); }
+    height: 60% !important; }
   #historia .slick-slide img {
     border-radius: 50%;
     height: 400px;
@@ -4151,7 +4175,7 @@ body {
     height: auto !important; }
     #historia .slick-slide img {
       width: 70%;
-      height: 500px; }
+      height: 455px; }
   #historia .puntos {
     top: 50%;
     left: 80%;
@@ -4181,10 +4205,10 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1800px;
+    margin-top: 8%;
+    max-width: 1272px;
     position: absolute;
-    height: 100% !important;
-    transform: translateY(-100%); } }
+    height: 80% !important; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {
   .bg-linear-yellow {
     background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
@@ -4194,7 +4218,7 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1500px;
     position: absolute;
     height: 100% !important; } }
 #page-propuesta-educativa .scalar {
