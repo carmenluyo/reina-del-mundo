@@ -2608,13 +2608,50 @@ body.removerScroll {
   background-position: center;
   height: 100vh;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding: 0 250px 0 200px; }
+  padding: 0; }
+  @media screen and (min-width: 790px) {
+    .miscelanea {
+      padding: 0 250px 0 85px; } }
+  @media screen and (min-width: 1100px) {
+    .miscelanea {
+      padding: 0 250px 0 200px; } }
+  .miscelanea .scalar {
+    position: absolute;
+    bottom: -132px;
+    left: -15px;
+    right: auto;
+    top: auto; }
+    @media screen and (min-width: 790px) {
+      .miscelanea .scalar {
+        top: -70px;
+        right: -88px;
+        bottom: auto;
+        left: auto; } }
+  .miscelanea .img-rdm {
+    bottom: -161px;
+    position: absolute;
+    right: 21px; }
+    .miscelanea .img-rdm .logo-img {
+      width: 175px; }
+    @media screen and (min-width: 790px) {
+      .miscelanea .img-rdm {
+        bottom: -142px;
+        position: absolute;
+        right: 30px; }
+        .miscelanea .img-rdm .logo-img {
+          width: 121px; } }
+    @media screen and (min-width: 1100px) {
+      .miscelanea .img-rdm {
+        right: -184px; }
+        .miscelanea .img-rdm .logo-img {
+          width: 250px; } }
   .miscelanea .content {
-    width: 1100px;
+    width: 500px;
     margin: 0 auto;
-    height: 100vh;
+    height: 350px;
+    position: relative;
     background-image: url(img/miscelanea/fondo-slide-end.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -2626,7 +2663,7 @@ body.removerScroll {
     .miscelanea .content img {
       width: 200px; }
     .miscelanea .content .slider-fotos-miscelanea {
-      width: 350px !important; }
+      width: 220px !important; }
       .miscelanea .content .slider-fotos-miscelanea .slick-list {
         height: auto !important; }
       @media screen and (min-width: 1024px) {
@@ -2643,10 +2680,14 @@ body.removerScroll {
         height: auto !important;
         padding: 0;
         margin-top: 0; }
+    @media screen and (min-width: 1100px) {
+      .miscelanea .content {
+        height: 500px;
+        width: 700px; } }
   .miscelanea .overlay {
     position: absolute;
-    bottom: 50%;
-    right: 52px;
+    bottom: 55px;
+    right: 21px;
     width: 355px;
     text-align: center;
     margin: 0 auto; }
@@ -2657,6 +2698,10 @@ body.removerScroll {
         color: #FF7167; }
         .miscelanea .overlay .items a:hover {
           opacity: 0.7; }
+    @media screen and (min-width: 790px) {
+      .miscelanea .overlay {
+        bottom: 50%;
+        right: 52px; } }
 
 body {
   width: 100%; }
