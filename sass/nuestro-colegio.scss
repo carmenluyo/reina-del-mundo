@@ -306,9 +306,9 @@
 	    width: 50%;
 	    height: 100%;
         margin-right: 5%;
-		position: absolute;
-		margin-top: -60px;
-		top: 35%;	
+			position: absolute;
+			margin-top: -60px;
+			top: 35%;	
 
 			h1 {
 				z-index: 4;
@@ -676,7 +676,7 @@
 			}
 
 	    p {
-			width: 60%;
+			width: 70%;
 			font-size: 15px;
 			margin-right: 0;
 			margin-left: auto;
@@ -872,8 +872,11 @@
 		width: 400px;
 	}
 
-	.word-inside {
-		top: 200px;
+	.red-bg--absolute {
+		top: 25%;
+		z-index: 0;
+		width: 50%;
+		position: absolute;
 	}
 
 	.wrapper-container {
@@ -884,5 +887,21 @@
 		max-width: 1900px;
 		position: absolute;
 		height: 100% !important;
+	}
+}
+
+
+
+@media screen and (min-height: 600px) and (max-height: 768px){
+	.inicio .tabs-info{
+		bottom: -100px;
+	}
+
+	.inicio .box-logos {
+		bottom: 5%;
+	}
+
+	.container-full.inicio {
+		padding-top: 0;
 	}
 }
