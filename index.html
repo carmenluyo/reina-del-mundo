@@ -248,6 +248,7 @@
 
 		<div class="slider-home">
 			<div class="tabs-info">
+
 					<div class="tab-1">
 						<div class="box-text-float">
 							<h3>
@@ -438,11 +439,12 @@
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				autoplay: true,
-				autoplaySpeed: 8000,
+				autoplaySpeed: 5000,
 				arrows: false,
 				fade: true,
-				adaptiveHeight: true,
-				infinite: false,
+				dots: true,
+				adaptiveHeight: false,
+				infinite: true,
 				useTransform: true,
 				speed: 400,
 				cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
@@ -464,8 +466,6 @@
 
 
 		$('.slider-single').on('afterChange', function(event, slick, currentSlide){   
-
-			console.log(currentSlide);
 
 			if(currentSlide == 0) {
 				$(".tab-1").css("z-index" , 6);
@@ -538,12 +538,20 @@
 				$(".tab-3").css("z-index" , 2);
 				$(".tab-4").css("z-index" , 1);
 				$(".tab-5").css("z-index" , 0);
-				$(".tab-6").css("z-index" , 6);	
-				$(".tab-7").css("z-index" , 5);	
+				$(".tab-6").css("z-index" , 5);	
+				$(".tab-7").css("z-index" , 6);	
 
 			}		
+
 		});
 
+		if($(window).width() > 900) {
+
+			var heightTab = $(".tab-1").height() + 50;
+		
+			$("ul.slick-dots").insertBefore($( ".tab-1" ));
+			$("ul.slick-dots").css("bottom", heightTab);
+		}
 	});
 </script>
 

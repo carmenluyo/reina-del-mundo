@@ -6,6 +6,61 @@ body {
     cursor: url('img/cursor.png'), auto;
 }
 
+ul.slick-dots {
+    z-index: 9;
+    width: auto;
+    padding: 0 21px;
+    text-align: left;
+    list-style-type: decimal !important;
+
+    li {
+
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+        
+        button {
+            height: 40px;
+            width: 40px;
+            border: none;
+            color: white;
+            font-size: 15px;
+            background-color: #C83C41;
+            box-shadow: 0 9px#fbb800;
+        }
+
+        button:active {
+            background-color: #C83C41;
+            box-shadow: 0 5px #fbb800;
+            transform: translateY(4px);
+        }
+
+        button:hover,
+        button:focus {
+              -webkit-animation-name: shakeme;
+              -webkit-animation-duration: 0.8s;
+              -webkit-transform-origin:50% 50%;
+              -webkit-animation-iteration-count: infinite;
+              -webkit-animation-timing-function: linear;
+        }
+
+        @keyframes shakeme {
+            0%{transform:rotate(0deg);}
+            25%{transform:rotate(-10deg);}
+            50%{transform:rotate(0deg);}
+            75%{transform:rotate(10deg);}
+            100%{transform:rotate(0deg);}
+        }
+          
+
+
+        &.slick-active button:before,
+        button::before {
+            color: transparent !important;
+        }
+    }
+}
+
 .wrapper-inicio {
     width: 100vw;
     height: 800px;
@@ -450,7 +505,7 @@ body {
             .tab-7 {
                 width: 650px;
                 height: 533px;
-                bottom: 50px;
+                bottom: 35px;
             }
         }
     
