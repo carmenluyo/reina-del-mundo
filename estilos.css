@@ -2858,7 +2858,7 @@ body {
         margin-right: 50px; }
     .inicio .slider-single {
       width: 65%;
-      margin-left: auto; }
+      margin: 60px 0 0 auto; }
       .inicio .slider-single h3 {
         line-height: 10rem; }
     .inicio .slider-nav .slick-slide {
