@@ -132,3 +132,15 @@ input[type=number] {
    
   }
 }
+
+
+
+
+@media(min-width: 1024px){
+   #page-admision {
+      background-image: url('img/niños-inicial.jpeg'); 
+      background-position: center; 
+      background-repeat: no-repeat; 
+      background-size: cover
+   }
+}

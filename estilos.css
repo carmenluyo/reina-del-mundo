@@ -1900,6 +1900,12 @@ input[type=number] {
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.3);
   color: #c83c41; }
 
+@media (min-width: 1024px) {
+  #page-admision {
+    background-image: url("img/niños-inicial.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 .preload {
   position: absolute;
   z-index: 9999;
