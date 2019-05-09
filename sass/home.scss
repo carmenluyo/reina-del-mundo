@@ -12,54 +12,45 @@ body {
     height: 800px;
 }
 
-.simple-mobile {
-    display: block;
+
+#inicio {
+    overflow: hidden;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-image: url('./mobile/home.jpg');
     
-    div.header {
-        height: auto;
-        background-image: url(img/puntos.png);
-
-        img {
-            top: 0%;
-            width: 100%;
-            position: absolute;
-        }
-
-        .info {
-            position: absolute;
-            bottom: 0;
-            padding: 21px;
-            background: #ca434b;
-            color: white;
-
-            p {
-                font-size: 15px;
-                margin-bottom: 30px;
-            }
-        }
+    .container-full {
+        padding-top: 50px;
     }
+}
 
-    .img-mobile-home {
-        img {
-            width: 100%;
-        }
-    }
+.simple-mobile {
+    
+
+    padding: 0 35px;
+    margin: 60% 0;
 
     .logos-home {
-        display: block;
-
         img {
-            display: block;
-            width: 250px;
-            margin: 21px auto 35px;
+            width: 100%;
+        }
+    }
+
+    nav {
+        background: red;
+        text-align: center;
+        padding: 21px 0;
+			background-color: #25337E;
+
+        a  {
+            padding: 0 14px;
+            text-decoration: none;
         }
     }
 }
 
 .logo-rmd img {
-    width: 90px;
-    margin-left: 8px;
-    margin-top: 28px;
+    display: none;
 }
 
 
@@ -74,10 +65,17 @@ body {
 
     #inicio {
         overflow: hidden;
+        background-image: unset;
     }
     
     .logo-rmd {
-        top: 100% !important;
+        top: 0;
+        left: 0;
+        position: absolute;
+
+        img {
+            display: block;
+        }
     }
     
     .logos-home {
@@ -104,7 +102,7 @@ body {
 @media screen and (min-width: 768px) {
 
     ul.slick-dots {
-        bottom: 500px;
+        bottom: 470px;
         padding: 0 13px;
         z-index: 9;
         width: auto;
@@ -350,39 +348,46 @@ body {
 
             .tab-1 {
                 z-index: 6;
+                background-repeat: no-repeat;
                 background-image: url(img/tab1.png);
             }
 
             .tab-2 {
                 z-index: 5;
+                background-repeat: no-repeat;
                 background-image: url(img/tab2.png);
             }
 
             .tab-3 {
                 z-index: 4;
+                background-repeat: no-repeat;
                 background-image: url(img/tab3.png);
             }
 
             .tab-4 {
                 z-index: 3;
+                background-repeat: no-repeat;
                 background-image: url(img/tab4.png);
 
             }
             
             .tab-5 {
                 z-index: 2;
+                background-repeat: no-repeat;
                 background-image: url(img/tab5.png);
 
             }
 
             .tab-6 {
                 z-index: 1;
+                background-repeat: no-repeat;
                 background-image: url(img/tab6.png);
 
             }
 
             .tab-7 {
                 z-index: 0;
+                background-repeat: no-repeat;
                 background-image: url(img/tab7.png);
 
             }

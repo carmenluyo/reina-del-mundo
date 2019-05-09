@@ -1,8 +1,27 @@
 
 #page-propuesta-educativa {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('./mobile/niveles_educativos-mob.jpg');
 
-	.left {
+	h1.titulo-interno {
+		margin: 14px;
+		font-size: 32px;
+		color: #c74f47;
+	}
 
+	p.text-mobile-prop {
+		width: 300px;
+		margin-top: 0;
+		margin: 0 auto;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		color: #25337C;
+
+		br {
+			display: none;
+		}
 	}
 
 	.scalar {
@@ -32,20 +51,48 @@
 	.slick-slide {
 
 		img {
-			width: 80%;
+			width: 75%;
 			margin: 0 auto;
 			border-radius: 50%;
-			height: 300px;
+			height: 250px;
 		}
 
 		p {
 			padding: 30px;
+			color: #25336d;
 		}
+	}
+
+
+	.slick-arrow {
+		display: none !important;
 	}
 }
 
 
+@media screen and (min-width: 375px) { 
+	#page-propuesta-educativa .slick-slide img {
+		width: 80%;
+		margin: 0 auto;
+		border-radius: 50%;
+		height: 300px;
+	}
+}
+
+@media screen and (min-width: 425px){ 
+	#page-propuesta-educativa .slick-slide img {
+		width: 80%;
+		margin: 0 auto;
+		border-radius: 50%;
+		height: 350px;
+	}
+}
+
 @media screen and (min-width: 768px) {
+	#page-propuesta-educativa {
+		background-image: unset;
+		background-color: #F8EBB7;
+	}
 
 	.scalar {
 		display: block !important;
@@ -56,7 +103,6 @@
 		ul.slick-dots {
 			bottom: -50px;
 		}
-
 
 		.wrapper-slider-fotos {
 			.slick-slide {
@@ -315,7 +361,6 @@
 	
 	#page-propuesta-educativa {
 
-		.container-maxw,
 		.wrapper-lista-descripcion {
 			left: 0;
 			right: 0;
@@ -324,6 +369,16 @@
 			max-width: 1272px;
 			margin-top: 10%;
 			height: 80% !important;
+		}
+
+
+
+		.slider-fotos {
+			width: 620px !important;
+			height: 600px !important;
+			img {
+				width: 100%
+			}
 		}
 
 	}
@@ -338,15 +393,20 @@
 	}
 		
 	#page-propuesta-educativa {
-		.container-maxw,
 		.wrapper-lista-descripcion {
 			left: 0;
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
-			margin-top: 8%;
-			max-width: 1500px !important;
+			margin-top: 10%;
+			max-width: 1200px !important;
 			height: 100% !important;
 		}
+	}
+
+
+	#page-propuesta-educativa .slider-propuesta .right .slick-slide img {
+		width: 66%;
+		height: 400px !important;
 	}
 }

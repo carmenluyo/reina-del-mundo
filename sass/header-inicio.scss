@@ -6,6 +6,10 @@
   height: 120px;
 }
 
+#inicio button#boton-click {
+  display:block;
+}
+
 .container-full {
   width: 100%;
   padding-top: 114px;
@@ -89,7 +93,13 @@
 
   @media(min-width: 760px){
     position: absolute;
-    left: 21px;
+    left: 70px;
     top: 21%;  
+  }
+}
+
+@media(min-width: 760px){
+  #inicio button#boton-click {
+    display:none;
   }
 }

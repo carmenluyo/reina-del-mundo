@@ -26,6 +26,15 @@
             width: 1200px;
         }
 
+
+        @media screen and (min-width: 1500px) {
+            background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
+            background-position-x: center;
+            height: 100%;
+            width: 100%;
+        }
+
+
         .lineadetiempo {
             top: -23px;
             left: -37px;
@@ -40,7 +49,11 @@
             @media screen and (min-width: 1200px) {
                 top: 58px;
                 left: 25px;
-                position: absolute;
+            }
+
+            @media screen and (min-width: 1500px) {
+                top: 20px;
+
             }
 
             img {
