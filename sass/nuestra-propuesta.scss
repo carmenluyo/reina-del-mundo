@@ -1,8 +1,27 @@
 
 #page-propuesta-educativa {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('./mobile/niveles_educativos-mob.jpg');
 
-	.left {
+	h1.titulo-interno {
+		margin: 14px;
+		font-size: 32px;
+		color: #c74f47;
+	}
 
+	p.text-mobile-prop {
+		width: 300px;
+		margin-top: 0;
+		margin: 0 auto;
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		color: #25337C;
+
+		br {
+			display: none;
+		}
 	}
 
 	.scalar {
@@ -35,17 +54,27 @@
 			width: 80%;
 			margin: 0 auto;
 			border-radius: 50%;
-			height: 300px;
+			height: 250px;
 		}
 
 		p {
 			padding: 30px;
+			color: #25336d;
 		}
+	}
+
+
+	.slick-arrow {
+		display: none !important;
 	}
 }
 
 
 @media screen and (min-width: 768px) {
+	#page-propuesta-educativa {
+		background-image: unset;
+		background-color: #F8EBB7;
+	}
 
 	.scalar {
 		display: block !important;
@@ -56,6 +85,8 @@
 		ul.slick-dots {
 			bottom: -50px;
 		}
+
+
 
 
 		.wrapper-slider-fotos {
@@ -315,7 +346,6 @@
 	
 	#page-propuesta-educativa {
 
-		.container-maxw,
 		.wrapper-lista-descripcion {
 			left: 0;
 			right: 0;
