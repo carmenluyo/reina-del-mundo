@@ -326,6 +326,16 @@
 			height: 80% !important;
 		}
 
+
+
+		.slider-fotos {
+			width: 620px !important;
+			height: 600px !important;
+			img {
+				width: 100%
+			}
+		}
+
 	}
 
 }
@@ -338,15 +348,20 @@
 	}
 		
 	#page-propuesta-educativa {
-		.container-maxw,
 		.wrapper-lista-descripcion {
 			left: 0;
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
-			margin-top: 8%;
-			max-width: 1500px !important;
+			margin-top: 10%;
+			max-width: 1200px !important;
 			height: 100% !important;
 		}
+	}
+
+
+	#page-propuesta-educativa .slider-propuesta .right .slick-slide img {
+		width: 66%;
+		height: 400px !important;
 	}
 }

@@ -2533,6 +2533,9 @@ body.removerScroll {
   overflow: visible;
   height: 120px; }
 
+#inicio button#boton-click {
+  display: block; }
+
 .container-full {
   width: 100%;
   padding-top: 114px; }
@@ -2598,9 +2601,12 @@ body.removerScroll {
   @media (min-width: 760px) {
     .logo-rmd {
       position: absolute;
-      left: 21px;
+      left: 70px;
       top: 21%; } }
 
+@media (min-width: 760px) {
+  #inicio button#boton-click {
+    display: none; } }
 .miscelanea {
   background-image: url(img/miscelanea/fondo-deep-1.png);
   background-size: contain;
@@ -2628,7 +2634,8 @@ body.removerScroll {
         top: -70px;
         right: -88px;
         bottom: auto;
-        left: auto; } }
+        left: auto;
+        transform: scale(0.9); } }
   .miscelanea .img-rdm {
     bottom: -161px;
     position: absolute;
@@ -2637,7 +2644,7 @@ body.removerScroll {
       width: 175px; }
     @media screen and (min-width: 790px) {
       .miscelanea .img-rdm {
-        bottom: -142px;
+        bottom: -35px;
         position: absolute;
         right: 30px; }
         .miscelanea .img-rdm .logo-img {
@@ -3715,7 +3722,7 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1000px;
     position: absolute;
     height: 100% !important; }
 
@@ -3875,7 +3882,7 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1000px;
     position: absolute;
     height: 100% !important; } }
 @media screen and (min-width: 1300px) {
@@ -3890,7 +3897,7 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1800px;
+    max-width: 1272px;
     position: absolute;
     height: 100% !important; }
 
@@ -3973,7 +3980,7 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1900px;
+    max-width: 1500px;
     position: absolute;
     height: 100% !important; }
 
@@ -4469,20 +4476,28 @@ body {
     margin: 0 auto;
     max-width: 1272px;
     margin-top: 10%;
-    height: 80% !important; } }
+    height: 80% !important; }
+  #page-propuesta-educativa .slider-fotos {
+    width: 620px !important;
+    height: 600px !important; }
+    #page-propuesta-educativa .slider-fotos img {
+      width: 100%; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {
   .scalar {
     display: block !important; }
 
-  #page-propuesta-educativa .container-maxw,
   #page-propuesta-educativa .wrapper-lista-descripcion {
     left: 0;
     right: 0;
     width: 100%;
     margin: 0 auto;
-    margin-top: 8%;
-    max-width: 1500px !important;
-    height: 100% !important; } }
+    margin-top: 10%;
+    max-width: 1200px !important;
+    height: 100% !important; }
+
+  #page-propuesta-educativa .slider-propuesta .right .slick-slide img {
+    width: 66%;
+    height: 400px !important; } }
 #areaformativa h1 {
   padding-top: 0; }
 #areaformativa .seccion-text-right {
@@ -4774,6 +4789,12 @@ body {
         background-position-x: center;
         height: auto;
         width: 100%; } }
+    @media screen and (min-width: 1500px) {
+      .linea-tiempo .content {
+        background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
+        background-position-x: center;
+        height: 100%;
+        width: 100%; } }
     .linea-tiempo .content .lineadetiempo {
       top: -23px;
       left: -37px;
@@ -4781,8 +4802,10 @@ body {
       @media screen and (min-width: 768px) {
         .linea-tiempo .content .lineadetiempo {
           top: -90px;
-          left: 25px;
-          position: absolute; } }
+          left: 25px; } }
+      @media screen and (min-width: 1500px) {
+        .linea-tiempo .content .lineadetiempo {
+          top: 20px; } }
       .linea-tiempo .content .lineadetiempo img {
         width: 60%; }
   .linea-tiempo .row {
