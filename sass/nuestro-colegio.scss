@@ -888,6 +888,15 @@
 		position: absolute;
 		height: 100% !important;
 	}
+
+	#areaformativa .wrapper-lista-descripcion .slick-slide img {
+		height: 80% !important;
+	}
+
+	#areaformativa .left p {
+    font-size: 23px;
+    line-height: 24px;
+	}
 }
 
 
@@ -898,7 +907,7 @@
 	}
 
 	.inicio .box-logos {
-		bottom: 5%;
+		bottom: 7px;
 	}
 
 	.container-full.inicio {

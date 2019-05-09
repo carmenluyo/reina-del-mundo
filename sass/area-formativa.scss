@@ -80,8 +80,10 @@
 			width: 50%;
 
 			.instalaciones {
+				z-index: 4;
 				right: 42px;
 				bottom: -15%;
+				cursor: pointer;
 				position: absolute;
 
 				button {
@@ -288,7 +290,7 @@
 		    height: 80% !important;
 
 			.slick-slide img {
-				height: 100% !important;
+				height: 95% !important;
 			}
 		}
 

@@ -2,3 +2,5 @@ node_modules/
 .sass-cache/
 estilos.css.map
 ai/
+img/.DS_Store
+.DS_Store

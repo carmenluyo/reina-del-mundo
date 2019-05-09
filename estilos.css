@@ -3271,7 +3271,8 @@ body {
   .inicio .box-logos {
     width: 100%;
     bottom: 0;
-    margin-top: 20px; }
+    margin-top: 20px;
+    height: 14%; }
     .inicio .box-logos img {
       display: inline-block;
       width: 130px; } }
@@ -3974,13 +3975,20 @@ body {
     margin: 0 auto;
     max-width: 1900px;
     position: absolute;
-    height: 100% !important; } }
+    height: 100% !important; }
+
+  #areaformativa .wrapper-lista-descripcion .slick-slide img {
+    height: 80% !important; }
+
+  #areaformativa .left p {
+    font-size: 23px;
+    line-height: 24px; } }
 @media screen and (min-height: 600px) and (max-height: 768px) {
   .inicio .tabs-info {
     bottom: -100px; }
 
   .inicio .box-logos {
-    bottom: 5%; }
+    bottom: 7px; }
 
   .container-full.inicio {
     padding-top: 0; } }
@@ -4525,8 +4533,10 @@ body {
     #areaformativa .seccion-text-right {
       width: 50%; }
       #areaformativa .seccion-text-right .instalaciones {
+        z-index: 4;
         right: 42px;
         bottom: -15%;
+        cursor: pointer;
         position: absolute; }
         #areaformativa .seccion-text-right .instalaciones button {
           color: white;
@@ -4670,7 +4680,7 @@ body {
       overflow: hidden;
       height: 80% !important; }
       #areaformativa .wrapper-lista-descripcion .slick-slide img {
-        height: 100% !important; }
+        height: 95% !important; }
     #areaformativa .left p {
       font-size: 20px;
       line-height: 20px; }
@@ -4988,7 +4998,17 @@ body {
     height: auto;
     width: 450px;
     margin-right: auto;
-    margin-left: auto; } }
+    margin-left: auto; }
+
+  #educacionintegral .container-maxw,
+  #educacionintegral .wrapper-lista-descripcion {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 740px;
+    position: absolute;
+    height: 80% !important; } }
 @media screen and (min-width: 1024px) {
   #educacionintegral .container-maxw,
   #educacionintegral .wrapper-lista-descripcion {
@@ -4996,17 +5016,17 @@ body {
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     position: absolute;
-    height: 100% !important; } }
+    height: 80% !important; } }
 @media screen and (min-width: 1300px) {
   #educacionintegral .wrapper-lista-descripcion {
     left: 0;
     right: 0;
     width: 100%;
     margin: 0 auto;
-    max-width: 1250px;
-    height: 100% !important; }
+    max-width: 1272px;
+    height: 80% !important; }
   #educacionintegral .seccion-text-right-titulo {
     width: 400px;
     margin-left: auto; } }
@@ -5017,6 +5037,6 @@ body {
     width: 100%;
     margin: 0 auto;
     max-width: 1500px !important;
-    height: 100% !important; } }
+    height: 80% !important; } }
 
 /*# sourceMappingURL=estilos.css.map */

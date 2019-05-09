@@ -66,6 +66,20 @@
 		  margin-right: auto;
 		  margin-left: auto;
 	}	
+
+
+	#educacionintegral {
+        .container-maxw,
+        .wrapper-lista-descripcion {
+            left: 0;
+            right: 0;
+            width: 100%;
+            margin: 0 auto;
+            max-width: 740px;
+            position: absolute;
+            height: 80% !important;
+        }
+    }
 }
 
 
@@ -77,9 +91,9 @@
             right: 0;
             width: 100%;
             margin: 0 auto;
-            max-width: 1200px;
+            max-width: 1000px;
             position: absolute;
-            height: 100% !important;
+            height: 80% !important;
         }
     }
 }
@@ -92,8 +106,8 @@
 			right: 0;
 			width: 100%;
 			margin: 0 auto;
-			max-width: 1250px;
-			height: 100% !important;
+			max-width: 1272px;
+            height: 80% !important;
 		}
 
 		
@@ -115,7 +129,7 @@
 			width: 100%;
 			margin: 0 auto;
 			max-width: 1500px !important;
-			height: 100% !important;
+            height: 80% !important;
 		}
 
 	}
