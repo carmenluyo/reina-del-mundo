@@ -23,7 +23,7 @@
             background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
             background-position-x: center;
             height: auto;
-            width: 100%;
+            width: 1200px;
         }
 
         .lineadetiempo {
@@ -32,7 +32,13 @@
             position: absolute;
 
             @media screen and (min-width: 768px) {
-                top: -90px;
+                top: -40px;
+                left: 25px;
+                position: absolute;
+            }
+
+            @media screen and (min-width: 1200px) {
+                top: 58px;
                 left: 25px;
                 position: absolute;
             }
@@ -260,20 +266,45 @@
 
         @media screen and (min-width: 768px) {
             width: 355px;
-            display: block;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 21px 4px;
+            box-sizing: border-box;
+        }
+
+        @media screen and (min-width: 1024px) {
+            height: 215px;
+            padding: 0 14px 4px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 440px;
+            height: 265px;
+            padding: 0 14px 4px;
         }
 
         p {
             color: #3D497C;
             font-size: 12px;
+            margin: 0;
+
+            @media screen and (min-width: 768px) {
+                font-size: 10px;
+            }
 
             @media screen and (min-width: 1020px) {
                 font-size: 12px;
             }
 
-            @media screen and (min-width: 1400px) {
+            @media screen and (min-width: 1200px) {
                 font-size: 15px;
             }
+
+            // @media screen and (min-width: 1400px) {
+            //     font-size: 15px;
+            // }
         }
 
         .hide {

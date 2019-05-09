@@ -1,5 +1,5 @@
 .miscelanea {
-    background-image: url(img/miscelanea/fondo-deep-1.png);
+    background-image: url(img/miscelanea/bg-miscelanea-mob.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,15 +10,39 @@
     justify-content: center;
     padding: 0 ;
 
+    .line-right,
+    .line-left {
+        display: none;
+    }
+
     @media screen and (min-width: 790px) {
         padding: 0 250px 0 85px;
+        background-image: url(img/miscelanea/fondo-deep-1.png);
+
+        .line-right {
+            display: block;
+            position: absolute;
+            top: 19px;
+            right: -180px;
+            width: 300px !important;
+            z-index: 9;
+
+        }
+
+        .line-left {
+            display: block;
+            position: absolute;
+            top: 58px;
+            right: -107px;
+            width: 300px !important;
+            z-index: 9;
+
+        }
     }
 
     @media screen and (min-width: 1100px) {
         padding: 0 250px 0 200px;
     }
-
-    
 
 
     .scalar {
@@ -27,31 +51,38 @@
         left: -15px;
         right: auto;
         top: auto;
+        z-index: 10;
 
         @media screen and (min-width: 790px) {
             top: -70px;
             right: -88px;
             bottom: auto;
             left: auto;
+
+            .containerCubo {
+                transform: scale(0.9);
+            }
         }
     }
 
     .img-rdm {
-        bottom: -161px;
         position: absolute;
         right: 21px;
+        bottom: auto;
+        top: 0;
         
         .logo-img {
-            width: 175px;
+            width: 135px;
         }
 
         @media screen and (min-width: 790px) {
-            bottom: -142px;
+            bottom: -45px;
             position: absolute;
-            right: 30px;
+            right: -35px;
+            top: auto;
 
             .logo-img {
-                width: 121px;
+                width: 151px;
             }
 
         }
@@ -68,9 +99,9 @@
     .content {
         width: 500px;
         margin: 0 auto;
-        height: 350px;
+        height: 412px;
         position: relative;
-        background-image: url(img/miscelanea/fondo-slide-end.png);
+        background-image: none;
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -114,6 +145,10 @@
             }
         }
 
+        @media screen and (min-width: 790px) {
+            background-image: url(img/miscelanea/fondo-slide-end.png);
+        }
+
         @media screen and (min-width: 1100px) {
             height: 500px;
             width: 700px;
@@ -123,20 +158,43 @@
 
     .overlay {
         position: absolute;
-        bottom: 55px;
-        right: 21px;
+        bottom: 35px;
+        right: 55px;
         width: 355px;
         text-align: center;
         margin: 0 auto;
+        z-index: 10000;
 
         .items {
             text-align: right;
+            position: relative;
 
             a {
                 text-decoration: none;
                 color: #FF7167;
                 &:hover {
                     opacity: 0.7;
+                }
+            }
+
+            h2 {
+                padding-right: 21px;
+                font-size: 22px;
+                margin: 7px 0px;
+
+                @media screen and (min-width: 790px) {
+                    font-size: 24px;
+                }
+            }
+
+            &.active {
+                &::after {
+                    content: url(img/miscelanea/arrow-choose.png);
+                    position: absolute;
+                    right: 0;
+                    top: -10px;
+                    transform: translate(50%,0);
+                    
                 }
             }
         }

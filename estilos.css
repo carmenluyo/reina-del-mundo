@@ -2602,7 +2602,7 @@ body.removerScroll {
       top: 21%; } }
 
 .miscelanea {
-  background-image: url(img/miscelanea/fondo-deep-1.png);
+  background-image: url(img/miscelanea/bg-miscelanea-mob.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -2611,9 +2611,27 @@ body.removerScroll {
   align-items: center;
   justify-content: center;
   padding: 0; }
+  .miscelanea .line-right,
+  .miscelanea .line-left {
+    display: none; }
   @media screen and (min-width: 790px) {
     .miscelanea {
-      padding: 0 250px 0 85px; } }
+      padding: 0 250px 0 85px;
+      background-image: url(img/miscelanea/fondo-deep-1.png); }
+      .miscelanea .line-right {
+        display: block;
+        position: absolute;
+        top: 19px;
+        right: -180px;
+        width: 300px !important;
+        z-index: 9; }
+      .miscelanea .line-left {
+        display: block;
+        position: absolute;
+        top: 58px;
+        right: -107px;
+        width: 300px !important;
+        z-index: 9; } }
   @media screen and (min-width: 1100px) {
     .miscelanea {
       padding: 0 250px 0 200px; } }
@@ -2622,26 +2640,31 @@ body.removerScroll {
     bottom: -132px;
     left: -15px;
     right: auto;
-    top: auto; }
+    top: auto;
+    z-index: 10; }
     @media screen and (min-width: 790px) {
       .miscelanea .scalar {
         top: -70px;
         right: -88px;
         bottom: auto;
-        left: auto; } }
+        left: auto; }
+        .miscelanea .scalar .containerCubo {
+          transform: scale(0.9); } }
   .miscelanea .img-rdm {
-    bottom: -161px;
     position: absolute;
-    right: 21px; }
+    right: 21px;
+    bottom: auto;
+    top: 0; }
     .miscelanea .img-rdm .logo-img {
-      width: 175px; }
+      width: 135px; }
     @media screen and (min-width: 790px) {
       .miscelanea .img-rdm {
-        bottom: -142px;
+        bottom: -45px;
         position: absolute;
-        right: 30px; }
+        right: -35px;
+        top: auto; }
         .miscelanea .img-rdm .logo-img {
-          width: 121px; } }
+          width: 151px; } }
     @media screen and (min-width: 1100px) {
       .miscelanea .img-rdm {
         right: -184px; }
@@ -2650,9 +2673,9 @@ body.removerScroll {
   .miscelanea .content {
     width: 500px;
     margin: 0 auto;
-    height: 350px;
+    height: 412px;
     position: relative;
-    background-image: url(img/miscelanea/fondo-slide-end.png);
+    background-image: none;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -2680,24 +2703,42 @@ body.removerScroll {
         height: auto !important;
         padding: 0;
         margin-top: 0; }
+    @media screen and (min-width: 790px) {
+      .miscelanea .content {
+        background-image: url(img/miscelanea/fondo-slide-end.png); } }
     @media screen and (min-width: 1100px) {
       .miscelanea .content {
         height: 500px;
         width: 700px; } }
   .miscelanea .overlay {
     position: absolute;
-    bottom: 55px;
-    right: 21px;
+    bottom: 35px;
+    right: 55px;
     width: 355px;
     text-align: center;
-    margin: 0 auto; }
+    margin: 0 auto;
+    z-index: 10000; }
     .miscelanea .overlay .items {
-      text-align: right; }
+      text-align: right;
+      position: relative; }
       .miscelanea .overlay .items a {
         text-decoration: none;
         color: #FF7167; }
         .miscelanea .overlay .items a:hover {
           opacity: 0.7; }
+      .miscelanea .overlay .items h2 {
+        padding-right: 21px;
+        font-size: 22px;
+        margin: 7px 0px; }
+        @media screen and (min-width: 790px) {
+          .miscelanea .overlay .items h2 {
+            font-size: 24px; } }
+      .miscelanea .overlay .items.active::after {
+        content: url(img/miscelanea/arrow-choose.png);
+        position: absolute;
+        right: 0;
+        top: -10px;
+        transform: translate(50%, 0); }
     @media screen and (min-width: 790px) {
       .miscelanea .overlay {
         bottom: 50%;
@@ -4773,14 +4814,19 @@ body {
         background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
         background-position-x: center;
         height: auto;
-        width: 100%; } }
+        width: 1200px; } }
     .linea-tiempo .content .lineadetiempo {
       top: -23px;
       left: -37px;
       position: absolute; }
       @media screen and (min-width: 768px) {
         .linea-tiempo .content .lineadetiempo {
-          top: -90px;
+          top: -40px;
+          left: 25px;
+          position: absolute; } }
+      @media screen and (min-width: 1200px) {
+        .linea-tiempo .content .lineadetiempo {
+          top: 58px;
           left: 25px;
           position: absolute; } }
       .linea-tiempo .content .lineadetiempo img {
@@ -4925,14 +4971,32 @@ body {
     @media screen and (min-width: 768px) {
       .linea-tiempo .overlay {
         width: 355px;
-        display: block; } }
+        height: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 21px 4px;
+        box-sizing: border-box; } }
+    @media screen and (min-width: 1024px) {
+      .linea-tiempo .overlay {
+        height: 215px;
+        padding: 0 14px 4px; } }
+    @media screen and (min-width: 1200px) {
+      .linea-tiempo .overlay {
+        width: 440px;
+        height: 265px;
+        padding: 0 14px 4px; } }
     .linea-tiempo .overlay p {
       color: #3D497C;
-      font-size: 12px; }
+      font-size: 12px;
+      margin: 0; }
+      @media screen and (min-width: 768px) {
+        .linea-tiempo .overlay p {
+          font-size: 10px; } }
       @media screen and (min-width: 1020px) {
         .linea-tiempo .overlay p {
           font-size: 12px; } }
-      @media screen and (min-width: 1400px) {
+      @media screen and (min-width: 1200px) {
         .linea-tiempo .overlay p {
           font-size: 15px; } }
     .linea-tiempo .overlay .hide {
