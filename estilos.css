@@ -2764,47 +2764,41 @@ body {
   width: 100vw;
   height: 800px; }
 
+#inicio {
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./mobile/home.jpg"); }
+
 .simple-mobile {
-  display: block; }
-  .simple-mobile div.header {
-    height: auto;
-    background-image: url(img/puntos.png); }
-    .simple-mobile div.header img {
-      top: 0%;
-      width: 100%;
-      position: absolute; }
-    .simple-mobile div.header .info {
-      position: absolute;
-      bottom: 0;
-      padding: 21px;
-      background: #ca434b;
-      color: white; }
-      .simple-mobile div.header .info p {
-        font-size: 15px;
-        margin-bottom: 30px; }
-  .simple-mobile .img-mobile-home img {
+  padding: 0 35px;
+  margin: 60% 0; }
+  .simple-mobile .logos-home img {
     width: 100%; }
-  .simple-mobile .logos-home {
-    display: block; }
-    .simple-mobile .logos-home img {
-      display: block;
-      width: 250px;
-      margin: 21px auto 35px; }
+  .simple-mobile nav {
+    background: red;
+    text-align: center;
+    padding: 7px 0;
+    background-color: #25337E; }
+    .simple-mobile nav a {
+      padding: 0 14px;
+      text-decoration: none; }
 
 .logo-rmd img {
-  width: 90px;
-  margin-left: 8px;
-  margin-top: 28px; }
+  display: none; }
 
 .inicio {
   display: none; }
 
 @media screen and (min-width: 760px) {
   #inicio {
-    overflow: hidden; }
+    overflow: hidden;
+    background-image: unset; }
 
   .logo-rmd {
     top: 100% !important; }
+    .logo-rmd img {
+      display: block; }
 
   .logos-home {
     display: none; }
@@ -2890,6 +2884,7 @@ body {
   .simple-mobile {
     display: none; }
 
+  iwidth: 100%;
   .logo-rmd img {
     width: 88%;
     margin-top: 28px; }
