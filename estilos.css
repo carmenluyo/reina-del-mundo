@@ -4379,6 +4379,18 @@ body {
   #page-propuesta-educativa .slick-arrow {
     display: none !important; }
 
+@media screen and (min-width: 375px) {
+  #page-propuesta-educativa .slick-slide img {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 300px; } }
+@media screen and (min-width: 425px) {
+  #page-propuesta-educativa .slick-slide img {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 350px; } }
 @media screen and (min-width: 768px) {
   #page-propuesta-educativa {
     background-image: unset;
