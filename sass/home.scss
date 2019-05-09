@@ -12,16 +12,20 @@ body {
     height: 800px;
 }
 
+
 #inicio {
     overflow: hidden;
     background-size: cover;
-    background-repeat: no-repeat;
-	background-image: url('./mobile/home.jpg');
+	background-repeat: no-repeat;
+    background-image: url('./mobile/home.jpg');
+    
+    .container-full {
+        padding-top: 50px;
+    }
 }
 
-
-
 .simple-mobile {
+    
 
     padding: 0 35px;
     margin: 60% 0;
@@ -35,8 +39,8 @@ body {
     nav {
         background: red;
         text-align: center;
-        padding: 7px 0;
-		background-color: #25337E;
+        padding: 21px 0;
+			background-color: #25337E;
 
         a  {
             padding: 0 14px;
@@ -65,7 +69,9 @@ body {
     }
     
     .logo-rmd {
-        top: 100% !important;
+        top: 0;
+        left: 0;
+        position: absolute;
 
         img {
             display: block;
@@ -96,7 +102,7 @@ body {
 @media screen and (min-width: 768px) {
 
     ul.slick-dots {
-        bottom: 500px;
+        bottom: 423px;
         padding: 0 13px;
         z-index: 9;
         width: auto;
@@ -183,8 +189,7 @@ body {
         display: none;
     } 
 
- 
- iwidth: 100%;   .logo-rmd img {
+    .logo-rmd img {
         width: 88%;
         margin-top: 28px;
     }
@@ -343,39 +348,46 @@ body {
 
             .tab-1 {
                 z-index: 6;
+                background-repeat: no-repeat;
                 background-image: url(img/tab1.png);
             }
 
             .tab-2 {
                 z-index: 5;
+                background-repeat: no-repeat;
                 background-image: url(img/tab2.png);
             }
 
             .tab-3 {
                 z-index: 4;
+                background-repeat: no-repeat;
                 background-image: url(img/tab3.png);
             }
 
             .tab-4 {
                 z-index: 3;
+                background-repeat: no-repeat;
                 background-image: url(img/tab4.png);
 
             }
             
             .tab-5 {
                 z-index: 2;
+                background-repeat: no-repeat;
                 background-image: url(img/tab5.png);
 
             }
 
             .tab-6 {
                 z-index: 1;
+                background-repeat: no-repeat;
                 background-image: url(img/tab6.png);
 
             }
 
             .tab-7 {
                 z-index: 0;
+                background-repeat: no-repeat;
                 background-image: url(img/tab7.png);
 
             }

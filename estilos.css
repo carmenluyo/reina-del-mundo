@@ -2769,6 +2769,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("./mobile/home.jpg"); }
+  #inicio .container-full {
+    padding-top: 50px; }
 
 .simple-mobile {
   padding: 0 35px;
@@ -2778,7 +2780,7 @@ body {
   .simple-mobile nav {
     background: red;
     text-align: center;
-    padding: 7px 0;
+    padding: 21px 0;
     background-color: #25337E; }
     .simple-mobile nav a {
       padding: 0 14px;
@@ -2796,7 +2798,9 @@ body {
     background-image: unset; }
 
   .logo-rmd {
-    top: 100% !important; }
+    top: 0;
+    left: 0;
+    position: absolute; }
     .logo-rmd img {
       display: block; }
 
@@ -2813,7 +2817,7 @@ body {
         width: 50% !important; } }
 @media screen and (min-width: 768px) {
   ul.slick-dots {
-    bottom: 500px;
+    bottom: 423px;
     padding: 0 13px;
     z-index: 9;
     width: auto;
@@ -2884,7 +2888,6 @@ body {
   .simple-mobile {
     display: none; }
 
-  iwidth: 100%;
   .logo-rmd img {
     width: 88%;
     margin-top: 28px; }
@@ -2986,24 +2989,31 @@ body {
         background-size: 100%; }
       .inicio .tabs-info .tab-1 {
         z-index: 6;
+        background-repeat: no-repeat;
         background-image: url(img/tab1.png); }
       .inicio .tabs-info .tab-2 {
         z-index: 5;
+        background-repeat: no-repeat;
         background-image: url(img/tab2.png); }
       .inicio .tabs-info .tab-3 {
         z-index: 4;
+        background-repeat: no-repeat;
         background-image: url(img/tab3.png); }
       .inicio .tabs-info .tab-4 {
         z-index: 3;
+        background-repeat: no-repeat;
         background-image: url(img/tab4.png); }
       .inicio .tabs-info .tab-5 {
         z-index: 2;
+        background-repeat: no-repeat;
         background-image: url(img/tab5.png); }
       .inicio .tabs-info .tab-6 {
         z-index: 1;
+        background-repeat: no-repeat;
         background-image: url(img/tab6.png); }
       .inicio .tabs-info .tab-7 {
         z-index: 0;
+        background-repeat: no-repeat;
         background-image: url(img/tab7.png); }
     .inicio .slick-slide {
       margin-top: 35px; }
