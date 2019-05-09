@@ -70,6 +70,47 @@
 }
 
 #colegio {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url('./mobile/nuestro-colegio.jpg');
+
+	.mobile-options {
+
+		div h4 {
+			margin: 14px;
+			font-size: 32px;
+			color: #c74f47;
+		}
+
+		div p {
+			margin-top: 0;
+			font-size: 22px;
+			line-height: 24px;
+			text-align: center;
+		}
+
+		.list-mobile-cole {
+			ul li a {
+				font-size: 28px;
+				line-height: 47px;
+				text-decoration: none;
+				color: gray;
+			}
+
+			ul li.active a {
+					color: #c74f47;
+			}
+		}
+	}
+
+
+	.list-mobile-cole {
+		position: absolute;
+    bottom: 60px;
+    text-align: center;
+    width: 100%;
+	}
+
 	#boton-click {
 		top:0;
 	}
@@ -94,11 +135,17 @@
 }
 
 .right-mobile {
-	top: -150px;
+	top: 150px;
 	position: absolute;
+	width: 50%;
+	right: 0;
 }
 
 @media screen and (min-width: 768px) {
+
+#colegio {
+	background-image: unset;
+}
 
 .left-inside-shape {
 	display: block;
@@ -518,7 +565,7 @@
 	}
 	
 	.hidden-xs {
-		display: inline-block;
+		display: block;
 	}
 
 	.line-yellow,
@@ -749,7 +796,7 @@
 	}
 	
 	.hidden-xs {
-		display: inline-block;
+		display: block;
 	}
 	.wrapper-container {
 		left: 0;
@@ -770,7 +817,7 @@
 	}
 	
 	.hidden-xs {
-		display: inline-block;
+		display: block;
 	}
 
 	.wrapper-container {
@@ -865,7 +912,7 @@
 	}
 	
 	.hidden-xs {
-		display: inline-block;
+		display: block;
 	}
 
 	.line-yellow {

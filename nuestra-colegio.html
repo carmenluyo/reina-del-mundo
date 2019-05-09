@@ -65,6 +65,7 @@
 			</div>
 	</div>
 
+
 	<div class="seccion-titulos">
 		<div class="container flex align-center">
 			<button class="hamburger hamburger--collapse" id="boton-click" type="button">
@@ -74,7 +75,31 @@
 			</button>  
 		</div>
 	</div>
-	<section class="full-width mt-negative-10  auto-height relative fondo-colegio" id="block">
+  <section class="hidden-lg mobile-options">
+		<div class="wrapper-lista-descripcion max-height-300 mobile-options-cole">
+			<h4>Nuestro Colegio</h4>
+      <p class="wrapper-lista-descripcion-p w-400  caja-centrado tab_content_colegio-mob" id="one-mob">"Ser reconocidos como el mejor colegio católico peruano alemán de educación personalizada y como agente que lidera la nueva evangelización en la comunidad a la que se proyecta por la excelencia académica y moral de sus alumnos y egresados."</p>
+      <p class="wrapper-lista-descripcion-p w-400  caja-centrado tab_content_colegio-mob" id="two-mob">Brindar una educación integral, cuyo centro y fin es la persona, capacitándola para que sea capaz de esbozar un proyecto personal de vida humano y cristiano y llevarlo a cabo, en una acción conjunta con la familia. </p>
+      <p class="wrapper-lista-descripcion-p w-400  caja-centrado tab_content_colegio-mob" id="thrid-mob">Nuestro lema: “Todo en humildad, sencillez y caridad” resume los valores que nos impulsan a la obra bien hecha y a establecer relaciones sólidas con las familias, basadas en la confianza mutua y la responsabilidad compartida de formar a los alumnos que nos confían.</p>
+      <p class="wrapper-lista-descripcion-p w-400  caja-centrado tab_content_colegio-mob" id="four-mob">Nuestro lema: “Todo en humildad, sencillez y caridad” resume los valores que nos impulsan a la obra bien hecha y a establecer relaciones sólidas con las familias, basadas en la confianza mutua y la responsabilidad compartida de formar a los alumnos que nos confían.</p>
+      <p class="wrapper-lista-descripcion-p w-400  caja-centrado tab_content_colegio-mob" id="five-mob">Nuestro lema: “Todo en humildad, sencillez y caridad” resume los valores que nos impulsan a la obra bien hecha y a establecer relaciones sólidas con las familias, basadas en la confianza mutua y la responsabilidad compartida de formar a los alumnos que nos confían.</p>
+    </div>
+    <div class="list-mobile-cole">
+      <ul>
+        <li class="items">
+          <a href="#one-mob" >Visión</a>
+        </li>
+        <li class="items">
+          <a href="#two-mob" >Misión</a>
+        </li>
+        <li class="items">
+          <a href="#thrid-mob" >Valores</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+	<section class="full-width mt-negative-10  auto-height relative hidden-xs fondo-colegio" id="block">
 
 		<div class="wrapper-container">
 			<div class="wrapper-slider-fotos carousel-move">	
@@ -134,9 +159,9 @@
 
 	</section>
 			
-	<div class="bottom-svg-nuestro-colegio relative">
+	<div class="bottom-svg-nuestro-colegio hidden-xs relative">
 		<div class="wrapper-container">
-			<div class="right-mobile hidden-lg">
+			<div class="right-mobile">
 				<div class="center-absolute">
 					<img src="img/nuestro-colegio/shape-child.png" alt="">
 				</div>
@@ -158,11 +183,11 @@
 					<img src="img/nuestro-colegio/cuadrado.png" alt="">
 				</div>
 			</div>
-			<div class="right hidden-xs">
+			<!-- <div class="right hidden-xs">
 				<div class="center-absolute">
 					<img src="img/nuestro-colegio/shape-child.png" alt="">
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -255,6 +280,21 @@ jQuery(document).ready(function ($) {
         $('.items').removeClass('active');
         $(this).addClass('active');
         $('p.tab_content_colegio').hide();
+    
+        var selectTab = $(this).find('a').attr("href");
+    
+        $(selectTab).fadeIn();
+    });
+});
+
+jQuery(document).ready(function ($) {	
+    $('p.tab_content_colegio-mob').hide();
+    $('p.tab_content_colegio-mob:first').show();
+
+    $('.items').click(function(event) {
+        $('.items').removeClass('active');
+        $(this).addClass('active');
+        $('p.tab_content_colegio-mob').hide();
     
         var selectTab = $(this).find('a').attr("href");
     

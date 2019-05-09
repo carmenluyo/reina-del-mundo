@@ -3358,11 +3358,36 @@ body {
       opacity: 1;
       display: block; }
 
-#colegio #boton-click {
-  top: 0; }
-#colegio .wrapper-lista-descripcion-p {
-  visibility: visible !important;
-  margin-top: 30px; }
+#colegio {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./mobile/nuestro-colegio.jpg"); }
+  #colegio .mobile-options div h4 {
+    margin: 14px;
+    font-size: 32px;
+    color: #c74f47; }
+  #colegio .mobile-options div p {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center; }
+  #colegio .mobile-options .list-mobile-cole ul li a {
+    font-size: 28px;
+    line-height: 47px;
+    text-decoration: none;
+    color: gray; }
+  #colegio .mobile-options .list-mobile-cole ul li.active a {
+    color: #c74f47; }
+  #colegio .list-mobile-cole {
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    width: 100%; }
+  #colegio #boton-click {
+    top: 0; }
+  #colegio .wrapper-lista-descripcion-p {
+    visibility: visible !important;
+    margin-top: 30px; }
 
 .hidden-lg {
   display: block; }
@@ -3375,10 +3400,15 @@ body {
   position: absolute; }
 
 .right-mobile {
-  top: -150px;
-  position: absolute; }
+  top: 150px;
+  position: absolute;
+  width: 50%;
+  right: 0; }
 
 @media screen and (min-width: 768px) {
+  #colegio {
+    background-image: unset; }
+
   .left-inside-shape {
     display: block;
     bottom: -358px;
@@ -3704,7 +3734,7 @@ body {
     display: none; }
 
   .hidden-xs {
-    display: inline-block; }
+    display: block; }
 
   .line-yellow img,
   .red-bg--absolute img,
@@ -3881,7 +3911,7 @@ body {
     display: none; }
 
   .hidden-xs {
-    display: inline-block; }
+    display: block; }
 
   .wrapper-container {
     left: 0;
@@ -3896,7 +3926,7 @@ body {
     display: none; }
 
   .hidden-xs {
-    display: inline-block; }
+    display: block; }
 
   .wrapper-container {
     left: 0;
@@ -3970,7 +4000,7 @@ body {
     display: none; }
 
   .hidden-xs {
-    display: inline-block; }
+    display: block; }
 
   .line-yellow {
     width: 400px; }
