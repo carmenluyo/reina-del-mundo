@@ -3204,7 +3204,7 @@ body {
     width: 100%; }
   .inicio .box-logos {
     margin: 0;
-    bottom: 30px; }
+    bottom: 30px !important; }
     .inicio .box-logos img {
       width: 120px; }
   .inicio .slider.slider-nav.slick-initialized.slick-slider {
