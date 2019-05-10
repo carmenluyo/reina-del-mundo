@@ -11,8 +11,10 @@
 
 
 #historia {
-	background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
-
+	height: 100vh;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-image: url('./mobile/historia-mob.jpg');
 	overflow-x: hidden;
 
 	.middle-left,
@@ -153,6 +155,12 @@
 }
 
 @media screen and (min-width: 768px) {
+	.bg-linear-yellow {
+		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+	}
+
+	background-image: unset;
+
 	.circuloRuta,
 	.ball,
 	#animacion-propuesta-bottom-path{
