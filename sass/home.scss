@@ -286,9 +286,9 @@ body {
 
         .box-logos {
 
-            width: 50%;
             right: 0;
             bottom: 0;
+            width: 50%;
             float: right;
             overflow: auto;
             text-align: right;
@@ -620,7 +620,7 @@ body {
     
         .box-logos {
             margin: 0;
-
+            bottom: 30px;
 
             img {
                 width: 120px;
@@ -673,7 +673,7 @@ body {
     ul.slick-dots {
         z-index: 9;
         width: auto;
-        bottom: 593px;
+        bottom: 615px;
         padding: 0 21px;
         text-align: left;
         list-style-type: decimal !important;
@@ -756,7 +756,7 @@ body {
         .tabs-info .tab-1, .tabs-info .tab-2, .tabs-info .tab-3, .tabs-info .tab-4,  .tabs-info .tab-5,  .tabs-info .tab-6, .tabs-info .tab-7 {
             width: 580px;
             height: 533px;
-            bottom: 50px;
+            bottom: 70px;
         }
     
         .box-logos {
