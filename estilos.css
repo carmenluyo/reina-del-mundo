@@ -1848,6 +1848,14 @@ textarea:focus, input:focus{
 }
 
 */
+#page-contacto {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./mobile/contacto-mobile.jpg"); }
+  #page-contacto .wrapper-main-contacto {
+    transform: translateY(100%); }
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: black;
@@ -1900,6 +1908,14 @@ input[type=number] {
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.3);
   color: #c83c41; }
 
+@media screen and (min-width: 425px) {
+  #page-contacto .wrapper-main-contacto {
+    transform: translateY(150%); } }
+@media screen and (min-width: 768px) {
+  #page-contacto {
+    background-image: unset; }
+    #page-contacto .wrapper-main-contacto {
+      transform: unset; } }
 @media (min-width: 1024px) {
   #page-admision {
     background-image: url("img/niños-inicial.jpeg");
