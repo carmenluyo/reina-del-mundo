@@ -1,5 +1,14 @@
 #areaformativa {
 
+	height: 100vh;
+    background-size: cover;
+    background-image: url('./mobile/area-formativa-mob.jpg');
+	overflow-x: hidden;
+
+	.slick-arrow {
+		display: none !important;
+	}
+
 	h1 {
 		padding-top: 0;
 	}
@@ -67,6 +76,7 @@
 		
 		ul.slick-dots {
 			padding: 0;
+			bottom: 200px !important;
 
 			li button {
 	        	font-size: 15px;

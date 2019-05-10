@@ -4623,38 +4623,45 @@ body {
   #page-propuesta-educativa .slider-propuesta .right .slick-slide img {
     width: 66%;
     height: 400px !important; } }
-#areaformativa h1 {
-  padding-top: 0; }
-#areaformativa .seccion-text-right {
-  overflow: visible; }
-  #areaformativa .seccion-text-right .instalaciones {
-    right: 14px;
-    bottom: -36px;
-    position: absolute; }
-    #areaformativa .seccion-text-right .instalaciones button {
-      color: white;
-      border: none;
-      font-size: 25px;
-      cursor: pointer;
-      background-color: transparent; }
-      #areaformativa .seccion-text-right .instalaciones button img {
-        width: 10%;
-        vertical-align: middle; }
-#areaformativa .left,
-#areaformativa .right {
-  height: 100%;
-  width: 100%;
-  display: block;
-  position: relative; }
-  #areaformativa .left .slick-slide img,
-  #areaformativa .right .slick-slide img {
+#areaformativa {
+  height: 100vh;
+  background-size: cover;
+  background-image: url("./mobile/area-formativa-mob.jpg");
+  overflow-x: hidden; }
+  #areaformativa .slick-arrow {
+    display: none !important; }
+  #areaformativa h1 {
+    padding-top: 0; }
+  #areaformativa .seccion-text-right {
+    overflow: visible; }
+    #areaformativa .seccion-text-right .instalaciones {
+      right: 14px;
+      bottom: -36px;
+      position: absolute; }
+      #areaformativa .seccion-text-right .instalaciones button {
+        color: white;
+        border: none;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: transparent; }
+        #areaformativa .seccion-text-right .instalaciones button img {
+          width: 10%;
+          vertical-align: middle; }
+  #areaformativa .left,
+  #areaformativa .right {
+    height: 100%;
+    width: 100%;
     display: block;
-    border-radius: 50%;
-    width: 90%;
-    margin: 0 auto;
-    height: 340px; }
-#areaformativa .slick-slide p {
-  padding: 0 7%; }
+    position: relative; }
+    #areaformativa .left .slick-slide img,
+    #areaformativa .right .slick-slide img {
+      display: block;
+      border-radius: 50%;
+      width: 90%;
+      margin: 0 auto;
+      height: 340px; }
+  #areaformativa .slick-slide p {
+    padding: 0 7%; }
 
 @media screen and (min-width: 768px) {
   .bg-linear-pink {
@@ -4665,7 +4672,8 @@ body {
     background-repeat: no-repeat;
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
     #areaformativa ul.slick-dots {
-      padding: 0; }
+      padding: 0;
+      bottom: 200px !important; }
       #areaformativa ul.slick-dots li button {
         font-size: 15px;
         background-color: #9C6550;
