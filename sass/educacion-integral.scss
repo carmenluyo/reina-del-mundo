@@ -1,3 +1,9 @@
+#educacionintegral {
+	height: 100vh;
+    background-size: cover;
+    background-image: url('./mobile/historia-mob.jpg');
+}
+
 .seccion-text-right-titulo {
     font-size: 14px;
     text-align: right;
@@ -23,6 +29,11 @@
 
 
 @media screen and (min-width: 768px) {
+
+	#educacionintegral {
+	    background-image: unset;
+	}
+
     .cajita {
         height: 100vh;
 	}
