@@ -3211,7 +3211,8 @@ body {
     top: 15%;
     width: 450px; }
     .inicio .box-text-float h3 {
-      font-size: 36px; }
+      font-size: 36px;
+      margin-top: 7px; }
     .inicio .box-text-float p {
       font-size: 16px; }
   .inicio .slider-home .slick-slide .image-slider {
