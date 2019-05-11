@@ -4941,9 +4941,7 @@ body {
     @media screen and (min-width: 1500px) {
       .linea-tiempo .content {
         background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
-        background-position-x: center;
-        height: 100%;
-        width: 100%; } }
+        background-position-x: center; } }
     .linea-tiempo .content .lineadetiempo {
       top: -23px;
       left: -37px;
@@ -4974,8 +4972,8 @@ body {
       align-items: center; }
       .linea-tiempo .row.flex-center .mil-novecientos-setenta-cuatro-mob {
         position: absolute;
-        top: 345px;
-        left: 4px; }
+        top: 342px;
+        left: 23px; }
         @media screen and (min-width: 768px) {
           .linea-tiempo .row.flex-center .mil-novecientos-setenta-cuatro-mob {
             position: relative;
@@ -5007,7 +5005,7 @@ body {
       .linea-tiempo .row.space-center .items img.mil-novecientos-noventa-mob {
         position: absolute;
         left: 60px;
-        bottom: 152px; }
+        bottom: 93px; }
         @media screen and (min-width: 768px) {
           .linea-tiempo .row.space-center .items img.mil-novecientos-noventa-mob {
             position: relative;
@@ -5016,7 +5014,7 @@ body {
       .linea-tiempo .row.space-center .items img.mil-novecientos-ochenta-mob {
         left: 100px;
         position: absolute;
-        bottom: 230px; }
+        bottom: 246px; }
         @media screen and (min-width: 768px) {
           .linea-tiempo .row.space-center .items img.mil-novecientos-ochenta-mob {
             position: relative;
@@ -5091,23 +5089,49 @@ body {
         height: 170px;
         margin-top: -15px; } }
   .linea-tiempo .overlay {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 240px;
+    position: fixed;
     text-align: center;
     margin: 0 auto;
-    display: none; }
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%; }
+    .linea-tiempo .overlay.active {
+      position: fixed;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      top: 0; }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .linea-tiempo .overlay #zero {
+        display: none !important; } }
     @media screen and (min-width: 768px) {
       .linea-tiempo .overlay {
+        position: absolute;
         width: 355px;
         height: 170px;
-        display: flex;
-        align-items: center;
         justify-content: center;
         padding: 0 21px 4px;
-        box-sizing: border-box; } }
+        box-sizing: border-box;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: auto;
+        transform: none;
+        background: transparent; }
+        .linea-tiempo .overlay.active {
+          position: absolute;
+          justify-content: center;
+          padding: 0 21px 4px;
+          box-sizing: border-box;
+          left: 0;
+          bottom: 0;
+          background: transparent;
+          right: 0;
+          top: auto; } }
     @media screen and (min-width: 1024px) {
       .linea-tiempo .overlay {
         height: 215px;
@@ -5117,13 +5141,42 @@ body {
         width: 440px;
         height: 265px;
         padding: 0 14px 4px; } }
+    .linea-tiempo .overlay .tab_content {
+      background-color: #EA5B4C;
+      padding: 40px 21px 21px;
+      margin: 0 21px;
+      border-radius: 21px;
+      position: relative; }
+      @media screen and (min-width: 768px) {
+        .linea-tiempo .overlay .tab_content {
+          background-color: transparent;
+          padding: 0;
+          margin: 0;
+          border-radius: 0; } }
+      .linea-tiempo .overlay .tab_content img {
+        width: 250px; }
+      .linea-tiempo .overlay .tab_content span {
+        position: absolute;
+        color: #fff;
+        font-size: 20px;
+        text-align: right;
+        padding: 2px 8px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        line-height: 22px;
+        top: 8px;
+        right: 15px; }
+        @media screen and (min-width: 768px) {
+          .linea-tiempo .overlay .tab_content span {
+            display: none; } }
     .linea-tiempo .overlay p {
-      color: #3D497C;
-      font-size: 12px;
+      color: #fff;
+      font-size: 14px;
       margin: 0; }
       @media screen and (min-width: 768px) {
         .linea-tiempo .overlay p {
-          font-size: 10px; } }
+          font-size: 10px;
+          color: #3D497C; } }
       @media screen and (min-width: 1020px) {
         .linea-tiempo .overlay p {
           font-size: 12px; } }
