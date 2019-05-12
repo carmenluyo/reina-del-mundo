@@ -4,18 +4,18 @@
 
 .circuloRuta,
 .ball,
-#animacion-propuesta-bottom-path,
-.puntos{
+.puntos,
+#animacion-propuesta-bottom-path{
 	display: none ;
 }
 
 
 #historia {
 	height: 100vh;
+	overflow-x: hidden;
     background-size: cover;
 	background-repeat: no-repeat;
     background-image: url('./mobile/historia-mob.jpg');
-	overflow-x: hidden;
 
 	.middle-left,
 	.historia {
@@ -112,7 +112,11 @@
 	}
 
 	.wrapper-lista-descripcion {
+	    transform: unset;
+	    background-size: cover;
 	    height: auto !important;
+	    background-repeat: no-repeat;
+	    background-image: url('./mobile/historia-mob.jpg');
 	}
 
 	.slick-slide {
@@ -120,7 +124,7 @@
 
 		img {
 			width: 80%;
-			height: 340px;
+			height: 260px;
 			margin: 0 auto;
 			border-radius: 50%;
 		}
@@ -154,6 +158,20 @@
 	}
 }
 
+
+@media screen and (min-width: 375px) {
+	#historia .slick-slide img {
+		width: 70%;
+	}
+}
+
+@media screen and (min-width: 425px) {
+	#historia .slick-slide img {
+		width: 60%;
+	}
+}
+
+
 @media screen and (min-width: 768px) {
 	.bg-linear-yellow {
 		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
@@ -162,8 +180,7 @@
 	background-image: unset;
 
 	.circuloRuta,
-	.ball,
-	#animacion-propuesta-bottom-path{
+	.ball{
 		display: block ;
 		position: absolute;
 
@@ -188,8 +205,9 @@
 
 
 	#animacion-propuesta-bottom-path{
-		background-image: url('img/shape-bg.jpg');
+		display: block;
 		background-size: cover;
+		background-image: url('img/shape-bg.jpg');
 	}
 
 	@keyframes rotating {
@@ -221,7 +239,8 @@
 			}
 		}
 
-		.left, .right {
+		.left, 
+		.right {
 			float: right;
 			position: relative;
 			width: 50%;
@@ -294,13 +313,14 @@
 		.wrapper-lista-descripcion {
 			left: 0;
 			right: 0;
+			margin: 0;
 			width: 100%;
-			margin: 0 auto;
+	    	bottom: -28%;
 			margin-top: 0;
 			transform: unset;
-			max-width: 740px;
 			position: absolute;
 			height: 60% !important;
+			background-image: unset;
 		}
 
 		.slick-slide {
@@ -363,6 +383,7 @@
 			left: 0;
 			right: 0;
 			width: 100%;
+			bottom: -60%;
 			margin: 0 auto;
 			margin-top: 8%;
 			max-width: 1000px;
@@ -435,8 +456,9 @@
 			left: 0;
 			right: 0;
 			width: 100%;
+			bottom: -130%;
+			margin-top: 0;
 			margin: 0 auto;
-			margin-top: 8%;
 			max-width: 1272px;
 			position: absolute;
 			height: 80% !important;

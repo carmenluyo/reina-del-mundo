@@ -9,6 +9,7 @@
     text-align: right;
     margin-top: 0;
     margin-bottom: 0px;
+    margin-left: 0 !important;
 }
 
 .educacionIntegral:after {
@@ -27,6 +28,15 @@
 	height: 180px;
 }
 
+.seccion-text-right {
+	width: 50%;
+	padding-top: 7% !important;
+
+	&-titulo {
+		font-size: 18px;
+		margin-left: 14%;
+	}
+}
 
 @media screen and (min-width: 768px) {
 
@@ -35,7 +45,7 @@
 	}
 
     .cajita {
-        height: 100vh;
+        height: auto;
 	}
 	
 	.img-educacion-top {
@@ -52,7 +62,7 @@
 
 		&-titulo {
 			font-size: 18px;
-			margin-left: 14%;
+			margin-left: 40%;
 		}
 	}
 
@@ -72,7 +82,7 @@
 	}
 
 	.imagen-educacion-circular {
-		  top: 38%;
+		  top: 30%;
 		  height: auto;
 		  width: 450px;
 		  margin-right: auto;
@@ -87,9 +97,14 @@
             right: 0;
             width: 100%;
             margin: 0 auto;
-            max-width: 740px;
+            max-width: 740px 	;
             position: absolute;
+            transform: unset;
             height: 80% !important;
+        }
+
+        .sub-wrapper-lista {
+        	height: 100;
         }
     }
 }
@@ -103,6 +118,7 @@
             right: 0;
             width: 100%;
             margin: 0 auto;
+            transform: unset;
             max-width: 1000px;
             position: absolute;
             height: 80% !important;
@@ -111,7 +127,19 @@
 }
 
 
+@media screen and (min-width: 1200px){
+
+	.img-educacion-top {
+		top: 10%;
+	}
+}
+
 @media screen and (min-width: 1300px){
+
+	.img-educacion-top {
+		top: 10%;
+	}
+
 	#educacionintegral {
 		.wrapper-lista-descripcion {
 			left: 0;
@@ -119,8 +147,9 @@
 			width: 100%;
 			margin: 0 auto;
 			max-width: 1272px;
-            height: 80% !important;
+            height: 75% !important;
 		}
+
 
 		
 		.seccion-text-right {

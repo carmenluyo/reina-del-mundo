@@ -76,7 +76,7 @@
 		
 		ul.slick-dots {
 			padding: 0;
-			bottom: 200px !important;
+			bottom: 190px !important;
 
 			li button {
 	        	font-size: 15px;
@@ -266,7 +266,7 @@
 		width: auto !important;
 
 		ul.slick-dots {
-			bottom : 0;
+			bottom : 150px !important;
 		}
 
 		#top-formativo {
@@ -300,7 +300,7 @@
 		    height: 80% !important;
 
 			.slick-slide img {
-				height: 95% !important;
+				height: 95%;
 			}
 		}
 
@@ -332,6 +332,10 @@
 
 		#top-formativo {
 			z-index: 2;
+		}
+
+		ul.slick-dots {
+			bottom : 60px !important;
 		}
 
 		.seccion-text-right-titulo {
@@ -377,7 +381,7 @@
 		}
 
 		.left p {
-			width: 62%;
+			width: 80%;
 			margin-top: 14%;
 			font-size: 20px;
 			line-height: 25px;
@@ -416,6 +420,10 @@
 			#areaformativa .left img, #areaformativa .right img {
 
 			}
+		}
+
+		#areaformativa .wrapper-lista-descripcion .slick-slide img#areaformativa .wrapper-lista-descripcion .slick-slide img {
+			height: 80%;
 		}
 
 		.slick-list {
