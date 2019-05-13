@@ -1912,16 +1912,20 @@ input[type=number] {
   #page-contacto .wrapper-main-contacto {
     transform: translateY(150%); } }
 @media screen and (min-width: 768px) {
+  #page-admision {
+    background-size: 100%;
+    background-image: url("img/niños-inicial.jpeg");
+    background-repeat: no-repeat; }
+
   #page-contacto {
     background-image: unset; }
     #page-contacto .wrapper-main-contacto {
       transform: unset; } }
 @media (min-width: 1024px) {
   #page-admision {
+    background-size: 100%;
     background-image: url("img/niños-inicial.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; } }
+    background-repeat: no-repeat; } }
 .preload {
   position: absolute;
   z-index: 9999;
@@ -2245,13 +2249,16 @@ body.removerScroll {
     height: 120vh;
     overflow: hidden;*/ } }
 
-@media (max-width: 760px) {
-  #page-admision {
-    background-image: url(img/admision/fondo-admision.svg);
-    background-size: 600%; } }
-@media (min-width: 760px) {
-  #page-admision {
-    background-color: #C83C41; } }
+#page-admision {
+  overflow: hidden;
+  height: 800px; }
+  @media (max-width: 760px) {
+    #page-admision {
+      background-image: url(img/admision/fondo-admision.svg);
+      background-size: 600%; } }
+  @media (min-width: 760px) {
+    #page-admision {
+      background-color: #C83C41; } }
 
 @media (max-width: 760px) {
   #page-admision > .seccion-titulos {

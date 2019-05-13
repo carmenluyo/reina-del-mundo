@@ -20,7 +20,7 @@
 		}
 	</style>
 </head>
-<body id="page-admision">
+<body id="page-admision" class="page-admision">
 	<div class="contendorTransition">
 			<div class="contendorTransition-top">
 				<ul class="cabecera-modal-ul">
@@ -234,6 +234,13 @@
        	autoplay: true,
 	});
 
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		if($('body').hasClass("page-admision")) {
+			$('html').css("overflow", "hidden");
+		};
+	}
 </script>
 </body>
 </html>

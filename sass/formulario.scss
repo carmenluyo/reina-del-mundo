@@ -132,9 +132,9 @@ input[type=number] {
 }
 
 #btn-enviar-admision{
-   border:0;
+  border:0;
   outline: 0;
-    background-color: initial;
+  background-color: initial;
   width: 120px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -162,6 +162,12 @@ input[type=number] {
 
 
 @media screen and (min-width: 768px){
+  #page-admision {
+      background-size: 100%;
+      background-image: url('img/niños-inicial.jpeg'); 
+      background-repeat: no-repeat; 
+  }
+
   #page-contacto {
     background-image: unset;
 
@@ -176,9 +182,8 @@ input[type=number] {
 
 @media(min-width: 1024px){
    #page-admision {
+      background-size: 100%;
       background-image: url('img/niños-inicial.jpeg'); 
-      background-position: center; 
       background-repeat: no-repeat; 
-      background-size: cover
    }
 }
