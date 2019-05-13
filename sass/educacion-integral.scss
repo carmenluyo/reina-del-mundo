@@ -128,6 +128,14 @@
 
 
 @media screen and (min-width: 1200px){
+	#educacionintegral {
+
+		.seccion-text-right {
+		    width: 35%;
+		    padding-top: 7% !important;
+		    text-align: right;
+		}
+	}
 
 	.img-educacion-top {
 		top: 10%;
@@ -150,9 +158,10 @@
             height: 75% !important;
 		}
 
-
-		
 		.seccion-text-right {
+		    width: 25%;
+		    padding-top: 7% !important;
+		    text-align: right;
 			&-titulo {
 				width: 400px;
 				margin-left: auto;
