@@ -31,9 +31,8 @@
 
 #page-admision{
 	@media(max-width: 760px){
-		
 		height: 700px;
-		
+	    overflow-y: auto;
 	}
 }
 

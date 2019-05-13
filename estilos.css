@@ -2280,7 +2280,8 @@ body.removerScroll {
 
 @media (max-width: 760px) {
   #page-admision {
-    height: 700px; } }
+    height: 700px;
+    overflow-y: auto; } }
 
 #wrapper-svg-admision {
   position: absolute;
