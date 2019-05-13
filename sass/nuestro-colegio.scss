@@ -948,16 +948,22 @@
 
 
 
-@media screen and (min-height: 600px) and (max-height: 768px){
-	.inicio .tabs-info{
-		bottom: -100px;
-	}
+@media screen and (min-height: 600px) and (max-height: 700px){
+    .inicio .tabs-info{
+        bottom: -100px;
+    }
 
-	.inicio .box-logos {
-		bottom: 7px;
-	}
+    .inicio .box-logos {
+        bottom: 7px;
+    }
 
-	.container-full.inicio {
-		padding-top: 0;
-	}
+    .container-full.inicio {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-height: 700px) and (max-height: 768px){
+    .inicio .slick-slide {
+        height: 700px !important;
+    }
 }

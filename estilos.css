@@ -4094,7 +4094,7 @@ body {
   #areaformativa .left p {
     font-size: 23px;
     line-height: 24px; } }
-@media screen and (min-height: 600px) and (max-height: 768px) {
+@media screen and (min-height: 600px) and (max-height: 700px) {
   .inicio .tabs-info {
     bottom: -100px; }
 
@@ -4103,6 +4103,9 @@ body {
 
   .container-full.inicio {
     padding-top: 0; } }
+@media screen and (min-height: 700px) and (max-height: 768px) {
+  .inicio .slick-slide {
+    height: 700px !important; } }
 .bg-linear-yellow {
   background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
 
