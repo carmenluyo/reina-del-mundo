@@ -4735,7 +4735,8 @@ body {
     #areaformativa .seccion-text-right {
       width: 47%;
       display: inline-block;
-      vertical-align: top; }
+      vertical-align: top;
+      margin-top: 5%; }
     #areaformativa .middle-side {
       height: 80vh;
       position: relative; }
