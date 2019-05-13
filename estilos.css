@@ -426,11 +426,15 @@ p {
 
 .seccion-wrapper-admision-contenido-titulo {
   color: #ffffff;
-  text-align: right; }
+  text-align: right;
+  font-size: 26px; }
+  @media (min-width: 760px) {
+    .seccion-wrapper-admision-contenido-titulo {
+      font-size: 2em; } }
 
 .seccion-wrapper-admision-contenido-contexto {
   width: 100%;
-  font-size: 18px;
+  font-size: 13px;
   margin-left: auto;
   text-align: right;
   color: #ffffff; }
@@ -1183,7 +1187,13 @@ p {
   margin-left: auto;
   border: 2px solid white;
   border-radius: 10px;
-  color: #e9be53; }
+  color: white !important; }
+  @media (max-width: 760px) {
+    .btn-conoce-reina {
+      color: #e9be53; } }
+  @media (min-width: 1500px) {
+    .btn-conoce-reina {
+      color: #e9be53; } }
 
 /*body::-webkit-scrollbar {
     width: 1em;
@@ -1906,7 +1916,10 @@ input[type=number] {
   border: 1px solid #ffffff;
   border-radius: 7px;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.3);
-  color: #c83c41; }
+  color: white; }
+  @media (min-width: 760px) {
+    #btn-enviar-admision {
+      color: #c83c41; } }
 
 @media screen and (min-width: 425px) {
   #page-contacto .wrapper-main-contacto {
@@ -4141,7 +4154,7 @@ body {
   #historia .lineatiempo {
     width: 40%;
     bottom: -60px;
-    margin-left: 14%; }
+    margin-left: 7%; }
     #historia .lineatiempo a {
       cursor: pointer; }
       #historia .lineatiempo a img {
@@ -4151,7 +4164,7 @@ body {
     top: 113px; }
   #historia .historia {
     width: 90%;
-    top: -80px;
+    top: -50px;
     padding: 0 12px 0; }
   #historia .left, #historia .right {
     float: right;
@@ -4219,7 +4232,8 @@ body {
 
 @media screen and (min-width: 375px) {
   #historia .slick-slide img {
-    width: 70%; } }
+    width: 65%;
+    margin-top: 35px; } }
 @media screen and (min-width: 425px) {
   #historia .slick-slide img {
     width: 60%; } }
@@ -5229,7 +5243,14 @@ body {
 #educacionintegral {
   height: 100vh;
   background-size: cover;
-  background-image: url("./mobile/historia-mob.jpg"); }
+  background-image: url("./mobile/educacion-integral-mob.jpg"); }
+  #educacionintegral .titulo-interno {
+    font-size: 30px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 4; }
 
 #educacionintegral .seccion-text-right-titulo {
   font-size: 14px;
@@ -5253,7 +5274,7 @@ body {
   height: 180px; }
 
 #educacionintegral .seccion-text-right {
-  width: 50%;
+  width: 60%;
   padding-top: 7% !important; }
   #educacionintegral .seccion-text-right-titulo {
     font-size: 18px;

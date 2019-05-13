@@ -35,7 +35,7 @@
 
 		width: 40%;
 		bottom: -60px;
-		margin-left: 14%;
+		margin-left:7%;
 
     	a {
     		cursor: pointer;
@@ -54,7 +54,7 @@
 
 	.historia {
 	    width: 90%;
-	    top: -80px;
+	    top: -50px;
 	    padding: 0 12px 0;
     }
 
@@ -161,7 +161,8 @@
 
 @media screen and (min-width: 375px) {
 	#historia .slick-slide img {
-		width: 70%;
+		width: 65%;
+		margin-top: 35px;
 	}
 }
 

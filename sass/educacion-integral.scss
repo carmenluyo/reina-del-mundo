@@ -1,7 +1,16 @@
 #educacionintegral {
 	height: 100vh;
     background-size: cover;
-    background-image: url('./mobile/historia-mob.jpg');
+    background-image: url('./mobile/educacion-integral-mob.jpg');
+
+    .titulo-interno {
+	    font-size: 30px;
+	    color: white;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	    position: relative;
+	    z-index: 4;
+	}
 }
 
 #educacionintegral .seccion-text-right-titulo {
@@ -29,7 +38,7 @@
 }
 
 #educacionintegral .seccion-text-right {
-	width: 50%;
+	width: 60%;
 	padding-top: 7% !important;
 
 	&-titulo {
