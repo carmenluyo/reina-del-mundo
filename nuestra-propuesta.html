@@ -78,7 +78,7 @@
 
 	<div class="seccion-titulos">
 		<div class="container flex align-center ">
-			<h1 class="titulo-interno">Niveles Educativos</h1>
+			<h1 class="titulo-interno">Nuestra Propuesta</h1>
 			<button class="hamburger hamburger--collapse" id="boton-click" type="button">
 			  <span class="hamburger-box">
 			    <span class="hamburger-inner"></span>
@@ -103,11 +103,30 @@
 				<h1 class="txt-right txt-white full-width position-right-20  pr-20  z-index-4">Niveles Educativos</h1>
 				<p class="text-right t-white txt-25 m-txt-18 pr-20 z-4" data-rellax-speed="4" >Nuestra labor educativa está centrada<br class="mv-br-none"> en el alumno como persona. Por ello, es<br class="mv-br-none"> parte fundamental de nuestra tarea<br class="mv-br-none"> conocer a cada estudiante a profundidad, <br class="mv-br-none"> con sus fortalezas y aspectos a potenciar;<br class="mv-br-none">  para poder lograr, en sinergia con los <br class="mv-br-none"> padres, un desarrollo perdurable y armónico. </p>
 
-				<div class="instalaciones">
-					<button  onclick="window.location.href='miscelanea.html';">
-						<img src="img/flecha-instalaciones.png"> Instalaciones
-					</button>
+				<div class="nuestra-propuesta-container">				
+					<ul class="nuestra-propuesta-content">
+						<button class="n-propuesta">
+							Niveles Educativos
+						</button>
+
+						<li class="items">
+							<a class="one-slide" href="javascript:void(0)" >Kindergarten</a>
+						</li>
+						<li class="items">
+							<a class="two-slide"  href="javascript:void(0)" >Grundschule</a>
+						</li>
+						<li class="items">
+							<a class="three-slide" href="javascript:void(0)" >Mittelstufe</a>
+						</li>
+						<li class="items">
+							<a class="four-slide"  href="javascript:void(0)" >Oberstufe</a>
+						</li>
+						<li class="items">
+							<a class="five-slide"  href="javascript:void(0)" >Diploma PD</a>
+						</li>
+					</ul>
 				</div>
+
 
 			</div>
 
@@ -187,7 +206,7 @@
 													to="395" 
 													begin="0"
 	                        dur="160s" repeatCount="indefinite"/>
-				<circle class="circle-ai" cx="10" cy="10" r="10" stroke="none" fill="yellow">
+				<circle class="circle-ai hidden-xs hidden-lg" cx="10" cy="10" r="10" stroke="none" fill="yellow">
 				 <animate attributeName="r"
 	                      type="xml"
 	                      from="1" 
@@ -435,6 +454,32 @@
 			   autoplaySpeed: 4000,
 			   asNavFor: '.slider-for'
 			 });
+
+			$("ul > button.n-propuesta").on("click", function(e){
+			   e.preventDefault();
+			   $("ul > li ").toggleClass("active");
+			});
+
+
+			$(".one-slide").on('click', function(){
+				$("#slick-slide20").trigger('click');
+			});
+
+			$(".two-slide").on('click', function(){
+				$("#slick-slide21").trigger('click');
+			});
+
+			$(".three-slide").on('click', function(){
+				$("#slick-slide22").trigger('click');
+			});
+
+			$(".four-slide").on('click', function(){
+				$("#slick-slide23").trigger('click');
+			});	
+
+			$(".five-slide").on('click', function(){
+				$("#slick-slide24").trigger('click');
+			});	
 
 		 });
 	</script>

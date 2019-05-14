@@ -4438,6 +4438,48 @@ body {
     color: #25336d; }
   #page-propuesta-educativa .slick-arrow {
     display: none !important; }
+  #page-propuesta-educativa .nuestra-propuesta-container {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto; }
+    #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content {
+      top: 0;
+      right: 0;
+      z-index: 9;
+      position: relative; }
+      #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content button.n-propuesta {
+        left: 130px;
+        width: 194px !important;
+        color: #C83C41;
+        height: 60px;
+        display: block;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 60px;
+        margin: 0 auto;
+        margin-left: auto;
+        padding-left: 7px;
+        text-align: center;
+        text-decoration: none;
+        background-size: cover;
+        background-image: url(img/submenu.png);
+        background-color: transparent;
+        border: none; }
+      #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content li {
+        opacity: 0;
+        width: 170px;
+        height: 40px;
+        display: none;
+        margin: auto;
+        text-align: center;
+        border-radius: 3px;
+        background-color: rgba(211, 211, 211, 0.2901960784); }
+        #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content li a {
+          text-decoration: none;
+          color: black; }
+        #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content li.active {
+          opacity: 1;
+          display: block; }
 
 @media screen and (min-width: 375px) {
   #page-propuesta-educativa .slick-slide img {
@@ -4541,6 +4583,46 @@ body {
     transform: unset; }
     #page-propuesta-educativa .wrapper-lista-descripcion .slick-list {
       height: auto !important; }
+  #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content {
+    top: 55%;
+    right: 13px;
+    bottom: unset;
+    position: absolute; }
+    #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content button.n-propuesta {
+      left: 130px;
+      width: 215px !important;
+      color: #C83C41;
+      height: 67px;
+      display: block;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 900;
+      line-height: 73px;
+      margin-left: auto;
+      padding-left: 7px;
+      text-align: center;
+      text-decoration: none;
+      background-size: cover;
+      background-image: url(img/submenu.png);
+      background-color: transparent;
+      border: none; }
+    #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content li {
+      opacity: 0;
+      width: 170px;
+      height: 40px;
+      display: none;
+      margin-left: auto;
+      text-align: center;
+      border-radius: 3px;
+      background-color: rgba(211, 211, 211, 0.2901960784); }
+      #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content li a {
+        text-decoration: none;
+        color: black;
+        font-size: 21px;
+        line-height: 40px; }
+      #page-propuesta-educativa .nuestra-propuesta-container ul.nuestra-propuesta-content li.active {
+        opacity: 1;
+        display: block; }
 
   circle.circle-ai {
     animation: bounce 0.5s;
@@ -4572,7 +4654,7 @@ body {
   #page-propuesta-educativa .full-width p {
     font-size: 19px; }
   #page-propuesta-educativa .full-width div.h-700 {
-    height: 600px; } }
+    height: 680px; } }
 @media screen and (min-width: 1300px) {
   .scalar {
     display: block !important; }
@@ -4611,7 +4693,7 @@ body {
     height: 80% !important; }
   #page-propuesta-educativa .slider-fotos {
     width: 620px !important;
-    height: 600px !important; }
+    height: 680px !important; }
     #page-propuesta-educativa .slider-fotos img {
       width: 100%; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {

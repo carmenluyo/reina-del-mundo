@@ -67,6 +67,64 @@
 	.slick-arrow {
 		display: none !important;
 	}
+
+	.nuestra-propuesta-container {
+
+	    text-align: center;
+	    width: 300px;
+	    margin: 0 auto;
+
+		ul.nuestra-propuesta-content {
+			top:0;
+			right: 0;
+			z-index: 9;
+			position: relative;
+
+			button.n-propuesta {
+				left: 130px;
+				width: 194px !important;
+				color: #C83C41;
+				height: 60px;
+				display: block;
+				cursor: pointer;
+				font-size: 18px;
+				line-height: 60px;
+				margin: 0 auto;
+				margin-left: auto;
+				padding-left: 7px;
+				text-align: center;
+				text-decoration: none;
+				background-size: cover;
+				background-image: url(img/submenu.png);
+				background-color: transparent;
+				border: none;
+			}
+
+			li {
+
+				opacity: 0;
+				width: 170px;
+				height: 40px;
+				display: none;
+				margin: auto;
+				text-align: center;
+				border-radius: 3px;
+				background-color: rgba(211, 211, 211, 0.2901960784313726);
+
+				a {
+					text-decoration: none;
+					color: black;	
+				}
+
+
+				&.active {
+					opacity: 1;
+					display: block;
+				}
+			}
+		}	
+	}
+
 }
 
 
@@ -239,6 +297,60 @@
 				height: auto !important;
 			}
 		}
+
+		.nuestra-propuesta-container{
+			ul.nuestra-propuesta-content {
+				top: 55%;
+				right: 13px;
+				bottom: unset;
+				position: absolute;
+
+				button.n-propuesta {
+				    left: 130px;
+				    width: 215px !important;
+				    color: #C83C41;
+				    height: 67px;
+				    display: block;
+				    cursor: pointer;
+				    font-size: 18px;
+				    font-weight: 900;
+				    line-height: 73px;
+				    margin-left: auto;
+				    padding-left: 7px;
+					text-align: center;
+					text-decoration: none;
+					background-size: cover;
+					background-image: url(img/submenu.png);
+					background-color: transparent;
+					border: none;
+				}
+
+				li {
+
+					opacity: 0;
+					width: 170px;
+					height: 40px;
+					display: none;
+					margin-left: auto;
+					text-align: center;
+					border-radius: 3px;
+					background-color: rgba(211, 211, 211, 0.2901960784313726);
+
+					a {
+						text-decoration: none;
+						color: black;
+					    font-size: 21px;
+    					line-height: 40px;
+					}
+
+
+					&.active {
+						opacity: 1;
+						display: block;
+					}
+				}
+			}	
+		}			
 	}
 
 
@@ -296,7 +408,7 @@
 				}
 
 				div.h-700 {
-					height: 600px;
+					height: 680px;
 				}
 			}
 		}
@@ -375,7 +487,7 @@
 
 		.slider-fotos {
 			width: 620px !important;
-			height: 600px !important;
+			height: 680px !important;
 			img {
 				width: 100%
 			}
