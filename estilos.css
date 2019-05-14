@@ -5274,6 +5274,52 @@ body {
   top: 40%;
   height: 180px; }
 
+.tab_content_colegio-edu {
+  visibility: inherit;
+  text-align: left; }
+
+ul.educacion-integral-container {
+  top: 45%;
+  right: 35px;
+  z-index: 9;
+  position: absolute; }
+  ul.educacion-integral-container button.e-integral {
+    z-index: 1;
+    left: 130px;
+    width: 260px !important;
+    color: #C83C41;
+    height: 80px;
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+    line-height: 90px;
+    margin-left: auto;
+    padding-left: 14px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    background-size: cover;
+    background-image: url(img/submenu.png);
+    background-color: transparent;
+    border: none; }
+  ul.educacion-integral-container li {
+    opacity: 0;
+    width: 200px;
+    display: none;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+    border-radius: 3px;
+    background-color: rgba(211, 211, 211, 0.2901960784); }
+    ul.educacion-integral-container li a {
+      text-decoration: none;
+      color: black;
+      font-size: 20px; }
+    ul.educacion-integral-container li.active {
+      opacity: 1;
+      display: block; }
+
 #educacionintegral .seccion-text-right {
   width: 60%;
   padding-top: 7% !important; }
