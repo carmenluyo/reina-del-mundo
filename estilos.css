@@ -4670,6 +4670,49 @@ body {
   #areaformativa .slick-slide p {
     padding: 0 7%; }
 
+.aformativa {
+  text-align: center;
+  width: 300px;
+  margin: 0 auto; }
+  .aformativa ul.areafor {
+    top: 0;
+    right: 0;
+    z-index: 9;
+    position: relative; }
+    .aformativa ul.areafor button.areaformativa-web {
+      left: 130px;
+      width: 194px !important;
+      color: #C83C41;
+      height: 60px;
+      display: block;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 60px;
+      margin: 0 auto;
+      margin-left: auto;
+      padding-left: 7px;
+      text-align: center;
+      text-decoration: none;
+      background-size: cover;
+      background-image: url(img/submenu.png);
+      background-color: transparent;
+      border: none; }
+    .aformativa ul.areafor li {
+      opacity: 0;
+      width: 170px;
+      height: 40px;
+      display: none;
+      margin: auto;
+      text-align: center;
+      border-radius: 3px;
+      background-color: rgba(211, 211, 211, 0.2901960784); }
+      .aformativa ul.areafor li a {
+        text-decoration: none;
+        color: black; }
+      .aformativa ul.areafor li.active {
+        opacity: 1;
+        display: block; }
+
 @media screen and (min-width: 768px) {
   .bg-linear-pink {
     background-image: linear-gradient(180deg, #f1645b, #f59986, #fbcdbb) !important; }
@@ -4752,6 +4795,46 @@ body {
       height: 60% !important;
       transform: unset;
       overflow: hidden; }
+    #areaformativa .aformativa ul.areafor {
+      top: 100%;
+      right: 35px;
+      bottom: unset;
+      position: absolute; }
+      #areaformativa .aformativa ul.areafor button.areaformativa-web {
+        left: 130px;
+        width: 180px !important;
+        color: #C83C41;
+        height: 55px;
+        display: block;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 60px;
+        margin-left: auto;
+        padding-left: 7px;
+        text-align: center;
+        text-decoration: none;
+        background-size: cover;
+        background-image: url(img/submenu.png);
+        background-color: transparent;
+        border: none; }
+      #areaformativa .aformativa ul.areafor li {
+        opacity: 0;
+        width: 170px;
+        height: 40px;
+        display: none;
+        margin-left: auto;
+        text-align: center;
+        border-radius: 3px;
+        background-color: rgba(211, 211, 211, 0.2901960784); }
+        #areaformativa .aformativa ul.areafor li a {
+          text-decoration: none;
+          color: black;
+          font-size: 21px;
+          line-height: 40px; }
+        #areaformativa .aformativa ul.areafor li.active {
+          opacity: 1;
+          display: block; }
 
   @keyframes rotating {
     0% {

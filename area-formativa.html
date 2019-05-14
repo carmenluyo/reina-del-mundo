@@ -114,17 +114,28 @@
 	<section class="seccion-text-right max-align-center  flex-wrap mv-over m-bottom-mv-0" id="block"  >
 		<h1 class="txt-right txt-white full-width pt-50 z-index-4">Área Formativa</h1>
 		<p class="seccion-text-right-titulo" data-rellax-speed="4" >Uno de nuestros grandes pilares es la formación. En este sentido contamos con una sólida tutoría grupal que combina la educación en virtudes humanas con temas de actualidad propios de cada etapa evolutiva. Además, a través de la preceptoría individual, los alumnos y sus familias reciben una orientación específica para lograr el desarrollo pleno de cada estudiante. Nuestra propuesta formativa se complementa con las labores desempeñadas por las áreas de Pastoral, Liderazgo y Acción Social; Familia; Atención a la Diversidad y Psicopedagogía. 
-
 		</p>
+		<div class="aformativa">
+			<ul class="areafor">
+				<button class="areaformativa-web">
+					Área Formativa
+				</button>
 
-		<div class="triangle triangle--brown"></div>
-
-		<div class="instalaciones">
-			<button  onclick="window.location.href='miscelanea.html';">
-				<img src="img/flecha-instalaciones.png"> Instalaciones
-			</button>
+				<li class="items">
+					<a class="ten-slide" href="javascript:void(0)" >Preceptoría</a>
+				</li>
+				<li class="items">
+					<a class="eleven-slide" href="javascript:void(0)" >Programa STAR</a>
+				</li>
+				<li class="items">
+					<a class="twelve-slide" href="javascript:void(0)" >Área de Familia</a>
+				</li>
+				<li class="items">
+					<a class="thirteen-slide" href="javascript:void(0)" >Pastoral</a>
+				</li>
+			</ul>
 		</div>
-
+		<div class="triangle triangle--brown"></div>
 	</section>
 	
 	<div>
@@ -379,6 +390,30 @@ $("a").click(function() {
 		   autoplaySpeed: 4000,
 		   asNavFor: '.slider-for-area'
  		});
+
+
+		$("ul > button.areaformativa-web").on("click", function(e){
+		   e.preventDefault();
+		   $("ul > li ").toggleClass("active");
+		});
+
+
+		$(".ten-slide").on('click', function(){
+			$("#slick-slide10").trigger('click');
+		});
+
+		$(".eleven-slide").on('click', function(){
+			$("#slick-slide11").trigger('click');
+		});
+
+		$(".twelve-slide").on('click', function(){
+			$("#slick-slide12").trigger('click');
+		});
+
+		$(".thirteen-slide").on('click', function(){
+			$("#slick-slide13").trigger('click');
+		});				
+
 	});
 </script>
 <script>
