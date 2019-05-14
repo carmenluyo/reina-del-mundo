@@ -339,7 +339,28 @@ $(document).ready(function(){
 	});
 	
 </script>
+<script>
+	$(document).ready(function(){	
+		var lastScrollTop = 0;
 
+		window.addEventListener("scroll", function(){
+		   var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+		   if (currentScroll > lastScrollTop){
+	   			$(".puntos img").css("opacity", "0.15");
+
+		   } else {
+	   			$(".puntos img").css("opacity", "0.2");
+
+
+		     if(currentScroll<=3){
+	   			$(".puntos img").css("opacity", "1");
+		     }
+		   }
+		   lastScrollTop = currentScroll;
+		}, false);			
+
+	});
+</script>
 <script src="js/rellax.min.js"></script>
 <script>
 	var rellax = new Rellax('.rellax');
