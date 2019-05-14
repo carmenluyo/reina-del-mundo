@@ -2787,6 +2787,9 @@ body {
   width: 100vw;
   height: 800px; }
 
+.texto-mobile {
+  font-size: 14px; }
+
 #inicio {
   overflow: hidden;
   background-size: cover;
