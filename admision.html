@@ -20,22 +20,24 @@
 		}
 	</style>
 </head>
-<body id="page-admision">
+<body id="page-admision" class="page-admision">
 	<div class="contendorTransition">
 			<div class="contendorTransition-top">
 				<ul class="cabecera-modal-ul">
-					<li><a href="nuestra-colegio.html">Nuestro Colegio</a></li>
-					<li><a href="educacion-integral.html">Propuesta Educativa</a></li>
-					<li><a href="area-formativa.html">Área formativa</a></li>
-					<li><a href="nuestra-propuesta.html">Educación Integral</a></li>
-					<li><a href="admision.html">Admisión</a></li>
-					<li><a href="contacto.html">Contacto</a></li>	
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="historia.html">Historia</a></li>
+						<li><a href="nuestra-colegio.html">Nuestro Colegio</a></li>
+						<li><a href="nuestra-propuesta.html">Propuesta Académica</a></li>
+						<li><a href="area-formativa.html">Área formativa</a></li>
+						<li><a href="educacion-integral.html">Educación Integral</a></li>
+						<li><a href="admision.html">Admisión</a></li>
+						<li><a href="contacto.html">Contacto</a></li>	
 				</ul>
 			</div>
 	</div>
 
 	<div class="seccion-titulos m-t-7 width82">
-		<h1 class="titulo-interno lineH-110"><span class="titulo-admision">Proceso de Admisión</span> <br>  <span class="titulo-fecha">2020-2021 </span> <br> <span class="titulo-socilitud">Solicitud de visita guiada<br> <span>Viernes 22 Marzo 9:00 am</span></span></h1>
+		<h1 class="titulo-interno lineH-110"><span class="titulo-admision">Proceso de Admisión</span> <br>  <span class="titulo-fecha">2020-2021 </span> <br> </h1>
 		<button class="hamburger hamburger--collapse" id="boton-click" type="button">
 		  <span class="hamburger-box">
 		    <span class="hamburger-inner"></span>
@@ -44,9 +46,8 @@
 		</div>
 
 	<section class="seccion-wrapper-admision" id="block">
-		<img src="img/admision/admision-rectangulo-circular.svg" class="admision-forma-bottom-rojo">
+		<img src="img/admision/admision-rectangulo-circular.svg" class="admision-forma-bottom-rojo hidden-xs">
 		<div class="seccion-wrapper-admision-form">
-			<img src="img/BF162673.jpg" class="admision-imagen-movil">
 			<form id="formulario-admision">
 				<h2 class="formulario-admision-titulo">Datos del Alumno</h2>
 				<input type="text" name="nombreTutor"  placeholder="Nombre y apellido del Alumno:" id="nombreAdmision">
@@ -232,6 +233,13 @@
        	autoplay: true,
 	});
 
+</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		if($('body').hasClass("page-admision")) {
+			$('html').css("overflow", "hidden");
+		};
+	});
 </script>
 </body>
 </html>

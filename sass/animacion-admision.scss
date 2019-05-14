@@ -8,10 +8,14 @@
 }
 
 #page-admision{
+
+    height: 800px;
+    overflow: hidden;
+    position: relative;
 	
 	@media(max-width: 760px){
 		background-image: url(img/admision/fondo-admision.svg);
-	background-size: 600%;
+		background-size: 600%;
 	}
 	@media(min-width: 760px){
 		background-color: #C83C41;
@@ -28,9 +32,8 @@
 
 #page-admision{
 	@media(max-width: 760px){
-		
 		height: 700px;
-		
+	    overflow-y: auto;
 	}
 }
 

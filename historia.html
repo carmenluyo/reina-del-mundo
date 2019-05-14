@@ -45,12 +45,14 @@
 	<div class="contendorTransition">
 			<div class="contendorTransition-top">
 				<ul class="cabecera-modal-ul">
-					<li><a href="nuestra-colegio.html">Nuestro Colegio</a></li>
-					<li><a href="educacion-integral.html">Propuesta Educativa</a></li>
-					<li><a href="area-formativa.html">Área formativa</a></li>
-					<li><a href="nuestra-propuesta.html">Educación Integral</a></li>
-					<li><a href="admision.html">Admisión</a></li>
-					<li><a href="contacto.html">Contacto</a></li>	
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="historia.html">Historia</a></li>
+						<li><a href="nuestra-colegio.html">Nuestro Colegio</a></li>
+						<li><a href="nuestra-propuesta.html">Propuesta Educativa</a></li>
+						<li><a href="area-formativa.html">Área formativa</a></li>
+						<li><a href="educacion-integral.html">Educación Integral</a></li>
+						<li><a href="admision.html">Admisión</a></li>
+						<li><a href="contacto.html">Contacto</a></li>	
 				</ul>
 			</div>
 	</div>
@@ -77,7 +79,7 @@
 			</div>
 		</div>
 		<div class="historia" >
-			<div class="t-white m-center flex-center txt-20 pt-20 pr-20 z-4">
+			<div class="t-white m-center flex-center txt-20 pr-20 z-4">
 				<h1 class="txt-right txt-white full-width   pr-20  z-index-4">Historia</h1>
 				<p class="text-right " data-rellax-speed="4" >50 años al servicio de la educación nos<br class="mv-br-none"> llenan de orgullo y felicidad, ya que, en<br class="mv-br-none"> los valores de humildad, sencillez y <br class="mv-br-none">caridad, seguimos formando<br class="mv-br-none"> generaciones de alumnos líderes que <br class="mv-br-none">buscan la verdad.  En ello hemos<br class="mv-br-none"> encontrado la gratificación de nuestra <br class="mv-br-none">vocación.
 				<br></p>
@@ -191,7 +193,6 @@
 						<div><img class="image-slider" src="img/instalaciones/16.jpg" alt=""></div>
 						<div><img class="image-slider" src="img/instalaciones/17.jpg" alt=""></div>
 						<div><img class="image-slider" src="img/instalaciones/18.jpg" alt=""></div>
-						<div><img class="image-slider" src="img/instalaciones/19.jpg" alt=""></div>
 					</div>
 
 
@@ -338,7 +339,28 @@ $(document).ready(function(){
 	});
 	
 </script>
+<script>
+	$(document).ready(function(){	
+		var lastScrollTop = 0;
 
+		window.addEventListener("scroll", function(){
+		   var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+		   if (currentScroll > lastScrollTop){
+	   			$(".puntos img").css("opacity", "0.15");
+
+		   } else {
+	   			$(".puntos img").css("opacity", "0.2");
+
+
+		     if(currentScroll<=3){
+	   			$(".puntos img").css("opacity", "1");
+		     }
+		   }
+		   lastScrollTop = currentScroll;
+		}, false);			
+
+	});
+</script>
 <script src="js/rellax.min.js"></script>
 <script>
 	var rellax = new Rellax('.rellax');

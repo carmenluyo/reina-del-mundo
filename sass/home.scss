@@ -13,6 +13,10 @@ body {
 }
 
 
+.texto-mobile {
+    font-size: 14px;
+}
+
 #inicio {
     overflow: hidden;
     background-size: cover;
@@ -437,6 +441,7 @@ body {
     }
 
     .logo-rmd {
+        width: 256px;
         top: 0 !important;
     }
 
@@ -828,6 +833,12 @@ body {
 }
 
 
+@media screen and (min-width: 1900px){
+    .logo-rmd {
+        width: 260px;
+        margin-right: auto;
+    }
+}
 
 @media screen and (min-width: 2560px) {
 
@@ -862,3 +873,4 @@ body {
         }
     }
 }
+

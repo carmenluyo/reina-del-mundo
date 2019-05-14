@@ -30,8 +30,7 @@
         @media screen and (min-width: 1500px) {
             background-image: url(img/linea-tiempo/bg-linea-tiempo.png);
             background-position-x: center;
-            height: 100%;
-            width: 100%;
+        
         }
 
 
@@ -76,8 +75,8 @@
 
             .mil-novecientos-setenta-cuatro-mob {
                 position: absolute;
-                top: 345px;
-                left: 4px;
+                top: 342px;
+                left: 23px;
 
                 @media screen and (min-width: 768px) {
                     position: relative;
@@ -124,7 +123,7 @@
                     &.mil-novecientos-noventa-mob {
                         position: absolute;
                         left: 60px;
-                        bottom: 152px;
+                        bottom: 93px;
 
                         @media screen and (min-width: 768px) {
                             position: relative;
@@ -136,7 +135,7 @@
                     &.mil-novecientos-ochenta-mob {
                         left: 100px;
                         position: absolute;
-                        bottom: 230px;
+                        bottom: 246px;
 
                         @media screen and (min-width: 768px) {
                             position: relative;
@@ -267,24 +266,58 @@
     }
 
     .overlay {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 240px;
+        position: fixed;
         text-align: center;
         margin: 0 auto;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        
+        width: 100%;
 
-        display: none;
+        
+        &.active {
+            position: fixed;
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+            margin: 0 auto;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 0;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            #zero {
+                display: none !important; 
+            }
+        }
 
         @media screen and (min-width: 768px) {
+            position: absolute;
             width: 355px;
             height: 170px;
-            display: flex;
-            align-items: center;
             justify-content: center;
             padding: 0 21px 4px;
             box-sizing: border-box;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: auto;
+            transform: none;
+            background: transparent;
+
+            &.active {
+                position: absolute;
+                justify-content: center;
+                padding: 0 21px 4px;
+                box-sizing: border-box;
+                left: 0;
+                bottom: 0;
+                background: transparent;
+                right: 0;
+                top: auto;
+            }
         }
 
         @media screen and (min-width: 1024px) {
@@ -298,13 +331,51 @@
             padding: 0 14px 4px;
         }
 
+        .tab_content {
+            background-color: #EA5B4C;
+            padding: 40px 21px 21px;
+            margin: 0 21px;
+            border-radius: 21px;
+            position: relative;
+
+
+            @media screen and (min-width: 768px) {
+                background-color: transparent;
+                padding: 0;
+                margin: 0;
+                border-radius: 0;
+            }
+
+            img {
+                width: 250px;
+            }
+
+            span {
+                position: absolute;
+                color: #fff;
+                font-size: 20px;
+                text-align: right;
+                padding: 2px 8px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                line-height: 22px;
+                top: 8px;
+                right: 15px;
+                @media screen and (min-width: 768px) {
+                    display: none;
+                }
+            }
+        }
+
+
         p {
-            color: #3D497C;
-            font-size: 12px;
+            color: #fff;
+            font-size: 14px;
             margin: 0;
 
             @media screen and (min-width: 768px) {
                 font-size: 10px;
+                color: #3D497C;
             }
 
             @media screen and (min-width: 1020px) {
@@ -314,10 +385,6 @@
             @media screen and (min-width: 1200px) {
                 font-size: 15px;
             }
-
-            // @media screen and (min-width: 1400px) {
-            //     font-size: 15px;
-            // }
         }
 
         .hide {
