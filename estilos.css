@@ -5593,3 +5593,12 @@ ul.educacion-integral-container {
     height: 80% !important; } }
 
 /*# sourceMappingURL=estilos.css.map */
+
+@media screen and (min-width: 1080px)  {
+  .inicio .tabs-info {
+    bottom: -132px;
+  } 
+  .inicio .box-logos {
+    bottom: 50px;
+  }
+}
