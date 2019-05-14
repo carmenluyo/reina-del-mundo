@@ -5279,10 +5279,10 @@ body {
   text-align: left; }
 
 ul.educacion-integral-container {
-  top: 56%;
-  right: 20px;
+  top: 0;
+  right: 0;
   z-index: 9;
-  position: absolute; }
+  position: relative; }
   ul.educacion-integral-container button.e-integral {
     z-index: 1;
     left: 130px;
@@ -5294,6 +5294,7 @@ ul.educacion-integral-container {
     font-size: 20px;
     line-height: 90px;
     margin-left: auto;
+    margin-right: auto;
     padding-left: 14px;
     text-align: center;
     text-decoration: none;
@@ -5390,7 +5391,43 @@ ul.educacion-integral-container {
     top: 45%;
     right: 35px;
     z-index: 9;
-    position: absolute; } }
+    position: absolute; }
+    ul.educacion-integral-container button.e-integral {
+      z-index: 1;
+      left: 130px;
+      width: 260px !important;
+      color: #C83C41;
+      height: 80px;
+      display: block;
+      cursor: pointer;
+      font-size: 20px;
+      line-height: 90px;
+      margin-left: auto;
+      padding-left: 14px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 900;
+      background-size: cover;
+      background-image: url(img/submenu.png);
+      background-color: transparent;
+      border: none; }
+    ul.educacion-integral-container li {
+      opacity: 0;
+      width: 200px;
+      display: none;
+      height: 50px;
+      line-height: 50px;
+      margin: auto;
+      text-align: center;
+      border-radius: 3px;
+      background-color: rgba(211, 211, 211, 0.2901960784); }
+      ul.educacion-integral-container li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px; }
+      ul.educacion-integral-container li.active {
+        opacity: 1;
+        display: block; } }
 @media screen and (min-width: 1024px) {
   #educacionintegral .container-maxw,
   #educacionintegral .wrapper-lista-descripcion {
