@@ -440,7 +440,7 @@ p {
   color: #ffffff; }
   @media (min-width: 760px) {
     .seccion-wrapper-admision-contenido-contexto {
-      width: 500px;
+      width: 370px;
       font-size: 18px; } }
 
 #formulario-admision > input {
@@ -1164,7 +1164,7 @@ p {
 .admision-forma-bottom-rojo {
   width: 800px;
   position: absolute;
-  top: -80px;
+  top: 0;
   right: -220px;
   z-index: -1; }
   @media (min-width: 1500px) {
@@ -1785,79 +1785,6 @@ button:focus {
   .boton-movil {
     display: none !important; } }
 
-/*textarea {
-  resize: none;
-}
-textarea:focus, input:focus{
-    outline: none;
-}
-
-#page-contacto{
-  overflow: hidden;
-}
-
-#nombre,#email,#asunto,#telefono,#mensaje{
-  width: 80%;
-  border:0;
-  background:inherit;
-  border-bottom: 1px solid #585757;
-}
-
-
-.wrappper-formulario-span{
-  margin-right: auto;
-}
-
-#wrappper-formulario{
-  width: 100%;
-  @media(min-width: 760px){
-    width: 400px;
-  }
-}
-
-
-.wrappper-formulario-titulo{
-  font-size: 25px;
-  line-height: 100%;
-  margin-top: 40px;
-  @media(min-width: 760px){
-    font-size: 30px;
-    margin-top: 0;
-  }
-}
-
-
-.wrappper-formulario-envoltura-inputs{
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-
-#btn-enviar{
-  cursor: pointer;
-  background: initial;
-  border:0;
-  color: #C83C41;
-  font-size: 20px;
-  margin-left:40px;
-  margin-top: 20px;
-  @media(min-width: 760px){
-     margin-left:80px;
-    margin-top: 50px;
-  }
-}
-
-.boton-admision{
-  margin-left:0;
-}
-
-
-.top-20{
-  margin-top: 50px;
-}
-
-*/
 #page-contacto {
   height: 100vh;
   background-size: cover;
@@ -1926,19 +1853,37 @@ input[type=number] {
     transform: translateY(150%); } }
 @media screen and (min-width: 768px) {
   #page-admision {
-    background-size: 100%;
-    background-image: url("img/niños-inicial.jpeg");
-    background-repeat: no-repeat; }
+    background-image: url("img/niños-inicial.jpeg"); }
 
   #page-contacto {
     background-image: unset; }
     #page-contacto .wrapper-main-contacto {
-      transform: unset; } }
+      transform: unset; }
+
+  #wrapper-svg-admision {
+    top: 0;
+    z-index: 3;
+    height: 100vh;
+    position: absolute; }
+
+  .seccion-wrapper-admision-contenido {
+    margin-top: 70px; } }
 @media (min-width: 1024px) {
   #page-admision {
     background-size: 100%;
     background-image: url("img/niños-inicial.jpeg");
-    background-repeat: no-repeat; } }
+    background-repeat: no-repeat;
+    background-position-y: top; }
+    #page-admision .admision-forma-bottom-rojo {
+      top: 0; } }
+@media (min-width: 1300px) {
+  #page-admision {
+    background-size: 100%;
+    background-image: url("img/niños-inicial.jpeg");
+    background-repeat: no-repeat;
+    background-position-y: center; }
+    #page-admision .admision-forma-bottom-rojo {
+      top: 0; } }
 .preload {
   position: absolute;
   z-index: 9999;
@@ -2263,8 +2208,9 @@ body.removerScroll {
     overflow: hidden;*/ } }
 
 #page-admision {
+  height: 800px;
   overflow: hidden;
-  height: 800px; }
+  position: relative; }
   @media (max-width: 760px) {
     #page-admision {
       background-image: url(img/admision/fondo-admision.svg);
@@ -4870,7 +4816,7 @@ body {
     height: fit-content !important;
     width: auto !important; }
     #areaformativa ul.slick-dots {
-      bottom: 150px !important; }
+      bottom: 0 !important; }
     #areaformativa #top-formativo {
       z-index: 2; }
     #areaformativa .seccion-text-right-titulo {

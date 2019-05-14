@@ -9,8 +9,9 @@
 
 #page-admision{
 
-    overflow: hidden;
     height: 800px;
+    overflow: hidden;
+    position: relative;
 	
 	@media(max-width: 760px){
 		background-image: url(img/admision/fondo-admision.svg);
