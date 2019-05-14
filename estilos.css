@@ -5247,7 +5247,7 @@ body {
   background-image: url("./mobile/educacion-integral-mob.jpg"); }
   #educacionintegral .titulo-interno {
     font-size: 30px;
-    color: white;
+    color: #e5ac4dc;
     margin-top: 0;
     margin-bottom: 0;
     position: relative;
@@ -5279,8 +5279,8 @@ body {
   text-align: left; }
 
 ul.educacion-integral-container {
-  top: 45%;
-  right: 35px;
+  top: 56%;
+  right: 20px;
   z-index: 9;
   position: absolute; }
   ul.educacion-integral-container button.e-integral {
@@ -5335,14 +5335,16 @@ ul.educacion-integral-container {
     height: auto; }
 
   .img-educacion-top {
-    position: absolute;
+    top: 20%;
     left: 0%;
     top: 208px;
     z-index: 3;
-    top: 20%; }
+    width: 45%;
+    position: absolute; }
 
   #educacionintegral .seccion-text-right {
     width: 50%;
+    height: 432px;
     padding-top: 7% !important; }
     #educacionintegral .seccion-text-right-titulo {
       font-size: 18px;
@@ -5362,10 +5364,11 @@ ul.educacion-integral-container {
     border-radius: 50%; }
 
   .imagen-educacion-circular {
+    right: 0;
     top: 30%;
+    width: 40%;
     height: auto;
-    width: 450px;
-    margin-right: auto;
+    margin-right: 0;
     margin-left: auto; }
 
   #educacionintegral .container-maxw,
@@ -5377,9 +5380,17 @@ ul.educacion-integral-container {
     max-width: 740px;
     position: absolute;
     transform: unset;
-    height: 80% !important; }
+    height: unset !important; }
   #educacionintegral .sub-wrapper-lista {
-    height: 100; } }
+    height: 100; }
+  #educacionintegral .tab_content_colegio-edu {
+    padding-right: 100px; }
+
+  ul.educacion-integral-container {
+    top: 45%;
+    right: 35px;
+    z-index: 9;
+    position: absolute; } }
 @media screen and (min-width: 1024px) {
   #educacionintegral .container-maxw,
   #educacionintegral .wrapper-lista-descripcion {
@@ -5390,7 +5401,11 @@ ul.educacion-integral-container {
     transform: unset;
     max-width: 1000px;
     position: absolute;
-    height: 80% !important; } }
+    height: 80% !important; }
+  #educacionintegral .seccion-text-right.educacionIntegral {
+    height: 650px; }
+  #educacionintegral .imagen-educacion-circular {
+    margin-right: auto; } }
 @media screen and (min-width: 1200px) {
   #educacionintegral .seccion-text-right {
     width: 35%;

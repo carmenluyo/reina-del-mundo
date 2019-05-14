@@ -5,7 +5,7 @@
 
     .titulo-interno {
 	    font-size: 30px;
-	    color: white;
+	    color: #e5ac4dc;
 	    margin-top: 0;
 	    margin-bottom: 0;
 	    position: relative;
@@ -45,8 +45,8 @@
 
 
 ul.educacion-integral-container {
-	top:45%;
-	right: 35px;
+	top:56%;
+	right: 20px;
 	z-index: 9;
 	position: absolute;
 
@@ -118,15 +118,17 @@ ul.educacion-integral-container {
 	}
 	
 	.img-educacion-top {
-		position: absolute;
+		top: 20%;
 		left: 0%;
 		top: 208px;
 		z-index: 3;
-		top: 20%;
+    	width: 45%;
+		position: absolute;
 	}
 
 	#educacionintegral .seccion-text-right {
 		width: 50%;
+		height: 432px;
 		padding-top: 7% !important;
 
 		&-titulo {
@@ -151,11 +153,13 @@ ul.educacion-integral-container {
 	}
 
 	.imagen-educacion-circular {
+		  right: 0;
 		  top: 30%;
+		  width: 40%;
 		  height: auto;
-		  width: 450px;
-		  margin-right: auto;
+		  margin-right: 0;
 		  margin-left: auto;
+
 	}	
 
 
@@ -169,13 +173,25 @@ ul.educacion-integral-container {
             max-width: 740px;
             position: absolute;
             transform: unset;
-            height: 80% !important;
+            height: unset !important;
         }
 
         .sub-wrapper-lista {
         	height: 100;
         }
+
+        .tab_content_colegio-edu {
+    	    padding-right: 100px;
+        }
     }
+
+    ul.educacion-integral-container {
+		top:45%;
+		right: 35px;
+		z-index: 9;
+		position: absolute;
+	}	
+
 }
 
 
@@ -192,6 +208,14 @@ ul.educacion-integral-container {
             position: absolute;
             height: 80% !important;
         }
+
+		.seccion-text-right.educacionIntegral {
+		    height: 650px;
+		}       
+
+		.imagen-educacion-circular {
+			margin-right: auto;
+		}
     }
 }
 
