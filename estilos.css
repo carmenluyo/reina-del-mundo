@@ -5601,4 +5601,9 @@ ul.educacion-integral-container {
   .inicio .box-logos {
     bottom: 50px;
   }
+
+  .logo-rmd img {
+    width: 70%;
+    margin-top: 20px;
+  }
 }
