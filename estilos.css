@@ -5606,4 +5606,10 @@ ul.educacion-integral-container {
     width: 70%;
     margin-top: 20px;
   }
+
+  .inicio .box-text-float p {
+    color: #fff;
+    font-size: 12px;
+    margin-right: 50px;
+  }
 }
