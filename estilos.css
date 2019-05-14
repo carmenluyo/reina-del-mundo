@@ -5612,4 +5612,8 @@ ul.educacion-integral-container {
     font-size: 12px;
     margin-right: 50px;
   }
+
+  .navegacion-simple-ul {
+    margin-right: 0%;
+  }
 }
