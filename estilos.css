@@ -3424,8 +3424,9 @@ body {
   #colegio #boton-click {
     top: 0; }
   #colegio .wrapper-lista-descripcion-p {
-    visibility: visible !important;
-    margin-top: 30px; }
+    text-align: left;
+    margin-top: 30px;
+    visibility: visible !important; }
 
 .hidden-lg {
   display: block; }
@@ -3567,22 +3568,23 @@ body {
       right: 35px;
       position: absolute; }
       .circle-fade-purple ul button.vision {
-        left: 130px;
-        width: 180px !important;
+        left: 30px;
+        border: none;
         color: white;
-        height: 55px;
+        height: 76px;
         display: block;
         cursor: pointer;
         font-size: 20px;
-        line-height: 60px;
+        line-height: 80px;
         margin-left: auto;
         padding-left: 7px;
+        position: relative;
         text-align: center;
         text-decoration: none;
         background-size: cover;
+        width: 237px !important;
         background-image: url(img/submenu.png);
-        background-color: transparent;
-        border: none; }
+        background-color: transparent; }
       .circle-fade-purple ul li {
         opacity: 0;
         width: 170px;
