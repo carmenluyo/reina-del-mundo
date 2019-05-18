@@ -4104,9 +4104,11 @@ body {
     #historia .historia img {
       width: 90vw; }
   #historia .lineatiempo {
+    right: 0;
     width: 40%;
-    bottom: -60px;
-    margin-left: 7%; }
+    bottom: -42px;
+    margin-left: 7%;
+    position: absolute; }
     #historia .lineatiempo a {
       cursor: pointer; }
       #historia .lineatiempo a img {
@@ -4161,9 +4163,10 @@ body {
       margin: 0 auto;
       border-radius: 50%; }
   #historia ul {
-    right: 0;
-    position: absolute;
-    z-index: 9; }
+    left: 4%;
+    z-index: 9;
+    bottom: -40px;
+    position: absolute; }
     #historia ul button.instalaciones {
       left: 130px;
       width: 170px;
@@ -4201,7 +4204,7 @@ body {
 
   .lineatiempo {
     width: 40%;
-    bottom: 0;
+    bottom: -90px;
     margin-left: 14%;
     position: absolute; }
     .lineatiempo a {
@@ -4300,7 +4303,7 @@ body {
         height: 300px;
         width: 80%; }
     #historia ul {
-      right: 0;
+      left: 18%;
       position: absolute; }
       #historia ul button.instalaciones {
         left: 130px;

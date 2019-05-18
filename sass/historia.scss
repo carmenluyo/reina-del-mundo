@@ -32,10 +32,11 @@
 
 
 	.lineatiempo {
-
-		width: 40%;
-		bottom: -60px;
-		margin-left:7%;
+	    right: 0;
+	    width: 40%;
+	    bottom: -42px;
+	    margin-left: 7%;
+	    position: absolute;
 
     	a {
     		cursor: pointer;
@@ -132,10 +133,10 @@
 
 	ul {
 
-		right: 0;
-
-		position: absolute;
-		z-index: 9;
+		    left: 4%;
+		    z-index: 9;
+		    bottom: -40px;
+		    position: absolute;
 
 		button.instalaciones {
 			left: 130px;
@@ -190,7 +191,7 @@
 	.lineatiempo {
 
 		width: 40%;
-		bottom: 0;
+		bottom: -90px;
 		margin-left: 14%;
 		position: absolute;
 
@@ -336,7 +337,7 @@
 
 		ul {
 
-			right: 0;
+			left: 18%;
 			position: absolute;
 
 			button.instalaciones {
