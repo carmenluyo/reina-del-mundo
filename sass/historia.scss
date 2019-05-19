@@ -191,9 +191,10 @@
 	.lineatiempo {
 
 		width: 40%;
-		bottom: -90px;
+		bottom: -90px !important;
 		margin-left: 14%;
 		position: absolute;
+		z-index: 9;
 
     	a {
     		cursor: pointer;
@@ -385,7 +386,7 @@
 			left: 0;
 			right: 0;
 			width: 100%;
-			bottom: -60%;
+			bottom: -%;
 			margin: 0 auto;
 			margin-top: 8%;
 			max-width: 1000px;
