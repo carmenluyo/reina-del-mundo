@@ -191,10 +191,10 @@
 	.lineatiempo {
 
 		width: 40%;
-		bottom: -90px !important;
+		z-index: 9;
 		margin-left: 14%;
 		position: absolute;
-		z-index: 9;
+		bottom: -90px !important;	
 
     	a {
     		cursor: pointer;
@@ -386,7 +386,7 @@
 			left: 0;
 			right: 0;
 			width: 100%;
-			bottom: -%;
+			bottom: -53%;
 			margin: 0 auto;
 			margin-top: 8%;
 			max-width: 1000px;
@@ -412,12 +412,20 @@
 	}
 
 	#historia {
-		.slick-slide {
-			height: auto !important;
+
+		.middle-left,
+		.historia {
 
 			img {
-			    width: 70%;
-			    height: 455px;
+				width: 84vw;
+			}
+		}
+
+		.slick-slide {
+			img {
+				border-radius: 50%;
+				height: 500px;
+				width: 80%;
 			}
 		}
 
@@ -459,12 +467,43 @@
 			left: 0;
 			right: 0;
 			width: 100%;
-			bottom: -130%;
+			bottom: -100%;
 			margin-top: 0;
 			margin: 0 auto;
 			max-width: 1272px;
 			position: absolute;
 			height: 80% !important;
+		}
+	}
+}
+
+
+@media screen and (min-width: 1440px){
+	.bg-linear-yellow {
+		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
+	}
+
+	#historia {
+
+		.slick-slide {
+			img {
+				border-radius: 50%;
+				height: 480px;
+				width: 80%;
+			}
+		}
+
+
+		.wrapper-lista-descripcion {
+			left: 0;
+			right: 0;
+			width: 100%;
+			bottom: -60%;
+			margin-top: 0;
+			margin: 0 auto;
+			max-width: 1272px;
+			position: absolute;
+			height: 70% !important;
 		}
 	}
 }
