@@ -9,5 +9,5 @@ for(i = 0; i < 6; i++ ){
   text +=     "<div class='read-more'>" + "<a href='noticia.html'>Leer más</a>" + "</div>" 
   text +=   "</div>" 
   text +=  "</li>";
-  a.innerHTML = text;
+  noticias.innerHTML = text;
 }
