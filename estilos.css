@@ -5653,7 +5653,8 @@ ul.educacion-integral-container {
     .container-x .read-more a {
       font-size: 14px; }
   .container-x.noti-interna {
-    padding: 21px; }
+    padding: 21px;
+    background-color: white; }
 
 @media (min-width: 760px) {
   .container-x li.grid {
