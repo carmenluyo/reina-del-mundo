@@ -118,7 +118,12 @@
 	.wrapper-lista-descripcion-p {
 		text-align: left;
 		margin-top: 30px;
+		font-weight: 100;
 		visibility: visible !important;
+
+		strong{
+			font-weight: 900;
+		}
 	}
 }
 
