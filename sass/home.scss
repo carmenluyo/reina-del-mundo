@@ -403,6 +403,9 @@ body {
         }
 
         .navegacion-simple-ul {
+                right: 0;
+                position: absolute;
+
             li {
                 a {
                     font-size: 14px;
@@ -432,6 +435,10 @@ body {
 
     #inicio {
         overflow-x: hidden;
+
+        .submenu {
+            position: absolute;
+        }
     }
 
     .container-full {
@@ -451,7 +458,10 @@ body {
     }
     
     .navegacion-simple-ul {
-        margin-top: 0;
+        right: 0;
+        margin: 0;
+        bottom: -80px;
+        position: absolute;
     }
 
     ul.slick-dots {

@@ -3043,10 +3043,13 @@ body {
         background-image: url(img/tab7.png); }
     .inicio .slick-slide {
       margin-top: 35px; }
-    .inicio .navegacion-simple-ul li a {
-      font-size: 14px; }
-      .inicio .navegacion-simple-ul li a br {
-        display: none; }
+    .inicio .navegacion-simple-ul {
+      right: 0;
+      position: absolute; }
+      .inicio .navegacion-simple-ul li a {
+        font-size: 14px; }
+        .inicio .navegacion-simple-ul li a br {
+          display: none; }
     .inicio .logo-rmd {
       left: 21px;
       top: 170% !important; }
@@ -3057,6 +3060,8 @@ body {
 @media screen and (min-width: 1024px) {
   #inicio {
     overflow-x: hidden; }
+    #inicio .submenu {
+      position: absolute; }
 
   .container-full {
     padding-top: 60px;
@@ -3072,7 +3077,10 @@ body {
     margin-top: 0px; }
 
   .navegacion-simple-ul {
-    margin-top: 0; }
+    right: 0;
+    margin: 0;
+    bottom: -80px;
+    position: absolute; }
 
   ul.slick-dots {
     bottom: 540px;
