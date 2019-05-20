@@ -3137,7 +3137,7 @@ body {
         color: transparent !important; }
 
   .inicio .box-text-float {
-    top: 15%;
+    top: 11%;
     width: 350px;
     padding: 0 40px; }
   .inicio .tabs-info .tab-1,
@@ -3179,13 +3179,13 @@ body {
     margin-top: 0; }
 
   .inicio .box-text-float {
-    top: 15%;
+    top: 11%;
     width: 450px; }
     .inicio .box-text-float h3 {
-      font-size: 30px;
+      font-size: 24px;
       margin-top: 7px; }
     .inicio .box-text-float p {
-      font-size: 16px; }
+      font-size: 15px; }
   .inicio .slider-home .slick-slide .image-slider {
     width: 100%; }
   .inicio .slider-home .slick-slide .image-nav {
