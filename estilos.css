@@ -5543,7 +5543,10 @@ ul.educacion-integral-container {
   #educacionintegral .sub-wrapper-lista {
     height: 100; }
   #educacionintegral .tab_content_colegio-edu {
-    padding-right: 100px; }
+    padding-right: 100px;
+    font-weight: 100; }
+    #educacionintegral .tab_content_colegio-edu strong {
+      font-weight: 800; }
 
   ul.educacion-integral-container {
     top: 45%;
@@ -5582,7 +5585,7 @@ ul.educacion-integral-container {
       ul.educacion-integral-container li a {
         text-decoration: none;
         color: black;
-        font-size: 20px; }
+        font-size: 18px; }
       ul.educacion-integral-container li.active {
         opacity: 1;
         display: block; } }
