@@ -3061,7 +3061,11 @@ body {
   #inicio {
     overflow-x: hidden; }
     #inicio .submenu {
-      position: absolute; }
+      left: -12px;
+      padding: 7px 12px;
+      position: absolute;
+      border-radius: 2px;
+      background-color: rgba(245, 245, 245, 0.54); }
 
   .container-full {
     padding-top: 60px;
