@@ -3061,10 +3061,10 @@ body {
   #inicio {
     overflow-x: hidden; }
     #inicio .submenu {
-      left: -12px;
+      left: -7px;
       padding: 7px 12px;
-      position: absolute;
       border-radius: 2px;
+      position: absolute;
       background-color: rgba(245, 245, 245, 0.54); }
 
   .container-full {
