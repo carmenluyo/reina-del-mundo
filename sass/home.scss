@@ -403,6 +403,9 @@ body {
         }
 
         .navegacion-simple-ul {
+                right: 0;
+                position: absolute;
+
             li {
                 a {
                     font-size: 14px;
@@ -432,6 +435,14 @@ body {
 
     #inicio {
         overflow-x: hidden;
+
+        .submenu {
+            left: -7px;
+            padding: 7px 12px;
+            border-radius: 2px;
+            position:  absolute;
+            background-color: rgba(245, 245, 245, 0.54);
+        }
     }
 
     .container-full {
@@ -451,7 +462,10 @@ body {
     }
     
     .navegacion-simple-ul {
-        margin-top: 0;
+        right: 0;
+        margin: 0;
+        bottom: -80px;
+        position: absolute;
     }
 
     ul.slick-dots {
@@ -532,7 +546,7 @@ body {
     .inicio {
 
         .box-text-float {
-            top: 15%;
+            top: 11%;
             width: 350px;
             padding: 0 40px ; 
         }
@@ -601,16 +615,16 @@ body {
     
     .inicio {
         .box-text-float {
-            top: 15%;
+            top: 11%;
             width: 450px;
 
             h3 {
-                font-size: 36px;
+                font-size: 24px;
                 margin-top: 7px;
             }
     
             p {
-                font-size: 16px;
+                font-size: 15px;
             }
         }
     

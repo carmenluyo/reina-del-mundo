@@ -116,8 +116,14 @@
 	}
 
 	.wrapper-lista-descripcion-p {
-		visibility: visible !important;
+		text-align: left;
 		margin-top: 30px;
+		font-weight: 100;
+		visibility: visible !important;
+
+		strong{
+			font-weight: 900;
+		}
 	}
 }
 
@@ -299,22 +305,23 @@
 			position: absolute;
 
 			button.vision {
-				left: 130px;
-				width: 180px !important;
-				color: white;
-				height: 55px;
-				display: block;
-				cursor: pointer;
-				font-size: 20px;
-				line-height: 60px;
-				margin-left: auto;
-				padding-left: 7px;
-				text-align: center;
-				text-decoration: none;
-				background-size: cover;
-				background-image: url(img/submenu.png);
-				background-color: transparent;
-				border: none;
+			    left: 30px;
+			    border: none;
+			    color: white;
+			    height: 76px;
+			    display: block;
+			    cursor: pointer;
+			    font-size: 20px;
+			    line-height: 80px;
+			    margin-left: auto;
+			    padding-left: 7px;
+			    position: relative;
+			    text-align: center;
+			    text-decoration: none;
+			    background-size: cover;
+			    width: 237px !important;
+			    background-image: url(img/submenu.png);
+			    background-color: transparent;
 			}
 
 			li {
