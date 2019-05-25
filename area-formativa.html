@@ -80,7 +80,7 @@
 		</div>
 	</div>
 
-	<section class="middle-side">
+	<section class="middle-side hidden-xs">
 		<div class="circle-yellow"></div>
 		<div class="triangle"></div>
 		<div class="big-triangle hidden-xs">
@@ -115,30 +115,68 @@
 		<h1 class="txt-right txt-white full-width pt-50 z-index-4">Área Formativa</h1>
 		<p class="seccion-text-right-titulo" data-rellax-speed="4" >Uno de nuestros pilares es la formación. En este sentido contamos con una sólida tutoría grupal que combina la educación en virtudes humanas con temas de actualidad propios de cada etapa evolutiva. Además, a través de la preceptoría individual, los alumnos y sus familias reciben una orientación específica para lograr el desarrollo pleno de cada estudiante. 
 		</p>
-		<div class="aformativa">
+
+		<div class="tab-mobile hidden-lg">
+			<p class="tab_content_colegio-area" id="ten-slide">
+				<strong>Preceptoría</strong><br><br>
+				Es concebida como una relación profunda entre el alumno y uno de sus maestros, con él trata directamente todos aquellos asuntos personales que el estudiante le confía, con el propósito de atender su desarrollo personal, en toda su extensión, humana y espiritual. 
+				En este sentido, el Preceptor es “un profesor que tiene clarísima su dimensión educadora y se compromete a llevarla a cabo de manera humana, comprensiva y exigente a la vez.
+			</p>
+			<p class="tab_content_colegio-area" id="eleven-slide">
+				<strong>Atención a la Diversidad y Programa STAR</strong><br>
+				La atención a la diversidad tiene sus fundamentos en la educación personalizada de nuestra propuesta educativa, teniendo en cuenta que los alumnos presentan diferencias en modos de aprender, necesidades educativas especiales, conocimientos y experiencias previas, que dependen de su historia personal.
+				El programa de Atención a la Superdotación, Talento y Altas Habilidades (STAR) busca desarrollar el potencial de alumnos y alumnas con estas características, acompañando a las familias para darles las pautas necesarias para la orientación del desarrollo emocional y afectivo de sus hijos.
+			</p>
+			<p class="tab_content_colegio-area" id="twelve-slide">
+				<strong>Área de Familia</strong><br>
+				Ofrece una formación y acompañamiento permanente a los padres durante el crecimiento de sus hijos, para adquirir nociones o habilidades sobre la formación integral de los mismos, para que de esa manera desarrollen con mayor eficiencia la tarea de ser los protagonistas de la formación de sus familias, posibilitando un ejercicio más rico de su paternidad.
+			</p>
+			<p class="tab_content_colegio-area" id="thirteen-slide">
+				<strong>Pastoral, Liderazgo y Acción Social</strong><br>
+				Como colegio mariano vicentino nuestra misión nos impulsa a formar líderes católicos que sean agentes de cambio en la sociedad. 
+				La preparación de los sacramentos de la Primera Comunión y Confirmación, así como las acciones de servicio social son parte de la formación cristiana de nuestros niños y jóvenes.
+			</p>
+		</div>
+
+		<ul class="area-tab hidden-lg">
+			<li class="items active">
+				<a href="#ten-slide">Preceptoría</a>
+			</li>
+			<li class="items">
+				<a href="#eleven-slide">Programa STAR</a>
+			</li>
+			<li class="items">
+				<a href="#twelve-slide">Área de Familia</a>
+			</li>
+			<li class="items">
+				<a href="#thirteen-slide">Pastoral</a>
+			</li>
+		</ul>
+
+		<div class="aformativa hidden-xs">
 			<ul class="areafor">
 				<button class="areaformativa-web">
 					Área Formativa
 				</button>
 
 				<li class="items">
-					<a class="ten-slide" href="javascript:void(0)" >Preceptoría</a>
+					<a class="ten-slide smooth" href="javascript:void(0)" >Preceptoría</a>
 				</li>
 				<li class="items">
-					<a class="eleven-slide" href="javascript:void(0)" >Programa STAR</a>
+					<a class="eleven-slide smooth" href="javascript:void(0)" >Programa STAR</a>
 				</li>
 				<li class="items">
-					<a class="twelve-slide" href="javascript:void(0)" >Área de Familia</a>
+					<a class="twelve-slide smooth" href="javascript:void(0)" >Área de Familia</a>
 				</li>
 				<li class="items">
-					<a class="thirteen-slide" href="javascript:void(0)" >Pastoral</a>
+					<a class="thirteen-slide smooth" href="javascript:void(0)" >Pastoral</a>
 				</li>
 			</ul>
 		</div>
 		<div class="triangle triangle--brown"></div>
 	</section>
 	
-	<div>
+	<div class="hidden-xs">
 			
 			<svg version="1.1" id="top-formativo" class="top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 1920 1170" style="enable-background:new 0 0 1920 1170;" xml:space="preserve">
@@ -215,7 +253,7 @@
 
 	</div>
 
-    <div class="wrapper-lista-descripcion" id="areaformativa-slider">
+    <div class="wrapper-lista-descripcion hidden-xs" id="areaformativa-slider">
 		<div class="slider-propuesta">
 			<div class="right">
 				<div class="slider slider-for-area">
@@ -326,12 +364,34 @@
 <script src="js/lista.js"></script>
 <script src="js/slick/slick.min.js"></script>
 <script type="text/javascript">
-$("a").click(function() {
+$("a.smooth").click(function() {
     $('html, body').animate({
         scrollTop: $(".wrapper-lista-descripcion").offset().top - 150 /*(150) is height to leave from top*/
     }, 2000);
 });
 </script>
+
+<script type="text/javascript">
+
+		if($(window).width() < 768) {
+			jQuery(document).ready(function ($) {	
+			    $('p.tab_content_colegio-area').hide();
+			    $('p.tab_content_colegio-area:first').show();
+
+			    $('.items').click(function(event) {
+			        $('.items').removeClass('active');
+			        $(this).addClass('active');
+			        $('p.tab_content_colegio-area').hide();
+			    
+			        var selectTab = $(this).find('a').attr("href");
+			    
+			        $(selectTab).fadeIn();
+			    });
+			});
+		}
+		
+</script>
+
 <script>
 	$(document).ready(function(){	
 		var lastScrollTop = 0;

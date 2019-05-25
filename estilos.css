@@ -4800,16 +4800,51 @@ body {
     width: 66%;
     height: 400px !important; } }
 #areaformativa {
-  height: 100vh;
   background-size: cover;
   background-image: url("./mobile/area-formativa-mob.jpg");
   overflow-x: hidden; }
   #areaformativa .slick-arrow {
     display: none !important; }
   #areaformativa h1 {
-    padding-top: 0; }
+    padding-top: 70px;
+    text-align: left; }
+  #areaformativa .tab-mobile {
+    padding: 7px 14px; }
+    #areaformativa .tab-mobile .tab_content_colegio-area {
+      font-size: 16px;
+      text-align: left;
+      font-weight: 600;
+      color: #676767; }
+      #areaformativa .tab-mobile .tab_content_colegio-area strong {
+        color: white;
+        font-size: 25px;
+        margin-bottom: 21px; }
+  #areaformativa ul.area-tab {
+    width: 240px;
+    margin: 0 auto;
+    text-align: center; }
+    #areaformativa ul.area-tab li.items {
+      text-align: center;
+      position: relative;
+      padding-left: 0;
+      margin-bottom: 7px; }
+      #areaformativa ul.area-tab li.items a {
+        color: #676767;
+        font-size: 25px;
+        text-decoration: none; }
+      #areaformativa ul.area-tab li.items.active a {
+        color: #c74f47; }
+      #areaformativa ul.area-tab li.items.active::after {
+        left: 0;
+        top: 7px;
+        position: absolute;
+        content: url(img/arrow-choose-white.png); }
   #areaformativa .seccion-text-right {
-    overflow: visible; }
+    padding: 0;
+    width: 280px;
+    margin: 0 auto;
+    overflow: visible;
+    text-align: center; }
     #areaformativa .seccion-text-right .instalaciones {
       right: 14px;
       bottom: -36px;
@@ -4823,6 +4858,9 @@ body {
         #areaformativa .seccion-text-right .instalaciones button img {
           width: 10%;
           vertical-align: middle; }
+    #areaformativa .seccion-text-right .seccion-text-right-titulo {
+      text-align: left;
+      color: #676767; }
   #areaformativa .left,
   #areaformativa .right {
     height: 100%;
@@ -4897,6 +4935,10 @@ body {
         font-size: 15px;
         background-color: #9C6550;
         box-shadow: 0 9px #477486; }
+    #areaformativa h1 {
+      text-align: right; }
+    #areaformativa .seccion-text-right-titulo {
+      color: white; }
     #areaformativa .seccion-text-right {
       width: 50%; }
       #areaformativa .seccion-text-right .instalaciones {

@@ -1,6 +1,5 @@
 #areaformativa {
 
-	height: 100vh;
     background-size: cover;
     background-image: url('./mobile/area-formativa-mob.jpg');
 	overflow-x: hidden;
@@ -10,12 +9,67 @@
 	}
 
 	h1 {
-		padding-top: 0;
+		padding-top: 70px;
+		text-align: left;
 	}
 
-	.seccion-text-right {
+	.tab-mobile {
+		padding: 7px 14px;
 
+		.tab_content_colegio-area {
+			font-size: 16px;
+			text-align: left;
+			font-weight: 600;
+			color: darken(gray, 10);
+
+			strong {
+				color: white;
+				font-size: 25px;
+				margin-bottom: 21px;
+			}
+		}
+	}
+
+	ul.area-tab {
+		width: 240px;
+		margin: 0 auto;
+		text-align: center;
+
+
+		li.items {
+			text-align: center;
+			position: relative;
+			padding-left: 0;
+			margin-bottom: 7px;
+
+			a {
+				color: #676767;
+			    font-size: 25px;
+    			text-decoration: none;
+			}
+
+			&.active {
+				a {
+					color: #c74f47;
+				}
+			}
+	
+			&.active::after {
+			    left: 0;
+			    top: 7px;
+			    position: absolute;
+			    content: url(img/arrow-choose-white.png);
+			}
+		}
+
+	} 	
+
+	.seccion-text-right {
+		padding: 0;
+		width: 280px;
+		margin: 0 auto;
 		overflow: visible;
+		text-align: center;
 
 		.instalaciones {
 			right: 14px;
@@ -34,6 +88,13 @@
 					vertical-align: middle;
 				}
 			}
+		}
+
+
+
+		.seccion-text-right-titulo {
+			text-align: left;
+			color: #676767;
 		}
 	}
 
@@ -141,6 +202,15 @@
 		        box-shadow: 0 9px #477486;
 			}
 		}
+
+		h1	{
+			text-align: right;
+		}
+
+		.seccion-text-right-titulo {
+			color: white;
+		}
+
 
 
 		.seccion-text-right {
