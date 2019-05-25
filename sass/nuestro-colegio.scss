@@ -90,15 +90,29 @@
 		}
 
 		.list-mobile-cole {
+			ul {
+				position: relative;
+			}
+
 			ul li a {
 				font-size: 28px;
 				line-height: 47px;
 				text-decoration: none;
-				color: gray;
+					color: gray;
 			}
 
-			ul li.active a {
+			ul li.items.active {
+				a {
 					color: #c74f47;
+				}
+
+				&::after {
+				    left: 90px;
+				    padding-top: 16px;
+				    position: absolute;
+				    transform: translate(50%, 0);
+				    content: url(img/arrow-choose-white.png);
+				}
 			}
 		}
 	}

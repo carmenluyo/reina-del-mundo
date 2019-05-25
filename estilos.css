@@ -3421,13 +3421,21 @@ body {
     font-size: 22px;
     line-height: 24px;
     text-align: center; }
+  #colegio .mobile-options .list-mobile-cole ul {
+    position: relative; }
   #colegio .mobile-options .list-mobile-cole ul li a {
     font-size: 28px;
     line-height: 47px;
     text-decoration: none;
     color: gray; }
-  #colegio .mobile-options .list-mobile-cole ul li.active a {
+  #colegio .mobile-options .list-mobile-cole ul li.items.active a {
     color: #c74f47; }
+  #colegio .mobile-options .list-mobile-cole ul li.items.active::after {
+    left: 90px;
+    padding-top: 16px;
+    position: absolute;
+    transform: translate(50%, 0);
+    content: url(img/arrow-choose-white.png); }
   #colegio .list-mobile-cole {
     position: absolute;
     bottom: 0;
