@@ -5,19 +5,19 @@
 	background-image: url('./mobile/niveles_educativos-mob.jpg');
 
 	h1.titulo-interno {
-		margin: 14px;
-		font-size: 32px;
+		margin: 50px 0 25px 0;
+		font-size: 23px;
 		color: #c74f47;
 	}
 
 	p.text-mobile-prop {
-		width: 300px;
+		width: 280px;
 		margin-top: 0;
 		margin: 0 auto;
 		font-size: 20px;
 		line-height: 24px;
 		text-align: center;
-		color: #25337C;
+		color: black;
 
 		br {
 			display: none;
@@ -27,6 +27,50 @@
 	.scalar {
 		display: none;
 	}
+
+	.tab-mobile {
+		padding: 7px 28px;
+
+		.tab_content_colegio-propuesta {
+			font-size: 16px;
+			color: #2e366a;
+
+			strong {
+				font-size: 25px;
+				color: #c74f47;
+			}
+		}
+	}
+
+	ul.propuesta-tab {
+		li.items {
+			text-align: right;
+			position: relative;
+			padding-right: 56px;
+			margin-bottom: 7px;
+
+			a {
+				color: #2e366a;
+			    font-size: 25px;
+    			text-decoration: none;
+			}
+
+			&.active {
+				a {
+					color: gray;
+				}
+			}
+	
+			&.active::after {
+			    content: url(img/miscelanea/arrow-choose.png);
+			    position: absolute;
+			    right: 35px;
+			    top: -10px;
+			    transform: translate(50%, 0);
+			}
+		}
+
+	} 
 
 	.container-maxw {
 		.instalaciones {

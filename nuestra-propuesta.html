@@ -89,6 +89,54 @@
 
 	<div class="hidden-lg">
 			<p class="text-center text-mobile-prop t-white" data-rellax-speed="4" >Nuestra labor educativa está centrada<br class="mv-br-none"> en el alumno como persona. Por ello, es<br class="mv-br-none"> parte fundamental de nuestra tarea<br class="mv-br-none"> conocer a cada estudiante a profundidad, <br class="mv-br-none"> con sus fortalezas y aspectos a potenciar;<br class="mv-br-none">  para poder lograr, en sinergia con los <br class="mv-br-none"> padres, un desarrollo perdurable y armónico. </p>
+
+			<div class="tab-mobile">
+				<p class="tab_content_colegio-propuesta" id="one-slide">
+					
+						<strong>Educación Inicial: Kindergarten</strong><br>
+					Privilegiamos en la formación del niño preescolar el juego, la exploración, el descubrimiento, la estimulación sensorio-motriz y la formación de hábitos como cimiento para el desarrollo del potencial cognitivo, afectivo y social. Las acciones en el Nivel Inicial están orientadas al desarrollo de competencias en el marco de una Educación Personalizada Cristiano - Vicentina, que tiene como fundamento el profundo respeto a la singularidad de cada niño reconociendo en cada uno sus características, respetando sus intereses y ritmos de aprendizaje. Se trata de fortalecer una paulatina autonomía y promover una interrelación con el mundo a través de un programa sistemático de habilidades y virtudes, procurando estimular el máximo desarrollo de las potencialidades de los niños entre 3 y 6 años de edad. 
+				</p>
+				<p class="tab_content_colegio-propuesta" id="two-slide">
+					
+						<strong>Educación Primaria: Grundschule</strong><br>
+					En esta etapa que comprende desde primer grado hasta quinto de primaria, promovemos el desarrollo de habilidades y hábitos de trabajo necesarios para aprender durante toda la vida a través de la indagación y la experimentación, estableciendo las bases para el desarrollo del pensamiento crítico y reflexivo. Asimismo, se desarrollan los principales hábitos que darán lugar a la formación moral, tales como la responsabilidad, el orden, la honestidad, la fortaleza, la laboriosidad, la generosidad, entre otras. Los proyectos interdisciplinarios así como la totalidad de las actividades de aprendizaje fomentan la atención a los niños y niñas en todas sus dimensiones.
+				</p>
+				<p class="tab_content_colegio-propuesta" id="three-slide">
+					
+						<strong>Años Intermedios: Mittelstufe</strong><br>
+					Los años intermedios se inician en sexto grado y culminan en tercero de secundaria.  En esta etapa potenciamos el esfuerzo y la autonomía de los alumnos para conseguir la madurez y la adquisición de conocimientos que lo capaciten para tomar decisiones libres, con rectitud y sentido de responsabilidad.
+				</p>
+				<p class="tab_content_colegio-propuesta" id="four-slide">
+					
+						<strong>Secundaria Alta: Oberstufe</strong><br>
+					Es la etapa (IV y V de secundaria) en que el proyecto de mejora personal de cada estudiante reinamundista se va concretizando en el dominio de idiomas, en hábitos académicos, en estándares internacionales, pero sobre todo en la realización de un proyecto de vida que los lleve a ser buenos profesionales, mejores cristianos y óptimos ciudadanos.
+				</p>
+				<p class="tab_content_colegio-propuesta" id="five-slide">
+					
+						<strong>Programa del Diploma del Bachillerato Internacional</strong><br>
+						El PD se pone a disposición de los alumnos de Secundaria Alta que cumplan con aprobar los requisitos establecidos para su ingreso al mismo. Cuenta con una estructura curricular internacional y exigente. La obtención del Diploma del Bachillerato Internacional constituye una vía de acceso a universidades y al mundo laboral.<br> El Reina del Mundo brinda el Programa del Diploma del BI porque ofrece a sus estudiantes una forma de concebir y entender el mundo que les permite adaptarse en cualquier contexto académico, cultural y social (conciencia internacional).
+					
+				</p>
+			</div>
+
+			<ul class="propuesta-tab">
+				<li class="items active">
+					<a href="#one-slide">Kindergarten</a>
+				</li>
+				<li class="items">
+					<a href="#two-slide">Grundschule</a>
+				</li>
+				<li class="items">
+					<a href="#three-slide">Mittelstufe</a>
+				</li>
+				<li class="items">
+					<a href="#four-slide">Oberstufe</a>
+				</li>
+				<li class="items">
+					<a href="#five-slide">Diploma PD</a>
+				</li>
+			</ul>
+
 	</div>
 
 	<div class="wrapper-slider-fotos hidden-xs">	
@@ -111,19 +159,19 @@
 						</button>
 
 						<li class="items">
-							<a class="one-slide" href="javascript:void(0)" >Kindergarten</a>
+							<a class="one-slide smooth" href="javascript:void(0)" >Kindergarten</a>
 						</li>
 						<li class="items">
-							<a class="two-slide"  href="javascript:void(0)" >Grundschule</a>
+							<a class="two-slide smooth"  href="javascript:void(0)" >Grundschule</a>
 						</li>
 						<li class="items">
-							<a class="three-slide" href="javascript:void(0)" >Mittelstufe</a>
+							<a class="three-slide smooth" href="javascript:void(0)" >Mittelstufe</a>
 						</li>
 						<li class="items">
-							<a class="four-slide"  href="javascript:void(0)" >Oberstufe</a>
+							<a class="four-slide smooth"  href="javascript:void(0)" >Oberstufe</a>
 						</li>
 						<li class="items">
-							<a class="five-slide"  href="javascript:void(0)" >Diploma PD</a>
+							<a class="five-slide smooth"  href="javascript:void(0)" >Diploma PD</a>
 						</li>
 					</ul>
 				</div>
@@ -314,7 +362,7 @@
 		
 
 
-	<div class="wrapper-lista-descripcion">
+	<div class="wrapper-lista-descripcion hidden-xs">
 		<div class="slider-propuesta">
 			<div class="right">
 				<div class="slider slider-for">
@@ -413,7 +461,7 @@
 	<script src="js/slick/slick.min.js"></script>
 
  	<script type="text/javascript">
-		$("a").click(function() {
+		$("a.smooth").click(function() {
 		    $('html, body').animate({
 		        scrollTop: $(".wrapper-lista-descripcion").offset().top - 150 /*(150) is height to leave from top*/
 		    }, 2000);
@@ -485,6 +533,26 @@
 		 });
 	</script>
 
+	<script type="text/javascript">
+
+		if($(window).width() < 768) {
+			jQuery(document).ready(function ($) {	
+			    $('p.tab_content_colegio-propuesta').hide();
+			    $('p.tab_content_colegio-propuesta:first').show();
+
+			    $('.items').click(function(event) {
+			        $('.items').removeClass('active');
+			        $(this).addClass('active');
+			        $('p.tab_content_colegio-propuesta').hide();
+			    
+			        var selectTab = $(this).find('a').attr("href");
+			    
+			        $(selectTab).fadeIn();
+			    });
+			});
+		}
+		
+	</script>
 
 	<script src="js/ScrollMagic.min.js"></script>
 	<script src="js/debug.addIndicators.min.js"></script>
