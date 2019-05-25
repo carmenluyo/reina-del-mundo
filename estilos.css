@@ -2788,7 +2788,9 @@ body {
   height: 800px; }
 
 .texto-mobile {
-  font-size: 14px; }
+  font-size: 14px;
+  text-align: center;
+  padding: 7px 0 0 0; }
 
 #inicio {
   overflow: hidden;
@@ -2799,24 +2801,32 @@ body {
     padding-top: 50px; }
 
 .simple-mobile {
-  padding: 0 35px;
+  padding: 0 28px;
   margin: 60% 0; }
   .simple-mobile .logos-home img {
     width: 100%; }
   .simple-mobile nav {
-    background: red;
-    text-align: center;
-    padding: 21px 0;
-    background-color: #25337E; }
+    text-align: left;
+    padding: 21px 0; }
     .simple-mobile nav a {
-      padding: 0 14px;
+      padding: 0 7px;
       text-decoration: none; }
+      .simple-mobile nav a img {
+        border-style: none;
+        border-radius: 50%;
+        background-color: #c74f47; }
 
 .logo-rmd img {
   display: none; }
 
 .inicio {
   display: none; }
+
+.box-logos-mobile a {
+  width: 24%;
+  display: inline-block; }
+  .box-logos-mobile a img {
+    width: 100%; }
 
 @media screen and (min-width: 760px) {
   #inicio {
@@ -4140,9 +4150,36 @@ body {
     width: 50%;
     top: 113px; }
   #historia .historia {
-    width: 90%;
-    top: -50px;
-    padding: 0 12px 0; }
+    width: 280px;
+    display: block;
+    text-align: left;
+    padding: 70px 0 0 0;
+    margin: 80px auto 0; }
+    #historia .historia div h1 {
+      text-align: left; }
+    #historia .historia div p {
+      text-align: left;
+      font-weight: 900;
+      color: #676767; }
+    #historia .historia div.right-mob p {
+      font-size: 15px;
+      text-align: right; }
+    #historia .historia .lineatiempo-mob {
+      color: #c74f47;
+      font-size: 21px;
+      cursor: pointer;
+      font-weight: 900;
+      text-align: left;
+      position: relative;
+      padding-left: 28px;
+      text-decoration: none; }
+      #historia .historia .lineatiempo-mob:after {
+        left: 0;
+        top: -15px;
+        padding-top: 16px;
+        position: absolute;
+        transform: translate(50%, 0);
+        content: url(img/arrow-choose-white.png); }
   #historia .left, #historia .right {
     float: right;
     position: relative;
@@ -4216,6 +4253,14 @@ body {
   #historia .slick-slide img {
     width: 60%; } }
 @media screen and (min-width: 768px) {
+  .historia div h1 {
+    text-align: right !important; }
+  .historia div p {
+    text-align: right !important;
+    color: white !important; }
+  .historia .slick-slide p {
+    color: #676767 !important; }
+
   .bg-linear-yellow {
     background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important; }
 

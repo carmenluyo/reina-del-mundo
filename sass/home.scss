@@ -15,6 +15,8 @@ body {
 
 .texto-mobile {
     font-size: 14px;
+    text-align: center;
+    padding: 7px 0 0 0;
 }
 
 #inicio {
@@ -31,7 +33,7 @@ body {
 .simple-mobile {
     
 
-    padding: 0 35px;
+    padding: 0 28px;
     margin: 60% 0;
 
     .logos-home {
@@ -41,14 +43,18 @@ body {
     }
 
     nav {
-        background: red;
-        text-align: center;
+        text-align: left;
         padding: 21px 0;
-			background-color: #25337E;
 
         a  {
-            padding: 0 14px;
+            padding: 0 7px;
             text-decoration: none;
+
+            img {
+                border-style: none;
+                border-radius: 50%;
+                background-color: #c74f47;
+            }
         }
     }
 }
@@ -60,6 +66,18 @@ body {
 
 .inicio {
     display: none;
+}
+
+.box-logos-mobile {
+    a {
+        width: 24%;
+        display: inline-block;
+
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
 

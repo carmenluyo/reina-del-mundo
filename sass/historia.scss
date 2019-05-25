@@ -54,9 +54,46 @@
 	}
 
 	.historia {
-	    width: 90%;
-	    top: -50px;
-	    padding: 0 12px 0;
+	    width: 280px;
+	    display: block;
+	    text-align: left;
+	    padding: 70px 0 0 0;
+	    margin: 80px auto 0;
+
+	    div h1 {
+	    	text-align: left;
+	    }
+
+	    div p {
+	    	text-align: left;
+	    	font-weight: 900;
+	    	color: darken(gray, 10);
+	    }	
+
+    	div.right-mob p{
+    		font-size: 15px;
+    		text-align: right;
+    	}
+
+	    .lineatiempo-mob {
+	    	color: #c74f47;
+	    	font-size: 21px;
+	    	cursor: pointer;
+	    	font-weight: 900;
+	    	text-align: left;
+	    	position: relative;
+	    	padding-left: 28px;
+	    	text-decoration: none;
+
+	    	&:after {
+			    left: 0;
+	    		top: -15px;
+			    padding-top: 16px;
+			    position: absolute;
+			    transform: translate(50%, 0);	    		
+			    content: url(img/arrow-choose-white.png);
+	    	}
+	    }    
     }
 
 	.left, .right {
@@ -175,6 +212,23 @@
 
 
 @media screen and (min-width: 768px) {
+
+	.historia {
+	    div h1 {
+	    	text-align: right !important;
+	    }
+
+	    div p {
+	    	text-align: right !important;
+	    	color: white !important;
+	    }	
+		
+		.slick-slide p {
+			color: darken(gray, 10) !important;
+		}
+		
+	}
+
 	.bg-linear-yellow {
 		background-image: linear-gradient(180deg, #e7af53, #f1cc97, #faedd7) !important;
 	}
@@ -187,6 +241,9 @@
 		position: absolute;
 
 	}
+
+
+
 
 	.lineatiempo {
 
