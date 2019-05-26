@@ -20,6 +20,9 @@ html {
 body {
   margin: 0; }
 
+* {
+  box-sizing: border-box; }
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -1014,12 +1017,12 @@ p {
   align-items: center;
   justify-content: center;
   width: 90vw;
-  height: 450px;
-  background-color: #efd27b; }
+  height: 450px; }
   @media (min-width: 760px) {
     .sub-wrapper-lista {
       width: 550px;
-      height: 350px; } }
+      height: 350px;
+      background-color: #efd27b; } }
 
 .sub-wrapper-lista > p {
   padding-left: 20px;
@@ -5537,7 +5540,7 @@ body {
 #educacionintegral {
   height: 100vh;
   background-size: cover;
-  background-image: url("./mobile/educacion-integral-mob.jpg"); }
+  background-image: url("./mobile/propuesta-academica.jpg"); }
   #educacionintegral .titulo-interno {
     font-size: 30px;
     color: #e5ac4dc;
@@ -5552,6 +5555,19 @@ body {
   margin-top: 0;
   margin-bottom: 0px;
   margin-left: 0 !important; }
+
+.seccion-text-right.educacionIntegral {
+  height: auto; }
+  .seccion-text-right.educacionIntegral div.sub-wrapper-lista {
+    height: 300px !important; }
+  .seccion-text-right.educacionIntegral div.sub-wrapper-lista.hidden-lg {
+    padding-top: 0;
+    background-color: transparent !important; }
+    .seccion-text-right.educacionIntegral div.sub-wrapper-lista.hidden-lg p {
+      padding: 0;
+      font-size: 14px;
+      text-align: right;
+      visibility: unset; }
 
 .educacionIntegral:after {
   content: "";
@@ -5570,6 +5586,32 @@ body {
 .tab_content_colegio-edu {
   visibility: inherit;
   text-align: left; }
+
+ul.edu-tab.hidden-lg {
+  left: 0;
+  padding: 21px;
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(img/ei/sqr.png); }
+  ul.edu-tab.hidden-lg li.items {
+    width: 190px;
+    text-align: left;
+    padding-right: 0;
+    position: relative;
+    margin-bottom: 14px; }
+    ul.edu-tab.hidden-lg li.items a {
+      color: #2e366a;
+      font-size: 20px;
+      text-decoration: none; }
+    ul.edu-tab.hidden-lg li.items.active a {
+      color: gray; }
+    ul.edu-tab.hidden-lg li.items.active::after {
+      top: -10px;
+      right: 35px;
+      position: absolute;
+      transform: translate(50%, 0);
+      content: url(img/miscelanea/arrow-choose.png); }
 
 ul.educacion-integral-container {
   top: 0;
@@ -5615,11 +5657,23 @@ ul.educacion-integral-container {
       display: block; }
 
 #educacionintegral .seccion-text-right {
-  width: 60%;
-  padding-top: 7% !important; }
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background-color: transparent;
+  padding-top: 70px !important; }
+  #educacionintegral .seccion-text-right h1 {
+    color: #c74f47;
+    margin-bottom: 14px; }
   #educacionintegral .seccion-text-right-titulo {
-    font-size: 18px;
-    margin-left: 14%; }
+    font-size: 16px;
+    margin-left: 14%;
+    text-align: left;
+    color: #676767; }
+  #educacionintegral .seccion-text-right:after {
+    background-color: transparent; }
 
 @media screen and (min-width: 768px) {
   #educacionintegral {
@@ -5637,10 +5691,11 @@ ul.educacion-integral-container {
     position: absolute; }
 
   #educacionintegral .seccion-text-right {
-    width: 50%;
+    width: 30%;
     height: 432px;
     padding-top: 7% !important; }
     #educacionintegral .seccion-text-right-titulo {
+      color: white;
       font-size: 18px;
       margin-left: 40%; }
 
@@ -5649,17 +5704,17 @@ ul.educacion-integral-container {
 
   .educacionIntegral:after {
     content: "";
-    background-color: rgba(229, 172, 77, 0.8);
     position: absolute;
     top: -140px;
-    right: -10px;
+    right: 0;
     width: 600px;
     height: 600px;
-    border-radius: 50%; }
+    border-radius: 50%;
+    background-color: rgba(229, 172, 77, 0.8) !important; }
 
   .imagen-educacion-circular {
-    right: 0;
     top: 30%;
+    right: 0;
     width: 40%;
     height: auto;
     margin-right: 0;
@@ -5675,6 +5730,9 @@ ul.educacion-integral-container {
     position: absolute;
     transform: unset;
     height: unset !important; }
+    #educacionintegral .container-maxw-p,
+    #educacionintegral .wrapper-lista-descripcion-p {
+      visibility: unset; }
   #educacionintegral .sub-wrapper-lista {
     height: 100; }
   #educacionintegral .tab_content_colegio-edu {
@@ -5759,12 +5817,14 @@ ul.educacion-integral-container {
     max-width: 1272px;
     height: 75% !important; }
   #educacionintegral .seccion-text-right {
-    width: 25%;
-    padding-top: 7% !important;
-    text-align: right; }
+    width: 30%;
+    text-align: right;
+    margin-right: 21px;
+    padding-top: 7% !important; }
     #educacionintegral .seccion-text-right-titulo {
       width: 400px;
-      margin-left: auto; } }
+      margin-left: auto;
+      text-align: right; } }
 @media screen and (min-width: 1900px) and (max-width: 200000px) {
   #educacionintegral .wrapper-lista-descripcion {
     left: 0;

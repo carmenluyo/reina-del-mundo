@@ -679,10 +679,10 @@ and (orientation : landscape) {
     justify-content: center;
     width: 90vw;
     height: 450px;
-    background-color: #efd27b;
     @media(min-width: 760px){
-      width: 550px;  
-      height: 350px;
+        width: 550px;  
+        height: 350px;
+        background-color: #efd27b;
     }
 }
 .sub-wrapper-lista > p{

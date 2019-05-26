@@ -1,7 +1,7 @@
 #educacionintegral {
 	height: 100vh;
     background-size: cover;
-    background-image: url('./mobile/educacion-integral-mob.jpg');
+    background-image: url('./mobile/propuesta-academica.jpg');
 
     .titulo-interno {
 	    font-size: 30px;
@@ -19,6 +19,28 @@
     margin-top: 0;
     margin-bottom: 0px;
     margin-left: 0 !important;
+}
+
+.seccion-text-right.educacionIntegral {
+	height: auto;
+
+
+	div.sub-wrapper-lista {
+		height: 300px !important	;
+	}
+
+	div.sub-wrapper-lista.hidden-lg {
+
+		padding-top: 0;
+		background-color: transparent !important;
+
+		p {
+			padding: 0;
+			font-size: 14px;
+			text-align: right;
+			visibility: unset;
+		}
+	}
 }
 
 .educacionIntegral:after {
@@ -42,6 +64,44 @@
 	text-align: left;
 }
 
+
+ul.edu-tab.hidden-lg {
+    left: 0;
+    padding: 21px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/ei/sqr.png);
+
+	li.items {
+		width: 190px;
+		text-align: left;
+		padding-right: 0;
+		position: relative;
+		margin-bottom: 14px;
+
+		a {
+			color: #2e366a;
+		    font-size: 20px;
+			text-decoration: none;
+		}
+
+		&.active {
+			a {
+				color: gray;
+			}
+		}
+
+		&.active::after {
+		    top: -10px;
+		    right: 35px;
+		    position: absolute;
+		    transform: translate(50%, 0);
+		    content: url(img/miscelanea/arrow-choose.png);
+		}
+	}
+
+} 
 
 
 ul.educacion-integral-container {
@@ -99,12 +159,29 @@ ul.educacion-integral-container {
 }	
 
 #educacionintegral .seccion-text-right {
-	width: 60%;
-	padding-top: 7% !important;
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    background-color: transparent;
+	padding-top: 70px !important;
+
+
+	h1 {
+		color: #c74f47;
+		margin-bottom: 14px;
+	}
 
 	&-titulo {
-		font-size: 18px;
+		font-size: 16px;
 		margin-left: 14%;
+		text-align: left;
+		color: darken(gray, 10);
+	}
+
+	&:after {
+		background-color: transparent;
 	}
 }
 
@@ -128,11 +205,12 @@ ul.educacion-integral-container {
 	}
 
 	#educacionintegral .seccion-text-right {
-		width: 50%;
+		width: 30%;
 		height: 432px;
 		padding-top: 7% !important;
 
 		&-titulo {
+			color: white;
 			font-size: 18px;
 			margin-left: 40%;
 		}
@@ -144,18 +222,18 @@ ul.educacion-integral-container {
 
 	.educacionIntegral:after {
 	    content: "";
-	    background-color: rgba(229, 172, 77, 0.8);
 	    position: absolute;
 	    top: -140px;
-	    right: -10px;
+	    right: 0;
 	    width: 600px;
 	    height: 600px;
 	    border-radius: 50%;
+	    background-color: rgba(229, 172, 77, 0.8) !important;
 	}
 
 	.imagen-educacion-circular {
-		  right: 0;
 		  top: 30%;
+		  right: 0;
 		  width: 40%;
 		  height: auto;
 		  margin-right: 0;
@@ -175,6 +253,10 @@ ul.educacion-integral-container {
             position: absolute;
             transform: unset;
             height: unset !important;
+
+            &-p {
+            	visibility: unset;
+            }
         }
 
         .sub-wrapper-lista {
@@ -304,12 +386,15 @@ ul.educacion-integral-container {
 		}
 
 		.seccion-text-right {
-		    width: 25%;
-		    padding-top: 7% !important;
+		    width: 30%;
 		    text-align: right;
+		    margin-right: 21px;
+		    padding-top: 7% !important;
+
 			&-titulo {
 				width: 400px;
 				margin-left: auto;
+				text-align: right;
 			}
 		}
 	}
