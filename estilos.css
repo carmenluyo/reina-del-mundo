@@ -1870,7 +1870,7 @@ input[type=number] {
     position: absolute; }
 
   .seccion-wrapper-admision-contenido {
-    margin-top: 70px; } }
+    margin-top: -160px; } }
 @media (min-width: 1024px) {
   #page-admision {
     background-size: 100%;
@@ -5551,6 +5551,36 @@ body {
     position: relative;
     z-index: 4; }
 
+#educacionpersonal {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("img/personalizada/educacion-personalizada.jpg"); }
+  #educacionpersonal .section-content section {
+    padding: 0;
+    width: 280px;
+    margin: 0 auto; }
+    #educacionpersonal .section-content section p {
+      text-align: left;
+      font-size: 16px; }
+  #educacionpersonal .container {
+    margin-left: 0;
+    margin-right: 0; }
+    #educacionpersonal .container .titulo-interno {
+      z-index: 4;
+      margin-left: 0;
+      color: #e5ac4dc;
+      margin-right: 0;
+      font-size: 30px;
+      margin-top: 70px;
+      position: relative; }
+  #educacionpersonal .img-educacion-top {
+    width: 230px;
+    display: block;
+    margin: 21px auto;
+    position: relative; }
+
+#educacionpersonal .seccion-text-right-titulo,
 #educacionintegral .seccion-text-right-titulo {
   font-size: 14px;
   text-align: right;
@@ -5678,6 +5708,66 @@ ul.educacion-integral-container {
     background-color: transparent; }
 
 @media screen and (min-width: 768px) {
+  #educacionpersonal {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/personalizada/educacion-personalizada.jpg"); }
+    #educacionpersonal .section-content {
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 745px; }
+      #educacionpersonal .section-content .seccion-text-right {
+        width: 400px;
+        margin-right: 0; }
+    #educacionpersonal .seccion-text-right-titulo {
+      font-size: 21px;
+      text-align: right;
+      margin-top: 70px;
+      margin-bottom: 0px;
+      margin-left: 0 !important; }
+    #educacionpersonal .move-elements {
+      width: 100%;
+      position: relative;
+      margin-right: auto;
+      margin-top: 70px; }
+      #educacionpersonal .move-elements img {
+        position: absolute; }
+      #educacionpersonal .move-elements img.rotate-thing-one {
+        right: 0;
+        top: 21px; }
+      #educacionpersonal .move-elements img.rotate-thing-two {
+        left: 0;
+        top: 21px; }
+      #educacionpersonal .move-elements img.rotate-thing-three {
+        right: 50%;
+        top: -30px; }
+      #educacionpersonal .move-elements img.rotate-thing-four {
+        right: 30%;
+        top: 71px; }
+      #educacionpersonal .move-elements img.rotate-thing-five {
+        right: 15%;
+        top: -110px; }
+      #educacionpersonal .move-elements img.rotate-thing-six {
+        left: 20%;
+        top: 100px; }
+      #educacionpersonal .move-elements img.rotate-thing-seven {
+        left: 60%;
+        top: -37px; }
+    #educacionpersonal .seccion-titulos {
+      text-align: right; }
+      #educacionpersonal .seccion-titulos h1 {
+        color: white; }
+    #educacionpersonal .img-educacion-top {
+      left: 4%;
+      top: 100px;
+      z-index: 3;
+      width: 40% !important;
+      height: auto !important;
+      position: absolute; }
+
   #educacionintegral {
     background-image: unset; }
 
@@ -5786,6 +5876,68 @@ ul.educacion-integral-container {
         opacity: 1;
         display: block; } }
 @media screen and (min-width: 1024px) {
+  #educacionpersonal {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/personalizada/educacion-personalizada.jpg"); }
+    #educacionpersonal .section-content {
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin: 0 auto;
+      transform: unset;
+      max-width: 1000px;
+      position: absolute; }
+      #educacionpersonal .section-content .seccion-text-right {
+        width: 400px;
+        margin-right: 35px; }
+    #educacionpersonal .seccion-text-right-titulo {
+      font-size: 21px;
+      text-align: right;
+      margin-top: 70px;
+      margin-bottom: 0px;
+      margin-left: 0 !important; }
+    #educacionpersonal .move-elements {
+      width: 100%;
+      position: relative;
+      margin-right: auto;
+      margin-top: 15%; }
+      #educacionpersonal .move-elements img {
+        position: absolute; }
+      #educacionpersonal .move-elements img.rotate-thing-one {
+        right: 0;
+        top: 21px; }
+      #educacionpersonal .move-elements img.rotate-thing-two {
+        left: 0;
+        top: 21px; }
+      #educacionpersonal .move-elements img.rotate-thing-three {
+        right: 50%;
+        top: -30px; }
+      #educacionpersonal .move-elements img.rotate-thing-four {
+        right: 30%;
+        top: 71px; }
+      #educacionpersonal .move-elements img.rotate-thing-five {
+        right: 15%;
+        top: -110px; }
+      #educacionpersonal .move-elements img.rotate-thing-six {
+        left: 20%;
+        top: 100px; }
+      #educacionpersonal .move-elements img.rotate-thing-seven {
+        left: 60%;
+        top: -37px; }
+    #educacionpersonal .seccion-titulos {
+      text-align: right; }
+      #educacionpersonal .seccion-titulos h1 {
+        color: white; }
+    #educacionpersonal .img-educacion-top {
+      top: 0;
+      left: 4%;
+      z-index: 3;
+      width: 40% !important;
+      height: auto !important;
+      position: absolute; }
+
   #educacionintegral .container-maxw,
   #educacionintegral .wrapper-lista-descripcion {
     left: 0;

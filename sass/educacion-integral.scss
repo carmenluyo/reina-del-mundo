@@ -13,6 +13,50 @@
 	}
 }
 
+#educacionpersonal {
+	height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('img/personalizada/educacion-personalizada.jpg');
+
+    .section-content {
+    	section {
+    		padding: 0;
+    		width: 280px;
+    		margin: 0 auto;
+
+    		p {
+    			text-align: left;
+    			font-size: 16px;
+    		}
+    	}
+    }
+
+    .container {
+    	margin-left: 0;
+    	margin-right: 0;
+    		
+	    .titulo-interno {
+		    z-index: 4;
+		    margin-left: 0;
+		    color: #e5ac4dc;
+		    margin-right: 0;
+		    font-size: 30px;
+		    margin-top: 70px;
+		    position: relative;
+		}
+    }
+
+    .img-educacion-top {
+	    width: 230px;
+	    display: block;
+	    margin: 21px auto;
+	    position: relative;
+    }
+
+}
+
+#educacionpersonal .seccion-text-right-titulo,
 #educacionintegral .seccion-text-right-titulo {
     font-size: 14px;
     text-align: right;
@@ -186,6 +230,100 @@ ul.educacion-integral-container {
 }
 
 @media screen and (min-width: 768px) {
+	#educacionpersonal {
+		height: 100vh;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-image: url('img/personalizada/educacion-personalizada.jpg');
+
+	    .section-content {
+			left: 0;
+			right: 0;
+			width: 100%;
+			margin: 0 auto;
+			max-width: 745px;
+
+			.seccion-text-right {
+				width: 400px;
+				margin-right: 0;
+			}
+	    }
+
+	    .seccion-text-right {
+	    	&-titulo {
+    		    font-size: 21px;
+			    text-align: right;
+			    margin-top: 70px;
+			    margin-bottom: 0px;
+			    margin-left: 0 !important;
+			}
+    	}
+	  
+	  	.move-elements {
+		    width: 100%;
+		    position: relative;
+		    margin-right: auto;
+		    margin-top: 70px;
+
+
+			img {
+				position: absolute;
+			}
+
+			img.rotate-thing {
+				&-one {
+					right: 0;
+					top: 21px;
+				}
+
+				&-two {
+					left: 0;
+					top: 21px;
+				}
+
+				&-three {
+					right: 50%;
+					top: -30px;
+				}
+
+				&-four {
+					right: 30%;
+					top: 71px;
+				}
+
+				&-five {
+					right: 15%;
+					top: -110px;
+				}	
+
+				&-six {
+					left: 20%;
+					top: 100px;
+				}	
+
+				&-seven {
+					left: 60%;
+					top: -37px;
+				}					
+			}
+		}
+
+	    .seccion-titulos {
+	    	text-align: right;
+	    	 h1 {
+	    	 	color: white;
+	    	 }
+	    }
+
+		.img-educacion-top {
+			left: 4%;
+			top: 100px;
+			z-index: 3;
+	    	width: 40% !important;
+			height: auto !important;
+			position: absolute;
+		}
+	}
 
 	#educacionintegral {
 	    background-image: unset;
@@ -331,6 +469,103 @@ ul.educacion-integral-container {
 
 
 @media screen and (min-width: 1024px) {
+	#educacionpersonal {
+		height: 100vh;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-image: url('img/personalizada/educacion-personalizada.jpg');
+
+		.section-content {
+	        left: 0;
+	        right: 0;
+	        width: 100%;
+	        margin: 0 auto;
+	        transform: unset;
+	        max-width: 1000px;
+	        position: absolute;
+
+			.seccion-text-right {
+				width: 400px;
+				margin-right: 35px;
+			}
+	    }
+
+	    .seccion-text-right {
+	    	&-titulo {
+    		    font-size: 21px;
+			    text-align: right;
+			    margin-top: 70px;
+			    margin-bottom: 0px;
+			    margin-left: 0 !important;
+			}
+    	}
+	  
+	  	.move-elements {
+		    width: 100%;
+		    position: relative;
+		    margin-right: auto;
+		    margin-top: 15%;
+
+
+			img {
+				position: absolute;
+			}
+
+			img.rotate-thing {
+				&-one {
+					right: 0;
+					top: 21px;
+				}
+
+				&-two {
+					left: 0;
+					top: 21px;
+				}
+
+				&-three {
+					right: 50%;
+					top: -30px;
+				}
+
+				&-four {
+					right: 30%;
+					top: 71px;
+				}
+
+				&-five {
+					right: 15%;
+					top: -110px;
+				}	
+
+				&-six {
+					left: 20%;
+					top: 100px;
+				}	
+
+				&-seven {
+					left: 60%;
+					top: -37px;
+				}					
+			}
+		}
+
+	    .seccion-titulos {
+	    	text-align: right;
+	    	 h1 {
+	    	 	color: white;
+	    	 }
+	    }
+
+		.img-educacion-top {
+			top: 0;
+			left: 4%;
+			z-index: 3;
+	    	width: 40% !important;
+			height: auto !important;
+			position: absolute;
+		}
+	}
+
     #educacionintegral {
         .container-maxw,
         .wrapper-lista-descripcion {
