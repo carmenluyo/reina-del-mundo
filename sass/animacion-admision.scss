@@ -12,6 +12,11 @@
     height: 800px;
     overflow: hidden;
     position: relative;
+
+
+    .seccion-wrapper-admision-contenido {
+    	width: 100%;
+    }
 	
 	@media(max-width: 760px){
 		background-image: url(img/admision/fondo-admision.svg);

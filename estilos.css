@@ -2214,6 +2214,8 @@ body.removerScroll {
   height: 800px;
   overflow: hidden;
   position: relative; }
+  #page-admision .seccion-wrapper-admision-contenido {
+    width: 100%; }
   @media (max-width: 760px) {
     #page-admision {
       background-image: url(img/admision/fondo-admision.svg);
