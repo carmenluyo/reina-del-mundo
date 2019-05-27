@@ -2792,6 +2792,9 @@ body {
   font-style: normal;
   cursor: url("img/cursor.png"), auto; }
 
+.preload {
+  display: none; }
+
 .wrapper-inicio {
   width: 100vw;
   height: 800px; }
@@ -2838,6 +2841,9 @@ body {
     width: 100%; }
 
 @media screen and (min-width: 760px) {
+  .preload {
+    display: flex; }
+
   #inicio {
     overflow: hidden;
     background-image: unset; }
