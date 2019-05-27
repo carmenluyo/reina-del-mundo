@@ -19,6 +19,10 @@
 		text-align: center;
 		color: black;
 
+		@media screen and (max-width: 500px) {
+			text-align: left;
+		}
+
 		br {
 			display: none;
 		}
@@ -34,6 +38,11 @@
 		.tab_content_colegio-propuesta {
 			font-size: 16px;
 			color: #2e366a;
+
+			@media screen and (max-width: 500px) {
+				width: 280px;
+				margin: 21px auto 0;
+			}
 
 			strong {
 				font-size: 25px;

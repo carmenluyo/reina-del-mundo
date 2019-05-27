@@ -2159,8 +2159,9 @@ body.removerScroll {
   width: 100vw;
   height: 100vh;
   background-color: #EAB720;
-  background-image: url("img/fondo-menu-mb.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position-y: 60%;
+  background-image: url("img/fondo-menu-mb.jpg"); }
   @media screen and (min-width: 768px) {
     .contendorTransition-top {
       background-image: url("img/fondo-menu.jpg");
@@ -2489,6 +2490,9 @@ body.removerScroll {
   justify-content: center;
   margin-top: 0;
   color: #ffffff; }
+  @media screen and (max-width: 500px) {
+    .cabecera-modal-ul {
+      margin-top: -50px; } }
   @media (max-width: 760px) {
     .cabecera-modal-ul {
       line-height: 120%;
@@ -2795,11 +2799,11 @@ body {
 .texto-mobile {
   font-size: 14px;
   text-align: center;
-  padding: 7px 0 0 0; }
+  padding: 70px 0 0 0; }
 
 #inicio {
   overflow: hidden;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-image: url("./mobile/home.jpg"); }
   #inicio .container-full {
@@ -2828,7 +2832,7 @@ body {
   display: none; }
 
 .box-logos-mobile a {
-  width: 24%;
+  width: 40%;
   display: inline-block; }
   .box-logos-mobile a img {
     width: 100%; }
@@ -3436,6 +3440,10 @@ body {
     font-size: 22px;
     line-height: 24px;
     text-align: center; }
+    @media screen and (max-width: 500px) {
+      #colegio .mobile-options div p {
+        width: 280px;
+        margin: 0 auto; } }
   #colegio .mobile-options .list-mobile-cole ul {
     position: relative; }
   #colegio .mobile-options .list-mobile-cole ul li a {
@@ -4227,12 +4235,12 @@ body {
       height: 260px;
       margin: 0 auto;
       border-radius: 50%; }
-  #historia ul {
+  #historia ul.ins {
     left: 4%;
     z-index: 9;
     bottom: -40px;
     position: absolute; }
-    #historia ul button.instalaciones {
+    #historia ul.ins button.instalaciones {
       left: 130px;
       width: 170px;
       color: white;
@@ -4376,10 +4384,10 @@ body {
         border-radius: 50%;
         height: 300px;
         width: 80%; }
-    #historia ul {
+    #historia ul.ins {
       left: 18%;
       position: absolute; }
-      #historia ul button.instalaciones {
+      #historia ul.ins button.instalaciones {
         left: 130px;
         width: 170px;
         color: #cc534e;
@@ -4532,6 +4540,9 @@ body {
     line-height: 24px;
     text-align: center;
     color: black; }
+    @media screen and (max-width: 500px) {
+      #page-propuesta-educativa p.text-mobile-prop {
+        text-align: left; } }
     #page-propuesta-educativa p.text-mobile-prop br {
       display: none; }
   #page-propuesta-educativa .scalar {
@@ -4541,6 +4552,10 @@ body {
     #page-propuesta-educativa .tab-mobile .tab_content_colegio-propuesta {
       font-size: 16px;
       color: #2e366a; }
+      @media screen and (max-width: 500px) {
+        #page-propuesta-educativa .tab-mobile .tab_content_colegio-propuesta {
+          width: 280px;
+          margin: 21px auto 0; } }
       #page-propuesta-educativa .tab-mobile .tab_content_colegio-propuesta strong {
         font-size: 25px;
         color: #c74f47; }

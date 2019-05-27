@@ -291,8 +291,9 @@ body.removerScroll{
   width: 100vw;
   height: 100vh;
   background-color: #EAB720;
-  background-image: url('img/fondo-menu-mb.jpg');
   background-size: cover;
+  background-position-y: 60%;  
+  background-image: url('img/fondo-menu-mb.jpg');
 
   @media screen and (min-width: 768px) {
       background-image: url('img/fondo-menu.jpg');

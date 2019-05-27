@@ -16,12 +16,12 @@ body {
 .texto-mobile {
     font-size: 14px;
     text-align: center;
-    padding: 7px 0 0 0;
+    padding: 70px 0 0 0;
 }
 
 #inicio {
     overflow: hidden;
-    background-size: cover;
+    background-size: contain;
 	background-repeat: no-repeat;
     background-image: url('./mobile/home.jpg');
     
@@ -70,7 +70,7 @@ body {
 
 .box-logos-mobile {
     a {
-        width: 24%;
+        width: 40%;
         display: inline-block;
 
 

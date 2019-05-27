@@ -53,6 +53,11 @@
   justify-content: center;
   margin-top: 0;
   color:#ffffff;
+
+  @media screen and (max-width: 500px) {
+      margin-top: -50px;
+  }
+
   @media(max-width: 760px){
     line-height: 120%;
     font-size: 28px;

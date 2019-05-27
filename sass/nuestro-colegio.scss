@@ -87,6 +87,11 @@
 			font-size: 22px;
 			line-height: 24px;
 			text-align: center;
+
+			@media screen and (max-width: 500px) {
+				width: 280px;
+				margin: 0 auto;
+			}
 		}
 
 		.list-mobile-cole {
@@ -120,9 +125,9 @@
 
 	.list-mobile-cole {
 		position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
+	    bottom: 0;
+	    text-align: center;
+	    width: 100%;
 	}
 
 	#boton-click {
