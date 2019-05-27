@@ -2165,7 +2165,8 @@ body.removerScroll {
   @media screen and (min-width: 768px) {
     .contendorTransition-top {
       background-image: url("img/fondo-menu.jpg");
-      background-size: cover; } }
+      background-size: cover;
+      background-position-y: unset; } }
 
 .transitionsuave {
   transform: translateY(0vh); }
@@ -2215,6 +2216,11 @@ body.removerScroll {
   height: 800px;
   overflow: hidden;
   position: relative; }
+  @media screen and (max-width: 500px) {
+    #page-admision .contendorTransition {
+      top: -23px; }
+    #page-admision #boton-click {
+      top: 0; } }
   #page-admision .seccion-wrapper-admision-contenido {
     width: 100%; }
   @media (max-width: 760px) {

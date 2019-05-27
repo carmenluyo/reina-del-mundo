@@ -13,6 +13,17 @@
     overflow: hidden;
     position: relative;
 
+    @media screen and (max-width: 500px) {	
+
+    	.contendorTransition {
+    		top: -23px;
+    	}
+
+	    #boton-click {
+		    top: 0;
+		}
+    }
+
 
     .seccion-wrapper-admision-contenido {
     	width: 100%;
