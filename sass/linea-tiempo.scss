@@ -272,7 +272,6 @@
         justify-content: center;
         display: flex;
         align-items: center;
-        
         width: 100%;
 
         
@@ -281,6 +280,7 @@
             text-align: center;
             background: rgba(0,0,0,0.5);
             margin: 0 auto;
+            z-index: 100;
             bottom: 0;
             right: 0;
             left: 0;
